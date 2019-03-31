@@ -42,43 +42,11 @@ TODO:
  * Reenable compilation at the end
 -}
 
-{-
-llc-5.0 -O3 -relocation-model=pic -filetype=obj ${OPT}.ll
-gcc -O3 test.c ${OPT}.o -s -o opt
-./opt
--}
-
-generateRuntime :: IO ()
-generateRuntime =
-  writeFile "runtime.c" $ unlines
-    [ "#include <stdio.h>"
-    , "#include <stdlib.h>"
-    , "#include <inttypes.h>"
-    , ""
-    , "extern int64_t _heap_ptr_;"
-    , "int64_t grinMain();"
-    , ""
-    , "int64_t _prim_int_print(int64_t i) {"
-    , "  printf(\"%ld\\n\", i);"
-    , "  return i;"
-    , "}"
-    , ""
-    , "int main() {"
-    , "  int64_t* heap = malloc(100*1024*1024);"
-    , "  _heap_ptr_ = (int64_t)heap;"
-    , "  grinMain();"
-    , "  printf(\"used memory: %ld bytes\\n\", (uint64_t)_heap_ptr_ - (uint64_t)heap);"
-    , "  free(heap);"
-    , "  return 0;"
-    , "}"
-    ]
-
-removeRuntime :: IO ()
-removeRuntime = removeFile "runtime.c"
-
 data Options = Options
   { inputs :: [FilePath]
   , output :: FilePath
+  , outputGrin :: Bool
+  , evalGrin :: Bool
   , optimise :: Bool
   , quiet :: Bool
   , help :: Bool
@@ -86,11 +54,14 @@ data Options = Options
   , outputDir :: String
   , deadCodeElim :: Bool -- Interprocedural dead code elimination
   , saveInBinary :: Bool
+  , debugSymbols :: Bool
   }
 
 defaultOptions = Options
   { inputs = []
   , output = "a.out"
+  , outputGrin = False
+  , evalGrin = False
   , optimise = True
   , quiet = False
   , help = False
@@ -98,6 +69,7 @@ defaultOptions = Options
   , outputDir = ".idris"
   , deadCodeElim = False
   , saveInBinary = False
+  , debugSymbols = True
   }
 
 codegenGrin :: Options -> CodegenInfo -> IO ()
@@ -116,17 +88,8 @@ codegenGrin o@Options{..} CodegenInfo{..} = do
     (program simpleDecls)
     preparation
     (idrisOptimizations o)
-    (postProcessing outputFile)
+    (postProcessing o)
   pure ()
-{-
-  generateRuntime
-  callCommand $ printf "llc-5.0 -O3 -relocation-model=pic -filetype=obj %s.ll" outputFile
-  callCommand $ printf "gcc -O3 runtime.c %s.o -s -o %s" outputFile outputFile
-  removeFile $ printf "%s.ll" outputFile
-  removeFile $ printf "%s.o" outputFile
-  removeFile $ printf "%s.s" outputFile
-  removeRuntime
--}
 
 program :: [(Idris.Name, SDecl)] -> Exp
 program defs =
@@ -299,7 +262,8 @@ primFn f ps = case f of
   LFloatStr -> Grin.SApp "idris_float_str" ps
 {-  LStrFloat -> undefined -}
   LChInt intTy -> Grin.SApp "idris_ch_int" ps
-{-  LIntCh intTy -> undefined
+  LIntCh intTy -> Grin.SApp "idris_int_ch" ps
+{-
   LBitCast arithTy1 arithTy2 -> undefined -- Only for values of equal width
   LFExp -> undefined
   LFLog -> undefined
@@ -388,6 +352,8 @@ preparation :: [PipelineStep]
 preparation =
   [ SaveGrin (Rel "FromIdris")
   , T SimpleDeadFunctionElimination
+  , T ProducerNameIntroduction
+  , T BindNormalisation
 --  , PrintGrin ondullblack
 --  , HPT PrintHPTResult
 --  , PrintTypeEnv
@@ -430,12 +396,8 @@ idrisOptimizations o =
       ]
     else []
 
-postProcessing :: String -> [PipelineStep]
-postProcessing outputFile =
-  [ SaveGrin (Abs outputFile)
---  , HPT CompileHPT
---  , HPT RunHPTPure
---  , PrintTypeEnv
-  , PureEval
---  , JITLLVM
+postProcessing :: Options -> [PipelineStep]
+postProcessing opt = concat
+  [ [ (if (outputGrin opt) then SaveGrin else (SaveExecutable (debugSymbols opt))) $ Abs $ output opt ]
+  , [ PureEval | evalGrin opt ]
   ]

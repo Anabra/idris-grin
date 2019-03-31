@@ -114,17 +114,13 @@ idrisPrimOps = withPrimPrelude [prog|
     (CGrString idris_str_eq1_0) <- fetch idris_str_eq1
     (CGrString idris_str_eq2_0) <- fetch idris_str_eq2
     idris_str_eq3 <- _prim_string_eq idris_str_eq1_0 idris_str_eq2_0
-    case idris_str_eq3 of
-      #False  -> pure (CGrInt 0)
-      #True   -> pure (CGrInt 1)
+    pure (CGrInt idris_str_eq3)
 
   idris_str_lt idris_str_lt1 idris_str_lt2 =
     (CGrString idris_str_lt1_0) <- fetch idris_str_lt1
     (CGrString idris_str_lt2_0) <- fetch idris_str_lt2
     idris_str_lt3 <- _prim_string_lt idris_str_lt1_0 idris_str_lt2_0
-    case idris_str_lt3 of
-      #False -> pure (CGrInt 0)
-      #True  -> pure (CGrInt 1)
+    pure (CGrInt idris_str_lt3)
 
   idris_str_len idris_str_len1 =
     (CGrString idris_str_len2) <- fetch idris_str_len1
@@ -190,6 +186,10 @@ idrisPrimOps = withPrimPrelude [prog|
   idris_ch_int idris_ch_int1 =
     (CGrInt idris_ch_int2) <- fetch idris_ch_int1
     pure (CGrInt idris_ch_int2)
+
+  idris_int_ch idris_int_ch1 =
+    (CGrInt idris_int_ch2) <- fetch idris_int_ch1
+    pure (CGrInt idris_int_ch2)
 
   idris_usleep idris_usleep1 =
     (CGrInt idris_usleep1_0) <- fetch idris_usleep1

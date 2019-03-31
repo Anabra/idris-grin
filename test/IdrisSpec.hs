@@ -9,7 +9,7 @@ We keep the failing test cases for reference and regression detecting.
 -}
 
 spec :: Spec
-spec = describe "Idris and Grin matches for:" $ forM_ [NonOptimised, Optimised] $ \mode ->
+spec = describe "Idris and Grin matches for:" $ forM_ [NonOptimisedEval, OptimisedEval, Compiled] $ \mode ->
   describe (show mode) $ do
     it "List length" $ timed $ idris mode 60 "test/other/list_length/list_len.idr"
     it "TDD 01 - 01 Hello World" $ timed $ idris mode 60 "test/tdd/chapter01/01_HelloWorld.idr"
@@ -52,7 +52,7 @@ spec = describe "Idris and Grin matches for:" $ forM_ [NonOptimised, Optimised] 
     it "TDD 06 - 01 Type Level Functions" $ timed $ idris mode 60 "test/tdd/chapter06/01TypeLevelFuns.idr"
     it "TDD 06 - 02 DataStore" $ timed $ idrisWithStdin
       mode 60
-      "test/tdd/chapter05/02_DataStore.idr"
+      "test/tdd/chapter06/02_DataStore.idr"
       $ unlines
         [ "schema Int String"
         , "add 99 \"Red ballons\""
@@ -66,3 +66,17 @@ spec = describe "Idris and Grin matches for:" $ forM_ [NonOptimised, Optimised] 
     it "TDD 08 - 01 ExactLength" $ timed $ idris mode 60 "test/tdd/chapter08/01_ExactLength.idr"
     it "TDD 08 - 02 Reverse" $ timed $ idris mode 60 "test/tdd/chapter08/02_Reverse.idr"
     it "TDD 09 - 01 RemoveElem" $ timed $ idris mode 60 "test/tdd/chapter09/01_RemoveElem.idr"
+    it "TDD 09 - 02 Game" $ timed $ idrisWithStdin
+      mode 60
+      "test/tdd/chapter09/02_Game.idr"
+      $ unlines
+        [ "Invalid"
+        , "t"
+        , "d"
+        , "s"
+        , "e"
+        ]
+    it "TDD 10 - 01 View" $ timed $ idris mode 60 "test/tdd/chapter10/01_View.idr"
+    it "TDD 10 - 01 Exercises" $ timed $ idris mode 60 "test/tdd/chapter10/01_Exercises.idr"
+    it "TDD 10 - 02 Recursive Views" $ timed $ idris mode 60 "test/tdd/chapter10/02_RecursiveViews.idr"
+    it "TDD 10 - 02 Exercises" $ timed $ idris mode 60 "test/tdd/chapter10/02_Exercises.idr"
