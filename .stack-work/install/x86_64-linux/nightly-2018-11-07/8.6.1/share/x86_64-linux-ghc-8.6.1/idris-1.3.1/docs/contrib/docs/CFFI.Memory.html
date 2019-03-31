@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: CFFI.Memory</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: CFFI.Memory<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>CFFI.Memory</h1><p>Machinery for interfacing with C.</p>
+<dl class="decls"><dt id="CFFI.Memory.#"><span class="name function" title="CFFI.Memory.#">(#)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Types.Composite" href="CFFI.Types.html#CFFI.Types.Composite">Composite</a> ->
+<a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a> ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a></span></dt><dd><p>Get a pointer to a field in a composite value</p>
+<dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixl 10">Left associative, precedence 10</dd></dl></dd><dt id="CFFI.Memory.CPtr"><span class="word">data&nbsp;</span><span class="name type" title="CFFI.Memory.CPtr">CPtr</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Type">Type</span></span></dt><dd><dl class="decls"><dt id="CFFI.Memory.CPt"><span class="name constructor" title="CFFI.Memory.CPt">CPt</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a> ->
+<span class="type" title="Int">Int</span> ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a></span></dt><dd></dd></dl></dd><dt id="CFFI.Memory.alloc"><span class="name function" title="CFFI.Memory.alloc">alloc</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Types.Composite" href="CFFI.Types.html#CFFI.Types.Composite">Composite</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a></span></dt><dd><p>Allocate enough memory to hold an instance of a C typr</p>
+</dd><dt id="CFFI.Memory.calloc"><span class="name function" title="CFFI.Memory.calloc">calloc</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Int">Int</span> ->
+<span class="type" title="Int">Int</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a></span></dt><dd><p>Import of calloc from the C standard library.</p>
+</dd><dt id="CFFI.Memory.field"><span class="name function" title="CFFI.Memory.field">field</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Types.Composite" href="CFFI.Types.html#CFFI.Types.Composite">Composite</a> ->
+<a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a> ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a></span></dt><dd><p>Get a pointer to a field in a composite value</p>
+</dd><dt id="CFFI.Memory.free"><span class="name function" title="CFFI.Memory.free">free</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Free memory allocated with alloc</p>
+</dd><dt id="CFFI.Memory.malloc"><span class="name function" title="CFFI.Memory.malloc">malloc</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Int">Int</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a></span></dt><dd><p>Import of malloc from the C standard library.</p>
+</dd><dt id="CFFI.Memory.mfree"><span class="name function" title="CFFI.Memory.mfree">mfree</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Import of free from the C standard library.</p>
+</dd><dt id="CFFI.Memory.peek"><span class="name function" title="CFFI.Memory.peek">peek</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">t</span> : <a class="type" title="CFFI.Types.CType" href="CFFI.Types.html#CFFI.Types.CType">CType</a>) ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="function" title="CFFI.Types.translate" href="CFFI.Types.html#CFFI.Types.translate">translate</a> <span class="boundvar" title="">t</span>)</span></dt><dd><p>Read from memory</p>
+</dd><dt id="CFFI.Memory.poke"><span class="name function" title="CFFI.Memory.poke">poke</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">t</span> : <a class="type" title="CFFI.Types.CType" href="CFFI.Types.html#CFFI.Types.CType">CType</a>) ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="function" title="CFFI.Types.translate" href="CFFI.Types.html#CFFI.Types.translate">translate</a> <span class="boundvar" title="">t</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Write to memory</p>
+</dd><dt id="CFFI.Memory.toCPtr"><span class="name function" title="CFFI.Memory.toCPtr">toCPtr</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a> ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a></span></dt><dd></dd><dt id="CFFI.Memory.toPtr"><span class="name function" title="CFFI.Memory.toPtr">toPtr</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a></span></dt><dd></dd><dt id="CFFI.Memory.update"><span class="name function" title="CFFI.Memory.update">update</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">t</span> : <a class="type" title="CFFI.Types.CType" href="CFFI.Types.html#CFFI.Types.CType">CType</a>) ->
+<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+(<a class="function" title="CFFI.Types.translate" href="CFFI.Types.html#CFFI.Types.translate">translate</a> <span class="boundvar" title="">t</span> ->
+<a class="function" title="CFFI.Types.translate" href="CFFI.Types.html#CFFI.Types.translate">translate</a> <span class="boundvar" title="">t</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Update memory with a function.</p>
+</dd><dt id="CFFI.Memory.withAlloc"><span class="name function" title="CFFI.Memory.withAlloc">withAlloc</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Types.Composite" href="CFFI.Types.html#CFFI.Types.Composite">Composite</a> ->
+(<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <span class="implicit boundvar" title="">a</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>Perform an IO action with memory that is freed afterwards</p>
+</dd><dt id="CFFI.Memory.~~&gt;"><span class="name function" title="CFFI.Memory.~~&gt;">(~~&gt;)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="CFFI.Types.Composite" href="CFFI.Types.html#CFFI.Types.Composite">Composite</a> ->
+(<a class="type" title="CFFI.Memory.CPtr" href="CFFI.Memory.html#CFFI.Memory.CPtr">CPtr</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Perform an IO action with memory that is freed afterwards</p>
+<dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixl 1">Left associative, precedence 1</dd></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

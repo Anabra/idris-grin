@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Pruviloj.Derive.DecEq</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Pruviloj.Derive.DecEq<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Pruviloj.Derive.DecEq</h1><p>Derive implementations of decidable equality.</p>
+<dl class="decls"><dt id="Pruviloj.Derive.DecEq.deriveDecEq"><span class="name function" title="Pruviloj.Derive.DecEq.deriveDecEq">deriveDecEq</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the name of the function whose type has been declared">fn</span> : <a class="type" title="Language.Reflection.TTName" href="Language.Reflection.html#Language.Reflection.TTName">TTName</a>) ->
+<a class="type" title="Language.Reflection.Elab.Elab" href="Language.Reflection.Elab.html#Language.Reflection.Elab.Elab">Elab</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Attempt to derive the body of an implementation of decidable<br />
+equality based on an existing type signature.</p>
+<p>The function signature must provide enough information for the<br />
+deriving to occur. It must consist of zero or more non-constraint<br />
+arguments followed by zero or more constraint arguments, followed<br />
+by the two values to compare. The constraint arguments must<br />
+provide sufficient implementations of <code>DecEq</code> to decide the equality of<br />
+each constructor field. The final two arguments to the function<br />
+declaration must be the two values that will be compared for<br />
+equality.</p>
+<dl><dt>fn</dt><dd><p>the name of the function whose type has been declared</p>
+</dd></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

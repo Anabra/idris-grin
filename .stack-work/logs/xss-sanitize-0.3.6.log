@@ -1,0 +1,8 @@
+Configuring xss-sanitize-0.3.6...
+Preprocessing library for xss-sanitize-0.3.6..
+Building library for xss-sanitize-0.3.6..
+[1 of 3] Compiling Paths_xss_sanitize ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/Paths_xss_sanitize.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Paths_xss_sanitize.o )
+[2 of 3] Compiling Text.HTML.SanitizeXSS.Css ( src/Text/HTML/SanitizeXSS/Css.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/HTML/SanitizeXSS/Css.o )
+[3 of 3] Compiling Text.HTML.SanitizeXSS ( src/Text/HTML/SanitizeXSS.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/HTML/SanitizeXSS.o )
+Installing library in /home/anabra/.stack/snapshots/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/xss-sanitize-0.3.6-5aZVPHLclUGBu2ZXoqA7Fs
+Registering library for xss-sanitize-0.3.6..

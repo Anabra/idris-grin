@@ -1,0 +1,102 @@
+# Compile time stats:
+
+before:
+```
+Definitions:     52
+Binds:           612
+Blocks:          0
+Cases:           83
+Alternatives:    202
+Function calls:  159
+Returns:         284
+Stores:          262
+Fethces:         78
+Updates:         0
+------------------
+Node summary:    1732
+
+Variables:       801
+Tags:            46
+```
+
+after intraprocedural opts:
+```
+Definitions:     9
+Binds:           355
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         285
+Stores:          85
+Fethces:         14
+Updates:         0
+------------------
+Node summary:    1096
+
+Variables:       402
+Tags:            32
+```
+
+after DDE:
+```
+Definitions:     9
+Binds:           430
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         364
+Stores:          82
+Fethces:         13
+Updates:         0
+------------------
+Node summary:    1246
+
+Variables:       475
+Tags:            31
+```
+
+Here DDE deleted the first argument of the Cons data ctor in the length function.
+
+
+# Runtime stats:
+
+before:
+```
+Binds:           167936
+Blocks:          0
+Cases:           41891
+Alternatives:    83926
+Function calls:  52104
+Returns:         42299
+Stores:          42300
+Fethces:         62609
+Updates:         0
+```
+
+after intraprocedural opts:
+```
+Binds:           32831
+Blocks:          0
+Cases:           21155
+Alternatives:    42370
+Function calls:  31338
+Returns:         11373
+Stores:          413
+Fethces:         320
+Updates:         0
+```
+
+after dde:
+```
+Binds:           32860
+Blocks:          0
+Cases:           21155
+Alternatives:    42370
+Function calls:  31338
+Returns:         11604
+Stores:          312
+Fethces:         219
+Updates:         0
+```

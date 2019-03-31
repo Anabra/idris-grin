@@ -1,0 +1,61 @@
+before:
+```
+Definitions:     42
+Binds:           666
+Blocks:          0
+Cases:           42
+Alternatives:    113
+Function calls:  153
+Returns:         265
+Stores:          298
+Fethces:         62
+Updates:         1
+------------------
+Node summary:    1642
+
+Variables:       869
+Tags:            52
+```
+
+after intraprocedural opts:
+```
+Definitions:     8
+Binds:           330
+Blocks:          0
+Cases:           66
+Alternatives:    138
+Function calls:  90
+Returns:         231
+Stores:          70
+Fethces:         19
+Updates:         0
+------------------
+Node summary:    952
+
+Variables:       390
+Tags:            30
+```
+
+after DDE:
+```
+Definitions:     8
+Binds:           383
+Blocks:          0
+Cases:           66
+Alternatives:    138
+Function calls:  90
+Returns:         287
+Stores:          67
+Fethces:         19
+Updates:         0
+------------------
+Node summary:    1058
+
+Variables:       441
+Tags:            30
+```
+
+Here DDE removed an argument from a node
+present in the top level of grinMain.
+This enabled some other transformations.
+(Running the intraprocedural opts again changed the code)

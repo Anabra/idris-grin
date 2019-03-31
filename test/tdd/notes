@@ -1,0 +1,1 @@
+stack exec -- grin -o "./dde" --quiet --optimize --eval normal/001.high-level-code.grin

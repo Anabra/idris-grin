@@ -1,0 +1,60 @@
+before:
+```
+Definitions:     69
+Binds:           981
+Blocks:          0
+Cases:           117
+Alternatives:    278
+Function calls:  205
+Returns:         459
+Stores:          430
+Fethces:         117
+Updates:         0
+------------------
+Node summary:    2656
+
+Variables:       1273
+Tags:            63
+```
+
+after intraprocedural opts:
+```
+Definitions:     13
+Binds:           657
+Blocks:          0
+Cases:           168
+Alternatives:    362
+Function calls:  139
+Returns:         514
+Stores:          161
+Fethces:         50
+Updates:         0
+------------------
+Node summary:    2064
+
+Variables:       752
+Tags:            45
+```
+
+after DDE:
+```
+Definitions:     13
+Binds:           803
+Blocks:          0
+Cases:           168
+Alternatives:    362
+Function calls:  139
+Returns:         661
+Stores:          160
+Fethces:         50
+Updates:         0
+------------------
+Node summary:    2356
+
+Variables:       897
+Tags:            44
+```
+
+Here DDE removed a node argument in a recursive function,
+but it was inside a literal scrutinizing case alternative,
+so not much gain here.

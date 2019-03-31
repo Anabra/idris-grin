@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# generate grin from idris
+# example usage: generate_grin hello_world.idr --O0
+
+levelArg=$2
+lvl="${levelArg: -1}"
+
+rm -rf "./idrO$lvl"
+mkdir "./idrO$lvl"
+
+tmp=$(uuidgen)
+
+stack exec idris -- $1 -o "$tmp".grin --O"$lvl" --codegen grin --cg-opt --output-dir="./idrO$lvl" --cg-opt --O0 --cg-opt --no-lint --cg-opt --quiet
+
+rm -f "$tmp.grin"

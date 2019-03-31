@@ -1,0 +1,188 @@
+Heap
+    0      -> {CErased[]}
+    1      -> {CGrString[{T_String}]}
+    2      -> {CUnit[]}
+    3      -> {Cidr_MkUnit[]}
+    4      -> {CGrString[{T_String}]}
+    5      -> {CGrString[{T_String}]}
+    6      -> {CGrInt[{T_Int64}]}
+    7      -> {CGrInt[{T_Int64}]}
+    8      -> {CGrInt[{T_Int64}]}
+    9      -> {CGrInt[{T_Int64}]}
+    10     -> {Cidr_Prelude.Interfaces.EQ[]
+              ,Cidr_Prelude.Interfaces.GT[]
+              ,Cidr_Prelude.Interfaces.LT[]}
+    11     -> {CGrInt[{T_Int64}]}
+    12     -> {CGrString[{T_String}]}
+    13     -> {CGrString[{T_String}]}
+    14     -> {CGrString[{T_String}]}
+    15     -> {CUnit[]}
+    16     -> {Cidr_MkUnit[]}
+    17     -> {CGrString[{T_String}]}
+    18     -> {CUnit[]}
+    19     -> {Cidr_MkUnit[]}
+    20     -> {CGrInt[{T_Int64}]}
+    21     -> {CGrInt[{T_Int64}]}
+    22     -> {CGrInt[{T_Int64}]}
+    23     -> {CGrInt[{T_Int64}]}
+    24     -> {CGrInt[{T_Int64}]}
+    25     -> {CGrInt[{T_Int64}]}
+Env
+    idr_Main.longer0.32.0.arity.1.0 -> {T_String}
+    idr_Main.longer0.40.arity.1.0 -> {T_String}
+    idr_Main.longer1.32.2.arity.1.0 -> {T_String}
+    idr_Main.longer1.40.arity.1.0 -> {T_String}
+    idr_Main.longer2.0 -> {6}
+    idr_Main.longer2.32.1.arity.1.0 -> {T_Int64}
+    idr_Main.longer2_4.0 -> {7}
+    idr_Main.longer2_4.40.0.arity.1.0 -> {T_Int64}
+    idr_Main.longer2_val.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.longer2_val_3.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.longer3.0 -> {8}
+    idr_Main.longer3.32.3.arity.1.0 -> {T_Int64}
+    idr_Main.longer3_6.0 -> {9}
+    idr_Main.longer3_6.40.0.arity.1.0 -> {T_Int64}
+    idr_Main.longer3_val.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.longer3_val_5.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.longer4.0 -> {10}
+    idr_Main.longer4_val.0 -> {Cidr_Prelude.Interfaces.EQ[]
+                              ,Cidr_Prelude.Interfaces.GT[]
+                              ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Main.longer4_val_7.0 -> {Cidr_Prelude.Interfaces.EQ[]
+                                ,Cidr_Prelude.Interfaces.GT[]
+                                ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Main.main1.0 -> {1}
+    idr_Main.main1.32.4.arity.1.0 -> {T_String}
+    idr_Main.main1_10.0 -> {2}
+    idr_Main.main1_11.0 -> {3}
+    idr_Main.main1_val.0 -> {Cidr_MkUnit[]}
+    idr_Main.main1_val_8.0 -> {CUnit[]}
+    idr_Main.main1_val_9.0 -> {CGrString[{T_String}]}
+    idr_Main.main2.0 -> {4}
+    idr_Main.main2.40.1.arity.1.0 -> {T_String}
+    idr_Main.main2_17.0 -> {11}
+    idr_Main.main2_17.32.5.arity.1.0 -> {T_Int64}
+    idr_Main.main2_18.0 -> {12}
+    idr_Main.main2_18.32.6.arity.1.0 -> {T_String}
+    idr_Main.main2_21.0 -> {14}
+    idr_Main.main2_21.32.7.arity.1.0 -> {T_String}
+    idr_Main.main2_22.0 -> {15}
+    idr_Main.main2_23.0 -> {16}
+    idr_Main.main2_val.0 -> {Cidr_MkUnit[]}
+    idr_Main.main2_val_12.0 -> {CUnit[]}
+    idr_Main.main2_val_13.0 -> {CGrString[{T_String}]}
+    idr_Main.main2_val_14.0 -> {CGrString[{T_String}]}
+    idr_Main.main2_val_15.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main2_val_16.0 -> {CGrString[{T_String}]}
+    idr_Main.main3.0 -> {5}
+    idr_Main.main3.40.1.arity.1.0 -> {T_String}
+    idr_Main.main3_20.0 -> {13}
+    idr_Main.main3_20.32.6.arity.1.0 -> {T_String}
+    idr_Main.main3_26.0 -> {17}
+    idr_Main.main3_26.32.8.arity.1.0 -> {T_String}
+    idr_Main.main3_27.0 -> {18}
+    idr_Main.main3_val.0 -> {CGrString[{T_String}]}
+    idr_Main.main3_val_19.0 -> {CGrString[{T_String}]}
+    idr_Main.main3_val_24.0 -> {CUnit[]}
+    idr_Main.main3_val_25.0 -> {CGrString[{T_String}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.11.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.9.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_41" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.32.10.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02" -> {20}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02.32.9.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_32" -> {21}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39" -> {22}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40" -> {23}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40.40.2.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_31" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_37" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03" -> {24}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44" -> {25}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44.40.2.arity.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_43" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_30" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_42" -> {T_Int64}
+    "idr_{EVAL_0}0.0.0" -> {19}
+    "idr_{EVAL_0}0_val.0.0" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0.0" -> {0}
+    "idr_{runMain_0}0_29.0" -> {19}
+    "idr_{runMain_0}0_val.0" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0_val_28.0" -> {CErased[]}
+    idris_int_str1.32.arity.1.0 -> {T_Int64}
+    idris_int_str1_0.0 -> {T_Int64}
+    idris_int_str2.0 -> {T_String}
+    idris_int_sub0.32.arity.1.0 -> {T_Int64}
+    idris_int_sub0.32.arity.1.1 -> {T_Int64}
+    idris_int_sub0.32.arity.1.2 -> {T_Int64}
+    idris_int_sub0_1.0 -> {T_Int64}
+    idris_int_sub0_1.1 -> {T_Int64}
+    idris_int_sub0_1.2 -> {T_Int64}
+    idris_int_sub1.32.arity.1.0 -> {T_Int64}
+    idris_int_sub1.32.arity.1.1 -> {T_Int64}
+    idris_int_sub1.32.arity.1.2 -> {T_Int64}
+    idris_int_sub1_1.0 -> {T_Int64}
+    idris_int_sub1_1.1 -> {T_Int64}
+    idris_int_sub1_1.2 -> {T_Int64}
+    idris_int_sub2.0 -> {T_Int64}
+    idris_int_sub2.1 -> {T_Int64}
+    idris_int_sub2.2 -> {T_Int64}
+    idris_lz_ext1.32.arity.1.0 -> {T_Int64}
+    idris_lz_ext1.32.arity.1.1 -> {T_Int64}
+    idris_lz_ext2.0 -> {T_Int64}
+    idris_lz_ext2.1 -> {T_Int64}
+    idris_lz_ext3.0 -> {T_Int64}
+    idris_lz_ext3.1 -> {T_Int64}
+    idris_str_concat1.32.arity.1.0 -> {T_String}
+    idris_str_concat1_0.0 -> {T_String}
+    idris_str_concat2.32.arity.1.0 -> {T_String}
+    idris_str_concat2_0.0 -> {T_String}
+    idris_str_concat3.0 -> {T_String}
+    idris_str_len1.32.arity.1.0 -> {T_String}
+    idris_str_len1.32.arity.1.1 -> {T_String}
+    idris_str_len2.0 -> {T_String}
+    idris_str_len2.1 -> {T_String}
+    idris_str_len3.0 -> {T_Int64}
+    idris_str_len3.1 -> {T_Int64}
+    idris_write_str2.32.arity.1.0 -> {T_String}
+    idris_write_str2.32.arity.1.1 -> {T_String}
+    idris_write_str2.32.arity.1.2 -> {T_String}
+    idris_write_str2_0.0 -> {T_String}
+    idris_write_str2_0.1 -> {T_String}
+    idris_write_str2_0.2 -> {T_String}
+    r      -> {Cidr_MkUnit[]}
+    unboxed.CGrInt.0.0 -> {T_Int64}
+    unboxed.CGrInt.1.0 -> {T_Int64}
+    unboxed.CGrInt.2.0 -> {T_Int64}
+    unboxed.CGrInt.3.0 -> {T_Int64}
+    unboxed.CGrInt.4.0 -> {T_Int64}
+    unboxed.CGrInt.5.0 -> {T_Int64}
+    unboxed.CGrInt.6.0 -> {T_Int64}
+    unboxed.CGrInt.7 -> {T_Int64}
+    unboxed.CGrInt.8 -> {T_Int64}
+    unboxed.CGrInt.9 -> {T_Int64}
+    unboxed.CGrString.0.0 -> {T_String}
+    unboxed.CGrString.1.0 -> {T_String}
+Function
+    _prim_int_add :: {T_Int64} -> {T_Int64} -> {T_Int64}
+    _prim_int_str :: {T_Int64} -> {T_String}
+    _prim_int_sub :: {T_Int64} -> {T_Int64} -> {T_Int64}
+    _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
+    _prim_string_len :: {T_String} -> {T_Int64}
+    _prim_string_print :: {T_String} -> {T_Unit}
+    grinMain :: {T_Unit}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" :: {T_Int64}
+                                                                                -> {T_Int64}
+                                                                                -> {Cidr_Prelude.Interfaces.EQ[]
+                                                                                   ,Cidr_Prelude.Interfaces.GT[]
+                                                                                   ,Cidr_Prelude.Interfaces.LT[]}

@@ -421,12 +421,12 @@ idrisOptimizations o =
   , LateInlining
   , NonSharedElimination
   ] ++
-  if (deadCodeElim o)
+  if False --(deadCodeElim o)
     then
-      [ DeadFunctionElimination
-      , DeadVariableElimination
-      , DeadParameterElimination
-      , DeadDataElimination
+      [ -- DeadFunctionElimination
+      -- , DeadVariableElimination
+      -- , DeadParameterElimination
+       DeadDataElimination
       ]
     else []
 

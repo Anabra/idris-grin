@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Control.Monad.Syntax</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Control.Monad.Syntax<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Control.Monad.Syntax</h1><dl class="decls"><dt id="Control.Monad.Syntax.&lt;=&lt;"><span class="name function" title="Control.Monad.Syntax.&lt;=&lt;">(&lt;=&lt;)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Monad.Monad" href="Prelude.Monad.html#Prelude.Monad.Monad">Monad</a> <span class="implicit boundvar" title="">m</span> =>
+(<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">c</span>) ->
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">b</span>) ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">c</span></span></dt><dd><p>Right-to-left Kleisli composition of monads, flipped version of <code>&gt;=&gt;</code>.</p>
+<dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixr 1">Left associative, precedence 1</dd></dl></dd><dt id="Control.Monad.Syntax.=&lt;&lt;"><span class="name function" title="Control.Monad.Syntax.=&lt;&lt;">(=&lt;&lt;)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Monad.Monad" href="Prelude.Monad.html#Prelude.Monad.Monad">Monad</a> <span class="implicit boundvar" title="">m</span> =>
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">b</span>) ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">b</span></span></dt><dd><p>Right-to-left monadic bind, flipped version of <code>&gt;&gt;=</code>.</p>
+<dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixr 1">Left associative, precedence 1</dd></dl></dd><dt id="Control.Monad.Syntax.&gt;=&gt;"><span class="name function" title="Control.Monad.Syntax.&gt;=&gt;">(&gt;=&gt;)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Monad.Monad" href="Prelude.Monad.html#Prelude.Monad.Monad">Monad</a> <span class="implicit boundvar" title="">m</span> =>
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">b</span>) ->
+(<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">c</span>) ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">m</span> <span class="implicit boundvar" title="">c</span></span></dt><dd><p>Left-to-right Kleisli composition of monads.</p>
+<dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixr 1">Left associative, precedence 1</dd></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

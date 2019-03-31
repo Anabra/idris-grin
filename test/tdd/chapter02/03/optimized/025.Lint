@@ -1,0 +1,40 @@
+grinMain =
+  idr_Main.main1.32.4.arity.1.0 <- pure #"12\n"
+  _prim_string_print idr_Main.main1.32.4.arity.1.0
+  idr_Main.main2.40.1.arity.1.0 <- pure #"Hello"
+  idr_Main.main3.40.1.arity.1.0 <- pure #"World!"
+  idris_str_len3.0 <- _prim_string_len idr_Main.main2.40.1.arity.1.0
+  idris_lz_ext3.0 <- _prim_int_add idris_str_len3.0 0
+  idris_str_len3.1 <- _prim_string_len idr_Main.main3.40.1.arity.1.0
+  idris_lz_ext3.1 <- _prim_int_add idris_str_len3.1 0
+  idr_Main.longer4_val.0 <- "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" idris_lz_ext3.0 idris_lz_ext3.1
+  unboxed.CGrInt.6.0 <- case idr_Main.longer4_val.0 of
+    (Cidr_Prelude.Interfaces.GT) ->
+      pure idris_lz_ext3.0
+    #default ->
+      pure idris_lz_ext3.1
+  idris_int_str2.0 <- _prim_int_str unboxed.CGrInt.6.0
+  idr_Main.main3_20.32.6.arity.1.0 <- pure #"\n"
+  idris_str_concat3.0 <- _prim_string_concat idris_int_str2.0 idr_Main.main3_20.32.6.arity.1.0
+  _prim_string_print idris_str_concat3.0
+  idr_Main.main3_26.32.8.arity.1.0 <- pure #"3.1622776601683795\n"
+  _prim_string_print idr_Main.main3_26.32.8.arity.1.0
+
+"idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" =
+  case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" of
+    0 ->
+      case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" of
+        0 ->
+          pure (Cidr_Prelude.Interfaces.EQ) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.EQ)
+        #default ->
+          pure (Cidr_Prelude.Interfaces.GT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.GT)
+    #default ->
+      "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1" <- pure 1
+      idris_int_sub2.1 <- _prim_int_sub "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1"
+      case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" of
+        0 ->
+          pure (Cidr_Prelude.Interfaces.LT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.LT)
+        #default ->
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1"
+          idris_int_sub2.2 <- _prim_int_sub "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1"
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" idris_int_sub2.2 idris_int_sub2.1

@@ -1,0 +1,7 @@
+Configuring code-page-0.1.3...
+Preprocessing library for code-page-0.1.3..
+Building library for code-page-0.1.3..
+[1 of 2] Compiling System.IO.CodePage ( src/System/IO/CodePage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/IO/CodePage.o )
+[2 of 2] Compiling System.Win32.CodePage ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/Win32/CodePage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/Win32/CodePage.o )
+Installing library in /home/anabra/.stack/snapshots/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/code-page-0.1.3-Kc5hEpEY5ob2rh8HXOjZRD
+Registering library for code-page-0.1.3..

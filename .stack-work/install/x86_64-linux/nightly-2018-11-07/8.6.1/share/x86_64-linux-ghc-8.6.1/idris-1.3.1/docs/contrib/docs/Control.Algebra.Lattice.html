@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Control.Algebra.Lattice</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Control.Algebra.Lattice<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Control.Algebra.Lattice</h1><dl class="decls"><dt id="Control.Algebra.Lattice.BoundedJoinSemilattice"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.Lattice.BoundedJoinSemilattice">BoundedJoinSemilattice</span><span class="signature">&nbsp;</span></dt><dd><p>Sets equipped with a binary operation that is commutative, associative and<br />
+idempotent and supplied with a unitary element. Must satisfy the following<br />
+laws:</p>
+<ul>
+<li>Associativity of join:<br />
+forall a b c, join a (join b c) == join (join a b) c</li>
+<li>Commutativity of join:<br />
+forall a b, join a b == join b a</li>
+<li>Idempotency of join:<br />
+forall a, join a a == a</li>
+<li>Bottom (Unitary Element):<br />
+forall a, join a bottom == a</li>
+</ul>
+<p>Join semilattices capture the notion of sets with a &quot;least upper bound&quot;<br />
+equipped with a &quot;bottom&quot; element.</p>
+<dl class="decls"><dt id="Control.Algebra.Lattice.bottom"><span class="name function" title="Control.Algebra.Lattice.bottom">bottom</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.Algebra.Lattice.BoundedJoinSemilattice" href="Control.Algebra.Lattice.html#Control.Algebra.Lattice.BoundedJoinSemilattice">BoundedJoinSemilattice</a> <span class="implicit boundvar" title="">a</span> =>
+<span class="implicit boundvar" title="">a</span></span></dt><dd></dd></dl></dd><dt id="Control.Algebra.Lattice.BoundedLattice"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.Lattice.BoundedLattice">BoundedLattice</span><span class="signature">&nbsp;</span></dt><dd><p>Sets equipped with two binary operations that are both commutative,<br />
+associative and idempotent and supplied with neutral elements, along with<br />
+absorbtion laws for relating the two binary operations. Must satisfy the<br />
+following:</p>
+<ul>
+<li>Associativity of meet and join:<br />
+forall a b c, meet a (meet b c) == meet (meet a b) c<br />
+forall a b c, join a (join b c) == join (join a b) c</li>
+<li>Commutativity of meet and join:<br />
+forall a b, meet a b == meet b a<br />
+forall a b, join a b == join b a</li>
+<li>Idempotency of meet and join:<br />
+forall a, meet a a == a<br />
+forall a, join a a == a</li>
+<li>Absorbtion laws for meet and join:<br />
+forall a b, meet a (join a b) == a<br />
+forall a b, join a (meet a b) == a</li>
+<li>Neutral for meet and join:<br />
+forall a, meet a top == top<br />
+forall a, join a bottom == bottom</li>
+</ul>
+<dl class="decls"></dl></dd><dt id="Control.Algebra.Lattice.BoundedMeetSemilattice"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.Lattice.BoundedMeetSemilattice">BoundedMeetSemilattice</span><span class="signature">&nbsp;</span></dt><dd><p>Sets equipped with a binary operation that is commutative, associative and<br />
+idempotent and supplied with a unitary element. Must satisfy the following<br />
+laws:</p>
+<ul>
+<li>Associativity of meet:<br />
+forall a b c, meet a (meet b c) == meet (meet a b) c</li>
+<li>Commutativity of meet:<br />
+forall a b, meet a b == meet b a</li>
+<li>Idempotency of meet:<br />
+forall a, meet a a == a</li>
+<li>Top (Unitary Element):<br />
+forall a, meet a top == a</li>
+</ul>
+<p>Meet semilattices capture the notion of sets with a &quot;greatest lower bound&quot;<br />
+equipped with a &quot;top&quot; element.</p>
+<dl class="decls"><dt id="Control.Algebra.Lattice.top"><span class="name function" title="Control.Algebra.Lattice.top">top</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.Algebra.Lattice.BoundedMeetSemilattice" href="Control.Algebra.Lattice.html#Control.Algebra.Lattice.BoundedMeetSemilattice">BoundedMeetSemilattice</a> <span class="implicit boundvar" title="">a</span> =>
+<span class="implicit boundvar" title="">a</span></span></dt><dd></dd></dl></dd><dt id="Control.Algebra.Lattice.JoinSemilattice"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.Lattice.JoinSemilattice">JoinSemilattice</span><span class="signature">&nbsp;</span></dt><dd><p>Sets equipped with a binary operation that is commutative, associative and<br />
+idempotent. Must satisfy the following laws:</p>
+<ul>
+<li>Associativity of join:<br />
+forall a b c, join a (join b c) == join (join a b) c</li>
+<li>Commutativity of join:<br />
+forall a b, join a b == join b a</li>
+<li>Idempotency of join:<br />
+forall a, join a a == a</li>
+</ul>
+<p>Join semilattices capture the notion of sets with a &quot;least upper bound&quot;.</p>
+<dl class="decls"><dt id="Control.Algebra.Lattice.join"><span class="name function" title="Control.Algebra.Lattice.join">join</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.Algebra.Lattice.JoinSemilattice" href="Control.Algebra.Lattice.html#Control.Algebra.Lattice.JoinSemilattice">JoinSemilattice</a> <span class="implicit boundvar" title="">a</span> =>
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">a</span></span></dt><dd></dd></dl></dd><dt id="Control.Algebra.Lattice.Lattice"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.Lattice.Lattice">Lattice</span><span class="signature">&nbsp;</span></dt><dd><p>Sets equipped with two binary operations that are both commutative,<br />
+associative and idempotent, along with absorbtion laws for relating the two<br />
+binary operations. Must satisfy the following:</p>
+<ul>
+<li>Associativity of meet and join:<br />
+forall a b c, meet a (meet b c) == meet (meet a b) c<br />
+forall a b c, join a (join b c) == join (join a b) c</li>
+<li>Commutativity of meet and join:<br />
+forall a b, meet a b == meet b a<br />
+forall a b, join a b == join b a</li>
+<li>Idempotency of meet and join:<br />
+forall a, meet a a == a<br />
+forall a, join a a == a</li>
+<li>Absorbtion laws for meet and join:<br />
+forall a b, meet a (join a b) == a<br />
+forall a b, join a (meet a b) == a</li>
+</ul>
+<dl class="decls"></dl></dd><dt id="Control.Algebra.Lattice.MeetSemilattice"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.Lattice.MeetSemilattice">MeetSemilattice</span><span class="signature">&nbsp;</span></dt><dd><p>Sets equipped with a binary operation that is commutative, associative and<br />
+idempotent. Must satisfy the following laws:</p>
+<ul>
+<li>Associativity of meet:<br />
+forall a b c, meet a (meet b c) == meet (meet a b) c</li>
+<li>Commutativity of meet:<br />
+forall a b, meet a b == meet b a</li>
+<li>Idempotency of meet:<br />
+forall a, meet a a == a</li>
+</ul>
+<p>Meet semilattices capture the notion of sets with a &quot;greatest lower bound&quot;.</p>
+<dl class="decls"><dt id="Control.Algebra.Lattice.meet"><span class="name function" title="Control.Algebra.Lattice.meet">meet</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.Algebra.Lattice.MeetSemilattice" href="Control.Algebra.Lattice.html#Control.Algebra.Lattice.MeetSemilattice">MeetSemilattice</a> <span class="implicit boundvar" title="">a</span> =>
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">a</span></span></dt><dd></dd></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

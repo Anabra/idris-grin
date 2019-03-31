@@ -1,0 +1,493 @@
+primop effectful
+  _prim_int_print :: T_Int64 -> T_Unit
+  _prim_string_print :: T_String -> T_Unit
+  _prim_read_string :: T_String
+  _prim_usleep :: T_Int64 -> T_Unit
+  _prim_error :: T_String -> T_Unit
+  _prim_ffi_file_eof :: T_Int64 -> T_Int64
+  
+primop pure
+  _prim_string_concat :: T_String -> T_String -> T_String
+  _prim_string_reverse :: T_String -> T_String
+  _prim_string_lt :: T_String -> T_String -> T_Bool
+  _prim_string_eq :: T_String -> T_String -> T_Bool
+  _prim_string_head :: T_String -> T_Int64
+  _prim_string_tail :: T_String -> T_String
+  _prim_string_cons :: T_Int64 -> T_String -> T_String
+  _prim_string_len :: T_String -> T_Int64
+  _prim_int_str :: T_Int64 -> T_String
+  _prim_str_int :: T_String -> T_Int64
+  _prim_int_float :: T_Int64 -> T_Float
+  _prim_float_string :: T_Float -> T_String
+  _prim_char_int :: T_Char -> T_Int64
+  _prim_int_add :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_sub :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_mul :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_div :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_eq :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_ne :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_gt :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_ge :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_lt :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_le :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_word_add :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_sub :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_mul :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_div :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_eq :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_ne :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_gt :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_ge :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_lt :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_le :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_float_add :: T_Float -> T_Float -> T_Float
+  _prim_float_sub :: T_Float -> T_Float -> T_Float
+  _prim_float_mul :: T_Float -> T_Float -> T_Float
+  _prim_float_div :: T_Float -> T_Float -> T_Float
+  _prim_float_eq :: T_Float -> T_Float -> T_Bool
+  _prim_float_ne :: T_Float -> T_Float -> T_Bool
+  _prim_float_gt :: T_Float -> T_Float -> T_Bool
+  _prim_float_ge :: T_Float -> T_Float -> T_Bool
+  _prim_float_lt :: T_Float -> T_Float -> T_Bool
+  _prim_float_le :: T_Float -> T_Float -> T_Bool
+  _prim_bool_eq :: T_Bool -> T_Bool -> T_Bool
+  _prim_bool_ne :: T_Bool -> T_Bool -> T_Bool
+  
+idris_int_eq idris_int_eq0 idris_int_eq1 =
+  (CGrInt idris_int_eq0_1) <- fetch idris_int_eq0
+  (CGrInt idris_int_eq1_1) <- fetch idris_int_eq1
+  idris_int_eq2 <- _prim_int_eq $ idris_int_eq0_1 idris_int_eq1_1
+  case idris_int_eq2 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_int_lt idris_int_lt0 idris_int_lt1 =
+  (CGrInt idris_int_lt0_1) <- fetch idris_int_lt0
+  (CGrInt idris_int_lt1_1) <- fetch idris_int_lt1
+  idris_int_lt2 <- _prim_int_lt $ idris_int_lt0_1 idris_int_lt1_1
+  case idris_int_lt2 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_int_le idris_int_le0 idris_int_le1 =
+  (CGrInt idris_int_le0_1) <- fetch idris_int_le0
+  (CGrInt idris_int_le1_1) <- fetch idris_int_le1
+  idris_int_le2 <- _prim_int_le $ idris_int_le0_1 idris_int_le1_1
+  case idris_int_le2 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_int_gt idris_int_gt0 idris_int_gt1 =
+  (CGrInt idris_int_gt0_1) <- fetch idris_int_gt0
+  (CGrInt idris_int_gt1_1) <- fetch idris_int_gt1
+  idris_int_gt2 <- _prim_int_gt $ idris_int_gt0_1 idris_int_gt1_1
+  case idris_int_gt2 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_int_ge idris_int_ge0 idris_int_ge1 =
+  (CGrInt idris_int_ge0_1) <- fetch idris_int_ge0
+  (CGrInt idris_int_ge1_1) <- fetch idris_int_ge1
+  idris_int_ge2 <- _prim_int_ge $ idris_int_ge0_1 idris_int_ge1_1
+  case idris_int_ge2 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_int_print idris_int_print0 =
+  (CGrInt idris_int_print0_1) <- fetch idris_int_print0
+  _prim_int_print $ idris_int_print0_1
+  pure (CUnit)
+
+idris_float_add idris_float_add0 idris_float_add1 =
+  (CGrFloat idris_float_add0_1) <- fetch idris_float_add0
+  (CGrFloat idris_float_add1_1) <- fetch idris_float_add1
+  idris_float_add3 <- _prim_float_add $ idris_float_add0_1 idris_float_add1_1
+  pure (CGrFloat idris_float_add3)
+
+idris_float_mul idris_float_mul0 idris_float_mul1 =
+  (CGrFloat idris_float_mul0_1) <- fetch idris_float_mul0
+  (CGrFloat idris_float_mul1_1) <- fetch idris_float_mul1
+  idris_float_mul3 <- _prim_float_mul $ idris_float_mul0_1 idris_float_mul1_1
+  pure (CGrFloat idris_float_mul3)
+
+idris_int_add idris_int_add0 idris_int_add1 =
+  (CGrInt idris_int_add0_1) <- fetch idris_int_add0
+  (CGrInt idris_int_add1_1) <- fetch idris_int_add1
+  idris_int_add2 <- _prim_int_add $ idris_int_add0_1 idris_int_add1_1
+  pure (CGrInt idris_int_add2)
+
+idris_int_sub idris_int_sub0 idris_int_sub1 =
+  (CGrInt idris_int_sub0_1) <- fetch idris_int_sub0
+  (CGrInt idris_int_sub1_1) <- fetch idris_int_sub1
+  idris_int_sub2 <- _prim_int_sub $ idris_int_sub0_1 idris_int_sub1_1
+  pure (CGrInt idris_int_sub2)
+
+idris_int_mul idris_int_mul0 idris_int_mul1 =
+  (CGrInt idris_int_mul0_1) <- fetch idris_int_mul0
+  (CGrInt idris_int_mul1_1) <- fetch idris_int_mul1
+  idris_int_mul2 <- _prim_int_mul $ idris_int_mul0_1 idris_int_mul1_1
+  pure (CGrInt idris_int_mul2)
+
+idris_int_div idris_int_div0 idris_int_div1 =
+  (CGrInt idris_int_div0_1) <- fetch idris_int_div0
+  (CGrInt idris_int_div1_1) <- fetch idris_int_div1
+  idris_int_div2 <- _prim_int_div $ idris_int_div0_1 idris_int_div1_1
+  pure (CGrInt idris_int_div2)
+
+idris_float_div idris_float_div0 idris_float_div1 =
+  (CGrFloat idris_float_div0_1) <- fetch idris_float_div0
+  (CGrFloat idris_float_div1_1) <- fetch idris_float_div1
+  idris_float_div2 <- _prim_float_div $ idris_float_div0_1 idris_float_div1_1
+  pure (CGrFloat idris_float_div2)
+
+idris_write_str idris_write_str1 idris_write_str2 =
+  (CGrString idris_write_str2_0) <- fetch idris_write_str2
+  _prim_string_print $ idris_write_str2_0
+  pure (CUnit)
+
+idris_read_str idris_read_str0 =
+  idris_read_str1 <- _prim_read_string $
+  pure (CGrString idris_read_str1)
+
+idris_str_concat idris_str_concat1 idris_str_concat2 =
+  (CGrString idris_str_concat1_0) <- fetch idris_str_concat1
+  (CGrString idris_str_concat2_0) <- fetch idris_str_concat2
+  idris_str_concat3 <- _prim_string_concat $ idris_str_concat1_0 idris_str_concat2_0
+  pure (CGrString idris_str_concat3)
+
+idris_str_eq idris_str_eq1 idris_str_eq2 =
+  (CGrString idris_str_eq1_0) <- fetch idris_str_eq1
+  (CGrString idris_str_eq2_0) <- fetch idris_str_eq2
+  idris_str_eq3 <- _prim_string_eq $ idris_str_eq1_0 idris_str_eq2_0
+  case idris_str_eq3 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_str_lt idris_str_lt1 idris_str_lt2 =
+  (CGrString idris_str_lt1_0) <- fetch idris_str_lt1
+  (CGrString idris_str_lt2_0) <- fetch idris_str_lt2
+  idris_str_lt3 <- _prim_string_lt $ idris_str_lt1_0 idris_str_lt2_0
+  case idris_str_lt3 of
+    #False ->
+      pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1)
+
+idris_str_len idris_str_len1 =
+  (CGrString idris_str_len2) <- fetch idris_str_len1
+  idris_str_len3 <- _prim_string_len $ idris_str_len2
+  pure (CGrInt idris_str_len3)
+
+idris_str_rev idris_str_rev1 =
+  (CGrString idris_str_rev1_0) <- fetch idris_str_rev1
+  idris_str_rev2 <- _prim_string_reverse $ idris_str_rev1_0
+  pure (CGrString idris_str_rev2)
+
+idris_str_head idris_str_head1 =
+  (CGrString idris_str_head1_0) <- fetch idris_str_head1
+  idris_str_head2 <- _prim_string_head $ idris_str_head1_0
+  pure (CGrInt idris_str_head2)
+
+idris_str_tail idris_str_tail1 =
+  (CGrString idris_str_tail1_0) <- fetch idris_str_tail1
+  idris_str_tail2 <- _prim_string_tail $ idris_str_tail1_0
+  pure (CGrString idris_str_tail2)
+
+idris_str_cons idris_str_cons1 idris_str_cons2 =
+  (CGrInt idris_str_cons1_0) <- fetch idris_str_cons1
+  (CGrString idris_str_cons2_0) <- fetch idris_str_cons2
+  idris_str_cons3 <- _prim_string_cons $ idris_str_cons1_0 idris_str_cons2_0
+  pure (CGrString idris_str_cons3)
+
+idris_int_str idris_int_str1 =
+  (CGrInt idris_int_str1_0) <- fetch idris_int_str1
+  idris_int_str2 <- _prim_int_str $ idris_int_str1_0
+  pure (CGrString idris_int_str2)
+
+idris_str_int idris_str_int1 =
+  (CGrString idris_str_int1_0) <- fetch idris_str_int1
+  idris_str_int2 <- _prim_str_int $ idris_str_int1_0
+  pure (CGrInt idris_str_int2)
+
+idris_int_float idris_int_float1 =
+  (CGrInt idris_int_float1_0) <- fetch idris_int_float1
+  idris_int_float2 <- _prim_int_float $ idris_int_float1_0
+  pure (CGrFloat idris_int_float2)
+
+idris_float_str idris_float_str1 =
+  (CGrFloat idris_float_str1_0) <- fetch idris_float_str1
+  idris_float_str2 <- _prim_float_string $ idris_float_str1_0
+  pure (CGrString idris_float_str2)
+
+idris_ffi_file_eof idris_ffi_file_eof1 =
+  (CGrInt idris_ffi_file_eof1_0) <- fetch idris_ffi_file_eof1
+  idris_ffi_file_eof2 <- _prim_ffi_file_eof $ idris_ffi_file_eof1_0
+  pure (CGrInt idris_ffi_file_eof2)
+
+idris_lz_ext idris_lz_ext1 =
+  (CGrInt idris_lz_ext2) <- fetch idris_lz_ext1
+  idris_lz_ext3 <- _prim_int_add $ idris_lz_ext2 0
+  pure (CGrInt idris_lz_ext3)
+
+idris_ls_ext idris_ls_ext1 =
+  (CGrInt idris_ls_ext2) <- fetch idris_ls_ext1
+  idris_ls_ext3 <- _prim_int_add $ idris_ls_ext2 0
+  pure (CGrInt idris_ls_ext3)
+
+idris_ch_int idris_ch_int1 =
+  (CGrInt idris_ch_int2) <- fetch idris_ch_int1
+  pure (CGrInt idris_ch_int2)
+
+idris_usleep idris_usleep1 =
+  (CGrInt idris_usleep1_0) <- fetch idris_usleep1
+  _prim_usleep $ idris_usleep1_0
+  pure ()
+
+idris_error idris_error1 =
+  _prim_error $ idris_error1
+
+prim__stdin =
+  pure (CGrInt 0)
+
+prim__stdout =
+  pure (CGrInt 1)
+
+prim__stderr =
+  pure (CGrInt 2)
+
+grinMain =
+  r <- "idr_{runMain_0}" $
+  pure ()
+
+idr_assert_unreachable =
+  pure (CErased)
+
+idr_call__IO idr_call__IO0 idr_call__IO1 idr_call__IO2 =
+  idr_call__IO3_val <- pure (CErased)
+  idr_call__IO3 <- store idr_call__IO3_val
+  "idr_{APPLY_0}" $ idr_call__IO2 idr_call__IO3
+
+idr_Main.getStringOrInt idr_Main.getStringOrInt0 =
+  idr_Main.getStringOrInt0_val <- fetch idr_Main.getStringOrInt0
+  case idr_Main.getStringOrInt0_val of
+    (Cidr_Prelude.Bool.False) ->
+      pure (CGrString #"Ninety four")
+    (Cidr_Prelude.Bool.True) ->
+      pure (CGrInt 94)
+
+idr_idris_crash =
+  pure (CErased)
+
+idr_io_bind idr_io_bind0 idr_io_bind1 idr_io_bind2 idr_io_bind3 idr_io_bind4 idr_io_bind5 =
+  idr_io_bind6_val_1 <- "idr_{APPLY_0}" $ idr_io_bind3 idr_io_bind5
+  idr_io_bind6 <- store idr_io_bind6_val_1
+  idr_io_bind6_val <- "idr_{APPLY_0}" $ idr_io_bind4 idr_io_bind6
+  idr_io_bind6_2 <- store idr_io_bind6_val
+  "idr_{APPLY_0}" $ idr_io_bind6_2 idr_io_bind5
+
+idr_io_pure idr_io_pure0 idr_io_pure1 idr_io_pure2 idr_io_pure3 =
+  fetch idr_io_pure2
+
+idr_Main.main idr_Main.main0 =
+  idr_Main.main1_val_6 <- pure (Cidr_Prelude.Bool.True)
+  idr_Main.main1 <- store idr_Main.main1_val_6
+  idr_Main.main2_val_7 <- pure (Cidr_Prelude.Bool.True)
+  idr_Main.main2 <- store idr_Main.main2_val_7
+  idr_Main.main2_val <- idr_Main.getStringOrInt $ idr_Main.main2
+  idr_Main.main2_8 <- store idr_Main.main2_val
+  idr_Main.main1_val_5 <- idr_Main.valToString $ idr_Main.main1 idr_Main.main2_8
+  idr_Main.main1_9 <- store idr_Main.main1_val_5
+  idr_Main.main2_val_10 <- pure (CGrString #"\n")
+  idr_Main.main2_11 <- store idr_Main.main2_val_10
+  idr_Main.main1_val_4 <- idris_str_concat $ idr_Main.main1_9 idr_Main.main2_11
+  idr_Main.main1_12 <- store idr_Main.main1_val_4
+  idr_Main.main1_val_3 <- idris_write_str $ idr_Main.main0 idr_Main.main1_12
+  idr_Main.main1_13 <- store idr_Main.main1_val_3
+  idr_Main.main1_val <- pure (Cidr_MkUnit)
+  idr_Main.main1_14 <- store idr_Main.main1_val
+  idr_Main.main2_val_18 <- pure (Cidr_Prelude.Bool.False)
+  idr_Main.main2_19 <- store idr_Main.main2_val_18
+  idr_Main.main3_val_20 <- pure (Cidr_Prelude.Bool.False)
+  idr_Main.main3 <- store idr_Main.main3_val_20
+  idr_Main.main3_val <- idr_Main.getStringOrInt $ idr_Main.main3
+  idr_Main.main3_21 <- store idr_Main.main3_val
+  idr_Main.main2_val_17 <- idr_Main.valToString $ idr_Main.main2_19 idr_Main.main3_21
+  idr_Main.main2_22 <- store idr_Main.main2_val_17
+  idr_Main.main3_val_23 <- pure (CGrString #"\n")
+  idr_Main.main3_24 <- store idr_Main.main3_val_23
+  idr_Main.main2_val_16 <- idris_str_concat $ idr_Main.main2_22 idr_Main.main3_24
+  idr_Main.main2_25 <- store idr_Main.main2_val_16
+  idr_Main.main2_val_15 <- idris_write_str $ idr_Main.main0 idr_Main.main2_25
+  idr_Main.main2_26 <- store idr_Main.main2_val_15
+  pure (Cidr_MkUnit)
+
+idr_mkForeignPrim =
+  pure (CErased)
+
+idr_prim__asPtr idr_prim__asPtr0 =
+  prim__asPtr $ idr_prim__asPtr0
+
+idr_prim__concat idr_prim__concat0 idr_prim__concat1 =
+  idris_str_concat $ idr_prim__concat0 idr_prim__concat1
+
+idr_prim__eqManagedPtr idr_prim__eqManagedPtr0 idr_prim__eqManagedPtr1 =
+  prim__eqManagedPtr $ idr_prim__eqManagedPtr0 idr_prim__eqManagedPtr1
+
+idr_prim__eqPtr idr_prim__eqPtr0 idr_prim__eqPtr1 =
+  prim__eqPtr $ idr_prim__eqPtr0 idr_prim__eqPtr1
+
+idr_prim__managedNull =
+  prim__managedNull $
+
+idr_prim__null =
+  prim__null $
+
+idr_prim__peek16 idr_prim__peek160 idr_prim__peek161 idr_prim__peek162 =
+  prim__peek16 $ idr_prim__peek160 idr_prim__peek161 idr_prim__peek162
+
+idr_prim__peek32 idr_prim__peek320 idr_prim__peek321 idr_prim__peek322 =
+  prim__peek32 $ idr_prim__peek320 idr_prim__peek321 idr_prim__peek322
+
+idr_prim__peek64 idr_prim__peek640 idr_prim__peek641 idr_prim__peek642 =
+  prim__peek64 $ idr_prim__peek640 idr_prim__peek641 idr_prim__peek642
+
+idr_prim__peek8 idr_prim__peek80 idr_prim__peek81 idr_prim__peek82 =
+  prim__peek8 $ idr_prim__peek80 idr_prim__peek81 idr_prim__peek82
+
+idr_prim__peekDouble idr_prim__peekDouble0 idr_prim__peekDouble1 idr_prim__peekDouble2 =
+  prim__peekDouble $ idr_prim__peekDouble0 idr_prim__peekDouble1 idr_prim__peekDouble2
+
+idr_prim__peekPtr idr_prim__peekPtr0 idr_prim__peekPtr1 idr_prim__peekPtr2 =
+  prim__peekPtr $ idr_prim__peekPtr0 idr_prim__peekPtr1 idr_prim__peekPtr2
+
+idr_prim__peekSingle idr_prim__peekSingle0 idr_prim__peekSingle1 idr_prim__peekSingle2 =
+  prim__peekSingle $ idr_prim__peekSingle0 idr_prim__peekSingle1 idr_prim__peekSingle2
+
+idr_prim__poke16 idr_prim__poke160 idr_prim__poke161 idr_prim__poke162 idr_prim__poke163 =
+  prim__poke16 $ idr_prim__poke160 idr_prim__poke161 idr_prim__poke162 idr_prim__poke163
+
+idr_prim__poke32 idr_prim__poke320 idr_prim__poke321 idr_prim__poke322 idr_prim__poke323 =
+  prim__poke32 $ idr_prim__poke320 idr_prim__poke321 idr_prim__poke322 idr_prim__poke323
+
+idr_prim__poke64 idr_prim__poke640 idr_prim__poke641 idr_prim__poke642 idr_prim__poke643 =
+  prim__poke64 $ idr_prim__poke640 idr_prim__poke641 idr_prim__poke642 idr_prim__poke643
+
+idr_prim__poke8 idr_prim__poke80 idr_prim__poke81 idr_prim__poke82 idr_prim__poke83 =
+  prim__poke8 $ idr_prim__poke80 idr_prim__poke81 idr_prim__poke82 idr_prim__poke83
+
+idr_prim__pokeDouble idr_prim__pokeDouble0 idr_prim__pokeDouble1 idr_prim__pokeDouble2 idr_prim__pokeDouble3 =
+  prim__pokeDouble $ idr_prim__pokeDouble0 idr_prim__pokeDouble1 idr_prim__pokeDouble2 idr_prim__pokeDouble3
+
+idr_prim__pokePtr idr_prim__pokePtr0 idr_prim__pokePtr1 idr_prim__pokePtr2 idr_prim__pokePtr3 =
+  prim__pokePtr $ idr_prim__pokePtr0 idr_prim__pokePtr1 idr_prim__pokePtr2 idr_prim__pokePtr3
+
+idr_prim__pokeSingle idr_prim__pokeSingle0 idr_prim__pokeSingle1 idr_prim__pokeSingle2 idr_prim__pokeSingle3 =
+  prim__pokeSingle $ idr_prim__pokeSingle0 idr_prim__pokeSingle1 idr_prim__pokeSingle2 idr_prim__pokeSingle3
+
+idr_prim__ptrOffset idr_prim__ptrOffset0 idr_prim__ptrOffset1 =
+  prim__ptrOffset $ idr_prim__ptrOffset0 idr_prim__ptrOffset1
+
+idr_prim__readChars idr_prim__readChars0 idr_prim__readChars1 idr_prim__readChars2 =
+  prim__readChars $ idr_prim__readChars0 idr_prim__readChars1 idr_prim__readChars2
+
+idr_prim__readFile idr_prim__readFile0 idr_prim__readFile1 =
+  prim__readFile $ idr_prim__readFile0 idr_prim__readFile1
+
+idr_prim__registerPtr idr_prim__registerPtr0 idr_prim__registerPtr1 =
+  prim__registerPtr $ idr_prim__registerPtr0 idr_prim__registerPtr1
+
+idr_prim__sizeofPtr =
+  prim__sizeofPtr $
+
+idr_prim__stderr =
+  prim__stderr $
+
+idr_prim__stdin =
+  prim__stdin $
+
+idr_prim__stdout =
+  prim__stdout $
+
+idr_prim__toStrInt idr_prim__toStrInt0 =
+  idris_int_str $ idr_prim__toStrInt0
+
+idr_prim__vm idr_prim__vm0 =
+  prim__vm $ idr_prim__vm0
+
+idr_prim__writeFile idr_prim__writeFile0 idr_prim__writeFile1 idr_prim__writeFile2 =
+  prim__writeFile $ idr_prim__writeFile0 idr_prim__writeFile1 idr_prim__writeFile2
+
+idr_prim__writeString idr_prim__writeString0 idr_prim__writeString1 =
+  idris_write_str $ idr_prim__writeString0 idr_prim__writeString1
+
+idr_prim_io_bind idr_prim_io_bind0 idr_prim_io_bind1 idr_prim_io_bind2 idr_prim_io_bind3 =
+  "idr_{APPLY_0}" $ idr_prim_io_bind3 idr_prim_io_bind2
+
+idr_run__IO idr_run__IO0 idr_run__IO1 =
+  idr_run__IO2_val <- pure (CErased)
+  idr_run__IO2 <- store idr_run__IO2_val
+  "idr_{APPLY_0}" $ idr_run__IO1 idr_run__IO2
+
+idr_unsafePerformPrimIO =
+  pure (CErased)
+
+idr_Main.valToString idr_Main.valToString0 idr_Main.valToString1 =
+  idr_Main.valToString0_val <- fetch idr_Main.valToString0
+  case idr_Main.valToString0_val of
+    (Cidr_Prelude.Bool.False) ->
+      fetch idr_Main.valToString1
+    (Cidr_Prelude.Bool.True) ->
+      idris_int_str $ idr_Main.valToString1
+
+idr_world idr_world0 =
+  fetch idr_world0
+
+"idr_{APPLY_0}" "idr_{APPLY_0}0" "idr_{APPLY_0}1" =
+  pure (CErased)
+
+"idr_{APPLY2_0}" "idr_{APPLY2_0}0" "idr_{APPLY2_0}1" "idr_{APPLY2_0}2" =
+  pure (CErased)
+
+"idr_{EVAL_0}" "idr_{EVAL_0}0" =
+  "idr_{EVAL_0}0_val" <- fetch "idr_{EVAL_0}0"
+  case "idr_{EVAL_0}0_val" of
+    #default ->
+      fetch "idr_{EVAL_0}0"
+
+"idr_{runMain_0}" =
+  "idr_{runMain_0}0_val_27" <- pure (CErased)
+  "idr_{runMain_0}0" <- store "idr_{runMain_0}0_val_27"
+  "idr_{runMain_0}0_val" <- idr_Main.main $ "idr_{runMain_0}0"
+  "idr_{runMain_0}0_28" <- store "idr_{runMain_0}0_val"
+  "idr_{EVAL_0}" $ "idr_{runMain_0}0_28"
+
+idr_Main.getStringOrInt_____test__tdd__chapter01__02__CalcType__idr_9_25_case idr_Main.getStringOrInt_____test__tdd__chapter01__02__CalcType__idr_9_25_case0 idr_Main.getStringOrInt_____test__tdd__chapter01__02__CalcType__idr_9_25_case1 =
+  idr_Main.getStringOrInt_____test__tdd__chapter01__02__CalcType__idr_9_25_case0_val <- fetch idr_Main.getStringOrInt_____test__tdd__chapter01__02__CalcType__idr_9_25_case0
+  case idr_Main.getStringOrInt_____test__tdd__chapter01__02__CalcType__idr_9_25_case0_val of
+    (Cidr_Prelude.Bool.False) ->
+      pure (CGrString #"Ninety four")
+    (Cidr_Prelude.Bool.True) ->
+      pure (CGrInt 94)
+
+idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case0 idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case1 idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case2 =
+  idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case0_val <- fetch idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case0
+  case idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case0_val of
+    (Cidr_Prelude.Bool.False) ->
+      fetch idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case1
+    (Cidr_Prelude.Bool.True) ->
+      idris_int_str $ idr_Main.valToString_____test__tdd__chapter01__02__CalcType__idr_14_26_case1
+
+idr_io_bind_IO__idr_108_34_108_36_case idr_io_bind_IO__idr_108_34_108_36_case0 idr_io_bind_IO__idr_108_34_108_36_case1 idr_io_bind_IO__idr_108_34_108_36_case2 idr_io_bind_IO__idr_108_34_108_36_case3 idr_io_bind_IO__idr_108_34_108_36_case4 idr_io_bind_IO__idr_108_34_108_36_case5 idr_io_bind_IO__idr_108_34_108_36_case6 idr_io_bind_IO__idr_108_34_108_36_case7 =
+  "idr_{APPLY_0}" $ idr_io_bind_IO__idr_108_34_108_36_case7 idr_io_bind_IO__idr_108_34_108_36_case5

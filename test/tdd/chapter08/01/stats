@@ -1,0 +1,104 @@
+# Compile time:
+
+before:
+```
+Definitions:     27
+Binds:           358
+Blocks:          0
+Cases:           50
+Alternatives:    114
+Function calls:  78
+Returns:         170
+Stores:          151
+Fethces:         50
+Updates:         0
+------------------
+Node summary:    998
+
+Variables:       463
+Tags:            30
+```
+
+after intraprocedural opts:
+```
+Definitions:     3
+Binds:           136
+Blocks:          0
+Cases:           67
+Alternatives:    134
+Function calls:  55
+Returns:         147
+Stores:          4
+Fethces:         0
+Updates:         0
+------------------
+Node summary:    546
+
+Variables:       150
+Tags:            9
+```
+
+after DDE:
+```
+Definitions:     3
+Binds:           181
+Blocks:          0
+Cases:           67
+Alternatives:    134
+Function calls:  55
+Returns:         196
+Stores:          0
+Fethces:         0
+Updates:         0
+------------------
+Node summary:    636
+
+Variables:       190
+Tags:            7
+```
+
+Here DDE removed the argument from a Maybe value,
+leaving only the Just data constructor.
+The node was inside a recursive function (idr_Main.checkEqNat2).
+
+
+# Runtime:
+
+before:
+```
+Binds:           995
+Blocks:          0
+Cases:           202
+Alternatives:    548
+Function calls:  258
+Returns:         310
+Stores:          322
+Fethces:         287
+Updates:         0
+```
+
+after intraprocedural opts:
+```
+Binds:           180
+Blocks:          0
+Cases:           108
+Alternatives:    216
+Function calls:  92
+Returns:         99
+Stores:          14
+Fethces:         0
+Updates:         0
+```
+
+after DDE:
+```
+Binds:           179
+Blocks:          0
+Cases:           108
+Alternatives:    216
+Function calls:  92
+Returns:         112
+Stores:          0
+Fethces:         0
+Updates:         0
+```

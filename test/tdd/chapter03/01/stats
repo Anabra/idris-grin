@@ -1,0 +1,60 @@
+before:
+```
+Definitions:     58
+Binds:           918
+Blocks:          0
+Cases:           102
+Alternatives:    225
+Function calls:  193
+Returns:         395
+Stores:          406
+Fethces:         105
+Updates:         0
+------------------
+Node summary:    2402
+
+Variables:       1192
+Tags:            44
+```
+
+after intraprocedural opts:
+```
+Definitions:     23
+Binds:           483
+Blocks:          0
+Cases:           129
+Alternatives:    260
+Function calls:  138
+Returns:         357
+Stores:          105
+Fethces:         37
+Updates:         0
+------------------
+Node summary:    1532
+
+Variables:       600
+Tags:            26
+```
+
+after DDE:
+```
+Definitions:     23
+Binds:           594
+Blocks:          0
+Cases:           129
+Alternatives:    260
+Function calls:  138
+Returns:         468
+Stores:          105
+Fethces:         37
+Updates:         0
+------------------
+Node summary:    1754
+
+Variables:       709
+Tags:            26
+```
+
+Here DDE removed a node argument in a recursive function,
+so it still recuded the data movement to and from the heap.
+(function was: idr_Data.Vect.foldrImpl)

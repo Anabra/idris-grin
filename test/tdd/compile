@@ -1,0 +1,14 @@
+grin -o "optimized/" --optimize normal/001.high-level-code.grin
+# seraching for last file
+grin -o "dde2" --dde-pass optimized/042.SimpleDeadVariableElimination.grin
+# renaming
+grin -o "dde2" --optimize dde2/000.DeadDataPass.grin
+grin --eval dde2/000.DeadDataPass.grin
+grin --eval normal/001.high-level-code.grin
+# search for last file
+grin --eval dde2/006.SimpleDeadVariableElimination.grin
+
+
+
+generate grin from idris:
+stack exec idris -- ./list_len.idr -o list_len.grin --O0 --codegen grin --cg-opt --output-dir="./idrO0" --cg-opt --O0 --cg-opt --no-lint

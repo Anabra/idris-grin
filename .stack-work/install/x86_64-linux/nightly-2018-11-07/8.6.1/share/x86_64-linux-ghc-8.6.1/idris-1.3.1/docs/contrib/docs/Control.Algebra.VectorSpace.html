@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Control.Algebra.VectorSpace</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Control.Algebra.VectorSpace<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Control.Algebra.VectorSpace</h1><dl class="decls"><dt id="Control.Algebra.VectorSpace.InnerProductSpace"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.VectorSpace.InnerProductSpace">InnerProductSpace</span><span class="signature">&nbsp;</span></dt><dd><p>An inner product space is a module – or vector space – over a ring, with a binary function<br />
+associating a ring value to each pair of vectors.</p>
+<dl class="decls"><dt id="Control.Algebra.VectorSpace.&lt;||&gt;"><span class="name function" title="Control.Algebra.VectorSpace.&lt;||&gt;">(&lt;||&gt;)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.Algebra.VectorSpace.InnerProductSpace" href="Control.Algebra.VectorSpace.html#Control.Algebra.VectorSpace.InnerProductSpace">InnerProductSpace</a> <span class="implicit boundvar" title="">a</span>
+<span class="implicit boundvar" title="">b</span> =>
+<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">a</span></span></dt><dd><dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixr 2">Left associative, precedence 2</dd></dl></dd></dl></dd><dt id="Control.Algebra.VectorSpace.Module"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.VectorSpace.Module">Module</span><span class="signature">&nbsp;</span></dt><dd><p>A module over a ring is an additive abelian group of &#39;vectors&#39; endowed with a<br />
+scale operation multiplying vectors by ring elements, and distributivity laws<br />
+relating the scale operation to both ring addition and module addition.<br />
+Must satisfy the following laws:</p>
+<ul>
+<li>Compatibility of scalar multiplication with ring multiplication:<br />
+forall a b v, a &lt;#&gt; (b &lt;#&gt; v) = (a &lt;.&gt; b) &lt;#&gt; v</li>
+<li>Ring unity is the identity element of scalar multiplication:<br />
+forall v, unity &lt;#&gt; v = v</li>
+<li>Distributivity of <code>&lt;#&gt;</code> and <code>&lt;+&gt;</code>:<br />
+forall a v w, a &lt;#&gt; (v &lt;+&gt; w) == (a &lt;#&gt; v) &lt;+&gt; (a &lt;#&gt; w)<br />
+forall a b v, (a &lt;+&gt; b) &lt;#&gt; v == (a &lt;#&gt; v) &lt;+&gt; (b &lt;#&gt; v)</li>
+</ul>
+<dl class="decls"><dt id="Control.Algebra.VectorSpace.&lt;#&gt;"><span class="name function" title="Control.Algebra.VectorSpace.&lt;#&gt;">(&lt;#&gt;)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.Algebra.VectorSpace.Module" href="Control.Algebra.VectorSpace.html#Control.Algebra.VectorSpace.Module">Module</a> <span class="implicit boundvar" title="">a</span>
+<span class="implicit boundvar" title="">b</span> =>
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">b</span></span></dt><dd><dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixl 5">Left associative, precedence 5</dd></dl></dd></dl></dd><dt id="Control.Algebra.VectorSpace.VectorSpace"><span class="word">interface&nbsp;</span><span class="name type" title="Control.Algebra.VectorSpace.VectorSpace">VectorSpace</span><span class="signature">&nbsp;</span></dt><dd><p>A vector space is a module over a ring that is also a field</p>
+<dl class="decls"></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

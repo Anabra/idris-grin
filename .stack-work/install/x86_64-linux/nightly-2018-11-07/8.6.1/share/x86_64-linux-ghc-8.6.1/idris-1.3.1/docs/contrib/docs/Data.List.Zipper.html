@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Data.List.Zipper</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Data.List.Zipper<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Data.List.Zipper</h1><p>A Zipper implementation for Lists<br />
+inspired by<br />
+<a href="https://hackage.haskell.org/package/ListZipper-1.2.0.2/docs/src/Data-List-Zipper.html">https://hackage.haskell.org/package/ListZipper-1.2.0.2/docs/src/Data-List-Zipper.html</a></p>
+<dl class="decls"><dt id="Data.List.Zipper.Zipper"><span class="word">data&nbsp;</span><span class="name type" title="Data.List.Zipper.Zipper">Zipper</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Type">Type</span> ->
+<span class="type" title="Type">Type</span></span></dt><dd><p>A Zipper for Lists</p>
+<dl class="decls"><dt id="Data.List.Zipper.Zip"><span class="name constructor" title="Data.List.Zipper.Zip">Zip</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.List.List" href="Prelude.List.html#Prelude.List.List">List</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.List.List" href="Prelude.List.html#Prelude.List.List">List</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd></dd></dl></dd><dt id="Data.List.Zipper.cursor"><span class="name function" title="Data.List.Zipper.cursor">cursor</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.Maybe.Maybe" href="Prelude.Maybe.html#Prelude.Maybe.Maybe">Maybe</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>gets the element at the current cursor</p>
+<pre class="idris"><code>cursor $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.delete"><span class="name function" title="Data.List.Zipper.delete">delete</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>delete the element at the current cursor</p>
+<pre class="idris"><code>show $ Data.List.Zipper.delete $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.empty"><span class="name function" title="Data.List.Zipper.empty">empty</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>creates an empty Zipper</p>
+<pre class="idris"><code>empty {a = Nat}
+</code></pre>
+</dd><dt id="Data.List.Zipper.end"><span class="name function" title="Data.List.Zipper.end">end</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>move the cursor to the end of the Zipper</p>
+<pre class="idris"><code>show $ end $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.endp"><span class="name function" title="Data.List.Zipper.endp">endp</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>checks whether the cursor is at the end of the Zipper</p>
+<pre class="idris"><code>endp $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.fromList"><span class="name function" title="Data.List.Zipper.fromList">fromList</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.List.List" href="Prelude.List.html#Prelude.List.List">List</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>creates a Zipper from a List</p>
+<pre class="idris"><code>show $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.index"><span class="name function" title="Data.List.Zipper.index">index</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a></span></dt><dd><p>Return the index of the current cursor</p>
+<pre class="idris"><code>index $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.insert"><span class="name function" title="Data.List.Zipper.insert">insert</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>inserts an element at the current cursor</p>
+<pre class="idris"><code>show $ insert 0 $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.isEmpty"><span class="name function" title="Data.List.Zipper.isEmpty">isEmpty</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>checks whether this Zipper is empty</p>
+<pre class="idris"><code>isEmpty empty {a = Nat}
+</code></pre>
+</dd><dt id="Data.List.Zipper.left"><span class="name function" title="Data.List.Zipper.left">left</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>moves the cursor to the left or leaves the cursor unchanged</p>
+<pre class="idris"><code>show $ left $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.pop"><span class="name function" title="Data.List.Zipper.pop">pop</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>pop an element from the Zipper</p>
+<pre class="idris"><code>show $ pop $ right $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.push"><span class="name function" title="Data.List.Zipper.push">push</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>push an element into the Zipper and move the cursor past it</p>
+<pre class="idris"><code>show $ push 0 $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.replace"><span class="name function" title="Data.List.Zipper.replace">replace</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>remove an element from the zipper</p>
+<pre class="idris"><code>show $ replace 9 $ fromList[1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.right"><span class="name function" title="Data.List.Zipper.right">right</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>moves the cursor to the right or leaves the cursor unchanged</p>
+<pre class="idris"><code>show $ right $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.start"><span class="name function" title="Data.List.Zipper.start">start</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>move the cursor to the start of the Zipper</p>
+<pre class="idris"><code>show $ start $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.startp"><span class="name function" title="Data.List.Zipper.startp">startp</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>checks whether the cursor is at the start of the Zipper</p>
+<pre class="idris"><code>startp $ fromList [1,2,3,4,5]
+</code></pre>
+</dd><dt id="Data.List.Zipper.toList"><span class="name function" title="Data.List.Zipper.toList">toList</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.List.Zipper.Zipper" href="Data.List.Zipper.html#Data.List.Zipper.Zipper">Zipper</a> <span class="implicit boundvar" title="">a</span> ->
+<a class="type" title="Prelude.List.List" href="Prelude.List.html#Prelude.List.List">List</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>convert this Zipper to a list</p>
+<pre class="idris"><code>toList $ fromList[1,2,3,4,5]
+</code></pre>
+</dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

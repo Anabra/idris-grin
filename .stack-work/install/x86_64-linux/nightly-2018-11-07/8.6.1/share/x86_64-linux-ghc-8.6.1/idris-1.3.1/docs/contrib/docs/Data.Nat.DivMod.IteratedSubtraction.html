@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Data.Nat.DivMod.IteratedSubtraction</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Data.Nat.DivMod.IteratedSubtraction<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Data.Nat.DivMod.IteratedSubtraction</h1><p>Division of natural numbers, by iterated subtraction using well-founded<br />
+recursion</p>
+<dl class="decls"><dt id="Data.Nat.DivMod.IteratedSubtraction.DivMod"><span class="word">data&nbsp;</span><span class="name type" title="Data.Nat.DivMod.IteratedSubtraction.DivMod">DivMod</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the dividend">dividend</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="documented boundvar" title="the divisor">divisor</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<span class="type" title="Type">Type</span></span></dt><dd><p>The result of division on natural numbers.</p>
+<dl><dt>dividend</dt><dd><p>the dividend</p>
+</dd><dt>divisor</dt><dd><p>the divisor</p>
+</dd></dl><dl class="decls"><dt id="Data.Nat.DivMod.IteratedSubtraction.DivModRes"><span class="name constructor" title="Data.Nat.DivMod.IteratedSubtraction.DivModRes">DivModRes</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the quotient">quotient</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="documented boundvar" title="the remainder (bounded by the divisor)">remainder</span> : <a class="type" title="Data.Fin.Fin" href="Data.Fin.html#Data.Fin.Fin">Fin</a> <span class="implicit documented boundvar" title="the divisor">divisor</span>) ->
+(<span class="documented boundvar" title="the fact that this is, in fact, a result of division">ok</span> : <span class="implicit documented boundvar" title="the dividend">dividend</span> <a class="type" title="=" href="[builtins].html#=">=</a>
+<a class="function" title="Data.Fin.finToNat" href="Data.Fin.html#Data.Fin.finToNat">finToNat</a> <span class="documented boundvar" title="the remainder (bounded by the divisor)">remainder</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="documented boundvar" title="the quotient">quotient</span> <a class="function" title="Prelude.Interfaces.*" href="Prelude.Interfaces.html#Prelude.Interfaces.*">*</a>
+<span class="implicit documented boundvar" title="the divisor">divisor</span>) ->
+<a class="type" title="Data.Nat.DivMod.IteratedSubtraction.DivMod" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.DivMod">DivMod</a> <span class="implicit documented boundvar" title="the dividend">dividend</span>
+<span class="implicit documented boundvar" title="the divisor">divisor</span></span></dt><dd><p>The result of division, with a quotient and a remainder.</p>
+<dl><dt>dividend</dt><dd><p>the dividend</p>
+</dd><dt>divisor</dt><dd><p>the divisor</p>
+</dd><dt>quotient</dt><dd><p>the quotient</p>
+</dd><dt>remainder</dt><dd><p>the remainder (bounded by the divisor)</p>
+</dd><dt>ok</dt><dd><p>the fact that this is, in fact, a result of division</p>
+</dd></dl></dd></dl></dd><dt id="Data.Nat.DivMod.IteratedSubtraction.LT&#39;"><span class="word">data&nbsp;</span><span class="name type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the smaller number">n</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="documented boundvar" title="the larger number">m</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<span class="type" title="Type">Type</span></span></dt><dd><p>A strict less-than relation on <code>Nat</code>.</p>
+<dl><dt>n</dt><dd><p>the smaller number</p>
+</dd><dt>m</dt><dd><p>the larger number</p>
+</dd></dl><dl class="decls"><dt id="Data.Nat.DivMod.IteratedSubtraction.LTSucc"><span class="name constructor" title="Data.Nat.DivMod.IteratedSubtraction.LTSucc">LTSucc</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="implicit boundvar" title="">n</span>
+(<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">n</span>)</span></dt><dd><p>n &lt; 1 + n</p>
+</dd><dt id="Data.Nat.DivMod.IteratedSubtraction.LTStep"><span class="name constructor" title="Data.Nat.DivMod.IteratedSubtraction.LTStep">LTStep</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">m</span> ->
+<a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="implicit boundvar" title="">n</span>
+(<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">m</span>)</span></dt><dd><p>n &lt; m implies that n &lt; m + 1</p>
+</dd></dl></dd><dt id="Data.Nat.DivMod.IteratedSubtraction.LTZeroLeast"><span class="name function" title="Data.Nat.DivMod.IteratedSubtraction.LTZeroLeast">LTZeroLeast</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="data" title="0">0</span>
+(<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">n</span>)</span></dt><dd><p>Zero is less than any non-zero number.</p>
+</dd><dt id="Data.Nat.DivMod.IteratedSubtraction.divMod"><span class="name function" title="Data.Nat.DivMod.IteratedSubtraction.divMod">divMod</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the dividend">dividend</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="documented boundvar" title="the divisor">divisor</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+{<span class="keyword" title="">auto</span> <a class="" title="nonzero" href="[builtins].html#nonzero">nonzero</a> : <a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<a class="function" title="Prelude.Bool.not" href="Prelude.Bool.html#Prelude.Bool.not">not</a> (<a class="function" title="Prelude.decAsBool" href="Prelude.html#Prelude.decAsBool">decAsBool</a> (<a class="function" title="Decidable.Equality.decEq" href="Decidable.Equality.html#Decidable.Equality.decEq">decEq</a> <span class="documented boundvar" title="the divisor">divisor</span>
+<span class="data" title="0">0</span>)))} ->
+<a class="type" title="Data.Nat.DivMod.IteratedSubtraction.DivMod" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.DivMod">DivMod</a> <span class="documented boundvar" title="the dividend">dividend</span>
+<span class="documented boundvar" title="the divisor">divisor</span></span></dt><dd><p>Division and modulus on <code>Nat</code>, inspired by the definition in the<br />
+Agda standard library.</p>
+<p>This uses well-founded recursion on <code>LT&#39;</code>.</p>
+<dl><dt>dividend</dt><dd><p>the dividend</p>
+</dd><dt>divisor</dt><dd><p>the divisor</p>
+</dd><dt>nonzero</dt><dd><p>division by zero is nonsense</p>
+</dd></dl></dd><dt id="Data.Nat.DivMod.IteratedSubtraction.ltSuccSucc"><span class="name function" title="Data.Nat.DivMod.IteratedSubtraction.ltSuccSucc">ltSuccSucc</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">m</span> ->
+<a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> (<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">n</span>)
+(<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">m</span>)</span></dt><dd><p>If n &lt; m, then 1 + n &lt; 1 + m</p>
+</dd><dt id="Data.Nat.DivMod.IteratedSubtraction.ltToLTE"><span class="name function" title="Data.Nat.DivMod.IteratedSubtraction.ltToLTE">ltToLTE</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">m</span> ->
+<a class="type" title="Prelude.Nat.LTE" href="Prelude.Nat.html#Prelude.Nat.LTE">LTE</a> (<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">n</span>)
+<span class="implicit boundvar" title="">m</span></span></dt><dd><p>Convert from LT&#39; to LTE</p>
+</dd><dt id="Data.Nat.DivMod.IteratedSubtraction.lteToLt&#39;"><span class="name function" title="Data.Nat.DivMod.IteratedSubtraction.lteToLt&#39;">lteToLt&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Nat.LTE" href="Prelude.Nat.html#Prelude.Nat.LTE">LTE</a> (<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="implicit boundvar" title="">n</span>)
+<span class="implicit boundvar" title="">m</span> ->
+<a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">m</span></span></dt><dd><p>If n + 1 &lt; m, then n &lt; m</p>
+</dd><dt id="Data.Nat.DivMod.IteratedSubtraction.minusLT&#39;"><span class="name function" title="Data.Nat.DivMod.IteratedSubtraction.minusLT&#39;">minusLT&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">x</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">y</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.Nat.DivMod.IteratedSubtraction.LT&#39;" href="Data.Nat.DivMod.IteratedSubtraction.html#Data.Nat.DivMod.IteratedSubtraction.LT&#39;">LT&#39;</a> (<a class="function" title="Prelude.Nat.minus" href="Prelude.Nat.html#Prelude.Nat.minus">minus</a> <span class="boundvar" title="">x</span>
+<span class="boundvar" title="">y</span>)
+(<a class="constructor" title="Prelude.Nat.S" href="Prelude.Nat.html#Prelude.Nat.S">S</a> <span class="boundvar" title="">x</span>)</span></dt><dd><p>Subtraction gives a result that is actually smaller.</p>
+</dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

@@ -1,0 +1,15 @@
+Idris is clever, and if it sees that a data constructors field is never used, it deletes it GLOBALLY.
+However, if there is even a single use site, it will keep them.
+
+The directory "normal" contains the output of list_len.idr without the Show interface.
+In this case, IDris can delete the first argument of the Cons data constructor.
+
+Compile using:
+stack exec -- idris-codegen-grin --output-dir="./normal2" --no-lint --O0 list_len.idr
+
+If it does not work, then first load the file into the Idris REPL:
+stack exec -- idris list_len.idr
+
+Or simply use grin_generate
+
+Note: Idris outputs the same code for all optimization levels.

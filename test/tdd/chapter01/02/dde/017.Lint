@@ -1,0 +1,65 @@
+grinMain =
+  idr_Main.main1_val_6.0 <- pure (Cidr_Prelude.Bool.True)
+  idr_Main.main1.0 <- store idr_Main.main1_val_6.0
+  idr_Main.main2_val_7.0 <- pure idr_Main.main1_val_6.0
+  idr_Main.main2.0 <- store idr_Main.main2_val_7.0
+  idr_Main.getStringOrInt0.0 <- pure idr_Main.main2.0
+  idr_Main.getStringOrInt0_val.0 <- fetch idr_Main.getStringOrInt0.0
+  idr_Main.main2_val.0 <- case idr_Main.getStringOrInt0_val.0 of
+    (Cidr_Prelude.Bool.True) ->
+      pure (CGrInt 94) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 94)
+  idr_Main.main2_8.0 <- store idr_Main.main2_val.0
+  idr_Main.valToString0.0 <- pure idr_Main.main1.0
+  idr_Main.valToString1.0 <- pure idr_Main.main2_8.0
+  idr_Main.valToString0_val.0 <- fetch idr_Main.valToString0.0
+  idr_Main.main1_val_5.0 <- case idr_Main.valToString0_val.0 of
+    (Cidr_Prelude.Bool.True) ->
+      idris_int_str1.0.0 <- pure idr_Main.valToString1.0
+      (CGrInt idris_int_str1_0.0.0) <- fetch idris_int_str1.0.0
+      idris_int_str2.0.0 <- _prim_int_str idris_int_str1_0.0.0
+      pure (CGrString idris_int_str2.0.0) -- LINT: Last return expressions can only return non-node values: pure (CGrString idris_int_str2.0.0) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_str1_0.0.0)
+  idr_Main.main1_9.0 <- store idr_Main.main1_val_5.0
+  idr_Main.main2_val_10.0 <- pure (CGrString #"\n")
+  (CGrString idr_Main.main2_11.32.0.arity.1.0) <- pure idr_Main.main2_val_10.0
+  idris_str_concat1.0 <- pure idr_Main.main1_9.0
+  idris_str_concat2.32.arity.1.0 <- pure idr_Main.main2_11.32.0.arity.1.0
+  (CGrString idris_str_concat1_0.0) <- fetch idris_str_concat1.0
+  (CGrString idris_str_concat2_0.0) <- pure (CGrString idris_str_concat2.32.arity.1.0) -- LINT: Syntax error - expected SimpleExp without nodes
+  idris_str_concat3.0 <- _prim_string_concat idris_str_concat1_0.0 idris_str_concat2_0.0
+  unboxed.CGrString.0.0 <- pure idris_str_concat3.0
+  idr_Main.main1_val_4.0 <- pure (CGrString unboxed.CGrString.0.0)
+  (CGrString idr_Main.main1_12.32.1.arity.1.0) <- pure idr_Main.main1_val_4.0
+  idris_write_str2.32.arity.1.0 <- pure idr_Main.main1_12.32.1.arity.1.0
+  (CGrString idris_write_str2_0.0) <- pure (CGrString idris_write_str2.32.arity.1.0) -- LINT: Syntax error - expected SimpleExp without nodes
+  _prim_string_print idris_write_str2_0.0
+  idr_Main.main2_val_18.0 <- pure (Cidr_Prelude.Bool.False)
+  idr_Main.main2_19.0 <- store idr_Main.main2_val_18.0
+  idr_Main.main3_val_20.0 <- pure idr_Main.main2_val_18.0
+  idr_Main.main3.0 <- store idr_Main.main3_val_20.0
+  idr_Main.getStringOrInt0.1 <- pure idr_Main.main3.0
+  idr_Main.getStringOrInt0_val.1 <- fetch idr_Main.getStringOrInt0.1
+  idr_Main.main3_val.0 <- case idr_Main.getStringOrInt0_val.1 of
+    (Cidr_Prelude.Bool.False) ->
+      pure (CGrString #"Ninety four") -- LINT: Last return expressions can only return non-node values: pure (CGrString #"Ninety four")
+  idr_Main.main3_21.0 <- store idr_Main.main3_val.0
+  idr_Main.valToString0.1 <- pure idr_Main.main2_19.0
+  idr_Main.valToString1.1 <- pure idr_Main.main3_21.0
+  idr_Main.valToString0_val.1 <- fetch idr_Main.valToString0.1
+  idr_Main.main2_val_17.0 <- case idr_Main.valToString0_val.1 of
+    (Cidr_Prelude.Bool.False) ->
+      fetch idr_Main.valToString1.1
+  idr_Main.main2_22.0 <- store idr_Main.main2_val_17.0
+  idr_Main.main3_val_23.0 <- pure idr_Main.main2_val_10.0
+  (CGrString idr_Main.main3_24.32.2.arity.1.0) <- pure idr_Main.main3_val_23.0
+  idris_str_concat1.1 <- pure idr_Main.main2_22.0
+  idris_str_concat2.32.arity.1.1 <- pure idr_Main.main3_24.32.2.arity.1.0
+  (CGrString idris_str_concat1_0.1) <- fetch idris_str_concat1.1
+  (CGrString idris_str_concat2_0.1) <- pure (CGrString idris_str_concat2.32.arity.1.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  idris_str_concat3.1 <- _prim_string_concat idris_str_concat1_0.1 idris_str_concat2_0.1
+  unboxed.CGrString.1.0 <- pure idris_str_concat3.1
+  idr_Main.main2_val_16.0 <- pure (CGrString unboxed.CGrString.1.0)
+  (CGrString idr_Main.main2_25.32.3.arity.1.0) <- pure idr_Main.main2_val_16.0
+  idris_write_str2.32.arity.1.1 <- pure idr_Main.main2_25.32.3.arity.1.0
+  (CGrString idris_write_str2_0.1) <- pure (CGrString idris_write_str2.32.arity.1.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  _prim_string_print idris_write_str2_0.1
+  pure () -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_concat1_0.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_concat1_0.0)

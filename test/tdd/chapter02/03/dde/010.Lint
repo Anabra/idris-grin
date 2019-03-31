@@ -1,0 +1,161 @@
+idris_write_str idris_write_str2.32.arity.1 =
+  (CGrString idris_write_str2_0) <- pure (CGrString idris_write_str2.32.arity.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  _prim_string_print idris_write_str2_0
+  pure (CUnit) -- LINT: Last return expressions can only return non-node values: pure (CUnit)
+
+idris_str_concat.unboxed idris_str_concat1.32.arity.1 idris_str_concat2.32.arity.1 =
+  (CGrString idris_str_concat1_0) <- pure (CGrString idris_str_concat1.32.arity.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  (CGrString idris_str_concat2_0) <- pure (CGrString idris_str_concat2.32.arity.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  idris_str_concat3 <- _prim_string_concat idris_str_concat1_0 idris_str_concat2_0
+  pure idris_str_concat3
+
+idris_str_len.unboxed idris_str_len1.32.arity.1 =
+  (CGrString idris_str_len2) <- pure (CGrString idris_str_len1.32.arity.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  idris_str_len3 <- _prim_string_len idris_str_len2
+  pure idris_str_len3
+
+idris_int_str.unboxed idris_int_str1.32.arity.1 =
+  (CGrInt idris_int_str1_0) <- pure (CGrInt idris_int_str1.32.arity.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  idris_int_str2 <- _prim_int_str idris_int_str1_0
+  pure idris_int_str2
+
+idris_lz_ext.unboxed idris_lz_ext1.32.arity.1 =
+  (CGrInt idris_lz_ext2) <- pure (CGrInt idris_lz_ext1.32.arity.1) -- LINT: Syntax error - expected SimpleExp without nodes
+  idris_lz_ext3 <- _prim_int_add idris_lz_ext2 0
+  pure idris_lz_ext3
+
+grinMain =
+  "idr_{runMain_0}0_val_28.0" <- pure (CErased)
+  "idr_{runMain_0}0.0" <- store "idr_{runMain_0}0_val_28.0"
+  "idr_{runMain_0}0_val.0" <- idr_Main.main
+  "idr_{runMain_0}0_29.0" <- store "idr_{runMain_0}0_val.0"
+  "idr_{EVAL_0}0.0.0" <- pure "idr_{runMain_0}0_29.0"
+  "idr_{EVAL_0}0_val.0.0" <- fetch "idr_{EVAL_0}0.0.0"
+  r <- fetch "idr_{EVAL_0}0.0.0"
+  pure ()
+
+idr_Main.longer.unboxed idr_Main.longer0 idr_Main.longer1 =
+  (CGrString idr_Main.longer0.32.0.arity.1) <- fetch idr_Main.longer0
+  unboxed.CGrInt.2 <- idris_str_len.unboxed idr_Main.longer0.32.0.arity.1
+  idr_Main.longer2_val_3 <- pure (CGrInt unboxed.CGrInt.2)
+  idr_Main.longer2 <- store idr_Main.longer2_val_3
+  (CGrInt idr_Main.longer2.32.1.arity.1) <- fetch idr_Main.longer2
+  unboxed.CGrInt.3 <- idris_lz_ext.unboxed idr_Main.longer2.32.1.arity.1
+  idr_Main.longer2_val <- pure (CGrInt unboxed.CGrInt.3)
+  idr_Main.longer2_4 <- store idr_Main.longer2_val
+  (CGrString idr_Main.longer1.32.2.arity.1) <- fetch idr_Main.longer1
+  unboxed.CGrInt.4 <- idris_str_len.unboxed idr_Main.longer1.32.2.arity.1
+  idr_Main.longer3_val_5 <- pure (CGrInt unboxed.CGrInt.4)
+  idr_Main.longer3 <- store idr_Main.longer3_val_5
+  (CGrInt idr_Main.longer3.32.3.arity.1) <- fetch idr_Main.longer3
+  unboxed.CGrInt.5 <- idris_lz_ext.unboxed idr_Main.longer3.32.3.arity.1
+  idr_Main.longer3_val <- pure (CGrInt unboxed.CGrInt.5)
+  idr_Main.longer3_6 <- store idr_Main.longer3_val
+  idr_Main.longer4_val <- "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" idr_Main.longer2_4 idr_Main.longer3_6
+  idr_Main.longer4 <- store idr_Main.longer4_val
+  idr_Main.longer4_val_7 <- fetch idr_Main.longer4
+  case idr_Main.longer4_val_7 of
+    (Cidr_Prelude.Interfaces.GT) ->
+      (CGrInt unboxed.CGrInt.0) <- fetch idr_Main.longer2_4
+      pure unboxed.CGrInt.0 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt unboxed.CGrInt.0)
+    #default ->
+      (CGrInt unboxed.CGrInt.1) <- fetch idr_Main.longer3_6
+      pure unboxed.CGrInt.1 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt unboxed.CGrInt.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idr_Main.longer3.32.3.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.longer1.32.2.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idr_Main.longer2.32.1.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.longer0.32.0.arity.1)
+
+idr_Main.main =
+  idr_Main.main1_val_9 <- pure (CGrString #"12\n")
+  idr_Main.main1 <- store idr_Main.main1_val_9
+  (CGrString idr_Main.main1.32.4.arity.1) <- fetch idr_Main.main1
+  idr_Main.main1_val_8 <- idris_write_str idr_Main.main1.32.4.arity.1
+  idr_Main.main1_10 <- store idr_Main.main1_val_8
+  idr_Main.main1_val <- pure (Cidr_MkUnit)
+  idr_Main.main1_11 <- store idr_Main.main1_val
+  idr_Main.main2_val_16 <- pure (CGrString #"Hello")
+  idr_Main.main2 <- store idr_Main.main2_val_16
+  idr_Main.main3_val <- pure (CGrString #"World!")
+  idr_Main.main3 <- store idr_Main.main3_val
+  unboxed.CGrInt.6 <- idr_Main.longer.unboxed idr_Main.main2 idr_Main.main3
+  idr_Main.main2_val_15 <- pure (CGrInt unboxed.CGrInt.6)
+  idr_Main.main2_17 <- store idr_Main.main2_val_15
+  (CGrInt idr_Main.main2_17.32.5.arity.1) <- fetch idr_Main.main2_17
+  unboxed.CGrString.0 <- idris_int_str.unboxed idr_Main.main2_17.32.5.arity.1
+  idr_Main.main2_val_14 <- pure (CGrString unboxed.CGrString.0)
+  idr_Main.main2_18 <- store idr_Main.main2_val_14
+  idr_Main.main3_val_19 <- pure (CGrString #"\n")
+  idr_Main.main3_20 <- store idr_Main.main3_val_19
+  (CGrString idr_Main.main2_18.32.6.arity.1) <- fetch idr_Main.main2_18
+  (CGrString idr_Main.main3_20.32.6.arity.1) <- fetch idr_Main.main3_20
+  unboxed.CGrString.1 <- idris_str_concat.unboxed idr_Main.main2_18.32.6.arity.1 idr_Main.main3_20.32.6.arity.1
+  idr_Main.main2_val_13 <- pure (CGrString unboxed.CGrString.1)
+  idr_Main.main2_21 <- store idr_Main.main2_val_13
+  (CGrString idr_Main.main2_21.32.7.arity.1) <- fetch idr_Main.main2_21
+  idr_Main.main2_val_12 <- idris_write_str idr_Main.main2_21.32.7.arity.1
+  idr_Main.main2_22 <- store idr_Main.main2_val_12
+  idr_Main.main2_val <- pure (Cidr_MkUnit)
+  idr_Main.main2_23 <- store idr_Main.main2_val
+  idr_Main.main3_val_25 <- pure (CGrString #"3.1622776601683795\n")
+  idr_Main.main3_26 <- store idr_Main.main3_val_25
+  (CGrString idr_Main.main3_26.32.8.arity.1) <- fetch idr_Main.main3_26
+  idr_Main.main3_val_24 <- idris_write_str idr_Main.main3_26.32.8.arity.1
+  idr_Main.main3_27 <- store idr_Main.main3_val_24
+  pure (Cidr_MkUnit) -- LINT: Last return expressions can only return non-node values: pure (Cidr_MkUnit) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.main3_26.32.8.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.main2_21.32.7.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.main3_20.32.6.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.main2_18.32.6.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idr_Main.main2_17.32.5.arity.1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idr_Main.main1.32.4.arity.1)
+
+"idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01" =
+  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01"
+  case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" of
+    (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0") ->
+      case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0" of
+        0 ->
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00"
+          case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" of
+            (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_30") ->
+              case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_30" of
+                0 ->
+                  pure (Cidr_Prelude.Interfaces.EQ) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.EQ)
+                #default ->
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_31" <- pure (CGrInt 1)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_31"
+                  (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.9.arity.1") <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00"
+                  (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02.32.9.arity.1") <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02"
+                  idris_int_sub0.32.arity.1.0 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.9.arity.1"
+                  idris_int_sub1.32.arity.1.0 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02.32.9.arity.1"
+                  (CGrInt idris_int_sub0_1.0) <- pure (CGrInt idris_int_sub0.32.arity.1.0) -- LINT: Syntax error - expected SimpleExp without nodes
+                  (CGrInt idris_int_sub1_1.0) <- pure (CGrInt idris_int_sub1.32.arity.1.0) -- LINT: Syntax error - expected SimpleExp without nodes
+                  idris_int_sub2.0 <- _prim_int_sub idris_int_sub0_1.0 idris_int_sub1_1.0
+                  unboxed.CGrInt.7 <- pure idris_int_sub2.0
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val" <- pure (CGrInt unboxed.CGrInt.7)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_32" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val"
+                  pure (Cidr_Prelude.Interfaces.GT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.GT) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02.32.9.arity.1") -- LINT: The result of Fetch can only be bound to a variable: (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.9.arity.1")
+        #default ->
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38" <- pure (CGrInt 1)
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38"
+          (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.32.10.arity.1") <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01"
+          (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1") <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39"
+          idris_int_sub0.32.arity.1.1 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.32.10.arity.1"
+          idris_int_sub1.32.arity.1.1 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1"
+          (CGrInt idris_int_sub0_1.1) <- pure (CGrInt idris_int_sub0.32.arity.1.1) -- LINT: Syntax error - expected SimpleExp without nodes
+          (CGrInt idris_int_sub1_1.1) <- pure (CGrInt idris_int_sub1.32.arity.1.1) -- LINT: Syntax error - expected SimpleExp without nodes
+          idris_int_sub2.1 <- _prim_int_sub idris_int_sub0_1.1 idris_int_sub1_1.1
+          unboxed.CGrInt.8 <- pure idris_int_sub2.1
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_37" <- pure (CGrInt unboxed.CGrInt.8)
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_37"
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_41" <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00"
+          case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_41" of
+            (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_42") ->
+              case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_42" of
+                0 ->
+                  pure (Cidr_Prelude.Interfaces.LT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.LT)
+                #default ->
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_43" <- pure (CGrInt 1)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_43"
+                  (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.11.arity.1") <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00"
+                  (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1") <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03"
+                  idris_int_sub0.32.arity.1.2 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.11.arity.1"
+                  idris_int_sub1.32.arity.1.2 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1"
+                  (CGrInt idris_int_sub0_1.2) <- pure (CGrInt idris_int_sub0.32.arity.1.2) -- LINT: Syntax error - expected SimpleExp without nodes
+                  (CGrInt idris_int_sub1_1.2) <- pure (CGrInt idris_int_sub1.32.arity.1.2) -- LINT: Syntax error - expected SimpleExp without nodes
+                  idris_int_sub2.2 <- _prim_int_sub idris_int_sub0_1.2 idris_int_sub1_1.2
+                  unboxed.CGrInt.9 <- pure idris_int_sub2.2
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val" <- pure (CGrInt unboxed.CGrInt.9)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val"
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40" -- LINT: The result of Fetch can only be bound to a variable: (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1") -- LINT: The result of Fetch can only be bound to a variable: (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.11.arity.1") -- LINT: The result of Fetch can only be bound to a variable: (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1") -- LINT: The result of Fetch can only be bound to a variable: (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.32.10.arity.1")

@@ -1,0 +1,433 @@
+Heap
+    0      -> {C"idr_{U_Main.{main_2}_1}"[]}
+    1      -> {CGrInt[{T_Int64}]}
+    2      -> {CGrInt[{T_Int64}]}
+    3      -> {CGrInt[{T_Int64}]}
+    4      -> {Cidr_Data.Vect.Nil[]}
+    5      -> {Cidr_Data.Vect.::[{3},{4}]}
+    6      -> {Cidr_Data.Vect.::[{2},{5}]}
+    7      -> {Cidr_Data.Vect.::[{1},{6}]}
+    8      -> {Cidr_Data.Vect.Here[]}
+    9      -> {Cidr_Data.Vect.There[{8}]}
+    10     -> {Cidr_Data.Vect.There[{9}]}
+    11     -> {CErased[]
+              ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+              ,Cidr_Data.Vect.Nil[]}
+    12     -> {C"idr_{U_Main.{main_3}_1}"[]}
+    13     -> {C"idr_{U_Main.{main_4}_2}"[]}
+    14     -> {Cidr_Data.Vect.::[{3},{4}]}
+    15     -> {Cidr_Data.Vect.::[{2},{14}]}
+    16     -> {Cidr_Data.Vect.::[{1},{15}]}
+    17     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    18     -> {CGrInt[{T_Int64}]}
+    19     -> {CGrInt[{T_Int64}]}
+    20     -> {CGrInt[{T_Int64}]}
+    21     -> {CGrInt[{T_Int64}]}
+    22     -> {CGrInt[{T_Int64}]}
+    23     -> {CGrInt[{T_Int64}]}
+    24     -> {CGrInt[{T_Int64}]}
+    25     -> {Cidr_Data.Vect.::[{24},{4}]}
+    26     -> {Cidr_Data.Vect.::[{23},{25}]}
+    27     -> {Cidr_Data.Vect.::[{22},{26}]}
+    28     -> {Cidr_Data.Vect.::[{21},{27}]}
+    29     -> {Cidr_Data.Vect.::[{20},{28}]}
+    30     -> {Cidr_Data.Vect.::[{19},{29}]}
+    31     -> {Cidr_Data.Vect.::[{3},{30}]}
+    32     -> {Cidr_Data.Vect.::[{2},{31}]}
+    33     -> {Cidr_Data.Vect.::[{1},{32}]}
+    34     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    35     -> {C"idr_{U_Data.Vect.{foldrImpl_0}_1}"[{35,39}
+                                                   ,{37}
+                                                   ,{1,2,3}]}
+    36     -> {C"idr_{U_Main.{main_1}_1}"[]}
+    37     -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_8}_2}"[]}
+    38     -> {Cidr_Prelude.List.Nil[]}
+    39     -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_9}_1}"[]}
+    40     -> {Cidr_Prelude.List.::[{1,2,3},{38,43}]
+              ,Cidr_Prelude.List.Nil[]}
+    41     -> {CErased[]
+              ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+              ,Cidr_Data.Vect.Nil[]}
+    42     -> {CErased[]
+              ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+              ,Cidr_Data.Vect.Nil[]}
+    43     -> {Cidr_Prelude.List.::[{1,2,3},{38,43}]}
+Env
+    ccp.0  -> {T_String}
+    ccp.0.0 -> {T_Int64}
+    ccp.0.1.0 -> {T_Int64}
+    ccp.0.1.1 -> {T_Int64}
+    ccp.0.2.0 -> {T_Int64}
+    ccp.0.2.1 -> {T_Int64}
+    ccp.0.3.0.0 -> {T_Int64}
+    ccp.0.3.0.1 -> {T_Int64}
+    ccp.1.0.0 -> {T_Int64}
+    ccp.1.0.1 -> {T_Int64}
+    ccp.2.0.0 -> {T_Int64}
+    ccp.2.0.1 -> {T_Int64}
+    ccp.3.0.0 -> {T_Int64}
+    ccp.3.0.1 -> {T_Int64}
+    ccp.4.0.0 -> {T_Int64}
+    ccp.4.0.1 -> {T_Int64}
+    ccp.5.0 -> {T_String}
+    idr_Data.Vect.foldrImpl12 -> {35}
+    idr_Data.Vect.foldrImpl12_val -> {C"idr_{U_Data.Vect.{foldrImpl_0}_1}"[{35
+                                                                           ,39}
+                                                                          ,{37}
+                                                                          ,{1,2,3}]}
+    idr_Data.Vect.foldrImpl3 -> {37}
+    idr_Data.Vect.foldrImpl4 -> {38}
+    idr_Data.Vect.foldrImpl5 -> {35,39}
+    idr_Data.Vect.foldrImpl6 -> {4,5,11,17,34,41,42}
+    idr_Data.Vect.foldrImpl6_val -> {CErased[]
+                                    ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+                                    ,Cidr_Data.Vect.Nil[]
+                                    ,Cidr_Prelude.Bool.False[]
+                                    ,Cidr_Prelude.Bool.True[]}
+    idr_Data.Vect.foldrImpl7 -> {1,2,3}
+    idr_Data.Vect.foldrImpl8 -> {4,5,41,42}
+    "idr_Data.Vect.{foldrImpl_0}0" -> {35,39}
+    "idr_Data.Vect.{foldrImpl_0}2" -> {1,2,3}
+    "idr_Data.Vect.{foldrImpl_0}3" -> {38,43}
+    "idr_Data.Vect.{foldrImpl_0}4_176" -> {43}
+    "idr_Data.Vect.{foldrImpl_0}4_val" -> {Cidr_Prelude.List.::[{1
+                                                                ,2
+                                                                ,3}
+                                                               ,{38,43}]}
+    "idr_Data.Vect.{foldrImpl_0}4_val_175" -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_8}_1}"[{1
+                                                                                                                                    ,2
+                                                                                                                                    ,3}]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_185.0.0" -> {Cidr_Prelude.Bool.False[]
+                                                                                                        ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_185.0.1" -> {Cidr_Prelude.Bool.False[]
+                                                                                                        ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01_val.0.0" -> {Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01_val.0.1" -> {Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Integer:!decEq:00.0.49.12.arity.1.0" -> {T_Int64}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Integer:!decEq:01.0.49.12.arity.1.0" -> {T_Int64}
+    idr_Main.isElem'2 -> {13}
+    idr_Main.isElem'3 -> {3,18}
+    idr_Main.isElem'4 -> {4,14,15,16,25,26,27,28,29,30,31,32,33}
+    idr_Main.isElem'4_val -> {Cidr_Data.Vect.::[{1
+                                                ,2
+                                                ,3
+                                                ,19
+                                                ,20
+                                                ,21
+                                                ,22
+                                                ,23
+                                                ,24}
+                                               ,{4,14,15,25,26,27,28,29,30,31,32}]
+                             ,Cidr_Data.Vect.Nil[]}
+    idr_Main.isElem'5 -> {1,2,3,19,20,21,22,23,24}
+    idr_Main.isElem'6 -> {4,14,15,25,26,27,28,29,30,31,32}
+    idr_Main.isElem'7_val.0 -> {Cidr_Prelude.Basics.No[]}
+    idr_Main.isElem'7_val.1 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Main.isElem'7_val_3 -> {C"idr_{U_Main.{main_4}_1}"[{3
+                                                           ,18}]}
+    idr_Main.isElem'8_val.0 -> {Cidr_Prelude.Basics.No[]
+                               ,Cidr_Prelude.Basics.Yes[]}
+    idr_Main.main10.0 -> {4}
+    idr_Main.main10_47.0 -> {2}
+    idr_Main.main10_50.0 -> {15}
+    idr_Main.main10_74.0 -> {1}
+    idr_Main.main10_95.0 -> {33}
+    idr_Main.main10_val.0 -> {Cidr_Data.Vect.Nil[]}
+    idr_Main.main10_val_45.0 -> {Cidr_Data.Vect.::[{2},{14}]}
+    idr_Main.main10_val_72.0 -> {Cidr_Data.Vect.::[{1},{32}]}
+    idr_Main.main11.0 -> {3}
+    idr_Main.main11_49.0 -> {14}
+    idr_Main.main11_77.0 -> {2}
+    idr_Main.main11_94.0 -> {32}
+    idr_Main.main11_val.0 -> {Cidr_Data.Vect.::[{3},{4}]}
+    idr_Main.main11_val_75.0 -> {Cidr_Data.Vect.::[{2},{31}]}
+    idr_Main.main12.0 -> {4}
+    idr_Main.main12_80.0 -> {3}
+    idr_Main.main12_93.0 -> {31}
+    idr_Main.main12_val_78.0 -> {Cidr_Data.Vect.::[{3},{30}]}
+    idr_Main.main13.0 -> {19}
+    idr_Main.main13_92.0 -> {30}
+    idr_Main.main13_val.0 -> {Cidr_Data.Vect.::[{19},{29}]}
+    idr_Main.main13_val_81.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main14.0 -> {20}
+    idr_Main.main14_91.0 -> {29}
+    idr_Main.main14_val.0 -> {Cidr_Data.Vect.::[{20},{28}]}
+    idr_Main.main14_val_82.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main15.0 -> {21}
+    idr_Main.main15_90.0 -> {28}
+    idr_Main.main15_val.0 -> {Cidr_Data.Vect.::[{21},{27}]}
+    idr_Main.main15_val_83.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main16.0 -> {22}
+    idr_Main.main16_89.0 -> {27}
+    idr_Main.main16_val.0 -> {Cidr_Data.Vect.::[{22},{26}]}
+    idr_Main.main16_val_84.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main17.0 -> {23}
+    idr_Main.main17_88.0 -> {26}
+    idr_Main.main17_val.0 -> {Cidr_Data.Vect.::[{23},{25}]}
+    idr_Main.main17_val_85.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main18.0 -> {24}
+    idr_Main.main18_87.0 -> {25}
+    idr_Main.main18_val.0 -> {Cidr_Data.Vect.::[{24},{4}]}
+    idr_Main.main18_val_86.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main19.0 -> {4}
+    idr_Main.main1_val.0 -> {Cidr_MkUnit[]}
+    idr_Main.main2_val_25.0 -> {Cidr_MkUnit[]}
+    idr_Main.main3.0 -> {0}
+    idr_Main.main3_val.0 -> {C"idr_{U_Main.{main_2}_1}"[]}
+    idr_Main.main4_23.0 -> {11}
+    idr_Main.main4_31.0 -> {12}
+    idr_Main.main4_val.0 -> {CErased[]
+                            ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+                            ,Cidr_Data.Vect.Nil[]}
+    idr_Main.main4_val_30.0 -> {C"idr_{U_Main.{main_3}_1}"[]}
+    idr_Main.main5.49.0.arity.1.0 -> {T_Int64}
+    idr_Main.main5_54.0 -> {17}
+    idr_Main.main5_61.0 -> {12}
+    idr_Main.main5_val.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main5_val_32.0 -> {Cidr_Prelude.Bool.False[]
+                               ,Cidr_Prelude.Bool.True[]}
+    idr_Main.main5_val_33.0 -> {Cidr_Prelude.Basics.No[]
+                               ,Cidr_Prelude.Basics.Yes[]}
+    idr_Main.main6_98.0 -> {34}
+    idr_Main.main6_val_62.0 -> {Cidr_Prelude.Bool.False[]
+                               ,Cidr_Prelude.Bool.True[]}
+    idr_Main.main6_val_63.0 -> {Cidr_Prelude.Basics.No[]
+                               ,Cidr_Prelude.Basics.Yes[]}
+    idr_Main.main7.0 -> {1}
+    idr_Main.main7_16.0 -> {7}
+    idr_Main.main7_39.0 -> {13}
+    idr_Main.main7_val.0 -> {Cidr_Data.Vect.::[{1},{6}]}
+    idr_Main.main7_val_11.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main7_val_38.0 -> {C"idr_{U_Main.{main_4}_2}"[]}
+    idr_Main.main8.0 -> {2}
+    idr_Main.main8_15.0 -> {6}
+    idr_Main.main8_20.0 -> {8}
+    idr_Main.main8_21.0 -> {9}
+    idr_Main.main8_22.0 -> {10}
+    idr_Main.main8_41.0 -> {3}
+    idr_Main.main8_69.0 -> {13}
+    idr_Main.main8_val.0 -> {Cidr_Data.Vect.::[{2},{5}]}
+    idr_Main.main8_val_17.0 -> {Cidr_Data.Vect.There[{9}]}
+    idr_Main.main8_val_18.0 -> {Cidr_Data.Vect.There[{8}]}
+    idr_Main.main8_val_19.0 -> {Cidr_Data.Vect.Here[]}
+    idr_Main.main9.0 -> {3}
+    idr_Main.main9_14.0 -> {5}
+    idr_Main.main9_44.0 -> {1}
+    idr_Main.main9_51.0 -> {16}
+    idr_Main.main9_71.0 -> {18}
+    idr_Main.main9_val.0 -> {Cidr_Data.Vect.::[{3},{4}]}
+    idr_Main.main9_val_13.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.main9_val_42.0 -> {Cidr_Data.Vect.::[{1},{15}]}
+    idr_Main.main9_val_70.0 -> {CGrInt[{T_Int64}]}
+    idr_Main.removeElemPrf1.49.arity.1 -> {T_Int64}
+    idr_Main.removeElemPrf3 -> {4,5,6,7}
+    idr_Main.removeElemPrf3_val -> {Cidr_Data.Vect.::[{1,2,3}
+                                                     ,{4,5,6}]
+                                   ,Cidr_Data.Vect.Nil[]}
+    idr_Main.removeElemPrf3_val_144 -> {Cidr_Data.Vect.::[{1,2,3}
+                                                         ,{4,5,6}]
+                                       ,Cidr_Data.Vect.Nil[]}
+    idr_Main.removeElemPrf4 -> {8,9,10}
+    idr_Main.removeElemPrf4_val -> {Cidr_Data.Vect.Here[]
+                                   ,Cidr_Data.Vect.There[{8,9}]}
+    idr_Main.removeElemPrf5 -> {1,2,3}
+    idr_Main.removeElemPrf5_143 -> {8,9}
+    idr_Main.removeElemPrf6 -> {4,5,6}
+    idr_Main.removeElemPrf6_145 -> {1,2,3}
+    idr_Main.removeElemPrf7 -> {4,5,6}
+    idr_Main.removeElemPrf7_val -> {Cidr_Data.Vect.::[{2,3},{4,5}]
+                                   ,Cidr_Data.Vect.Nil[]}
+    idr_Main.removeElemPrf8_149 -> {41}
+    idr_Main.removeElemPrf8_169 -> {42}
+    idr_Main.removeElemPrf8_val -> {CErased[]
+                                   ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+                                   ,Cidr_Data.Vect.Nil[]}
+    idr_Main.removeElemPrf8_val_160 -> {CErased[]
+                                       ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+                                       ,Cidr_Data.Vect.Nil[]}
+    idr_Main.removeElemPrf9.41.3.arity.1 -> {T_Int64}
+    idr_Main.removeElemPrf9_165.41.4.arity.1 -> {T_Int64}
+    "idr_Main.{main_1}0.158.arity.1.0" -> {T_Int64}
+    "idr_Main.{main_1}0.158.arity.1.1" -> {T_Int64}
+    "idr_Main.{main_2}3.0" -> {36}
+    "idr_Main.{main_2}3_val.0" -> {C"idr_{U_Main.{main_1}_1}"[]}
+    "idr_Main.{main_3}0_val.0" -> {CErased[]
+                                  ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+                                  ,Cidr_Data.Vect.Nil[]
+                                  ,Cidr_Prelude.Bool.False[]
+                                  ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Interactive.printLn'2 -> {0,12}
+    idr_Prelude.Interactive.printLn'3 -> {11,17,34}
+    idr_Prelude.Interactive.printLn'6.49.1.arity.1 -> {T_String}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:00.49.16.arity.1.0.0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:00.49.16.arity.1.0.1" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:01.49.16.arity.1.0.0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:01.49.16.arity.1.0.1" -> {T_Int64}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:011.0.0" -> {37}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:011_val.0.0" -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_8}_2}"[]}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:012.0.0" -> {38}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:012_val.0.0" -> {Cidr_Prelude.List.Nil[]}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:013.0.0" -> {39}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:013_val.0.0" -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_9}_1}"[]}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:04.0.49.11.arity.1.0" -> {T_String}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:06_196.0.49.10.arity.1.0" -> {T_String}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:07.0.0.57.0.arity.1" -> {T_String}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:08_193.0.0" -> {40}
+    "idr_Prelude.Show.Data.Vect.@Prelude.Show.Show$Vect len elem:!show:08_val.0.0" -> {Cidr_Prelude.List.::[{1
+                                                                                                            ,2
+                                                                                                            ,3}
+                                                                                                           ,{38,43}]
+                                                                                      ,Cidr_Prelude.List.Nil[]}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':010.49.14.arity.1" -> {T_String}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':02" -> {36}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':03.57.arity.1" -> {T_String}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':04" -> {38
+                                                                                  ,40
+                                                                                  ,43}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':04_val" -> {Cidr_Prelude.List.::[{1
+                                                                                                            ,2
+                                                                                                            ,3}
+                                                                                                           ,{38,43}]
+                                                                                      ,Cidr_Prelude.List.Nil[]}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':05" -> {1
+                                                                                  ,2
+                                                                                  ,3}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':05.158.0.arity.1" -> {T_Int64}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':05.158.1.arity.1" -> {T_Int64}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':06" -> {38
+                                                                                  ,43}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':06_val" -> {Cidr_Prelude.List.::[{1
+                                                                                                            ,2
+                                                                                                            ,3}
+                                                                                                           ,{38,43}]
+                                                                                      ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Show.primNumShow5_val.0.0 -> {Cidr_Prelude.Bool.False[]
+                                             ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val.0.1 -> {Cidr_Prelude.Bool.False[]
+                                             ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_100.0.0 -> {Cidr_Prelude.Interfaces.EQ[]
+                                                 ,Cidr_Prelude.Interfaces.GT[]
+                                                 ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.primNumShow5_val_100.0.1 -> {Cidr_Prelude.Interfaces.EQ[]
+                                                 ,Cidr_Prelude.Interfaces.GT[]
+                                                 ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.primNumShow5_val_101.0.0 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow5_val_101.0.1 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow5_val_99.0.0 -> {Cidr_Prelude.Bool.False[]
+                                                ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_99.0.1 -> {Cidr_Prelude.Bool.False[]
+                                                ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow6_116.41.0.arity.1.0.0 -> {T_String}
+    idr_Prelude.Show.primNumShow6_116.41.0.arity.1.0.1 -> {T_String}
+    idr_Prelude.Show.primNumShow6_134.0.49.9.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow6_134.0.49.9.arity.1.1 -> {T_String}
+    idr_Prelude.Show.primNumShow6_val.0.0 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val.0.1 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_112.0.0.0 -> {Cidr_Prelude.Basics.No[]}
+    idr_Prelude.Show.primNumShow6_val_112.0.0.1 -> {Cidr_Prelude.Basics.No[]}
+    idr_Prelude.Show.primNumShow6_val_112.0.1.0 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.primNumShow6_val_112.0.1.1 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.primNumShow6_val_113.0.0 -> {Cidr_Prelude.Bool.False[]
+                                                 ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow6_val_113.0.1 -> {Cidr_Prelude.Bool.False[]
+                                                 ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow7.0.49.4.arity.1.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow7.0.49.4.arity.1.1 -> {T_Int64}
+    idr_Prelude.Show.primNumShow7_137.0.49.8.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow7_137.0.49.8.arity.1.1 -> {T_String}
+    idr_Prelude.Show.primNumShow8.0.49.7.arity.1.0.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow8.0.49.7.arity.1.0.1 -> {T_Int64}
+    "idr_{APPLY_0}0_val.0" -> {C"idr_{U_Data.Vect.{foldrImpl_0}_1}"[{35
+                                                                    ,39}
+                                                                   ,{37}
+                                                                   ,{1,2,3}]
+                              ,C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_9}_1}"[]}
+    "idr_{APPLY_0}0_val.2" -> {C"idr_{U_Main.{main_4}_1}"[{3,18}]}
+    "idr_{APPLY_0}0_val.4" -> {C"idr_{U_Main.{main_2}_1}"[]
+                              ,C"idr_{U_Main.{main_3}_1}"[]}
+    "idr_{APPLY_0}0_val.6" -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_8}_1}"[{1
+                                                                                                                    ,2
+                                                                                                                    ,3}]}
+    "idr_{APPLY_0}0_val.7" -> {C"idr_{U_Data.Vect.{foldrImpl_0}_1}"[{35
+                                                                    ,39}
+                                                                   ,{37}
+                                                                   ,{1,2,3}]
+                              ,C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_9}_1}"[]}
+    "idr_{APPLY_0}2.0" -> {35,39}
+    "idr_{APPLY_0}2.7" -> {35,39}
+    "idr_{APPLY_0}2_172.2" -> {3,18}
+    "idr_{APPLY_0}2_173.6" -> {1,2,3}
+    "idr_{APPLY_0}3.0" -> {37}
+    "idr_{APPLY_0}3.7" -> {37}
+    "idr_{APPLY_0}4.0" -> {1,2,3}
+    "idr_{APPLY_0}4.7" -> {1,2,3}
+    "idr_{runMain_0}0_val.0" -> {Cidr_MkUnit[]}
+    idris_int_eq2.0 -> {T_Bool}
+    idris_int_eq2.1.0 -> {T_Bool}
+    idris_int_eq2.1.1 -> {T_Bool}
+    idris_int_eq2.2.0 -> {T_Bool}
+    idris_int_eq2.2.1 -> {T_Bool}
+    idris_int_eq2.3.0.0 -> {T_Bool}
+    idris_int_eq2.3.0.1 -> {T_Bool}
+    idris_int_lt2.0.0 -> {T_Bool}
+    idris_int_lt2.0.1 -> {T_Bool}
+    idris_int_str1_0.0.0.0 -> {T_Int64}
+    idris_int_str1_0.0.0.1 -> {T_Int64}
+    idris_int_str2.0.0.0 -> {T_String}
+    idris_int_str2.0.0.1 -> {T_String}
+    idris_int_sub2.0 -> {T_Int64}
+    idris_int_sub2.1 -> {T_Int64}
+    idris_str_concat3.0 -> {T_String}
+    idris_str_concat3.1 -> {T_String}
+    idris_str_concat3.2 -> {T_String}
+    idris_str_concat3.3.0 -> {T_String}
+    idris_str_concat3.3.1 -> {T_String}
+    idris_str_concat3.4.0 -> {T_String}
+    idris_str_concat3.4.1 -> {T_String}
+    idris_str_concat3.5 -> {T_String}
+    idris_str_concat3.6 -> {T_String}
+    idris_str_concat3.7 -> {T_String}
+    idris_str_eq3.0.0 -> {T_Bool}
+    idris_str_eq3.0.1 -> {T_Bool}
+    idris_str_head2.0.0.0 -> {T_Int64}
+    idris_str_head2.0.0.1 -> {T_Int64}
+    unboxed.CGrString.11 -> {T_String}
+    unboxed.CGrString.2.0.0 -> {T_String}
+    unboxed.CGrString.9 -> {T_String}
+Function
+    _prim_int_eq :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_lt :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_str :: {T_Int64} -> {T_String}
+    _prim_int_sub :: {T_Int64} -> {T_Int64} -> {T_Int64}
+    _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
+    _prim_string_eq :: {T_String} -> {T_String} -> {T_Bool}
+    _prim_string_head :: {T_String} -> {T_Int64}
+    _prim_string_print :: {T_String} -> {T_Unit}
+    grinMain :: {T_Unit}
+    idr_Data.Vect.foldrImpl :: {37}
+                            -> {38}
+                            -> {35,39}
+                            -> {4,5,11,17,34,41,42}
+                            -> {Cidr_Prelude.List.::[{1,2,3},{38,43}]
+                               ,Cidr_Prelude.List.Nil[]}
+    "idr_Data.Vect.{foldrImpl_0}" :: {35,39}
+                                  -> {1,2,3}
+                                  -> {38,43}
+                                  -> {Cidr_Prelude.List.::[{1,2,3},{38,43}]}
+    idr_Main.isElem' :: {13}
+                     -> {3,18}
+                     -> {4,14,15,16,25,26,27,28,29,30,31,32,33}
+                     -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    idr_Main.removeElemPrf :: {T_Int64}
+                           -> {4,5,6,7}
+                           -> {8,9,10}
+                           -> {CErased[]
+                              ,Cidr_Data.Vect.::[{1,2,3},{4,5,41,42}]
+                              ,Cidr_Data.Vect.Nil[]}
+    idr_Prelude.Interactive.printLn' :: {0,12}
+                                     -> {11,17,34}
+                                     -> {Cidr_MkUnit[]}
+    "idr_Prelude.Show.Prelude.Show.@Prelude.Show.Show$List a:!show:0:show':0.unboxed" :: {36}
+                                                                                      -> {T_String}
+                                                                                      -> {38,40,43}
+                                                                                      -> {T_String}

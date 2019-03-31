@@ -1,0 +1,7 @@
+grinMain =
+  idr_Main.main1_val_3.0 <- pure (CGrString #"Hello World!\n")
+  (CGrString idr_Main.main1.32.0.arity.1.0) <- pure idr_Main.main1_val_3.0
+  idris_write_str2.32.arity.1.0 <- pure idr_Main.main1.32.0.arity.1.0
+  (CGrString idris_write_str2_0.0) <- pure (CGrString idris_write_str2.32.arity.1.0) -- LINT: Syntax error - expected SimpleExp without nodes
+  _prim_string_print idris_write_str2_0.0
+  pure ()

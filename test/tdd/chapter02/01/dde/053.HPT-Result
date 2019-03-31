@@ -1,0 +1,605 @@
+Heap
+    0      -> {C"idr_{U_prim__floatToStr_1}"[]}
+    1      -> {CGrString[{T_String}]}
+    2      -> {C"idr_{U_Main.{average_0}_2}"[]}
+    3      -> {CGrInt[{T_Int64}]}
+    4      -> {C"idr_{U_Main.{average_1}_1}"[]}
+    5      -> {Cidr_Prelude.List.::[{39},{40}]
+              ,Cidr_Prelude.List.Nil[]}
+    6      -> {Cidr_Prelude.List.::[{39},{40}]
+              ,Cidr_Prelude.List.Nil[]}
+    7      -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    8      -> {Cidr_Prelude.List.::[{39},{40}]
+              ,Cidr_Prelude.List.Nil[]}
+    9      -> {CGrInt[{T_Int64}]}
+    10     -> {CGrFloat[{T_Float}]}
+    11     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    12     -> {CGrInt[{T_Int64}]}
+    13     -> {CGrInt[{T_Int64}]}
+    14     -> {Cidr_Prelude.List.::[{21,23,42},{14,15,17}]}
+    15     -> {Cidr_Prelude.List.Nil[]}
+    16     -> {Cidr_Prelude.List.::[{21,23,42},{26,45}]}
+    17     -> {Cidr_Prelude.List.Nil[]}
+    18     -> {Cidr_Prelude.List.Nil[]}
+    19     -> {C"idr_{U_Prelude.Strings.{words_2}_1}"[]}
+    20     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    21     -> {CGrInt[{T_Int64}]}
+    22     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    23     -> {CGrInt[{T_Int64}]}
+    24     -> {CGrString[{T_String}]}
+    25     -> {Cidr_Prelude.Strings.StrCons[{23},{24}]
+              ,Cidr_Prelude.Strings.StrNil[]}
+    26     -> {Cidr_Prelude.List.::[{23,42},{45}]
+              ,Cidr_Prelude.List.Nil[]}
+    27     -> {Cidr_Prelude.List.::[{21},{26}]
+              ,Cidr_Prelude.List.Nil[]}
+    28     -> {Cidr_Prelude.List.::[{14,15,17},{33}]
+              ,Cidr_Prelude.List.Nil[]}
+    29     -> {C"idr_{U_Prelude.Chars.isSpace_1}"[]}
+    30     -> {C"idr_{U_Prelude.Strings.{words'_3}_1}"[]}
+    31     -> {C"idr_{U_Prelude.Chars.isSpace_1}"[]}
+    32     -> {Cidr_Prelude.List.::[{21,23,42},{26,45}]
+              ,Cidr_Prelude.List.Nil[]}
+    33     -> {Cidr_Prelude.List.::[{14,15,17},{33}]
+              ,Cidr_Prelude.List.Nil[]}
+    34     -> {C"idr_{U_Main.{average_0}_1}"[{21,23,39,42}]
+              ,C"idr_{U_prim__strCons_1}"[{21,23,39,42}]}
+    35     -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    36     -> {CGrInt[{T_Int64}]}
+    37     -> {C"idr_{U_prim__strCons_2}"[]}
+    38     -> {CGrString[{T_String}]}
+    39     -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    40     -> {Cidr_Prelude.List.::[{39},{40}]
+              ,Cidr_Prelude.List.Nil[]}
+    41     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    42     -> {CGrInt[{T_Int64}]}
+    43     -> {CGrString[{T_String}]}
+    44     -> {Cidr_Prelude.Strings.StrCons[{42},{43}]
+              ,Cidr_Prelude.Strings.StrNil[]}
+    45     -> {Cidr_Prelude.List.::[{23,42},{45}]
+              ,Cidr_Prelude.List.Nil[]}
+Env
+    ccp.0.0 -> {T_Int64}
+    ccp.0.1 -> {T_Int64}
+    ccp.0.2.0 -> {T_Int64}
+    ccp.0.3.0 -> {T_Int64}
+    ccp.0.3.1 -> {T_Int64}
+    ccp.0.4.0 -> {T_Int64}
+    ccp.0.4.1 -> {T_Int64}
+    ccp.0.5.0 -> {T_Int64}
+    ccp.0.5.1 -> {T_Int64}
+    ccp.0.6.0 -> {T_Int64}
+    ccp.0.6.1 -> {T_Int64}
+    ccp.0.7.0 -> {T_Int64}
+    ccp.0.7.1 -> {T_Int64}
+    ccp.0.8.0 -> {T_Int64}
+    ccp.0.8.1 -> {T_Int64}
+    ccp.0.9.0 -> {T_Int64}
+    ccp.0.9.1 -> {T_Int64}
+    ccp.1.0 -> {T_Int64}
+    ccp.2.0 -> {T_Int64}
+    ccp.2.1 -> {T_Int64}
+    ccp.2.2.0 -> {T_Int64}
+    ccp.2.3 -> {T_Int64}
+    ccp.3.0 -> {T_Int64}
+    ccp.4.0 -> {T_Int64}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_179.0" -> {Cidr_Prelude.Bool.False[]
+                                                                                                      ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_179.1" -> {Cidr_Prelude.Bool.False[]
+                                                                                                      ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_179.2.0" -> {Cidr_Prelude.Bool.False[]
+                                                                                                        ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_179.3" -> {Cidr_Prelude.Bool.False[]
+                                                                                                      ,Cidr_Prelude.Bool.True[]}
+    idr_Main.average0.48.0.arity.1.0 -> {T_String}
+    idr_Main.average1_5.0 -> {7}
+    idr_Main.average1_val_1.0 -> {CGrInt[{T_Int64}]
+                                 ,CGrString[{T_String}]}
+    idr_Main.average2_13.0 -> {9}
+    idr_Main.average3.0 -> {2}
+    idr_Main.average3_12.0 -> {8}
+    idr_Main.average3_val_11.0 -> {Cidr_Prelude.List.::[{39},{40}]
+                                  ,Cidr_Prelude.List.Nil[]}
+    idr_Main.average4.0 -> {3}
+    idr_Main.average5_4.0 -> {6}
+    idr_Main.average5_val.0 -> {Cidr_Prelude.List.::[{39},{40}]
+                               ,Cidr_Prelude.List.Nil[]}
+    idr_Main.average7.0 -> {4}
+    idr_Main.average8.0 -> {5}
+    idr_Main.average8_val.0 -> {Cidr_Prelude.List.::[{39},{40}]
+                               ,Cidr_Prelude.List.Nil[]}
+    idr_Main.main1.40.8.arity.1.0 -> {T_String}
+    idr_Main.main2_60.32.11.arity.1.0 -> {T_String}
+    idr_Main.main3.0 -> {0}
+    idr_Main.main3_56.32.9.arity.1.0 -> {T_String}
+    idr_Main.main5.0 -> {1}
+    idr_Main.main5_53.0 -> {10}
+    "idr_Main.{average_1}1.0" -> {36}
+    idr_Prelude.Chars.isSpace1.32.1.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace1.32.1.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace2.32.2.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace2.32.2.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace3.32.3.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace3.32.3.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace4.32.4.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace4.32.4.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace5.32.5.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace5.32.5.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace6.32.6.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace6.32.6.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace7.32.7.arity.1.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace7.32.7.arity.1.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_24.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_24.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_28.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_28.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_32.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_32.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_36.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_36.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_40.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_40.1 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_44.0 -> {T_Int64}
+    idr_Prelude.Chars.isSpace_cpat_LInt64_0_44.1 -> {T_Int64}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:02" -> {2
+                                                                                     ,37}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:03" -> {3
+                                                                                     ,38}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:04" -> {6
+                                                                                     ,14
+                                                                                     ,15
+                                                                                     ,17
+                                                                                     ,39
+                                                                                     ,40}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:04_val" -> {CGrInt[{T_Int64}]
+                                                                                         ,CGrString[{T_String}]
+                                                                                         ,Cidr_Prelude.List.::[{21,23,39,42},{14,15,17,40}]
+                                                                                         ,Cidr_Prelude.List.Nil[]}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:05" -> {21
+                                                                                     ,23
+                                                                                     ,39
+                                                                                     ,42}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:06" -> {14
+                                                                                     ,15
+                                                                                     ,17
+                                                                                     ,40}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:07" -> {34}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:07_val" -> {C"idr_{U_Main.{average_0}_1}"[{21
+                                                                                                                        ,23
+                                                                                                                        ,39
+                                                                                                                        ,42}]
+                                                                                         ,C"idr_{U_prim__strCons_1}"[{21,23,39,42}]}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:08_181" -> {35}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:08_val" -> {CGrInt[{T_Int64}]
+                                                                                         ,CGrString[{T_String}]}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:02" -> {4
+                                                                                ,19}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03" -> {5
+                                                                                ,28
+                                                                                ,33
+                                                                                ,40}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03_val" -> {Cidr_Prelude.List.::[{14
+                                                                                                          ,15
+                                                                                                          ,17
+                                                                                                          ,39}
+                                                                                                         ,{33,40}]
+                                                                                    ,Cidr_Prelude.List.Nil[]}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:04" -> {14
+                                                                                ,15
+                                                                                ,17
+                                                                                ,39}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:05" -> {33
+                                                                                ,40}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:06" -> {39}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:06_val" -> {CGrInt[{T_Int64}]
+                                                                                    ,CGrString[{T_String}]}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:07_183" -> {40}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:07_val" -> {Cidr_Prelude.List.::[{39}
+                                                                                                         ,{40}]
+                                                                                    ,Cidr_Prelude.List.Nil[]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0.0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0_186.0" -> {T_Int64}
+    idr_Prelude.List.dropWhile2 -> {16,18,26,27,45}
+    idr_Prelude.List.dropWhile2_val -> {Cidr_Prelude.List.::[{21
+                                                             ,23
+                                                             ,42}
+                                                            ,{26,45}]
+                                       ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.List.dropWhile3 -> {21,23,42}
+    idr_Prelude.List.dropWhile4 -> {26,45}
+    idr_Prelude.List.dropWhile5_val -> {Cidr_Prelude.Bool.False[]
+                                       ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.List.length1 -> {8,40}
+    idr_Prelude.List.length1_val -> {Cidr_Prelude.List.::[{39}
+                                                         ,{40}]
+                                    ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.List.length2 -> {39}
+    idr_Prelude.List.length3 -> {40}
+    idr_Prelude.List.length4_46 -> {12}
+    idr_Prelude.List.length5 -> {13}
+    idr_Prelude.List.span2 -> {26,32,45}
+    idr_Prelude.List.span2_val -> {Cidr_Prelude.List.::[{21,23,42}
+                                                       ,{26,45}]
+                                  ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.List.span3 -> {21,23,42}
+    idr_Prelude.List.span3_112 -> {17}
+    idr_Prelude.List.span4 -> {26,45}
+    idr_Prelude.List.span4_113 -> {18}
+    idr_Prelude.List.span5_val.0 -> {Cidr_Prelude.Bool.True[]}
+    idr_Prelude.List.span5_val.1 -> {Cidr_Prelude.Bool.False[]}
+    idr_Prelude.List.span6.0 -> {15}
+    idr_Prelude.List.span6_val_106.0 -> {Cidr_Builtins.MkPair[{14
+                                                              ,15
+                                                              ,17}
+                                                             ,{16,18}]}
+    idr_Prelude.List.span7.0 -> {16}
+    idr_Prelude.List.span7_111.0 -> {14,15,17}
+    idr_Prelude.List.span8.0 -> {16,18}
+    idr_Prelude.List.span9.0 -> {14}
+    idr_Prelude.Show.primNumShow4.40.12.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow4.40.13.arity.1.0.0 -> {T_String}
+    idr_Prelude.Show.primNumShow4.40.15.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow4_val.0 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.primNumShow5_val.0 -> {Cidr_Prelude.Bool.False[]
+                                           ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_63.0 -> {Cidr_Prelude.Bool.False[]
+                                              ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_64.0 -> {Cidr_Prelude.Interfaces.EQ[]
+                                              ,Cidr_Prelude.Interfaces.GT[]
+                                              ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.primNumShow6.40.10.arity.1.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow6_80.32.14.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow6_84.0 -> {11}
+    idr_Prelude.Show.primNumShow6_98.40.16.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow6_val_76.0.0 -> {Cidr_Prelude.Basics.No[]}
+    idr_Prelude.Show.primNumShow6_val_76.0.1 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.primNumShow6_val_77.0 -> {Cidr_Prelude.Bool.False[]
+                                              ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow7.32.13.arity.1.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow7_101.32.17.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow8.32.16.arity.1.0.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow_cpat_LInt64_0.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow_cpat_LInt64_0_83.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow_cpat_LInt64_0_94.0.0 -> {T_Int64}
+    idr_Prelude.Strings.words'0 -> {16,18,27}
+    idr_Prelude.Strings.words'1_val -> {Cidr_Prelude.List.::[{21
+                                                             ,23
+                                                             ,42}
+                                                            ,{26,45}]
+                                       ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words'2 -> {29}
+    idr_Prelude.Strings.words'2_val_164 -> {Cidr_Builtins.MkPair[{14
+                                                                 ,15
+                                                                 ,17}
+                                                                ,{16,18}]}
+    idr_Prelude.Strings.words'3 -> {30}
+    idr_Prelude.Strings.words'3_171 -> {14,15,17}
+    idr_Prelude.Strings.words'4_168 -> {32}
+    idr_Prelude.Strings.words'4_172 -> {16,18}
+    idr_Prelude.Strings.words'4_val -> {Cidr_Prelude.List.::[{21
+                                                             ,23
+                                                             ,42}
+                                                            ,{26,45}]
+                                       ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words'5 -> {31}
+    idr_Prelude.Strings.words'5_174 -> {33}
+    idr_Prelude.Strings.words'5_val_173 -> {Cidr_Prelude.List.::[{14
+                                                                 ,15
+                                                                 ,17}
+                                                                ,{33}]
+                                           ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words0.48.arity.1 -> {T_String}
+    idr_Prelude.Strings.words3 -> {19}
+    idr_Prelude.Strings.words4.32.20.arity.1 -> {T_String}
+    idr_Prelude.Strings.words4_133 -> {20}
+    idr_Prelude.Strings.words4_159 -> {27}
+    idr_Prelude.Strings.words4_160 -> {28}
+    idr_Prelude.Strings.words4_val -> {Cidr_Prelude.List.::[{14
+                                                            ,15
+                                                            ,17}
+                                                           ,{33}]
+                                      ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words4_val_126 -> {Cidr_Prelude.List.::[{21}
+                                                               ,{26}]
+                                          ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words4_val_127.0 -> {Cidr_Prelude.Basics.No[]}
+    idr_Prelude.Strings.words4_val_127.1 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Strings.words4_val_128 -> {Cidr_Prelude.Bool.False[]
+                                          ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Strings.words5_137.0 -> {21}
+    idr_Prelude.Strings.words6_158.0 -> {26}
+    idr_Prelude.Strings.words6_val.0 -> {Cidr_Prelude.List.::[{23
+                                                              ,42}
+                                                             ,{45}]
+                                        ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words7_146.0 -> {22}
+    idr_Prelude.Strings.words7_157.0 -> {25}
+    idr_Prelude.Strings.words7_val.0 -> {Cidr_Prelude.Strings.StrCons[{23}
+                                                                     ,{24}]
+                                        ,Cidr_Prelude.Strings.StrNil[]}
+    idr_Prelude.Strings.words7_val_139.0.0 -> {Cidr_Prelude.Basics.No[]}
+    idr_Prelude.Strings.words7_val_139.1.0 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Strings.words7_val_140.0 -> {Cidr_Prelude.Bool.False[]
+                                            ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Strings.words8.32.23.arity.1.0 -> {T_String}
+    idr_Prelude.Strings.words8_154.0.0 -> {23}
+    idr_Prelude.Strings.words9_156.0.0 -> {24}
+    idr_Prelude.Strings.words_cpat_LInt64_0 -> {T_Int64}
+    idr_Prelude.Strings.words_cpat_LInt64_0_145.0 -> {T_Int64}
+    "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" -> {T_Int64}
+    "idr_Prelude.Strings.{words'_3}1_val.0" -> {Cidr_Prelude.Bool.False[]
+                                               ,Cidr_Prelude.Bool.True[]}
+    "idr_Prelude.Strings.{words_2}3.0" -> {37}
+    "idr_Prelude.Strings.{words_2}4.0" -> {38}
+    idr__Prelude.Strings.unpack_with_361 -> {25,44}
+    idr__Prelude.Strings.unpack_with_361_val -> {Cidr_Prelude.Strings.StrCons[{23
+                                                                              ,42}
+                                                                             ,{24,43}]
+                                                ,Cidr_Prelude.Strings.StrNil[]}
+    idr__Prelude.Strings.unpack_with_362 -> {23,42}
+    idr__Prelude.Strings.unpack_with_363 -> {24,43}
+    idr__Prelude.Strings.unpack_with_363.40.22.arity.1 -> {T_String}
+    idr__Prelude.Strings.unpack_with_364_200 -> {45}
+    idr__Prelude.Strings.unpack_with_364_val -> {Cidr_Prelude.List.::[{23
+                                                                      ,42}
+                                                                     ,{45}]
+                                                ,Cidr_Prelude.List.Nil[]}
+    idr__Prelude.Strings.unpack_with_365.32.30.arity.1 -> {T_String}
+    idr__Prelude.Strings.unpack_with_365_194 -> {41}
+    idr__Prelude.Strings.unpack_with_365_199 -> {44}
+    idr__Prelude.Strings.unpack_with_365_val -> {Cidr_Prelude.Strings.StrCons[{42}
+                                                                             ,{43}]
+                                                ,Cidr_Prelude.Strings.StrNil[]}
+    idr__Prelude.Strings.unpack_with_365_val_188.0 -> {Cidr_Prelude.Basics.No[]}
+    idr__Prelude.Strings.unpack_with_365_val_188.1 -> {Cidr_Prelude.Basics.Yes[]}
+    idr__Prelude.Strings.unpack_with_365_val_189 -> {Cidr_Prelude.Bool.False[]
+                                                    ,Cidr_Prelude.Bool.True[]}
+    idr__Prelude.Strings.unpack_with_366_198.0 -> {42}
+    idr__Prelude.Strings.unpack_with_367.0 -> {43}
+    idr__Prelude.Strings.unpack_with_36_cpat_LInt64_0 -> {T_Int64}
+    idr_prim__zextInt_BigInt0.32.19.arity.1.0.0 -> {T_Int64}
+    "idr_{APPLY_0}0_val.0" -> {C"idr_{U_Prelude.Chars.isSpace_1}"[]}
+    "idr_{APPLY_0}0_val.1.0" -> {C"idr_{U_prim__floatToStr_1}"[]}
+    "idr_{APPLY_0}0_val.2" -> {C"idr_{U_Prelude.Strings.{words'_3}_1}"[]}
+    "idr_{APPLY_0}0_val.3" -> {C"idr_{U_Main.{average_0}_2}"[]
+                              ,C"idr_{U_prim__strCons_2}"[]}
+    "idr_{APPLY_0}0_val.4" -> {C"idr_{U_Main.{average_0}_1}"[{21
+                                                             ,23
+                                                             ,39
+                                                             ,42}]
+                              ,C"idr_{U_prim__strCons_1}"[{21,23,39,42}]}
+    "idr_{APPLY_0}0_val.5" -> {C"idr_{U_Main.{average_1}_1}"[]
+                              ,C"idr_{U_Prelude.Strings.{words_2}_1}"[]}
+    "idr_{APPLY_0}1.0.48.2.arity.1" -> {T_Int64}
+    "idr_{APPLY_0}2.4" -> {21,23,39,42}
+    "idr_{APPLY_0}2_175.4" -> {21,23,39,42}
+    idris_float_div2.0 -> {T_Float}
+    idris_float_str1_0.0.0 -> {T_Float}
+    idris_float_str2.0.0 -> {T_String}
+    idris_int_add0_1.0 -> {T_Int64}
+    idris_int_add0_1.1.0 -> {T_Int64}
+    idris_int_add1_1.0 -> {T_Int64}
+    idris_int_add1_1.1.0 -> {T_Int64}
+    idris_int_add2.0 -> {T_Int64}
+    idris_int_add2.1.0 -> {T_Int64}
+    idris_int_eq2.0 -> {T_Bool}
+    idris_int_eq2.1 -> {T_Bool}
+    idris_int_eq2.2.0 -> {T_Bool}
+    idris_int_eq2.3.0 -> {T_Bool}
+    idris_int_eq2.3.1 -> {T_Bool}
+    idris_int_eq2.4.0 -> {T_Bool}
+    idris_int_eq2.4.1 -> {T_Bool}
+    idris_int_eq2.5.0 -> {T_Bool}
+    idris_int_eq2.5.1 -> {T_Bool}
+    idris_int_eq2.6.0 -> {T_Bool}
+    idris_int_eq2.6.1 -> {T_Bool}
+    idris_int_eq2.7.0 -> {T_Bool}
+    idris_int_eq2.7.1 -> {T_Bool}
+    idris_int_eq2.8.0 -> {T_Bool}
+    idris_int_eq2.8.1 -> {T_Bool}
+    idris_int_eq2.9.0 -> {T_Bool}
+    idris_int_eq2.9.1 -> {T_Bool}
+    idris_int_float1_0.0 -> {T_Int64}
+    idris_int_float1_0.1 -> {T_Int64}
+    idris_int_float2.0 -> {T_Float}
+    idris_int_float2.1 -> {T_Float}
+    idris_int_lt2.0 -> {T_Bool}
+    idris_lz_ext3.0 -> {T_Int64}
+    idris_str_concat3.0 -> {T_String}
+    idris_str_concat3.1 -> {T_String}
+    idris_str_concat3.2 -> {T_String}
+    idris_str_concat3.3 -> {T_String}
+    idris_str_concat3.4 -> {T_String}
+    idris_str_cons1_0.0.0 -> {T_Int64}
+    idris_str_cons2_0.0.0 -> {T_String}
+    idris_str_cons3.0.0 -> {T_String}
+    idris_str_eq3.0 -> {T_Bool}
+    idris_str_eq3.1 -> {T_Bool}
+    idris_str_eq3.2.0 -> {T_Bool}
+    idris_str_eq3.3 -> {T_Bool}
+    idris_str_head2.0.0 -> {T_Int64}
+    idris_str_head2.1.0 -> {T_Int64}
+    idris_str_head2.2.0.0 -> {T_Int64}
+    idris_str_head2.3.0 -> {T_Int64}
+    idris_str_len2.0 -> {T_String}
+    idris_str_len3.0 -> {T_Int64}
+    idris_str_tail2.0.0 -> {T_String}
+    idris_str_tail2.1.0.0 -> {T_String}
+    idris_str_tail2.2.0.0 -> {T_String}
+    idris_str_tail2.3.0.0 -> {T_String}
+    idris_str_tail2.4.0 -> {T_String}
+    p.0    -> {CGrFloat[{T_Float}]}
+    p.10   -> {CGrInt[{T_Int64}]}
+    p.11   -> {CGrInt[{T_Int64}]}
+    p.14   -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    p.15   -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    p.16   -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    p.17   -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    p.18   -> {CGrInt[{T_Int64}]}
+    p.19   -> {CGrInt[{T_Int64}]
+              ,CGrString[{T_String}]
+              ,Cidr_Prelude.List.::[{21,23,42},{14,15,17}]
+              ,Cidr_Prelude.List.Nil[]}
+    p.20   -> {CGrString[{T_String}]}
+    p.5    -> {CGrInt[{T_Int64}]}
+    p.6    -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    p.7    -> {CGrString[{T_String}]}
+    p.8    -> {CGrInt[{T_Int64}]}
+    p.9    -> {CGrInt[{T_Int64}]}
+    unboxed.CGrInt.1.0 -> {T_Int64}
+    unboxed.CGrInt.9 -> {T_Int64}
+    unboxed.CGrString.5.0 -> {T_String}
+    unboxed.CGrString.6.0 -> {T_String}
+    v.113  -> {C"idr_{U_prim__floatToStr_1}"[]}
+    v.114  -> {CGrString[{T_String}]}
+    v.115  -> {C"idr_{U_Main.{average_0}_2}"[]}
+    v.116  -> {CGrInt[{T_Int64}]}
+    v.117  -> {C"idr_{U_Main.{average_1}_1}"[]}
+    v.118  -> {CGrInt[{T_Int64}]}
+    v.119  -> {CGrFloat[{T_Float}]}
+    v.120  -> {CGrString[{T_String}]}
+    v.121  -> {Cidr_Prelude.Show.Open[]}
+    v.122  -> {CGrInt[{T_Int64}]}
+    v.123  -> {CGrInt[{T_Int64}]}
+    v.124  -> {Cidr_Prelude.Interfaces.GT[]}
+    v.125  -> {Cidr_Prelude.Interfaces.LT[]}
+    v.126  -> {Cidr_Prelude.Interfaces.EQ[]}
+    v.127  -> {Cidr_Prelude.Bool.True[]}
+    v.128  -> {CGrInt[{T_Int64}]}
+    v.129  -> {Cidr_Prelude.Bool.False[]}
+    v.130  -> {Cidr_Prelude.Bool.True[]}
+    v.131  -> {Cidr_Prelude.Bool.False[]}
+    v.132  -> {CGrInt[{T_Int64}]}
+    v.133  -> {Cidr_Prelude.Bool.True[]}
+    v.134  -> {Cidr_Prelude.Bool.False[]}
+    v.135  -> {Cidr_Prelude.Bool.True[]}
+    v.136  -> {Cidr_Prelude.Basics.No[]}
+    v.137  -> {Cidr_Prelude.Basics.Yes[]}
+    v.138.0 -> {Cidr_Prelude.Bool.False[]}
+    v.139.0 -> {CGrInt[{T_Int64}]}
+    v.140.0 -> {Cidr_Prelude.Bool.False[]}
+    v.141  -> {CGrInt[{T_Int64}]}
+    v.142  -> {CGrInt[{T_Int64}]}
+    v.143  -> {CGrInt[{T_Int64}]}
+    v.144  -> {CGrInt[{T_Int64}]}
+    v.145  -> {CGrInt[{T_Int64}]}
+    v.146  -> {CGrInt[{T_Int64}]}
+    v.147  -> {CGrInt[{T_Int64}]}
+    v.148  -> {Cidr_Prelude.Bool.False[]}
+    v.149  -> {Cidr_Prelude.Bool.True[]}
+    v.150  -> {Cidr_Prelude.Bool.True[]}
+    v.151  -> {Cidr_Prelude.Bool.True[]}
+    v.152  -> {Cidr_Prelude.Bool.True[]}
+    v.153  -> {Cidr_Prelude.Bool.True[]}
+    v.154  -> {Cidr_Prelude.Bool.True[]}
+    v.155  -> {Cidr_Prelude.Bool.True[]}
+    v.156  -> {Cidr_Prelude.List.::[{21,23,42},{26,45}]}
+    v.157  -> {CGrInt[{T_Int64}]}
+    v.158  -> {CGrInt[{T_Int64}]}
+    v.159  -> {CGrInt[{T_Int64}]}
+    v.160  -> {CGrInt[{T_Int64}]}
+    v.161  -> {CGrInt[{T_Int64}]}
+    v.162  -> {CGrInt[{T_Int64}]}
+    v.163  -> {CGrInt[{T_Int64}]}
+    v.164  -> {CGrInt[{T_Int64}]}
+    v.165  -> {CGrInt[{T_Int64}]}
+    v.166  -> {Cidr_Prelude.Bool.False[]}
+    v.167  -> {Cidr_Prelude.Bool.True[]}
+    v.168  -> {Cidr_Prelude.Bool.True[]}
+    v.169  -> {Cidr_Prelude.Bool.True[]}
+    v.170  -> {Cidr_Prelude.Bool.True[]}
+    v.171  -> {Cidr_Prelude.Bool.True[]}
+    v.172  -> {Cidr_Prelude.Bool.True[]}
+    v.173  -> {Cidr_Prelude.Bool.True[]}
+    v.174  -> {Cidr_Prelude.Bool.True[]}
+    v.175  -> {Cidr_Prelude.Bool.False[]}
+    v.176.0 -> {Cidr_Prelude.List.Nil[]}
+    v.177.0 -> {Cidr_Prelude.List.::[{21,23,42},{26,45}]}
+    v.178.0 -> {Cidr_Builtins.MkPair[{15},{16}]}
+    v.179.0 -> {Cidr_Prelude.List.::[{21,23,42},{14,15,17}]}
+    v.180.0 -> {Cidr_Builtins.MkPair[{14},{16,18}]}
+    v.181  -> {Cidr_Prelude.List.Nil[]}
+    v.182  -> {Cidr_Builtins.MkPair[{17},{18}]}
+    v.183  -> {C"idr_{U_Prelude.Strings.{words_2}_1}"[]}
+    v.184  -> {CGrInt[{T_Int64}]}
+    v.185  -> {Cidr_Prelude.Bool.True[]}
+    v.186  -> {Cidr_Prelude.Bool.False[]}
+    v.187  -> {Cidr_Prelude.Bool.True[]}
+    v.188  -> {Cidr_Prelude.Basics.No[]}
+    v.189  -> {Cidr_Prelude.Basics.Yes[]}
+    v.190.0 -> {Cidr_Prelude.List.Nil[]}
+    v.191.0 -> {CGrInt[{T_Int64}]}
+    v.192.0 -> {CGrInt[{T_Int64}]}
+    v.193.0 -> {Cidr_Prelude.Bool.False[]}
+    v.194.0 -> {Cidr_Prelude.Basics.No[]}
+    v.195.0 -> {Cidr_Prelude.Basics.Yes[]}
+    v.196.0.0 -> {Cidr_Prelude.Strings.StrNil[]}
+    v.197.0.0 -> {CGrInt[{T_Int64}]}
+    v.198.0.0 -> {CGrString[{T_String}]}
+    v.199.0.0 -> {Cidr_Prelude.Strings.StrCons[{23},{24}]}
+    v.200.0 -> {Cidr_Prelude.List.::[{21},{26}]}
+    v.201  -> {C"idr_{U_Prelude.Chars.isSpace_1}"[]}
+    v.202  -> {Cidr_Prelude.List.Nil[]}
+    v.203  -> {C"idr_{U_Prelude.Strings.{words'_3}_1}"[]}
+    v.204  -> {Cidr_Prelude.List.::[{14,15,17},{33}]}
+    v.205  -> {C"idr_{U_Main.{average_0}_1}"[{21,23,39,42}]}
+    v.206  -> {C"idr_{U_prim__strCons_1}"[{21,23,39,42}]}
+    v.207  -> {CGrInt[{T_Int64}]}
+    v.208  -> {CGrString[{T_String}]}
+    v.209  -> {CGrInt[{T_Int64}]}
+    v.210  -> {CGrInt[{T_Int64}]}
+    v.211  -> {C"idr_{U_prim__strCons_2}"[]}
+    v.212  -> {CGrString[{T_String}]}
+    v.213  -> {Cidr_Prelude.List.::[{39},{40}]}
+    v.214  -> {CGrInt[{T_Int64}]}
+    v.215  -> {Cidr_Prelude.Bool.True[]}
+    v.216  -> {Cidr_Prelude.Bool.False[]}
+    v.217  -> {Cidr_Prelude.Bool.True[]}
+    v.218  -> {Cidr_Prelude.Basics.No[]}
+    v.219  -> {Cidr_Prelude.Basics.Yes[]}
+    v.220.0 -> {Cidr_Prelude.Strings.StrNil[]}
+    v.221.0 -> {CGrInt[{T_Int64}]}
+    v.222.0 -> {CGrString[{T_String}]}
+    v.223.0 -> {Cidr_Prelude.Strings.StrCons[{42},{43}]}
+    v.224  -> {Cidr_Prelude.List.::[{23,42},{45}]}
+    v.225  -> {Cidr_Prelude.List.Nil[]}
+Function
+    _prim_float_div :: {T_Float} -> {T_Float} -> {T_Float}
+    _prim_float_string :: {T_Float} -> {T_String}
+    _prim_int_add :: {T_Int64} -> {T_Int64} -> {T_Int64}
+    _prim_int_eq :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_float :: {T_Int64} -> {T_Float}
+    _prim_int_lt :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
+    _prim_string_cons :: {T_Int64} -> {T_String} -> {T_String}
+    _prim_string_eq :: {T_String} -> {T_String} -> {T_Bool}
+    _prim_string_head :: {T_String} -> {T_Int64}
+    _prim_string_len :: {T_String} -> {T_Int64}
+    _prim_string_print :: {T_String} -> {T_Unit}
+    _prim_string_tail :: {T_String} -> {T_String}
+    grinMain :: {T_Unit}
+    "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:0" :: {2
+                                                                                    ,37}
+                                                                                 -> {3,38}
+                                                                                 -> {6,14,15,17,39,40}
+                                                                                 -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:0" :: {4
+                                                                               ,19}
+                                                                            -> {5,28,33,40}
+                                                                            -> {Cidr_Prelude.List.::[{39},{40}],Cidr_Prelude.List.Nil[]}
+    idr_Prelude.List.dropWhile :: {16,18,26,27,45}
+                               -> {Cidr_Prelude.List.::[{21,23,42},{26,45}]
+                                  ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.List.length.unboxed :: {8,40} -> {T_Int64}
+    idr_Prelude.List.span :: {26,32,45}
+                          -> {Cidr_Builtins.MkPair[{14,15,17},{16,18}]}
+    idr_Prelude.Strings.words :: {T_String}
+                              -> {Cidr_Prelude.List.::[{39},{40}],Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Strings.words' :: {16,18,27}
+                               -> {Cidr_Prelude.List.::[{14,15,17},{33}]
+                                  ,Cidr_Prelude.List.Nil[]}
+    idr__Prelude.Strings.unpack_with_36 :: {25,44}
+                                        -> {Cidr_Prelude.List.::[{23,42},{45}]
+                                           ,Cidr_Prelude.List.Nil[]}

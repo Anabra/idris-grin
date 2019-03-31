@@ -1,0 +1,689 @@
+idris_int_eq idris_int_eq0 idris_int_eq1 =
+  (CGrInt idris_int_eq0_1) <- fetch idris_int_eq0
+  (CGrInt idris_int_eq1_1) <- fetch idris_int_eq1
+  idris_int_eq2 <- _prim_int_eq idris_int_eq0_1 idris_int_eq1_1
+  case idris_int_eq2 of
+    #False ->
+      pure (CGrInt 0) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_eq1_1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_eq0_1)
+
+idris_int_lt idris_int_lt0 idris_int_lt1 =
+  (CGrInt idris_int_lt0_1) <- fetch idris_int_lt0
+  (CGrInt idris_int_lt1_1) <- fetch idris_int_lt1
+  idris_int_lt2 <- _prim_int_lt idris_int_lt0_1 idris_int_lt1_1
+  case idris_int_lt2 of
+    #False ->
+      pure (CGrInt 0) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_lt1_1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_lt0_1)
+
+idris_int_sub idris_int_sub0 idris_int_sub1 =
+  (CGrInt idris_int_sub0_1) <- fetch idris_int_sub0
+  (CGrInt idris_int_sub1_1) <- fetch idris_int_sub1
+  idris_int_sub2 <- _prim_int_sub idris_int_sub0_1 idris_int_sub1_1
+  pure (CGrInt idris_int_sub2) -- LINT: Last return expressions can only return non-node values: pure (CGrInt idris_int_sub2) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_sub1_1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_sub0_1)
+
+idris_write_str idris_write_str1 idris_write_str2 =
+  (CGrString idris_write_str2_0) <- fetch idris_write_str2
+  _prim_string_print idris_write_str2_0
+  pure (CUnit) -- LINT: Last return expressions can only return non-node values: pure (CUnit) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_write_str2_0)
+
+idris_str_concat idris_str_concat1 idris_str_concat2 =
+  -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_concat1_0)
+  -- LINT: Invalid pattern match for (CGrString idris_str_concat1_0). Expected pattern of type: {CGrString[T_String]}, but got: {CGrString[T_String]
+  ,Cidr_Refl[]}
+  (CGrString idris_str_concat1_0) <- fetch idris_str_concat1
+  -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_concat2_0)
+  -- LINT: Invalid pattern match for (CGrString idris_str_concat2_0). Expected pattern of type: {CGrString[T_String]}, but got: {CGrString[T_String]
+  ,Cidr_Refl[]}
+  (CGrString idris_str_concat2_0) <- fetch idris_str_concat2
+  idris_str_concat3 <- _prim_string_concat idris_str_concat1_0 idris_str_concat2_0
+  pure (CGrString idris_str_concat3) -- LINT: Last return expressions can only return non-node values: pure (CGrString idris_str_concat3)
+
+idris_str_eq idris_str_eq1 idris_str_eq2 =
+  -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_eq1_0)
+  -- LINT: Invalid pattern match for (CGrString idris_str_eq1_0). Expected pattern of type: {CGrString[T_String]}, but got: {CGrString[T_String]
+  ,Cidr_Refl[]}
+  (CGrString idris_str_eq1_0) <- fetch idris_str_eq1
+  (CGrString idris_str_eq2_0) <- fetch idris_str_eq2
+  idris_str_eq3 <- _prim_string_eq idris_str_eq1_0 idris_str_eq2_0
+  case idris_str_eq3 of
+    #False ->
+      pure (CGrInt 0) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 0)
+    #True ->
+      pure (CGrInt 1) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 1) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_eq2_0)
+
+idris_str_head idris_str_head1 =
+  -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_head1_0)
+  -- LINT: Invalid pattern match for (CGrString idris_str_head1_0). Expected pattern of type: {CGrString[T_String]}, but got: {CGrString[T_String]
+  ,Cidr_Refl[]}
+  (CGrString idris_str_head1_0) <- fetch idris_str_head1
+  idris_str_head2 <- _prim_string_head idris_str_head1_0
+  pure (CGrInt idris_str_head2) -- LINT: Last return expressions can only return non-node values: pure (CGrInt idris_str_head2)
+
+idris_int_str idris_int_str1 =
+  -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_str1_0)
+  -- LINT: Invalid pattern match for (CGrInt idris_int_str1_0). Expected pattern of type: {CGrInt[T_Int64]}, but got: {CGrInt[T_Int64]
+  ,CGrString[T_String]
+  ,Cidr_Main.Same[]
+  ,Cidr_Prelude.Bool.False[]
+  ,Cidr_Prelude.Bool.True[]
+  ,Cidr_Refl[]}
+  (CGrInt idris_int_str1_0) <- fetch idris_int_str1
+  idris_int_str2 <- _prim_int_str idris_int_str1_0
+  pure (CGrString idris_int_str2) -- LINT: Last return expressions can only return non-node values: pure (CGrString idris_int_str2)
+
+grinMain =
+  r <- "idr_{runMain_0}"
+  pure ()
+
+idr_Main.checkEqNat idr_Main.checkEqNat0 idr_Main.checkEqNat1 =
+  idr_Main.checkEqNat1_val <- fetch idr_Main.checkEqNat1
+  case idr_Main.checkEqNat1_val of
+    (CGrInt idr_Main.checkEqNat_cpat_LInt64_0) ->
+      case idr_Main.checkEqNat_cpat_LInt64_0 of
+        0 ->
+          idr_Main.checkEqNat0_val <- fetch idr_Main.checkEqNat0
+          case idr_Main.checkEqNat0_val of
+            (CGrInt idr_Main.checkEqNat_cpat_LInt64_0_1) ->
+              case idr_Main.checkEqNat_cpat_LInt64_0_1 of
+                0 ->
+                  idr_Main.checkEqNat2_val <- pure (Cidr_Main.Same)
+                  idr_Main.checkEqNat2_2 <- store idr_Main.checkEqNat2_val
+                  pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat2_2) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat2_2)
+                #default ->
+                  idr_Main.checkEqNat2_val_4 <- pure (CGrInt 1)
+                  idr_Main.checkEqNat2_5 <- store idr_Main.checkEqNat2_val_4
+                  idr_Main.checkEqNat2_val_3 <- idris_int_sub idr_Main.checkEqNat0 idr_Main.checkEqNat2_5
+                  idr_Main.checkEqNat2_6 <- store idr_Main.checkEqNat2_val_3
+                  pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+            #default ->
+              idr_Main.checkEqNat2_val_8 <- pure (CGrInt 1)
+              idr_Main.checkEqNat2_9 <- store idr_Main.checkEqNat2_val_8
+              idr_Main.checkEqNat2_val_7 <- idris_int_sub idr_Main.checkEqNat0 idr_Main.checkEqNat2_9
+              idr_Main.checkEqNat2_10 <- store idr_Main.checkEqNat2_val_7
+              pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+        #default ->
+          idr_Main.checkEqNat2_val_12 <- pure (CGrInt 1)
+          idr_Main.checkEqNat2_13 <- store idr_Main.checkEqNat2_val_12
+          idr_Main.checkEqNat2_val_11 <- idris_int_sub idr_Main.checkEqNat1 idr_Main.checkEqNat2_13
+          idr_Main.checkEqNat2_14 <- store idr_Main.checkEqNat2_val_11
+          idr_Main.checkEqNat0_val_15 <- fetch idr_Main.checkEqNat0
+          case idr_Main.checkEqNat0_val_15 of
+            (CGrInt idr_Main.checkEqNat_cpat_LInt64_0_16) ->
+              case idr_Main.checkEqNat_cpat_LInt64_0_16 of
+                0 ->
+                  pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+                #default ->
+                  idr_Main.checkEqNat3_val_17 <- pure (CGrInt 1)
+                  idr_Main.checkEqNat3 <- store idr_Main.checkEqNat3_val_17
+                  idr_Main.checkEqNat3_val <- idris_int_sub idr_Main.checkEqNat0 idr_Main.checkEqNat3
+                  idr_Main.checkEqNat3_18 <- store idr_Main.checkEqNat3_val
+                  idr_Main.checkEqNat4_val <- idr_Main.checkEqNat idr_Main.checkEqNat3_18 idr_Main.checkEqNat2_14
+                  idr_Main.checkEqNat4 <- store idr_Main.checkEqNat4_val
+                  idr_Main.checkEqNat4_val_19 <- fetch idr_Main.checkEqNat4
+                  case idr_Main.checkEqNat4_val_19 of
+                    (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat5) ->
+                      idr_Main.checkEqNat6_val <- pure (Cidr_Main.Same)
+                      idr_Main.checkEqNat6 <- store idr_Main.checkEqNat6_val
+                      pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6)
+                    (Cidr_Prelude.Maybe.Nothing) ->
+                      pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+            #default ->
+              idr_Main.checkEqNat3_val_21 <- pure (CGrInt 1)
+              idr_Main.checkEqNat3_22 <- store idr_Main.checkEqNat3_val_21
+              idr_Main.checkEqNat3_val_20 <- idris_int_sub idr_Main.checkEqNat0 idr_Main.checkEqNat3_22
+              idr_Main.checkEqNat3_23 <- store idr_Main.checkEqNat3_val_20
+              idr_Main.checkEqNat4_val_24 <- idr_Main.checkEqNat idr_Main.checkEqNat3_23 idr_Main.checkEqNat2_14
+              idr_Main.checkEqNat4_25 <- store idr_Main.checkEqNat4_val_24
+              idr_Main.checkEqNat4_val_26 <- fetch idr_Main.checkEqNat4_25
+              case idr_Main.checkEqNat4_val_26 of
+                (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat5_27) ->
+                  idr_Main.checkEqNat6_val_28 <- pure (Cidr_Main.Same)
+                  idr_Main.checkEqNat6_29 <- store idr_Main.checkEqNat6_val_28
+                  pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6_29) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6_29)
+                (Cidr_Prelude.Maybe.Nothing) ->
+                  pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+    #default ->
+      idr_Main.checkEqNat2_val_31 <- pure (CGrInt 1)
+      idr_Main.checkEqNat2_32 <- store idr_Main.checkEqNat2_val_31
+      idr_Main.checkEqNat2_val_30 <- idris_int_sub idr_Main.checkEqNat1 idr_Main.checkEqNat2_32
+      idr_Main.checkEqNat2_33 <- store idr_Main.checkEqNat2_val_30
+      idr_Main.checkEqNat0_val_34 <- fetch idr_Main.checkEqNat0
+      case idr_Main.checkEqNat0_val_34 of
+        (CGrInt idr_Main.checkEqNat_cpat_LInt64_0_35) ->
+          case idr_Main.checkEqNat_cpat_LInt64_0_35 of
+            0 ->
+              pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+            #default ->
+              idr_Main.checkEqNat3_val_37 <- pure (CGrInt 1)
+              idr_Main.checkEqNat3_38 <- store idr_Main.checkEqNat3_val_37
+              idr_Main.checkEqNat3_val_36 <- idris_int_sub idr_Main.checkEqNat0 idr_Main.checkEqNat3_38
+              idr_Main.checkEqNat3_39 <- store idr_Main.checkEqNat3_val_36
+              idr_Main.checkEqNat4_val_40 <- idr_Main.checkEqNat idr_Main.checkEqNat3_39 idr_Main.checkEqNat2_33
+              idr_Main.checkEqNat4_41 <- store idr_Main.checkEqNat4_val_40
+              idr_Main.checkEqNat4_val_42 <- fetch idr_Main.checkEqNat4_41
+              case idr_Main.checkEqNat4_val_42 of
+                (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat5_43) ->
+                  idr_Main.checkEqNat6_val_44 <- pure (Cidr_Main.Same)
+                  idr_Main.checkEqNat6_45 <- store idr_Main.checkEqNat6_val_44
+                  pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6_45) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6_45)
+                (Cidr_Prelude.Maybe.Nothing) ->
+                  pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+        #default ->
+          idr_Main.checkEqNat3_val_47 <- pure (CGrInt 1)
+          idr_Main.checkEqNat3_48 <- store idr_Main.checkEqNat3_val_47
+          idr_Main.checkEqNat3_val_46 <- idris_int_sub idr_Main.checkEqNat0 idr_Main.checkEqNat3_48
+          idr_Main.checkEqNat3_49 <- store idr_Main.checkEqNat3_val_46
+          idr_Main.checkEqNat4_val_50 <- idr_Main.checkEqNat idr_Main.checkEqNat3_49 idr_Main.checkEqNat2_33
+          idr_Main.checkEqNat4_51 <- store idr_Main.checkEqNat4_val_50
+          idr_Main.checkEqNat4_val_52 <- fetch idr_Main.checkEqNat4_51
+          case idr_Main.checkEqNat4_val_52 of
+            (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat5_53) ->
+              idr_Main.checkEqNat6_val_54 <- pure (Cidr_Main.Same)
+              idr_Main.checkEqNat6_55 <- store idr_Main.checkEqNat6_val_54
+              pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6_55) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat6_55)
+            (Cidr_Prelude.Maybe.Nothing) ->
+              pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+
+idr_Main.checkEqNat2 idr_Main.checkEqNat20 idr_Main.checkEqNat21 =
+  idr_Main.checkEqNat21_val <- fetch idr_Main.checkEqNat21
+  case idr_Main.checkEqNat21_val of
+    (CGrInt idr_Main.checkEqNat2_cpat_LInt64_0) ->
+      case idr_Main.checkEqNat2_cpat_LInt64_0 of
+        0 ->
+          idr_Main.checkEqNat20_val <- fetch idr_Main.checkEqNat20
+          case idr_Main.checkEqNat20_val of
+            (CGrInt idr_Main.checkEqNat2_cpat_LInt64_0_56) ->
+              case idr_Main.checkEqNat2_cpat_LInt64_0_56 of
+                0 ->
+                  idr_Main.checkEqNat22_val <- pure (Cidr_Refl)
+                  idr_Main.checkEqNat22 <- store idr_Main.checkEqNat22_val
+                  pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat22) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.checkEqNat22)
+                #default ->
+                  idr_Main.checkEqNat22_val_58 <- pure (CGrInt 1)
+                  idr_Main.checkEqNat22_59 <- store idr_Main.checkEqNat22_val_58
+                  idr_Main.checkEqNat22_val_57 <- idris_int_sub idr_Main.checkEqNat20 idr_Main.checkEqNat22_59
+                  idr_Main.checkEqNat22_60 <- store idr_Main.checkEqNat22_val_57
+                  pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+            #default ->
+              idr_Main.checkEqNat22_val_62 <- pure (CGrInt 1)
+              idr_Main.checkEqNat22_63 <- store idr_Main.checkEqNat22_val_62
+              idr_Main.checkEqNat22_val_61 <- idris_int_sub idr_Main.checkEqNat20 idr_Main.checkEqNat22_63
+              idr_Main.checkEqNat22_64 <- store idr_Main.checkEqNat22_val_61
+              pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+        #default ->
+          idr_Main.checkEqNat22_val_66 <- pure (CGrInt 1)
+          idr_Main.checkEqNat22_67 <- store idr_Main.checkEqNat22_val_66
+          idr_Main.checkEqNat22_val_65 <- idris_int_sub idr_Main.checkEqNat21 idr_Main.checkEqNat22_67
+          idr_Main.checkEqNat22_68 <- store idr_Main.checkEqNat22_val_65
+          idr_Main.checkEqNat20_val_69 <- fetch idr_Main.checkEqNat20
+          case idr_Main.checkEqNat20_val_69 of
+            (CGrInt idr_Main.checkEqNat2_cpat_LInt64_0_70) ->
+              case idr_Main.checkEqNat2_cpat_LInt64_0_70 of
+                0 ->
+                  pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+                #default ->
+                  idr_Main.checkEqNat23_val_71 <- pure (CGrInt 1)
+                  idr_Main.checkEqNat23 <- store idr_Main.checkEqNat23_val_71
+                  idr_Main.checkEqNat23_val <- idris_int_sub idr_Main.checkEqNat20 idr_Main.checkEqNat23
+                  idr_Main.checkEqNat23_72 <- store idr_Main.checkEqNat23_val
+                  idr_Main.checkEqNat24_val <- pure (CErased)
+                  idr_Main.checkEqNat24 <- store idr_Main.checkEqNat24_val
+                  idr_Main.checkEqNat25_val <- pure (CErased)
+                  idr_Main.checkEqNat25 <- store idr_Main.checkEqNat25_val
+                  idr_Main.checkEqNat26_val <- pure (C"idr_{U_Main.{checkEqNat2_0}_1}")
+                  idr_Main.checkEqNat26 <- store idr_Main.checkEqNat26_val
+                  idr_Main.checkEqNat27_val <- idr_Main.checkEqNat2 idr_Main.checkEqNat23_72 idr_Main.checkEqNat22_68
+                  idr_Main.checkEqNat27 <- store idr_Main.checkEqNat27_val
+                  "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:0" idr_Main.checkEqNat24 idr_Main.checkEqNat25 idr_Main.checkEqNat26 idr_Main.checkEqNat27
+            #default ->
+              idr_Main.checkEqNat23_val_74 <- pure (CGrInt 1)
+              idr_Main.checkEqNat23_75 <- store idr_Main.checkEqNat23_val_74
+              idr_Main.checkEqNat23_val_73 <- idris_int_sub idr_Main.checkEqNat20 idr_Main.checkEqNat23_75
+              idr_Main.checkEqNat23_76 <- store idr_Main.checkEqNat23_val_73
+              idr_Main.checkEqNat24_val_77 <- pure (CErased)
+              idr_Main.checkEqNat24_78 <- store idr_Main.checkEqNat24_val_77
+              idr_Main.checkEqNat25_val_79 <- pure (CErased)
+              idr_Main.checkEqNat25_80 <- store idr_Main.checkEqNat25_val_79
+              idr_Main.checkEqNat26_val_81 <- pure (C"idr_{U_Main.{checkEqNat2_0}_1}")
+              idr_Main.checkEqNat26_82 <- store idr_Main.checkEqNat26_val_81
+              idr_Main.checkEqNat27_val_83 <- idr_Main.checkEqNat2 idr_Main.checkEqNat23_76 idr_Main.checkEqNat22_68
+              idr_Main.checkEqNat27_84 <- store idr_Main.checkEqNat27_val_83
+              "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:0" idr_Main.checkEqNat24_78 idr_Main.checkEqNat25_80 idr_Main.checkEqNat26_82 idr_Main.checkEqNat27_84
+    #default ->
+      idr_Main.checkEqNat22_val_86 <- pure (CGrInt 1)
+      idr_Main.checkEqNat22_87 <- store idr_Main.checkEqNat22_val_86
+      idr_Main.checkEqNat22_val_85 <- idris_int_sub idr_Main.checkEqNat21 idr_Main.checkEqNat22_87
+      idr_Main.checkEqNat22_88 <- store idr_Main.checkEqNat22_val_85
+      idr_Main.checkEqNat20_val_89 <- fetch idr_Main.checkEqNat20
+      case idr_Main.checkEqNat20_val_89 of
+        (CGrInt idr_Main.checkEqNat2_cpat_LInt64_0_90) ->
+          case idr_Main.checkEqNat2_cpat_LInt64_0_90 of
+            0 ->
+              pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+            #default ->
+              idr_Main.checkEqNat23_val_92 <- pure (CGrInt 1)
+              idr_Main.checkEqNat23_93 <- store idr_Main.checkEqNat23_val_92
+              idr_Main.checkEqNat23_val_91 <- idris_int_sub idr_Main.checkEqNat20 idr_Main.checkEqNat23_93
+              idr_Main.checkEqNat23_94 <- store idr_Main.checkEqNat23_val_91
+              idr_Main.checkEqNat24_val_95 <- pure (CErased)
+              idr_Main.checkEqNat24_96 <- store idr_Main.checkEqNat24_val_95
+              idr_Main.checkEqNat25_val_97 <- pure (CErased)
+              idr_Main.checkEqNat25_98 <- store idr_Main.checkEqNat25_val_97
+              idr_Main.checkEqNat26_val_99 <- pure (C"idr_{U_Main.{checkEqNat2_0}_1}")
+              idr_Main.checkEqNat26_100 <- store idr_Main.checkEqNat26_val_99
+              idr_Main.checkEqNat27_val_101 <- idr_Main.checkEqNat2 idr_Main.checkEqNat23_94 idr_Main.checkEqNat22_88
+              idr_Main.checkEqNat27_102 <- store idr_Main.checkEqNat27_val_101
+              "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:0" idr_Main.checkEqNat24_96 idr_Main.checkEqNat25_98 idr_Main.checkEqNat26_100 idr_Main.checkEqNat27_102
+        #default ->
+          idr_Main.checkEqNat23_val_104 <- pure (CGrInt 1)
+          idr_Main.checkEqNat23_105 <- store idr_Main.checkEqNat23_val_104
+          idr_Main.checkEqNat23_val_103 <- idris_int_sub idr_Main.checkEqNat20 idr_Main.checkEqNat23_105
+          idr_Main.checkEqNat23_106 <- store idr_Main.checkEqNat23_val_103
+          idr_Main.checkEqNat24_val_107 <- pure (CErased)
+          idr_Main.checkEqNat24_108 <- store idr_Main.checkEqNat24_val_107
+          idr_Main.checkEqNat25_val_109 <- pure (CErased)
+          idr_Main.checkEqNat25_110 <- store idr_Main.checkEqNat25_val_109
+          idr_Main.checkEqNat26_val_111 <- pure (C"idr_{U_Main.{checkEqNat2_0}_1}")
+          idr_Main.checkEqNat26_112 <- store idr_Main.checkEqNat26_val_111
+          idr_Main.checkEqNat27_val_113 <- idr_Main.checkEqNat2 idr_Main.checkEqNat23_106 idr_Main.checkEqNat22_88
+          idr_Main.checkEqNat27_114 <- store idr_Main.checkEqNat27_val_113
+          "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:0" idr_Main.checkEqNat24_108 idr_Main.checkEqNat25_110 idr_Main.checkEqNat26_112 idr_Main.checkEqNat27_114
+
+idr_Main.exactLength idr_Main.exactLength0 idr_Main.exactLength1 idr_Main.exactLength2 idr_Main.exactLength3 =
+  idr_Main.exactLength4_val <- idr_Main.checkEqNat idr_Main.exactLength1 idr_Main.exactLength2
+  idr_Main.exactLength4 <- store idr_Main.exactLength4_val
+  idr_Main.exactLength4_val_115 <- fetch idr_Main.exactLength4
+  case idr_Main.exactLength4_val_115 of
+    (Cidr_Prelude.Maybe.Just idr_Main.exactLength5) ->
+      pure (Cidr_Prelude.Maybe.Just idr_Main.exactLength3) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just idr_Main.exactLength3)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Maybe.Nothing) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Nothing)
+
+idr_Main.main idr_Main.main0 =
+  idr_Main.main1_val_118 <- pure (CErased)
+  idr_Main.main1 <- store idr_Main.main1_val_118
+  idr_Main.main2_val <- pure (CErased)
+  idr_Main.main2 <- store idr_Main.main2_val
+  idr_Main.main3_val <- pure (C"idr_{U_Main.{main_1}_1}")
+  idr_Main.main3 <- store idr_Main.main3_val
+  idr_Main.main4_val <- pure (Cidr_Main.Same)
+  idr_Main.main4 <- store idr_Main.main4_val
+  idr_Main.main1_val <- idr_Prelude.Interactive.printLn' idr_Main.main1 idr_Main.main2 idr_Main.main3 idr_Main.main4 idr_Main.main0
+  idr_Main.main1_119 <- store idr_Main.main1_val
+  idr_Main.main2_val_121 <- pure (CErased)
+  idr_Main.main2_122 <- store idr_Main.main2_val_121
+  idr_Main.main3_val_123 <- pure (CErased)
+  idr_Main.main3_124 <- store idr_Main.main3_val_123
+  idr_Main.main4_val_125 <- pure (C"idr_{U_Main.{main_2}_1}")
+  idr_Main.main4_126 <- store idr_Main.main4_val_125
+  idr_Main.main5_val <- pure (Cidr_Main.Same)
+  idr_Main.main5 <- store idr_Main.main5_val
+  idr_Main.main2_val_120 <- idr_Prelude.Interactive.printLn' idr_Main.main2_122 idr_Main.main3_124 idr_Main.main4_126 idr_Main.main5 idr_Main.main0
+  idr_Main.main2_127 <- store idr_Main.main2_val_120
+  idr_Main.main3_val_129 <- pure (CErased)
+  idr_Main.main3_130 <- store idr_Main.main3_val_129
+  idr_Main.main4_val_131 <- pure (CErased)
+  idr_Main.main4_132 <- store idr_Main.main4_val_131
+  idr_Main.main5_val_133 <- pure (C"idr_{U_Main.{main_3}_1}")
+  idr_Main.main5_134 <- store idr_Main.main5_val_133
+  idr_Main.main6_val <- pure (Cidr_Main.Same)
+  idr_Main.main6 <- store idr_Main.main6_val
+  idr_Main.main3_val_128 <- idr_Prelude.Interactive.printLn' idr_Main.main3_130 idr_Main.main4_132 idr_Main.main5_134 idr_Main.main6 idr_Main.main0
+  idr_Main.main3_135 <- store idr_Main.main3_val_128
+  idr_Main.main4_val_137 <- pure (CErased)
+  idr_Main.main4_138 <- store idr_Main.main4_val_137
+  idr_Main.main5_val_139 <- pure (CErased)
+  idr_Main.main5_140 <- store idr_Main.main5_val_139
+  idr_Main.main6_val_141 <- pure (C"idr_{U_Main.{main_1}_1}")
+  idr_Main.main6_142 <- store idr_Main.main6_val_141
+  idr_Main.main7_val <- pure (Cidr_Main.Same)
+  idr_Main.main7 <- store idr_Main.main7_val
+  idr_Main.main4_val_136 <- idr_Prelude.Interactive.printLn' idr_Main.main4_138 idr_Main.main5_140 idr_Main.main6_142 idr_Main.main7 idr_Main.main0
+  idr_Main.main4_143 <- store idr_Main.main4_val_136
+  idr_Main.main5_val_145 <- pure (CErased)
+  idr_Main.main5_146 <- store idr_Main.main5_val_145
+  idr_Main.main6_val_147 <- pure (CErased)
+  idr_Main.main6_148 <- store idr_Main.main6_val_147
+  idr_Main.main7_val_149 <- pure (C"idr_{U_Main.{main_5}_1}")
+  idr_Main.main7_150 <- store idr_Main.main7_val_149
+  idr_Main.main8_val_152 <- pure (CErased)
+  idr_Main.main8 <- store idr_Main.main8_val_152
+  idr_Main.main9_val <- pure (CGrInt 2)
+  idr_Main.main9 <- store idr_Main.main9_val
+  idr_Main.main10_val <- pure (CGrInt 2)
+  idr_Main.main10 <- store idr_Main.main10_val
+  idr_Main.main11_val <- pure (Cidr_Main.::)
+  idr_Main.main11 <- store idr_Main.main11_val
+  idr_Main.main8_val_151 <- idr_Main.exactLength idr_Main.main8 idr_Main.main9 idr_Main.main10 idr_Main.main11
+  idr_Main.main8_153 <- store idr_Main.main8_val_151
+  idr_Main.main8_val_154 <- fetch idr_Main.main8_153
+  idr_Main.main8_val <- case idr_Main.main8_val_154 of
+    (Cidr_Prelude.Maybe.Just idr_Main.main9_155) ->
+      pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+  idr_Main.main8_156 <- store idr_Main.main8_val
+  idr_Main.main5_val_144 <- idr_Prelude.Interactive.printLn' idr_Main.main5_146 idr_Main.main6_148 idr_Main.main7_150 idr_Main.main8_156 idr_Main.main0
+  idr_Main.main5_157 <- store idr_Main.main5_val_144
+  idr_Main.main6_val_159 <- pure (CErased)
+  idr_Main.main6_160 <- store idr_Main.main6_val_159
+  idr_Main.main7_val_161 <- pure (CErased)
+  idr_Main.main7_162 <- store idr_Main.main7_val_161
+  idr_Main.main8_val_163 <- pure (C"idr_{U_Main.{main_5}_1}")
+  idr_Main.main8_164 <- store idr_Main.main8_val_163
+  idr_Main.main9_val_167 <- pure (CGrInt 10)
+  idr_Main.main9_168 <- store idr_Main.main9_val_167
+  idr_Main.main10_val_169 <- pure (CGrInt 10)
+  idr_Main.main10_170 <- store idr_Main.main10_val_169
+  idr_Main.main9_val_166 <- idr_Main.checkEqNat2 idr_Main.main9_168 idr_Main.main10_170
+  idr_Main.main9_171 <- store idr_Main.main9_val_166
+  idr_Main.main9_val_172 <- fetch idr_Main.main9_171
+  idr_Main.main9_val_165 <- case idr_Main.main9_val_172 of
+    (Cidr_Prelude.Maybe.Just idr_Main.main10_173) ->
+      pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+  idr_Main.main9_174 <- store idr_Main.main9_val_165
+  idr_Main.main6_val_158 <- idr_Prelude.Interactive.printLn' idr_Main.main6_160 idr_Main.main7_162 idr_Main.main8_164 idr_Main.main9_174 idr_Main.main0
+  idr_Main.main6_175 <- store idr_Main.main6_val_158
+  idr_Main.main7_val_176 <- pure (CErased)
+  idr_Main.main7_177 <- store idr_Main.main7_val_176
+  idr_Main.main8_val_178 <- pure (CErased)
+  idr_Main.main8_179 <- store idr_Main.main8_val_178
+  idr_Main.main9_val_180 <- pure (C"idr_{U_Main.{main_5}_1}")
+  idr_Main.main9_181 <- store idr_Main.main9_val_180
+  idr_Main.main10_val_184 <- pure (CGrInt 10)
+  idr_Main.main10_185 <- store idr_Main.main10_val_184
+  idr_Main.main11_val_186 <- pure (CGrInt 9)
+  idr_Main.main11_187 <- store idr_Main.main11_val_186
+  idr_Main.main10_val_183 <- idr_Main.checkEqNat2 idr_Main.main10_185 idr_Main.main11_187
+  idr_Main.main10_188 <- store idr_Main.main10_val_183
+  idr_Main.main10_val_189 <- fetch idr_Main.main10_188
+  idr_Main.main10_val_182 <- case idr_Main.main10_val_189 of
+    (Cidr_Prelude.Maybe.Just idr_Main.main11_190) ->
+      pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+  idr_Main.main10_191 <- store idr_Main.main10_val_182
+  idr_Prelude.Interactive.printLn' idr_Main.main7_177 idr_Main.main8_179 idr_Main.main9_181 idr_Main.main10_191 idr_Main.main0
+
+idr_Prelude.Show.primNumShow idr_Prelude.Show.primNumShow0 idr_Prelude.Show.primNumShow1 idr_Prelude.Show.primNumShow2 idr_Prelude.Show.primNumShow3 =
+  idr_Prelude.Show.primNumShow4_val <- "idr_{APPLY_0}" idr_Prelude.Show.primNumShow1 idr_Prelude.Show.primNumShow3
+  idr_Prelude.Show.primNumShow4 <- store idr_Prelude.Show.primNumShow4_val
+  idr_Prelude.Show.primNumShow2_val <- fetch idr_Prelude.Show.primNumShow2
+  idr_Prelude.Show.primNumShow5_val_194 <- case idr_Prelude.Show.primNumShow2_val of
+    (Cidr_Prelude.Show.App) ->
+      pure (CGrInt 6) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 6)
+    (Cidr_Prelude.Show.Backtick) ->
+      pure (CGrInt 3) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 3)
+    (Cidr_Prelude.Show.Dollar) ->
+      pure (CGrInt 2) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 2)
+    (Cidr_Prelude.Show.Eq) ->
+      pure (CGrInt 1) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 1)
+    (Cidr_Prelude.Show.Open) ->
+      pure (CGrInt 0) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 0)
+    (Cidr_Prelude.Show.PrefixMinus) ->
+      pure (CGrInt 5) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 5)
+    (Cidr_Prelude.Show.User) ->
+      pure (CGrInt 4) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 4)
+  idr_Prelude.Show.primNumShow5 <- store idr_Prelude.Show.primNumShow5_val_194
+  idr_Prelude.Show.primNumShow6_val <- pure (CGrInt 5)
+  idr_Prelude.Show.primNumShow6 <- store idr_Prelude.Show.primNumShow6_val
+  idr_Prelude.Show.primNumShow5_val_193 <- "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0" idr_Prelude.Show.primNumShow5 idr_Prelude.Show.primNumShow6
+  idr_Prelude.Show.primNumShow5_195 <- store idr_Prelude.Show.primNumShow5_val_193
+  idr_Prelude.Show.primNumShow5_val_196 <- fetch idr_Prelude.Show.primNumShow5_195
+  idr_Prelude.Show.primNumShow5_val_192 <- case idr_Prelude.Show.primNumShow5_val_196 of
+    (Cidr_Prelude.Interfaces.GT) ->
+      pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+    #default ->
+      idr_Prelude.Show.primNumShow2_val_199 <- fetch idr_Prelude.Show.primNumShow2
+      idr_Prelude.Show.primNumShow6_val_198 <- case idr_Prelude.Show.primNumShow2_val_199 of
+        (Cidr_Prelude.Show.App) ->
+          pure (CGrInt 6) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 6)
+        (Cidr_Prelude.Show.Backtick) ->
+          pure (CGrInt 3) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 3)
+        (Cidr_Prelude.Show.Dollar) ->
+          pure (CGrInt 2) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 2)
+        (Cidr_Prelude.Show.Eq) ->
+          pure (CGrInt 1) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 1)
+        (Cidr_Prelude.Show.Open) ->
+          pure (CGrInt 0) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 0)
+        (Cidr_Prelude.Show.PrefixMinus) ->
+          pure (CGrInt 5) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 5)
+        (Cidr_Prelude.Show.User) ->
+          pure (CGrInt 4) -- LINT: Last return expressions can only return non-node values: pure (CGrInt 4)
+      idr_Prelude.Show.primNumShow6_200 <- store idr_Prelude.Show.primNumShow6_val_198
+      idr_Prelude.Show.primNumShow7_val <- pure (CGrInt 5)
+      idr_Prelude.Show.primNumShow7 <- store idr_Prelude.Show.primNumShow7_val
+      idr_Prelude.Show.primNumShow6_val_197 <- idris_int_eq idr_Prelude.Show.primNumShow6_200 idr_Prelude.Show.primNumShow7
+      idr_Prelude.Show.primNumShow6_201 <- store idr_Prelude.Show.primNumShow6_val_197
+      idr_Prelude.Show.primNumShow6_val_202 <- fetch idr_Prelude.Show.primNumShow6_201
+      case idr_Prelude.Show.primNumShow6_val_202 of
+        (CGrInt idr_Prelude.Show.primNumShow_cpat_LInt64_0) ->
+          case idr_Prelude.Show.primNumShow_cpat_LInt64_0 of
+            0 ->
+              pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+            #default ->
+              pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+        #default ->
+          pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+  idr_Prelude.Show.primNumShow5_203 <- store idr_Prelude.Show.primNumShow5_val_192
+  idr_Prelude.Show.primNumShow5_val_204 <- fetch idr_Prelude.Show.primNumShow5_203
+  idr_Prelude.Show.primNumShow5_val <- case idr_Prelude.Show.primNumShow5_val_204 of
+    (Cidr_Prelude.Bool.False) ->
+      pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+    (Cidr_Prelude.Bool.True) ->
+      idr_Prelude.Show.primNumShow6_val_208 <- pure (CGrString #"")
+      idr_Prelude.Show.primNumShow6_209 <- store idr_Prelude.Show.primNumShow6_val_208
+      idr_Prelude.Show.primNumShow6_val_207 <- idris_str_eq idr_Prelude.Show.primNumShow4 idr_Prelude.Show.primNumShow6_209
+      idr_Prelude.Show.primNumShow6_210 <- store idr_Prelude.Show.primNumShow6_val_207
+      idr_Prelude.Show.primNumShow6_val_211 <- fetch idr_Prelude.Show.primNumShow6_210
+      idr_Prelude.Show.primNumShow6_val_206 <- case idr_Prelude.Show.primNumShow6_val_211 of
+        (CGrInt idr_Prelude.Show.primNumShow_cpat_LInt64_0_212) ->
+          case idr_Prelude.Show.primNumShow_cpat_LInt64_0_212 of
+            0 ->
+              pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+            #default ->
+              pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+        #default ->
+          pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+      idr_Prelude.Show.primNumShow6_213 <- store idr_Prelude.Show.primNumShow6_val_206
+      idr_Prelude.Show.primNumShow7_val_214 <- pure (Cidr_Prelude.Bool.True)
+      idr_Prelude.Show.primNumShow7_215 <- store idr_Prelude.Show.primNumShow7_val_214
+      idr_Prelude.Show.primNumShow6_val_205 <- "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:0" idr_Prelude.Show.primNumShow6_213 idr_Prelude.Show.primNumShow7_215
+      idr_Prelude.Show.primNumShow6_216 <- store idr_Prelude.Show.primNumShow6_val_205
+      idr_Prelude.Show.primNumShow6_val_217 <- fetch idr_Prelude.Show.primNumShow6_216
+      case idr_Prelude.Show.primNumShow6_val_217 of
+        (Cidr_Prelude.Basics.No) ->
+          pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+        (Cidr_Prelude.Basics.Yes) ->
+          idr_Prelude.Show.primNumShow7_val_219 <- idris_str_head idr_Prelude.Show.primNumShow4
+          idr_Prelude.Show.primNumShow7_220 <- store idr_Prelude.Show.primNumShow7_val_219
+          idr_Prelude.Show.primNumShow8_val <- pure (CGrInt 45)
+          idr_Prelude.Show.primNumShow8 <- store idr_Prelude.Show.primNumShow8_val
+          idr_Prelude.Show.primNumShow7_val_218 <- idris_int_eq idr_Prelude.Show.primNumShow7_220 idr_Prelude.Show.primNumShow8
+          idr_Prelude.Show.primNumShow7_221 <- store idr_Prelude.Show.primNumShow7_val_218
+          idr_Prelude.Show.primNumShow7_val_222 <- fetch idr_Prelude.Show.primNumShow7_221
+          case idr_Prelude.Show.primNumShow7_val_222 of
+            (CGrInt idr_Prelude.Show.primNumShow_cpat_LInt64_0_223) ->
+              case idr_Prelude.Show.primNumShow_cpat_LInt64_0_223 of
+                0 ->
+                  pure (Cidr_Prelude.Bool.False) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.False)
+                #default ->
+                  pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+            #default ->
+              pure (Cidr_Prelude.Bool.True) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Bool.True)
+  idr_Prelude.Show.primNumShow5_224 <- store idr_Prelude.Show.primNumShow5_val
+  idr_Prelude.Show.primNumShow5_val_225 <- fetch idr_Prelude.Show.primNumShow5_224
+  case idr_Prelude.Show.primNumShow5_val_225 of
+    (Cidr_Prelude.Bool.False) ->
+      fetch idr_Prelude.Show.primNumShow4
+    (Cidr_Prelude.Bool.True) ->
+      idr_Prelude.Show.primNumShow6_val_226 <- pure (CGrString #"(")
+      idr_Prelude.Show.primNumShow6_227 <- store idr_Prelude.Show.primNumShow6_val_226
+      idr_Prelude.Show.primNumShow7_val_229 <- pure (CGrString #")")
+      idr_Prelude.Show.primNumShow7_230 <- store idr_Prelude.Show.primNumShow7_val_229
+      idr_Prelude.Show.primNumShow7_val_228 <- idris_str_concat idr_Prelude.Show.primNumShow4 idr_Prelude.Show.primNumShow7_230
+      idr_Prelude.Show.primNumShow7_231 <- store idr_Prelude.Show.primNumShow7_val_228
+      idris_str_concat idr_Prelude.Show.primNumShow6_227 idr_Prelude.Show.primNumShow7_231
+
+idr_prim__toStrBigInt idr_prim__toStrBigInt0 =
+  idris_int_str idr_prim__toStrBigInt0
+
+idr_Prelude.Interactive.printLn' idr_Prelude.Interactive.printLn'0 idr_Prelude.Interactive.printLn'1 idr_Prelude.Interactive.printLn'2 idr_Prelude.Interactive.printLn'3 idr_Prelude.Interactive.printLn'4 =
+  idr_Prelude.Interactive.printLn'5_val_233 <- "idr_{APPLY_0}" idr_Prelude.Interactive.printLn'2 idr_Prelude.Interactive.printLn'3
+  idr_Prelude.Interactive.printLn'5 <- store idr_Prelude.Interactive.printLn'5_val_233
+  idr_Prelude.Interactive.printLn'6_val <- pure (CGrString #"\n")
+  idr_Prelude.Interactive.printLn'6 <- store idr_Prelude.Interactive.printLn'6_val
+  idr_Prelude.Interactive.printLn'5_val_232 <- idris_str_concat idr_Prelude.Interactive.printLn'5 idr_Prelude.Interactive.printLn'6
+  idr_Prelude.Interactive.printLn'5_234 <- store idr_Prelude.Interactive.printLn'5_val_232
+  idr_Prelude.Interactive.printLn'5_val <- idris_write_str idr_Prelude.Interactive.printLn'4 idr_Prelude.Interactive.printLn'5_234
+  idr_Prelude.Interactive.printLn'5_235 <- store idr_Prelude.Interactive.printLn'5_val
+  pure (Cidr_MkUnit) -- LINT: Last return expressions can only return non-node values: pure (Cidr_MkUnit)
+
+"idr_{APPLY_0}" "idr_{APPLY_0}0" "idr_{APPLY_0}1" =
+  "idr_{APPLY_0}0_val" <- fetch "idr_{APPLY_0}0"
+  case "idr_{APPLY_0}0_val" of
+    (C"idr_{U_Main.{checkEqNat2_0}_1}") ->
+      "idr_Main.{checkEqNat2_0}" "idr_{APPLY_0}1"
+    (C"idr_{U_Main.{main_1}_1}") ->
+      "idr_Main.{main_1}" "idr_{APPLY_0}1"
+    (C"idr_{U_Main.{main_2}_1}") ->
+      "idr_Main.{main_2}" "idr_{APPLY_0}1"
+    (C"idr_{U_Main.{main_3}_1}") ->
+      "idr_Main.{main_3}" "idr_{APPLY_0}1"
+    (C"idr_{U_Main.{main_5}_1}") ->
+      "idr_Main.{main_5}" "idr_{APPLY_0}1"
+    (C"idr_{U_prim__toStrBigInt_1}") ->
+      idr_prim__toStrBigInt "idr_{APPLY_0}1"
+    #default ->
+      pure (CErased) -- LINT: Last return expressions can only return non-node values: pure (CErased)
+
+"idr_{EVAL_0}" "idr_{EVAL_0}0" =
+  "idr_{EVAL_0}0_val" <- fetch "idr_{EVAL_0}0"
+  case "idr_{EVAL_0}0_val" of
+    #default ->
+      fetch "idr_{EVAL_0}0"
+
+"idr_Main.{checkEqNat2_0}" "idr_Main.{checkEqNat2_0}0" =
+  pure (Cidr_Refl) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Refl)
+
+"idr_{runMain_0}" =
+  "idr_{runMain_0}0_val_238" <- pure (CErased)
+  "idr_{runMain_0}0" <- store "idr_{runMain_0}0_val_238"
+  "idr_{runMain_0}0_val" <- idr_Main.main "idr_{runMain_0}0"
+  "idr_{runMain_0}0_239" <- store "idr_{runMain_0}0_val"
+  "idr_{EVAL_0}" "idr_{runMain_0}0_239"
+
+"idr_Main.{main_1}" "idr_Main.{main_1}0" =
+  "idr_Main.{main_1}1_val" <- pure (CGrString #"Same ")
+  "idr_Main.{main_1}1" <- store "idr_Main.{main_1}1_val"
+  "idr_Main.{main_1}2_val_240" <- pure (CErased)
+  "idr_Main.{main_1}2" <- store "idr_Main.{main_1}2_val_240"
+  "idr_Main.{main_1}3_val" <- pure (C"idr_{U_prim__toStrBigInt_1}")
+  "idr_Main.{main_1}3" <- store "idr_Main.{main_1}3_val"
+  "idr_Main.{main_1}4_val" <- pure (Cidr_Prelude.Show.Open)
+  "idr_Main.{main_1}4" <- store "idr_Main.{main_1}4_val"
+  "idr_Main.{main_1}5_val" <- pure (CGrInt 4)
+  "idr_Main.{main_1}5" <- store "idr_Main.{main_1}5_val"
+  "idr_Main.{main_1}2_val" <- idr_Prelude.Show.primNumShow "idr_Main.{main_1}2" "idr_Main.{main_1}3" "idr_Main.{main_1}4" "idr_Main.{main_1}5"
+  "idr_Main.{main_1}2_241" <- store "idr_Main.{main_1}2_val"
+  idris_str_concat "idr_Main.{main_1}1" "idr_Main.{main_1}2_241"
+
+"idr_Main.{main_2}" "idr_Main.{main_2}0" =
+  "idr_Main.{main_2}1_val" <- pure (CGrString #"Same ")
+  "idr_Main.{main_2}1" <- store "idr_Main.{main_2}1_val"
+  "idr_Main.{main_2}2_val_242" <- pure (CErased)
+  "idr_Main.{main_2}2" <- store "idr_Main.{main_2}2_val_242"
+  "idr_Main.{main_2}3_val" <- pure (C"idr_{U_prim__toStrBigInt_1}")
+  "idr_Main.{main_2}3" <- store "idr_Main.{main_2}3_val"
+  "idr_Main.{main_2}4_val" <- pure (Cidr_Prelude.Show.Open)
+  "idr_Main.{main_2}4" <- store "idr_Main.{main_2}4_val"
+  "idr_Main.{main_2}5_val" <- pure (CGrInt 5)
+  "idr_Main.{main_2}5" <- store "idr_Main.{main_2}5_val"
+  "idr_Main.{main_2}2_val" <- idr_Prelude.Show.primNumShow "idr_Main.{main_2}2" "idr_Main.{main_2}3" "idr_Main.{main_2}4" "idr_Main.{main_2}5"
+  "idr_Main.{main_2}2_243" <- store "idr_Main.{main_2}2_val"
+  idris_str_concat "idr_Main.{main_2}1" "idr_Main.{main_2}2_243"
+
+"idr_Main.{main_3}" "idr_Main.{main_3}0" =
+  "idr_Main.{main_3}1_val" <- pure (CGrString #"Same ")
+  "idr_Main.{main_3}1" <- store "idr_Main.{main_3}1_val"
+  "idr_Main.{main_3}2_val_244" <- pure (CErased)
+  "idr_Main.{main_3}2" <- store "idr_Main.{main_3}2_val_244"
+  "idr_Main.{main_3}3_val" <- pure (C"idr_{U_prim__toStrBigInt_1}")
+  "idr_Main.{main_3}3" <- store "idr_Main.{main_3}3_val"
+  "idr_Main.{main_3}4_val" <- pure (Cidr_Prelude.Show.Open)
+  "idr_Main.{main_3}4" <- store "idr_Main.{main_3}4_val"
+  "idr_Main.{main_3}5_val" <- pure (CGrInt 3)
+  "idr_Main.{main_3}5" <- store "idr_Main.{main_3}5_val"
+  "idr_Main.{main_3}2_val" <- idr_Prelude.Show.primNumShow "idr_Main.{main_3}2" "idr_Main.{main_3}3" "idr_Main.{main_3}4" "idr_Main.{main_3}5"
+  "idr_Main.{main_3}2_245" <- store "idr_Main.{main_3}2_val"
+  idris_str_concat "idr_Main.{main_3}1" "idr_Main.{main_3}2_245"
+
+"idr_Main.{main_5}" "idr_Main.{main_5}0" =
+  "idr_Main.{main_5}0_val" <- fetch "idr_Main.{main_5}0"
+  -- LINT: case has non-covered alternative CGrInt
+  -- LINT: case has non-covered alternative CGrString
+  -- LINT: case has non-covered alternative Cidr_Main.Same
+  -- LINT: case has non-covered alternative Cidr_Refl
+  case "idr_Main.{main_5}0_val" of
+    (Cidr_Prelude.Bool.False) ->
+      pure (CGrString #"False") -- LINT: Last return expressions can only return non-node values: pure (CGrString #"False")
+    (Cidr_Prelude.Bool.True) ->
+      pure (CGrString #"True") -- LINT: Last return expressions can only return non-node values: pure (CGrString #"True")
+
+"idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:0" "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00" "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01" =
+  "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01_val" <- fetch "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01"
+  case "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01_val" of
+    (Cidr_Prelude.Bool.False) ->
+      "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val" <- fetch "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00"
+      case "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val" of
+        (Cidr_Prelude.Bool.False) ->
+          pure (Cidr_Prelude.Basics.Yes) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Basics.Yes)
+        (Cidr_Prelude.Bool.True) ->
+          pure (Cidr_Prelude.Basics.No) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Basics.No)
+    (Cidr_Prelude.Bool.True) ->
+      "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_246" <- fetch "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00"
+      case "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_246" of
+        (Cidr_Prelude.Bool.False) ->
+          pure (Cidr_Prelude.Basics.No) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Basics.No)
+        (Cidr_Prelude.Bool.True) ->
+          pure (Cidr_Prelude.Basics.Yes) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Basics.Yes)
+
+"idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:0" "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:00" "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:01" "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:02" "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:03" =
+  "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:03_val" <- fetch "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:03"
+  case "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:03_val" of
+    (Cidr_Prelude.Maybe.Just "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:04") ->
+      "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:05_val" <- "idr_{APPLY_0}" "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:02" "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:04"
+      "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:05" <- store "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:05_val"
+      pure (Cidr_Prelude.Maybe.Just "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:05") -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Maybe.Just "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:05")
+    (Cidr_Prelude.Maybe.Nothing) ->
+      fetch "idr_Prelude.Functor.Prelude.@Prelude.Functor.Functor$Maybe:!map:03"
+
+"idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0" "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:00" "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:01" =
+  "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02_val" <- idris_int_eq "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:00" "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:01"
+  "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02" <- store "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02_val"
+  "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02_val_247" <- fetch "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02"
+  case "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02_val_247" of
+    (CGrInt "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0") ->
+      case "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0" of
+        0 ->
+          "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03_val" <- idris_int_lt "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:00" "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:01"
+          "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03" <- store "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03_val"
+          "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03_val_248" <- fetch "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03"
+          case "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03_val_248" of
+            (CGrInt "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0_249") ->
+              case "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0_249" of
+                0 ->
+                  pure (Cidr_Prelude.Interfaces.GT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.GT)
+                #default ->
+                  pure (Cidr_Prelude.Interfaces.LT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.LT)
+            #default ->
+              pure (Cidr_Prelude.Interfaces.LT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.LT)
+        #default ->
+          pure (Cidr_Prelude.Interfaces.EQ) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.EQ)
+    #default ->
+      pure (Cidr_Prelude.Interfaces.EQ) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.EQ)

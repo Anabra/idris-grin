@@ -1,0 +1,115 @@
+Heap
+    0      -> {C"idr_{U_Main.{main_0}_1}"[]}
+    1      -> {Cidr_Main.N[]}
+    2      -> {Cidr_Main.I[{1}]}
+    3      -> {Cidr_Main.I[{2}]}
+    4      -> {Cidr_Main.I[{3}]}
+    5      -> {Cidr_Main.I[{4}]}
+    6      -> {C"idr_{U_Main.{main_1}_1}"[]}
+    7      -> {CGrInt[{T_Int64}]}
+    8      -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+Env
+    ccp.0.0 -> {T_Int64}
+    ccp.0.1 -> {T_Int64}
+    ccp.0.2.0 -> {T_Int64}
+    ccp.1.0 -> {T_Int64}
+    ccp.2.0 -> {T_Int64}
+    ccp.3.0 -> {T_Int64}
+    ccp.4.0 -> {T_Int64}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_67.0" -> {Cidr_Prelude.Bool.False[]
+                                                                                                     ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01_val.0" -> {Cidr_Prelude.Bool.True[]}
+    idr_Main.main1_val.0 -> {Cidr_MkUnit[]}
+    idr_Main.main3.0 -> {0}
+    idr_Main.main3_val.0 -> {C"idr_{U_Main.{main_0}_1}"[]}
+    idr_Main.main4.0 -> {1}
+    idr_Main.main4_10.0 -> {4}
+    idr_Main.main4_11.0 -> {5}
+    idr_Main.main4_18.0 -> {6}
+    idr_Main.main4_8.0 -> {2}
+    idr_Main.main4_9.0 -> {3}
+    idr_Main.main4_val.0 -> {Cidr_Main.I[{4}]}
+    idr_Main.main4_val_17.0 -> {C"idr_{U_Main.{main_1}_1}"[]}
+    idr_Main.main4_val_4.0 -> {Cidr_Main.I[{3}]}
+    idr_Main.main4_val_5.0 -> {Cidr_Main.I[{2}]}
+    idr_Main.main4_val_6.0 -> {Cidr_Main.I[{1}]}
+    idr_Main.main4_val_7.0 -> {Cidr_Main.N[]}
+    idr_Main.main5.0 -> {7}
+    idr_Main.main5_val.0 -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_1}2.0" -> {8}
+    "idr_Main.{main_1}2_val.0" -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    idr_Prelude.Interactive.printLn'2 -> {0,6}
+    idr_Prelude.Interactive.printLn'3 -> {5,7}
+    idr_Prelude.Interactive.printLn'6.41.7.arity.1 -> {T_String}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$Bin n:!show:01" -> {1
+                                                                 ,2
+                                                                 ,3
+                                                                 ,4
+                                                                 ,5
+                                                                 ,7}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$Bin n:!show:01_val" -> {CGrInt[{T_Int64}]
+                                                                     ,Cidr_Main.I[{1,2,3,4}]
+                                                                     ,Cidr_Main.N[]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$Bin n:!show:02" -> {1
+                                                                 ,2
+                                                                 ,3
+                                                                 ,4}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$Bin n:!show:04.41.12.arity.1" -> {T_String}
+    idr_Prelude.Show.primNumShow5_val.0 -> {Cidr_Prelude.Bool.False[]
+                                           ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_19.0 -> {Cidr_Prelude.Bool.False[]
+                                              ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_20.0 -> {Cidr_Prelude.Interfaces.EQ[]
+                                              ,Cidr_Prelude.Interfaces.GT[]
+                                              ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.primNumShow6.49.0.arity.1.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow6_36.41.1.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow6_54.41.6.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow6_val_32.0.0 -> {Cidr_Prelude.Basics.No[]}
+    idr_Prelude.Show.primNumShow6_val_32.0.1 -> {Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.primNumShow6_val_33.0 -> {Cidr_Prelude.Bool.False[]
+                                              ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow7.41.0.arity.1.0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow7_57.41.5.arity.1.0 -> {T_String}
+    idr_Prelude.Show.primNumShow8.41.4.arity.1.0.0 -> {T_Int64}
+    "idr_{APPLY_0}0" -> {0,6,8}
+    "idr_{APPLY_0}0_val" -> {C"idr_{U_Main.{main_0}_1}"[]
+                            ,C"idr_{U_Main.{main_1}_1}"[]
+                            ,C"idr_{U_prim__toStrBigInt_1}"[]}
+    "idr_{APPLY_0}1" -> {5,7}
+    "idr_{runMain_0}0_val.0" -> {Cidr_MkUnit[]}
+    idris_int_eq2.0 -> {T_Bool}
+    idris_int_eq2.1 -> {T_Bool}
+    idris_int_eq2.2.0 -> {T_Bool}
+    idris_int_lt2.0 -> {T_Bool}
+    idris_int_str1_0.0 -> {T_Int64}
+    idris_int_str2.0 -> {T_String}
+    idris_str_concat3.0 -> {T_String}
+    idris_str_concat3.1 -> {T_String}
+    idris_str_concat3.2 -> {T_String}
+    idris_str_concat3.3 -> {T_String}
+    idris_str_eq3.0 -> {T_Bool}
+    idris_str_head2.0.0 -> {T_Int64}
+    unboxed.CGrString.1.0 -> {T_String}
+    unboxed.CGrString.3 -> {T_String}
+    unboxed.CGrString.5 -> {T_String}
+Function
+    _prim_int_eq :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_lt :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_str :: {T_Int64} -> {T_String}
+    _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
+    _prim_string_eq :: {T_String} -> {T_String} -> {T_Bool}
+    _prim_string_head :: {T_String} -> {T_Int64}
+    _prim_string_print :: {T_String} -> {T_Unit}
+    grinMain :: {T_Unit}
+    idr_Prelude.Interactive.printLn' :: {0,6}
+                                     -> {5,7}
+                                     -> {Cidr_MkUnit[]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$Bin n:!show:0.unboxed" :: {1
+                                                                        ,2
+                                                                        ,3
+                                                                        ,4
+                                                                        ,5
+                                                                        ,7}
+                                                                     -> {T_String}
+    "idr_{APPLY_0}.unboxed" :: {0,6,8} -> {5,7} -> {T_String}

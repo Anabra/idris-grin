@@ -1,0 +1,926 @@
+Definitions:     52
+Binds:           612
+Blocks:          0
+Cases:           83
+Alternatives:    202
+Function calls:  159
+Returns:         284
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1732
+Variables:       801
+Tags:            46
+
+
+Definitions:     52
+Binds:           612
+Blocks:          0
+Cases:           83
+Alternatives:    202
+Function calls:  159
+Returns:         284
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1732
+Variables:       791
+Tags:            46
+
+Definitions:     52
+Binds:           612
+Blocks:          1
+Cases:           82
+Alternatives:    201
+Function calls:  159
+Returns:         284
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1730
+Variables:       791
+Tags:            46
+
+Definitions:     52
+Binds:           611
+Blocks:          1
+Cases:           82
+Alternatives:    201
+Function calls:  159
+Returns:         283
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1728
+Variables:       790
+Tags:            46
+
+Definitions:     52
+Binds:           617
+Blocks:          7
+Cases:           82
+Alternatives:    201
+Function calls:  159
+Returns:         289
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1740
+Variables:       796
+Tags:            46
+
+Definitions:     52
+Binds:           617
+Blocks:          0
+Cases:           82
+Alternatives:    201
+Function calls:  159
+Returns:         289
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1740
+Variables:       796
+Tags:            46
+
+Definitions:     52
+Binds:           617
+Blocks:          0
+Cases:           82
+Alternatives:    201
+Function calls:  159
+Returns:         289
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1740
+Variables:       795
+Tags:            46
+
+Definitions:     52
+Binds:           617
+Blocks:          0
+Cases:           82
+Alternatives:    201
+Function calls:  159
+Returns:         289
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1740
+Variables:       794
+Tags:            46
+
+Definitions:     51
+Binds:           618
+Blocks:          1
+Cases:           82
+Alternatives:    201
+Function calls:  158
+Returns:         290
+Stores:          262
+Fetches:         78
+Updates:         0
+Node summary:    1740
+Variables:       793
+Tags:            46
+
+Definitions:     51
+Binds:           533
+Blocks:          1
+Cases:           75
+Alternatives:    149
+Function calls:  127
+Returns:         236
+Stores:          222
+Fetches:         73
+Updates:         0
+Node summary:    1466
+Variables:       703
+Tags:            40
+
+Definitions:     51
+Binds:           571
+Blocks:          39
+Cases:           75
+Alternatives:    149
+Function calls:  127
+Returns:         274
+Stores:          222
+Fetches:         73
+Updates:         0
+Node summary:    1542
+Variables:       741
+Tags:            40
+
+Definitions:     51
+Binds:           616
+Blocks:          76
+Cases:           75
+Alternatives:    149
+Function calls:  127
+Returns:         290
+Stores:          222
+Fetches:         102
+Updates:         0
+Node summary:    1632
+Variables:       775
+Tags:            40
+
+Definitions:     50
+Binds:           627
+Blocks:          80
+Cases:           78
+Alternatives:    206
+Function calls:  180
+Returns:         298
+Stores:          222
+Fetches:         105
+Updates:         0
+Node summary:    1766
+Variables:       798
+Tags:            40
+
+Definitions:     37
+Binds:           818
+Blocks:          132
+Cases:           90
+Alternatives:    226
+Function calls:  163
+Returns:         453
+Stores:          222
+Fetches:         153
+Updates:         0
+Node summary:    2162
+Variables:       958
+Tags:            40
+
+Definitions:     37
+Binds:           818
+Blocks:          0
+Cases:           90
+Alternatives:    226
+Function calls:  163
+Returns:         453
+Stores:          222
+Fetches:         153
+Updates:         0
+Node summary:    2162
+Variables:       958
+Tags:            40
+
+Definitions:     37
+Binds:           818
+Blocks:          0
+Cases:           90
+Alternatives:    169
+Function calls:  106
+Returns:         453
+Stores:          222
+Fetches:         153
+Updates:         0
+Node summary:    2048
+Variables:       943
+Tags:            40
+
+Definitions:     37
+Binds:           828
+Blocks:          10
+Cases:           90
+Alternatives:    169
+Function calls:  106
+Returns:         463
+Stores:          222
+Fetches:         153
+Updates:         0
+Node summary:    2068
+Variables:       953
+Tags:            40
+
+Definitions:     37
+Binds:           854
+Blocks:          32
+Cases:           90
+Alternatives:    169
+Function calls:  106
+Returns:         482
+Stores:          222
+Fetches:         160
+Updates:         0
+Node summary:    2120
+Variables:       979
+Tags:            40
+
+Definitions:     16
+Binds:           882
+Blocks:          54
+Cases:           91
+Alternatives:    171
+Function calls:  85
+Returns:         511
+Stores:          222
+Fetches:         160
+Updates:         0
+Node summary:    2138
+Variables:       964
+Tags:            40
+
+Definitions:     16
+Binds:           882
+Blocks:          0
+Cases:           91
+Alternatives:    171
+Function calls:  85
+Returns:         511
+Stores:          222
+Fetches:         160
+Updates:         0
+Node summary:    2138
+Variables:       964
+Tags:            40
+
+Definitions:     16
+Binds:           886
+Blocks:          4
+Cases:           91
+Alternatives:    171
+Function calls:  85
+Returns:         515
+Stores:          222
+Fetches:         160
+Updates:         0
+Node summary:    2146
+Variables:       968
+Tags:            40
+
+Definitions:     12
+Binds:           946
+Blocks:          17
+Cases:           97
+Alternatives:    183
+Function calls:  80
+Returns:         580
+Stores:          222
+Fetches:         162
+Updates:         0
+Node summary:    2282
+Variables:       1018
+Tags:            40
+
+Definitions:     12
+Binds:           946
+Blocks:          0
+Cases:           97
+Alternatives:    183
+Function calls:  80
+Returns:         580
+Stores:          222
+Fetches:         162
+Updates:         0
+Node summary:    2282
+Variables:       1018
+Tags:            40
+
+Definitions:     11
+Binds:           1000
+Blocks:          3
+Cases:           109
+Alternatives:    203
+Function calls:  81
+Returns:         632
+Stores:          226
+Fetches:         166
+Updates:         0
+Node summary:    2428
+Variables:       1073
+Tags:            40
+
+Definitions:     11
+Binds:           1000
+Blocks:          0
+Cases:           109
+Alternatives:    203
+Function calls:  81
+Returns:         632
+Stores:          226
+Fetches:         166
+Updates:         0
+Node summary:    2428
+Variables:       1073
+Tags:            40
+
+Definitions:     11
+Binds:           920
+Blocks:          0
+Cases:           109
+Alternatives:    203
+Function calls:  80
+Returns:         595
+Stores:          195
+Fetches:         155
+Updates:         0
+Node summary:    2268
+Variables:       1001
+Tags:            38
+
+Definitions:     11
+Binds:           920
+Blocks:          0
+Cases:           109
+Alternatives:    203
+Function calls:  80
+Returns:         675
+Stores:          195
+Fetches:         75
+Updates:         0
+Node summary:    2268
+Variables:       1001
+Tags:            38
+
+Definitions:     11
+Binds:           850
+Blocks:          0
+Cases:           109
+Alternatives:    203
+Function calls:  80
+Returns:         675
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    2128
+Variables:       931
+Tags:            38
+
+Definitions:     11
+Binds:           885
+Blocks:          35
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         710
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    2128
+Variables:       931
+Tags:            38
+
+Definitions:     11
+Binds:           877
+Blocks:          35
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         702
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    2112
+Variables:       931
+Tags:            38
+
+Definitions:     11
+Binds:           879
+Blocks:          37
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         704
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    2116
+Variables:       933
+Tags:            38
+
+Definitions:     11
+Binds:           879
+Blocks:          0
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         704
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    2116
+Variables:       933
+Tags:            38
+
+Definitions:     11
+Binds:           879
+Blocks:          0
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         704
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    2116
+Variables:       933
+Tags:            38
+
+Definitions:     11
+Binds:           466
+Blocks:          0
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         291
+Stores:          125
+Fetches:         75
+Updates:         0
+Node summary:    1290
+Variables:       520
+Tags:            37
+
+Definitions:     11
+Binds:           466
+Blocks:          0
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         348
+Stores:          125
+Fetches:         18
+Updates:         0
+Node summary:    1290
+Variables:       520
+Tags:            37
+
+Definitions:     11
+Binds:           432
+Blocks:          0
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         348
+Stores:          91
+Fetches:         18
+Updates:         0
+Node summary:    1222
+Variables:       486
+Tags:            37
+
+Definitions:     11
+Binds:           432
+Blocks:          0
+Cases:           74
+Alternatives:    168
+Function calls:  80
+Returns:         348
+Stores:          91
+Fetches:         18
+Updates:         0
+Node summary:    1222
+Variables:       486
+Tags:            37
+
+Definitions:     11
+Binds:           447
+Blocks:          10
+Cases:           69
+Alternatives:    158
+Function calls:  80
+Returns:         358
+Stores:          91
+Fetches:         18
+Updates:         0
+Node summary:    1232
+Variables:       491
+Tags:            37
+
+Definitions:     11
+Binds:           451
+Blocks:          12
+Cases:           69
+Alternatives:    158
+Function calls:  80
+Returns:         360
+Stores:          91
+Fetches:         20
+Updates:         0
+Node summary:    1240
+Variables:       495
+Tags:            37
+
+Definitions:     9
+Binds:           558
+Blocks:          20
+Cases:           106
+Alternatives:    232
+Function calls:  97
+Returns:         481
+Stores:          91
+Fetches:         24
+Updates:         0
+Node summary:    1598
+Variables:       591
+Tags:            37
+
+Definitions:     9
+Binds:           558
+Blocks:          0
+Cases:           106
+Alternatives:    232
+Function calls:  97
+Returns:         481
+Stores:          91
+Fetches:         24
+Updates:         0
+Node summary:    1598
+Variables:       591
+Tags:            37
+
+Definitions:     9
+Binds:           530
+Blocks:          0
+Cases:           89
+Alternatives:    194
+Function calls:  88
+Returns:         443
+Stores:          91
+Fetches:         22
+Updates:         0
+Node summary:    1466
+Variables:       563
+Tags:            37
+
+Definitions:     9
+Binds:           404
+Blocks:          0
+Cases:           89
+Alternatives:    194
+Function calls:  88
+Returns:         317
+Stores:          91
+Fetches:         22
+Updates:         0
+Node summary:    1214
+Variables:       451
+Tags:            35
+
+Definitions:     9
+Binds:           404
+Blocks:          0
+Cases:           89
+Alternatives:    194
+Function calls:  84
+Returns:         324
+Stores:          91
+Fetches:         19
+Updates:         0
+Node summary:    1214
+Variables:       451
+Tags:            35
+
+Definitions:     9
+Binds:           402
+Blocks:          0
+Cases:           89
+Alternatives:    194
+Function calls:  84
+Returns:         324
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1210
+Variables:       449
+Tags:            35
+
+Definitions:     9
+Binds:           406
+Blocks:          4
+Cases:           85
+Alternatives:    190
+Function calls:  84
+Returns:         328
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1210
+Variables:       449
+Tags:            35
+
+Definitions:     9
+Binds:           406
+Blocks:          4
+Cases:           85
+Alternatives:    190
+Function calls:  84
+Returns:         328
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1210
+Variables:       449
+Tags:            35
+
+Definitions:     9
+Binds:           406
+Blocks:          0
+Cases:           85
+Alternatives:    190
+Function calls:  84
+Returns:         328
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1210
+Variables:       449
+Tags:            35
+
+Definitions:     9
+Binds:           406
+Blocks:          0
+Cases:           85
+Alternatives:    190
+Function calls:  84
+Returns:         328
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1210
+Variables:       449
+Tags:            35
+
+Definitions:     9
+Binds:           412
+Blocks:          4
+Cases:           83
+Alternatives:    186
+Function calls:  84
+Returns:         332
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1214
+Variables:       451
+Tags:            35
+
+Definitions:     9
+Binds:           412
+Blocks:          0
+Cases:           83
+Alternatives:    186
+Function calls:  84
+Returns:         332
+Stores:          89
+Fetches:         19
+Updates:         0
+Node summary:    1214
+Variables:       451
+Tags:            35
+
+Definitions:     9
+Binds:           361
+Blocks:          0
+Cases:           83
+Alternatives:    186
+Function calls:  84
+Returns:         288
+Stores:          86
+Fetches:         15
+Updates:         0
+Node summary:    1112
+Variables:       408
+Tags:            32
+
+Definitions:     9
+Binds:           361
+Blocks:          0
+Cases:           83
+Alternatives:    186
+Function calls:  82
+Returns:         291
+Stores:          86
+Fetches:         14
+Updates:         0
+Node summary:    1112
+Variables:       408
+Tags:            32
+
+Definitions:     9
+Binds:           360
+Blocks:          0
+Cases:           83
+Alternatives:    186
+Function calls:  82
+Returns:         291
+Stores:          85
+Fetches:         14
+Updates:         0
+Node summary:    1110
+Variables:       407
+Tags:            32
+
+Definitions:     9
+Binds:           360
+Blocks:          0
+Cases:           83
+Alternatives:    186
+Function calls:  82
+Returns:         291
+Stores:          85
+Fetches:         14
+Updates:         0
+Node summary:    1110
+Variables:       407
+Tags:            32
+
+Definitions:     9
+Binds:           363
+Blocks:          2
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         293
+Stores:          85
+Fetches:         14
+Updates:         0
+Node summary:    1112
+Variables:       408
+Tags:            32
+
+Definitions:     9
+Binds:           363
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         293
+Stores:          85
+Fetches:         14
+Updates:         0
+Node summary:    1112
+Variables:       408
+Tags:            32
+
+Definitions:     9
+Binds:           355
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         285
+Stores:          85
+Fetches:         14
+Updates:         0
+Node summary:    1096
+Variables:       402
+Tags:            32
+
+Definitions:     9
+Binds:           355
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         285
+Stores:          85
+Fetches:         14
+Updates:         0
+Node summary:    1096
+Variables:       402
+Tags:            32
+
+
+Definitions:     9
+Binds:           435
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         366
+Stores:          84
+Fetches:         14
+Updates:         0
+Node summary:    1256
+Variables:       480
+Tags:            31
+
+Definitions:     9
+Binds:           437
+Blocks:          2
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         367
+Stores:          84
+Fetches:         15
+Updates:         0
+Node summary:    1260
+Variables:       482
+Tags:            31
+
+Definitions:     9
+Binds:           437
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         367
+Stores:          84
+Fetches:         15
+Updates:         0
+Node summary:    1260
+Variables:       482
+Tags:            31
+
+Definitions:     9
+Binds:           437
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         369
+Stores:          84
+Fetches:         13
+Updates:         0
+Node summary:    1260
+Variables:       482
+Tags:            31
+
+Definitions:     9
+Binds:           435
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         369
+Stores:          82
+Fetches:         13
+Updates:         0
+Node summary:    1256
+Variables:       480
+Tags:            31
+
+Definitions:     9
+Binds:           435
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         369
+Stores:          82
+Fetches:         13
+Updates:         0
+Node summary:    1256
+Variables:       480
+Tags:            31
+
+Definitions:     9
+Binds:           430
+Blocks:          0
+Cases:           82
+Alternatives:    184
+Function calls:  82
+Returns:         364
+Stores:          82
+Fetches:         13
+Updates:         0
+Node summary:    1246
+Variables:       475
+Tags:            31
+

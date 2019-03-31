@@ -1,0 +1,15 @@
+Configuring monad-gen-0.3.0.1...
+Preprocessing library for monad-gen-0.3.0.1..
+Building library for monad-gen-0.3.0.1..
+[1 of 2] Compiling Control.Monad.Gen.Class ( src/Control/Monad/Gen/Class.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Gen/Class.o )
+
+[;1msrc/Control/Monad/Gen/Class.hs:39:38: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class ‘ListT’
+    (imported from Control.Monad.List, but defined in Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m39 |[0m[0m instance MonadGen e m => MonadGen e ([;1m[35mListT[0m[0m m) where
+[;1m[34m   |[0m[0m[;1m[35m                                      ^^^^^[0m[0m
+[0m[0m[0m[2 of 2] Compiling Control.Monad.Gen ( src/Control/Monad/Gen.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Gen.o )
+Installing library in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/monad-gen-0.3.0.1-1YDQX2jgxAI229VuAGNOKf
+Registering library for monad-gen-0.3.0.1..

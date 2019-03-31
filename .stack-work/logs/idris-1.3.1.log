@@ -1,0 +1,697 @@
+[1 of 2] Compiling Main             ( /tmp/stack8552/idris-1.3.1/Setup.hs, /tmp/stack8552/idris-1.3.1/.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/setup/Main.o )
+
+/tmp/stack8552/idris-1.3.1/Setup.hs:225:3: warning: [-Wdeprecations]
+    In the use of ‘preSDist’
+    (imported from Distribution.Simple, but defined in Distribution.Simple.UserHooks):
+    Deprecated: "SDist hooks violate the invariants of new-sdist. Use 'autogen-modules' and 'build-tool-depends' instead."
+    |
+225 |   preSDist simpleUserHooks args flags
+    |   ^^^^^^^^
+
+/tmp/stack8552/idris-1.3.1/Setup.hs:246:3: warning: [-Wdeprecations]
+    In the use of ‘postSDist’
+    (imported from Distribution.Simple, but defined in Distribution.Simple.UserHooks):
+    Deprecated: "SDist hooks violate the invariants of new-sdist. Use 'autogen-modules' and 'build-tool-depends' instead."
+    |
+246 |   postSDist simpleUserHooks args flags desc lbi
+    |   ^^^^^^^^^
+
+/tmp/stack8552/idris-1.3.1/Setup.hs:356:6: warning: [-Wdeprecations]
+    In the use of ‘preSDist’
+    (imported from Distribution.Simple, but defined in Distribution.Simple.UserHooks):
+    Deprecated: "SDist hooks violate the invariants of new-sdist. Use 'autogen-modules' and 'build-tool-depends' instead."
+    |
+356 |    , preSDist = idrisPreSDist
+    |      ^^^^^^^^
+
+/tmp/stack8552/idris-1.3.1/Setup.hs:357:6: warning: [-Wdeprecations]
+    In the use of ‘sDistHook’
+    (imported from Distribution.Simple, but defined in Distribution.Simple.UserHooks):
+    Deprecated: "SDist hooks violate the invariants of new-sdist. Use 'autogen-modules' and 'build-tool-depends' instead."
+    |
+357 |    , sDistHook = idrisSDist (sDistHook simpleUserHooks)
+    |      ^^^^^^^^^
+
+/tmp/stack8552/idris-1.3.1/Setup.hs:357:30: warning: [-Wdeprecations]
+    In the use of ‘sDistHook’
+    (imported from Distribution.Simple, but defined in Distribution.Simple.UserHooks):
+    Deprecated: "SDist hooks violate the invariants of new-sdist. Use 'autogen-modules' and 'build-tool-depends' instead."
+    |
+357 |    , sDistHook = idrisSDist (sDistHook simpleUserHooks)
+    |                              ^^^^^^^^^
+
+/tmp/stack8552/idris-1.3.1/Setup.hs:358:6: warning: [-Wdeprecations]
+    In the use of ‘postSDist’
+    (imported from Distribution.Simple, but defined in Distribution.Simple.UserHooks):
+    Deprecated: "SDist hooks violate the invariants of new-sdist. Use 'autogen-modules' and 'build-tool-depends' instead."
+    |
+358 |    , postSDist = idrisPostSDist
+    |      ^^^^^^^^^
+[2 of 2] Compiling StackSetupShim   ( /home/anabra/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack8552/idris-1.3.1/.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/setup/StackSetupShim.o )
+Linking /tmp/stack8552/idris-1.3.1/.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/setup/setup ...
+Configuring idris-1.3.1...
+make: Entering directory '/tmp/stack8552/idris-1.3.1/rts'
+rm -f idris_rts.o idris_heap.o idris_gc.o idris_gmp.o idris_bitstring.o idris_opts.o idris_stats.o idris_utf8.o idris_stdfgn.o idris_buffer.o getline.o idris_net.o mini-gmp.o libidris_rts.a 
+make: Leaving directory '/tmp/stack8552/idris-1.3.1/rts'
+fatal: not a git repository (or any of the parent directories): .git
+Generating .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/BuildFlags_idris.hs
+Generating .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/Version_idris.hs for release
+Preprocessing library for idris-1.3.1..
+Building library for idris-1.3.1..
+[  1 of 115] Compiling BuildFlags_idris ( src/BuildFlags_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/BuildFlags_idris.o )
+[  2 of 115] Compiling IRTS.JavaScript.AST ( src/IRTS/JavaScript/AST.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/JavaScript/AST.o )
+[  3 of 115] Compiling Idris.Colours    ( src/Idris/Colours.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Colours.o )
+[  4 of 115] Compiling Idris.Help       ( src/Idris/Help.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Help.o )
+[  5 of 115] Compiling Paths_idris      ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/Paths_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Paths_idris.o )
+[  6 of 115] Compiling IRTS.System      ( src/IRTS/System.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/System.o )
+[  7 of 115] Compiling Tools_idris      ( src/Tools_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Tools_idris.o )
+[  8 of 115] Compiling Util.DynamicLinker ( src/Util/DynamicLinker.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Util/DynamicLinker.o )
+[  9 of 115] Compiling Util.Net         ( src/Util/Net.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Util/Net.o )
+[ 10 of 115] Compiling Util.Pretty      ( src/Util/Pretty.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Util/Pretty.o )
+[ 11 of 115] Compiling Idris.Core.TT    ( src/Idris/Core/TT.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/TT.o )
+[ 12 of 115] Compiling Idris.Unlit      ( src/Idris/Unlit.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Unlit.o )
+[ 13 of 115] Compiling Idris.Docstrings ( src/Idris/Docstrings.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Docstrings.o )
+[ 14 of 115] Compiling Idris.Core.Constraints ( src/Idris/Core/Constraints.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Constraints.o )
+[ 15 of 115] Compiling Idris.Core.CaseTree ( src/Idris/Core/CaseTree.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/CaseTree.o )
+[ 16 of 115] Compiling Idris.Core.Evaluate ( src/Idris/Core/Evaluate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Evaluate.o )
+[ 17 of 115] Compiling Idris.Core.WHNF  ( src/Idris/Core/WHNF.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/WHNF.o )
+[ 18 of 115] Compiling Idris.Core.Unify ( src/Idris/Core/Unify.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Unify.o )
+[ 19 of 115] Compiling Idris.Core.Typecheck ( src/Idris/Core/Typecheck.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Typecheck.o )
+[ 20 of 115] Compiling Idris.Core.ProofTerm ( src/Idris/Core/ProofTerm.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/ProofTerm.o )
+[ 21 of 115] Compiling Idris.Core.DeepSeq ( src/Idris/Core/DeepSeq.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/DeepSeq.o )
+[ 22 of 115] Compiling Idris.Core.Binary ( src/Idris/Core/Binary.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Binary.o )
+[ 23 of 115] Compiling Idris.IdeMode    ( src/Idris/IdeMode.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/IdeMode.o )
+[ 24 of 115] Compiling IRTS.Lang        ( src/IRTS/Lang.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Lang.o )
+[ 25 of 115] Compiling Idris.Primitives ( src/Idris/Primitives.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Primitives.o )
+[ 26 of 115] Compiling IRTS.LangOpts    ( src/IRTS/LangOpts.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/LangOpts.o )
+[ 27 of 115] Compiling IRTS.JavaScript.Specialize ( src/IRTS/JavaScript/Specialize.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/JavaScript/Specialize.o )
+[ 28 of 115] Compiling IRTS.JavaScript.PrimOp ( src/IRTS/JavaScript/PrimOp.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/JavaScript/PrimOp.o )
+[ 29 of 115] Compiling IRTS.JavaScript.Name ( src/IRTS/JavaScript/Name.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/JavaScript/Name.o )
+[ 30 of 115] Compiling IRTS.JavaScript.LangTransforms ( src/IRTS/JavaScript/LangTransforms.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/JavaScript/LangTransforms.o )
+[ 31 of 115] Compiling IRTS.Defunctionalise ( src/IRTS/Defunctionalise.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Defunctionalise.o )
+[ 32 of 115] Compiling IRTS.Simplified  ( src/IRTS/Simplified.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Simplified.o )
+[ 33 of 115] Compiling IRTS.Inliner     ( src/IRTS/Inliner.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Inliner.o )
+[ 34 of 115] Compiling IRTS.CodegenCommon ( src/IRTS/CodegenCommon.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/CodegenCommon.o )
+[ 35 of 115] Compiling Idris.Options    ( src/Idris/Options.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Options.o )
+[ 36 of 115] Compiling IRTS.Bytecode    ( src/IRTS/Bytecode.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Bytecode.o )
+[ 37 of 115] Compiling IRTS.Portable    ( src/IRTS/Portable.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Portable.o )
+[ 38 of 115] Compiling IRTS.DumpBC      ( src/IRTS/DumpBC.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/DumpBC.o )
+[ 39 of 115] Compiling Idris.Core.ProofState ( src/Idris/Core/ProofState.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/ProofState.o )
+[ 40 of 115] Compiling Idris.Core.Elaborate ( src/Idris/Core/Elaborate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Elaborate.o )
+[ 41 of 115] Compiling Idris.AbsSyntaxTree ( src/Idris/AbsSyntaxTree.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/AbsSyntaxTree.o )
+[ 42 of 115] Compiling Idris.DeepSeq    ( src/Idris/DeepSeq.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/DeepSeq.o )
+[ 43 of 115] Compiling Idris.ASTUtils   ( src/Idris/ASTUtils.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/ASTUtils.o )
+[ 44 of 115] Compiling Util.ScreenSize  ( src/Util/ScreenSize.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Util/ScreenSize.o )
+[ 45 of 115] Compiling Util.System      ( src/Util/System.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Util/System.o )
+[ 46 of 115] Compiling Idris.AbsSyntax  ( src/Idris/AbsSyntax.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/AbsSyntax.o )
+[ 47 of 115] Compiling Idris.WhoCalls   ( src/Idris/WhoCalls.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/WhoCalls.o )
+[ 48 of 115] Compiling Idris.Transforms ( src/Idris/Transforms.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Transforms.o )
+[ 49 of 115] Compiling Idris.REPL.Browse ( src/Idris/REPL/Browse.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/REPL/Browse.o )
+[ 50 of 115] Compiling Idris.Inliner    ( src/Idris/Inliner.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Inliner.o )
+[ 51 of 115] Compiling Idris.ErrReverse ( src/Idris/ErrReverse.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/ErrReverse.o )
+[ 52 of 115] Compiling Idris.Elab.Quasiquote ( src/Idris/Elab/Quasiquote.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Quasiquote.o )
+[ 53 of 115] Compiling Idris.Elab.AsPat ( src/Idris/Elab/AsPat.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/AsPat.o )
+[ 54 of 115] Compiling Idris.Delaborate ( src/Idris/Delaborate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Delaborate.o )
+[ 55 of 115] Compiling Idris.Reflection ( src/Idris/Reflection.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Reflection.o )
+[ 56 of 115] Compiling Idris.ProofSearch ( src/Idris/ProofSearch.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/ProofSearch.o )
+[ 57 of 115] Compiling Idris.PartialEval ( src/Idris/PartialEval.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/PartialEval.o )
+[ 58 of 115] Compiling Idris.Output     ( src/Idris/Output.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Output.o )
+[ 59 of 115] Compiling Idris.Parser.Stack ( src/Idris/Parser/Stack.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Parser/Stack.o )
+[ 60 of 115] Compiling Idris.Parser.Helpers ( src/Idris/Parser/Helpers.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Parser/Helpers.o )
+[ 61 of 115] Compiling Idris.Parser.Ops ( src/Idris/Parser/Ops.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Parser/Ops.o )
+[ 62 of 115] Compiling Idris.Error      ( src/Idris/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Error.o )
+[ 63 of 115] Compiling Idris.Termination ( src/Idris/Termination.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Termination.o )
+[ 64 of 115] Compiling Idris.Providers  ( src/Idris/Providers.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Providers.o )
+[ 65 of 115] Compiling Idris.Imports    ( src/Idris/Imports.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Imports.o )
+[ 66 of 115] Compiling Idris.REPL.Commands ( src/Idris/REPL/Commands.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/REPL/Commands.o )
+[ 67 of 115] Compiling Idris.Package.Common ( src/Idris/Package/Common.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Package/Common.o )
+[ 68 of 115] Compiling Idris.Directives ( src/Idris/Directives.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Directives.o )
+[ 69 of 115] Compiling Idris.IBC        ( src/Idris/IBC.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/IBC.o )
+[ 70 of 115] Compiling Idris.Erasure    ( src/Idris/Erasure.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Erasure.o )
+[ 71 of 115] Compiling Idris.Elab.Utils ( src/Idris/Elab/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Utils.o )
+[ 72 of 115] Compiling Idris.Elab.Rewrite ( src/Idris/Elab/Rewrite.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Rewrite.o )
+[ 73 of 115] Compiling Idris.Docs       ( src/Idris/Docs.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Docs.o )
+[ 74 of 115] Compiling Idris.IdrisDoc   ( src/Idris/IdrisDoc.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/IdrisDoc.o )
+[ 75 of 115] Compiling Idris.DataOpts   ( src/Idris/DataOpts.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/DataOpts.o )
+[ 76 of 115] Compiling Idris.DSL        ( src/Idris/DSL.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/DSL.o )
+[ 77 of 115] Compiling Idris.Parser.Expr ( src/Idris/Parser/Expr.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Parser/Expr.o )
+[ 78 of 115] Compiling Idris.Parser.Data ( src/Idris/Parser/Data.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Parser/Data.o )
+[ 79 of 115] Compiling Idris.Coverage   ( src/Idris/Coverage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Coverage.o )
+[ 80 of 115] Compiling Idris.Elab.Term  ( src/Idris/Elab/Term.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Term.o )
+[ 81 of 115] Compiling Idris.Elab.Value ( src/Idris/Elab/Value.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Value.o )
+[ 82 of 115] Compiling Idris.Elab.Type  ( src/Idris/Elab/Type.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Type.o )
+[ 83 of 115] Compiling Idris.TypeSearch ( src/Idris/TypeSearch.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/TypeSearch.o )
+[ 84 of 115] Compiling Idris.Elab.Data  ( src/Idris/Elab/Data.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Data.o )
+[ 85 of 115] Compiling Idris.Elab.Record ( src/Idris/Elab/Record.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Record.o )
+[ 86 of 115] Compiling Idris.Elab.Interface ( src/Idris/Elab/Interface.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Interface.o )
+[ 87 of 115] Compiling Idris.Elab.Transform ( src/Idris/Elab/Transform.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Transform.o )
+[ 88 of 115] Compiling Idris.Elab.RunElab ( src/Idris/Elab/RunElab.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/RunElab.o )
+[ 89 of 115] Compiling Idris.Elab.Implementation ( src/Idris/Elab/Implementation.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Implementation.o )
+[ 90 of 115] Compiling Idris.Elab.Clause ( src/Idris/Elab/Clause.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Clause.o )
+[ 91 of 115] Compiling Idris.Core.Execute ( src/Idris/Core/Execute.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Core/Execute.o )
+[ 92 of 115] Compiling Idris.Elab.Provider ( src/Idris/Elab/Provider.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Elab/Provider.o )
+[ 93 of 115] Compiling Idris.ElabDecls  ( src/Idris/ElabDecls.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/ElabDecls.o )
+[ 94 of 115] Compiling Idris.Parser     ( src/Idris/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Parser.o )
+[ 95 of 115] Compiling Idris.REPL.Parser ( src/Idris/REPL/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/REPL/Parser.o )
+[ 96 of 115] Compiling Idris.Completion ( src/Idris/Completion.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Completion.o )
+[ 97 of 115] Compiling Idris.Prover     ( src/Idris/Prover.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Prover.o )
+[ 98 of 115] Compiling Idris.Chaser     ( src/Idris/Chaser.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Chaser.o )
+[ 99 of 115] Compiling Idris.CaseSplit  ( src/Idris/CaseSplit.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/CaseSplit.o )
+[100 of 115] Compiling Idris.Interactive ( src/Idris/Interactive.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Interactive.o )
+[101 of 115] Compiling Idris.Apropos    ( src/Idris/Apropos.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Apropos.o )
+[102 of 115] Compiling IRTS.Exports     ( src/IRTS/Exports.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Exports.o )
+[103 of 115] Compiling IRTS.JavaScript.Codegen ( src/IRTS/JavaScript/Codegen.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/JavaScript/Codegen.o )
+[104 of 115] Compiling IRTS.CodegenJavaScript ( src/IRTS/CodegenJavaScript.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/CodegenJavaScript.o )
+[105 of 115] Compiling IRTS.CodegenC    ( src/IRTS/CodegenC.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/CodegenC.o )
+[106 of 115] Compiling IRTS.Compiler    ( src/IRTS/Compiler.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/IRTS/Compiler.o )
+[107 of 115] Compiling Version_idris    ( src/Version_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Version_idris.o )
+[108 of 115] Compiling Idris.Info       ( src/Idris/Info.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Info.o )
+[109 of 115] Compiling Idris.ModeCommon ( src/Idris/ModeCommon.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/ModeCommon.o )
+[110 of 115] Compiling Idris.REPL       ( src/Idris/REPL.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/REPL.o )
+[111 of 115] Compiling Idris.Main       ( src/Idris/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Main.o )
+[112 of 115] Compiling Idris.Info.Show  ( src/Idris/Info/Show.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Info/Show.o )
+[113 of 115] Compiling Idris.CmdOptions ( src/Idris/CmdOptions.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/CmdOptions.o )
+[114 of 115] Compiling Idris.Package.Parser ( src/Idris/Package/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Package/Parser.o )
+[115 of 115] Compiling Idris.Package    ( src/Idris/Package.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Idris/Package.o )
+Preprocessing executable 'idris' for idris-1.3.1..
+Building executable 'idris' for idris-1.3.1..
+[1 of 1] Compiling Main             ( main/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris ...
+Preprocessing executable 'idris-codegen-node' for idris-1.3.1..
+Building executable 'idris-codegen-node' for idris-1.3.1..
+[1 of 2] Compiling Paths_idris      ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-node/autogen/Paths_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-node/idris-codegen-node-tmp/Paths_idris.o )
+[2 of 2] Compiling Main             ( codegen/idris-codegen-node/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-node/idris-codegen-node-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-node/idris-codegen-node ...
+Preprocessing executable 'idris-codegen-javascript' for idris-1.3.1..
+Building executable 'idris-codegen-javascript' for idris-1.3.1..
+[1 of 2] Compiling Main             ( codegen/idris-codegen-javascript/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-javascript/idris-codegen-javascript-tmp/Main.o )
+[2 of 2] Compiling Paths_idris      ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-javascript/autogen/Paths_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-javascript/idris-codegen-javascript-tmp/Paths_idris.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-javascript/idris-codegen-javascript ...
+Preprocessing executable 'idris-codegen-c' for idris-1.3.1..
+Building executable 'idris-codegen-c' for idris-1.3.1..
+[1 of 2] Compiling Main             ( codegen/idris-codegen-c/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-c/idris-codegen-c-tmp/Main.o )
+[2 of 2] Compiling Paths_idris      ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-c/autogen/Paths_idris.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-c/idris-codegen-c-tmp/Paths_idris.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris-codegen-c/idris-codegen-c ...
+Building libraries...
+make: Entering directory '/tmp/stack8552/idris-1.3.1/libs'
+make -C prelude build
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/prelude'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --build prelude.ipkg
+Type checking ./Builtins.idr
+Type checking ./Prelude/Uninhabited.idr
+Type checking ./Prelude/Algebra.idr
+Type checking ./Prelude/Bool.idr
+Type checking ./Prelude/Basics.idr
+Type checking ./Prelude/Interfaces.idr
+Type checking ./Prelude/Foldable.idr
+Type checking ./Prelude/Cast.idr
+Type checking ./Prelude/Maybe.idr
+Type checking ./Prelude/Nat.idr
+Type checking ./Prelude/Functor.idr
+Type checking ./Prelude/List.idr
+Type checking ./Prelude/Either.idr
+Type checking ./Decidable/Equality.idr
+Type checking ./IO.idr
+Type checking ./Prelude/Applicative.idr
+Type checking ./Prelude/Traversable.idr
+Type checking ./Language/Reflection.idr
+Type checking ./Language/Reflection/Errors.idr
+Type checking ./Prelude/Monad.idr
+Type checking ./Language/Reflection/Elab.idr
+Type checking ./Prelude/WellFounded.idr
+Type checking ./Prelude/Doubles.idr
+Type checking ./Prelude/Chars.idr
+Type checking ./Prelude/Strings.idr
+Type checking ./Prelude/Bits.idr
+Type checking ./Prelude/Show.idr
+Type checking ./Prelude/File.idr
+Type checking ./Prelude/Interactive.idr
+Type checking ./Prelude/Providers.idr
+Type checking ./Prelude/Stream.idr
+Type checking ./Prelude/Pairs.idr
+Type checking ./Prelude.idr
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/prelude'
+make -C base build
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/base'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --build base.ipkg
+Type checking ./Data/Morphisms.idr
+Type checking ./Control/Category.idr
+Type checking ./Control/Arrow.idr
+Type checking ./Control/Monad/Trans.idr
+Type checking ./Control/Monad/Identity.idr
+Type checking ./Control/Monad/Reader.idr
+Type checking ./Control/Monad/Writer.idr
+Type checking ./Control/Monad/State.idr
+Type checking ./Control/Monad/RWS.idr
+Type checking ./Control/IOExcept.idr
+Type checking ./Control/Catchable.idr
+Type checking ./Data/Fin.idr
+Type checking ./Syntax/PreorderReasoning.idr
+Type checking ./Control/Isomorphism.idr
+Type checking ./Data/Bits.idr
+Type checking ./Data/Buffer.idr
+Type checking ./Data/Complex.idr
+Type checking ./Data/Erased.idr
+Type checking ./Data/Vect.idr
+Type checking ./Data/HVect.idr
+Type checking ./Data/IORef.idr
+Type checking ./Data/List.idr
+Type checking ./Data/List/Quantifiers.idr
+Type checking ./Data/Nat/Views.idr
+Type checking ./Data/List/Views.idr
+Type checking ./Data/Mod2.idr
+Type checking ./Data/Primitives/Views.idr
+Type checking ./Data/So.idr
+Type checking ./Data/String.idr
+Type checking ./Data/String/Views.idr
+Type checking ./Data/Vect/Quantifiers.idr
+Type checking ./Data/Vect/Views.idr
+Type checking ./System.idr
+Type checking ./Debug/Error.idr
+Type checking ./Debug/Trace.idr
+Type checking ./Language/Reflection/Utils.idr
+Type checking ./System/Concurrency/Raw.idr
+Type checking ./System/Concurrency/Channels.idr
+Type checking ./System/Info.idr
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/base'
+make -C contrib build
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/contrib'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --build contrib.ipkg
+Type checking ./CFFI/Types.idr
+Type checking ./CFFI/Memory.idr
+Type checking ./CFFI.idr
+Type checking ./Control/Algebra.idr
+Type checking ./Data/Heap.idr
+Type checking ./Control/Algebra/Lattice.idr
+Type checking ./Data/Sign.idr
+Type checking ./Data/ZZ.idr
+Type checking ./Control/Algebra/VectorSpace.idr
+Type checking ./Control/Algebra/NumericImplementations.idr
+Type checking ./Control/Delayed.idr
+Type checking ./Interfaces/Verified.idr
+Type checking ./Control/Isomorphism/Extra.idr
+Type checking ./Control/Isomorphism/Fin.idr
+Type checking ./Control/Isomorphism/Primitives.idr
+Type checking ./Control/Isomorphism/Vect.idr
+Type checking ./Control/Monad/Syntax.idr
+Type checking ./Control/Partial.idr
+Type checking ./Control/Pipeline.idr
+Type checking ./Data/Fuel.idr
+Type checking ./Control/ST.idr
+Type checking ./Control/ST/Exception.idr
+Type checking ./Control/ST/ImplicitCall.idr
+Type checking ./Control/ST/Random.idr
+Type checking ./Control/ST/File.idr
+Type checking ./Data/Bool/Extra.idr
+Type checking ./Data/BoundedList.idr
+Type checking ./Data/Chain.idr
+Type checking ./Data/CoList.idr
+Type checking ./Data/Combinators.idr
+Type checking ./Data/Combinators/Applicative.idr
+Type checking ./Data/Combinators/Arrow.idr
+Type checking ./Data/Fin/Extra.idr
+Type checking ./Data/Fun.idr
+Type checking ./Data/Hash.idr
+Type checking ./Data/IOArray.idr
+Type checking ./Data/List/Zipper.idr
+Type checking ./Data/List/Extra.idr
+Type checking ./Data/Matrix.idr
+Type checking ./Data/Matrix/Algebraic.idr
+Type checking ./Data/Matrix/Numeric.idr
+Type checking ./Data/Nat.idr
+Type checking ./Data/Nat/Parity.idr
+Type checking ./Data/Nat/DivMod.idr
+Type checking ./Data/Nat/DivMod/IteratedSubtraction.idr
+Type checking ./Data/Pairs/Implicit.idr
+Type checking ./Data/PosNat.idr
+Type checking ./Data/Rel.idr
+Type checking ./Data/SortedMap.idr
+Type checking ./Data/SortedBag.idr
+Type checking ./Data/SortedSet.idr
+Type checking ./Data/Storable.idr
+Type checking ./Data/Stream/Extra.idr
+Type checking ./Data/String/Extra.idr
+Type checking ./Decidable/Decidable.idr
+Type checking ./Decidable/Order.idr
+Type checking ./Interfaces/Correlative.idr
+Type checking ./Language/JSON/Data.idr
+Type checking ./Text/Token.idr
+Type checking ./Text/Quantity.idr
+Type checking ./Text/Lexer/Core.idr
+Type checking ./Text/Lexer.idr
+Type checking ./Language/JSON/String/Tokens.idr
+Type checking ./Text/Parser/Core.idr
+Type checking ./Text/Parser.idr
+Type checking ./Language/JSON/String/Parser.idr
+Type checking ./Language/JSON/String/Lexer.idr
+Type checking ./Language/JSON/String.idr
+Type checking ./Language/JSON/Tokens.idr
+Type checking ./Language/JSON/Parser.idr
+Type checking ./Language/JSON/Lexer.idr
+Type checking ./Language/JSON.idr
+Type checking ./Network/Cgi.idr
+Type checking ./Network/Socket/Data.idr
+Type checking ./Network/Socket/Raw.idr
+Type checking ./Network/Socket.idr
+Type checking ./System/Concurrency/Process.idr
+Type checking ./Test/Unit/Display.idr
+Type checking ./Test/Unit/Runners.idr
+Type checking ./Text/PrettyPrint/WL/Core.idr
+Type checking ./Text/PrettyPrint/WL/Characters.idr
+Type checking ./Text/PrettyPrint/WL/Combinators.idr
+Type checking ./Text/PrettyPrint/WL.idr
+Type checking ./Test/Unit/Generic.idr
+Type checking ./Test/Unit/Assertions.idr
+Type checking ./Test/Unit.idr
+Type checking ./Text/Literate.idr
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/contrib'
+make -C effects build
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/effects'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --build effects.ipkg
+Type checking ./Effect/Default.idr
+Type checking ./Effects.idr
+Type checking ./Effect/Exception.idr
+Type checking ./Effect/File.idr
+Type checking ./Effect/Logging/Level.idr
+Type checking ./Effect/Logging/Category.idr
+Type checking ./Effect/Logging/Default.idr
+Type checking ./Effect/Memory.idr
+Type checking ./Effect/Monad.idr
+Type checking ./Effect/Perf.idr
+Type checking ./Effect/Random.idr
+Type checking ./Effect/Select.idr
+Type checking ./Effect/State.idr
+Type checking ./Effect/StdIO.idr
+Type checking ./Effect/System.idr
+Type checking ./Effect/Trans.idr
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/effects'
+make -C pruviloj build
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/pruviloj'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --build pruviloj.ipkg
+Type checking ./Pruviloj/Renamers.idr
+Type checking ./Pruviloj/Core.idr
+Type checking ./Pruviloj/Internals.idr
+Type checking ./Pruviloj/Injective.idr
+Type checking ./Pruviloj/Internals/TyConInfo.idr
+Type checking ./Pruviloj/Derive/Eliminators.idr
+Type checking ./Pruviloj/Induction.idr
+Type checking ./Pruviloj/Disjoint.idr
+Type checking ./Pruviloj.idr
+Type checking ./Pruviloj/Derive/DecEq.idr
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/pruviloj'
+make: Leaving directory '/tmp/stack8552/idris-1.3.1/libs'
+make: Entering directory '/tmp/stack8552/idris-1.3.1/rts'
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_rts.o idris_rts.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_heap.o idris_heap.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_gc.o idris_gc.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_gmp.o idris_gmp.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_bitstring.o idris_bitstring.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_opts.o idris_opts.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_stats.o idris_stats.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_utf8.o idris_utf8.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_stdfgn.o idris_stdfgn.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_buffer.o idris_buffer.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o getline.o getline.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o idris_net.o idris_net.c
+gcc -O2 -Wall -std=c99 -pipe -fdata-sections -ffunction-sections -D_POSIX_C_SOURCE=200809L -DHAS_PTHREAD -DIDRIS_ENABLE_STATS  -I/usr/local/include  -DIDRIS_TARGET_OS="\"unix\"" -DIDRIS_TARGET_TRIPLE="\"x86_64-linux-gnu\"" -fPIC   -c -o mini-gmp.o mini-gmp.c
+ar rc libidris_rts.a idris_rts.o idris_heap.o idris_gc.o idris_gmp.o idris_bitstring.o idris_opts.o idris_stats.o idris_utf8.o idris_stdfgn.o idris_buffer.o getline.o idris_net.o mini-gmp.o
+ranlib libidris_rts.a
+make: Leaving directory '/tmp/stack8552/idris-1.3.1/rts'
+Installing library in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/idris-1.3.1-22kGgDgxrlL2oYLvRnImiv
+Installing executable idris in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/bin
+Installing executable idris-codegen-node in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/bin
+Installing executable idris-codegen-javascript in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/bin
+Installing executable idris-codegen-c in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/bin
+Installing libraries in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1
+make: Entering directory '/tmp/stack8552/idris-1.3.1/libs'
+make -C prelude install
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/prelude'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --install prelude.ipkg
+Installing Builtins.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude
+Installing Decidable/Equality.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Decidable
+Installing IO.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude
+Installing Language/Reflection.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Language
+Installing Language/Reflection/Elab.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Language/Reflection
+Installing Language/Reflection/Errors.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Language/Reflection
+Installing Prelude.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude
+Installing Prelude/Algebra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Applicative.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Basics.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Bits.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Bool.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Cast.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Chars.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Doubles.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Either.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/File.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Foldable.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Functor.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Interactive.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Interfaces.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/List.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Maybe.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Monad.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Nat.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Pairs.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Providers.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Show.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Stream.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Strings.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Traversable.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/Uninhabited.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing Prelude/WellFounded.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude/Prelude
+Installing 00prelude-idx.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/prelude
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --installdoc prelude.ipkg
+Attempting to install IdrisDocs for prelude in: /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/docs/prelude
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/prelude'
+make -C base install
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/base'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --install base.ipkg
+Installing Control/Arrow.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control
+Installing Control/Catchable.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control
+Installing Control/Category.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control
+Installing Control/IOExcept.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control
+Installing Control/Isomorphism.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control
+Installing Control/Monad/Identity.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control/Monad
+Installing Control/Monad/Reader.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control/Monad
+Installing Control/Monad/RWS.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control/Monad
+Installing Control/Monad/State.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control/Monad
+Installing Control/Monad/Trans.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control/Monad
+Installing Control/Monad/Writer.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Control/Monad
+Installing Data/Bits.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Buffer.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Complex.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Erased.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Fin.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/HVect.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/IORef.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/List.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/List/Quantifiers.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/List
+Installing Data/List/Views.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/List
+Installing Data/Mod2.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Morphisms.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Nat/Views.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/Nat
+Installing Data/Primitives/Views.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/Primitives
+Installing Data/So.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/String.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/String/Views.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/String
+Installing Data/Vect.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data
+Installing Data/Vect/Quantifiers.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/Vect
+Installing Data/Vect/Views.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Data/Vect
+Installing Debug/Error.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Debug
+Installing Debug/Trace.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Debug
+Installing Language/Reflection/Utils.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Language/Reflection
+Installing Syntax/PreorderReasoning.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/Syntax
+Installing System.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base
+Installing System/Concurrency/Channels.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/System/Concurrency
+Installing System/Concurrency/Raw.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/System/Concurrency
+Installing System/Info.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base/System
+Installing 00base-idx.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/base
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --installdoc base.ipkg
+Attempting to install IdrisDocs for base in: /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/docs/base
+Warning: Ignoring empty or non-existing namespace 'Control.Category'
+Warning: Ignoring empty or non-existing namespace 'Control.Monad.Trans'
+Warning: Ignoring empty or non-existing namespace 'Data.Nat.Views'
+Warning: Ignoring empty or non-existing namespace 'Data.Primitives.Views'
+Warning: Ignoring empty or non-existing namespace 'Data.So'
+Warning: Ignoring empty or non-existing namespace 'Syntax.PreorderReasoning'
+Warning: Ignoring empty or non-existing namespace 'System'
+Warning: Ignoring empty or non-existing namespace 'System.Concurrency.Raw'
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/base'
+make -C contrib install
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/contrib'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --install contrib.ipkg
+Installing CFFI.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib
+Installing CFFI/Memory.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/CFFI
+Installing CFFI/Types.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/CFFI
+Installing Control/Algebra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control
+Installing Control/Algebra/Lattice.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Algebra
+Installing Control/Algebra/NumericImplementations.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Algebra
+Installing Control/Algebra/VectorSpace.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Algebra
+Installing Control/Delayed.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control
+Installing Control/Isomorphism/Extra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Isomorphism
+Installing Control/Isomorphism/Fin.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Isomorphism
+Installing Control/Isomorphism/Primitives.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Isomorphism
+Installing Control/Isomorphism/Vect.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Isomorphism
+Installing Control/Monad/Syntax.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/Monad
+Installing Control/Partial.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control
+Installing Control/Pipeline.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control
+Installing Control/ST.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control
+Installing Control/ST/Exception.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/ST
+Installing Control/ST/ImplicitCall.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/ST
+Installing Control/ST/Random.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/ST
+Installing Control/ST/File.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Control/ST
+Installing Data/Bool/Extra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Bool
+Installing Data/BoundedList.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Chain.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/CoList.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Combinators.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Combinators/Applicative.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Combinators
+Installing Data/Combinators/Arrow.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Combinators
+Installing Data/Fin/Extra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Fin
+Installing Data/Fuel.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Fun.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Hash.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Heap.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/IOArray.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/List/Zipper.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/List
+Installing Data/List/Extra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/List
+Installing Data/Matrix.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Matrix/Algebraic.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Matrix
+Installing Data/Matrix/Numeric.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Matrix
+Installing Data/Nat.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Nat/Parity.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Nat
+Installing Data/Nat/DivMod.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Nat
+Installing Data/Nat/DivMod/IteratedSubtraction.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Nat/DivMod
+Installing Data/Pairs/Implicit.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Pairs
+Installing Data/PosNat.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Rel.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Sign.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/SortedBag.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/SortedMap.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/SortedSet.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Storable.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Data/Stream/Extra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/Stream
+Installing Data/String/Extra.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data/String
+Installing Data/ZZ.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Data
+Installing Decidable/Decidable.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Decidable
+Installing Decidable/Order.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Decidable
+Installing Interfaces/Correlative.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Interfaces
+Installing Interfaces/Verified.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Interfaces
+Installing Language/JSON.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language
+Installing Language/JSON/Data.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON
+Installing Language/JSON/Lexer.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON
+Installing Language/JSON/Parser.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON
+Installing Language/JSON/String.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON
+Installing Language/JSON/String/Lexer.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON/String
+Installing Language/JSON/String/Parser.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON/String
+Installing Language/JSON/String/Tokens.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON/String
+Installing Language/JSON/Tokens.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Language/JSON
+Installing Network/Cgi.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Network
+Installing Network/Socket.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Network
+Installing Network/Socket/Data.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Network/Socket
+Installing Network/Socket/Raw.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Network/Socket
+Installing System/Concurrency/Process.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/System/Concurrency
+Installing Test/Unit/Display.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Test/Unit
+Installing Test/Unit/Runners.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Test/Unit
+Installing Test/Unit/Generic.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Test/Unit
+Installing Test/Unit/Assertions.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Test/Unit
+Installing Test/Unit.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Test
+Installing Text/Lexer.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text
+Installing Text/Lexer/Core.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text/Lexer
+Installing Text/Literate.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text
+Installing Text/Parser.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text
+Installing Text/Parser/Core.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text/Parser
+Installing Text/PrettyPrint/WL/Core.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text/PrettyPrint/WL
+Installing Text/PrettyPrint/WL/Combinators.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text/PrettyPrint/WL
+Installing Text/PrettyPrint/WL/Characters.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text/PrettyPrint/WL
+Installing Text/PrettyPrint/WL.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text/PrettyPrint
+Installing Text/Quantity.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text
+Installing Text/Token.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib/Text
+Installing 00contrib-idx.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/contrib
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --installdoc contrib.ipkg
+Attempting to install IdrisDocs for contrib in: /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/docs/contrib
+Warning: Ignoring empty or non-existing namespace 'CFFI'
+Warning: Ignoring empty or non-existing namespace 'Data.Combinators.Arrow'
+Warning: Ignoring empty or non-existing namespace 'Data.Heap'
+Warning: Ignoring empty or non-existing namespace 'Data.Nat'
+Warning: Ignoring empty or non-existing namespace 'Data.Sign'
+Warning: Ignoring empty or non-existing namespace 'Data.SortedMap'
+Warning: Ignoring empty or non-existing namespace 'Data.ZZ'
+Warning: Ignoring empty or non-existing namespace 'Interfaces.Verified'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.Lexer'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.Parser'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.String'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.String.Lexer'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.String.Parser'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.String.Tokens'
+Warning: Ignoring empty or non-existing namespace 'Language.JSON.Tokens'
+Warning: Ignoring empty or non-existing namespace 'Network.Socket.Raw'
+Warning: Ignoring empty or non-existing namespace 'Test.Unit.Runners'
+Warning: Ignoring empty or non-existing namespace 'Test.Unit'
+Warning: Ignoring empty or non-existing namespace 'Text.Lexer'
+Warning: Ignoring empty or non-existing namespace 'Text.Parser'
+Warning: Ignoring empty or non-existing namespace 'Text.Parser.Core'
+Warning: Ignoring empty or non-existing namespace 'Text.PrettyPrint.WL.Core'
+Warning: Ignoring empty or non-existing namespace 'Text.PrettyPrint.WL.Combinators'
+Warning: Ignoring empty or non-existing namespace 'Text.PrettyPrint.WL.Characters'
+Warning: Ignoring empty or non-existing namespace 'Text.PrettyPrint.WL'
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/contrib'
+make -C effects install
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/effects'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --install effects.ipkg
+Installing Effects.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects
+Installing Effect/Default.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Exception.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/File.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Logging/Category.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect/Logging
+Installing Effect/Logging/Default.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect/Logging
+Installing Effect/Logging/Level.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect/Logging
+Installing Effect/Memory.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Monad.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Perf.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Random.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Select.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/State.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/StdIO.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/System.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing Effect/Trans.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects/Effect
+Installing 00effects-idx.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/effects
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --installdoc effects.ipkg
+Attempting to install IdrisDocs for effects in: /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/docs/effects
+Warning: Ignoring empty or non-existing namespace 'Effect.Default'
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/effects'
+make -C pruviloj install
+make[1]: Entering directory '/tmp/stack8552/idris-1.3.1/libs/pruviloj'
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --install pruviloj.ipkg
+Installing Pruviloj.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj
+Installing Pruviloj/Core.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj
+Installing Pruviloj/Derive/DecEq.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj/Derive
+Installing Pruviloj/Derive/Eliminators.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj/Derive
+Installing Pruviloj/Disjoint.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj
+Installing Pruviloj/Induction.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj
+Installing Pruviloj/Injective.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj
+Installing Pruviloj/Internals.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj
+Installing Pruviloj/Internals/TyConInfo.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj/Internals
+Installing Pruviloj/Renamers.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj/Pruviloj
+Installing 00pruviloj-idx.ibc to /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/libs/pruviloj
+../../.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/idris/idris --installdoc pruviloj.ipkg
+Attempting to install IdrisDocs for pruviloj in: /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/docs/pruviloj
+Warning: Ignoring empty or non-existing namespace 'Pruviloj'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Core'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Derive.Eliminators'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Disjoint'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Induction'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Injective'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Internals'
+Warning: Ignoring empty or non-existing namespace 'Pruviloj.Renamers'
+make[1]: Leaving directory '/tmp/stack8552/idris-1.3.1/libs/pruviloj'
+make: Leaving directory '/tmp/stack8552/idris-1.3.1/libs'
+Installing run time system in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/rts
+make: Entering directory '/tmp/stack8552/idris-1.3.1/rts'
+mkdir -p /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/rts
+install libidris_rts.a idris_rts.h idris_heap.h idris_gc.h idris_gmp.h idris_bitstring.h idris_opts.h idris_stats.h idris_stdfgn.h idris_net.h idris_buffer.h idris_utf8.h getline.h mini-gmp.h /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/x86_64-linux-ghc-8.6.1/idris-1.3.1/rts
+make: Leaving directory '/tmp/stack8552/idris-1.3.1/rts'
+Copying man page to
+/home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/share/man/man1
+Registering library for idris-1.3.1..

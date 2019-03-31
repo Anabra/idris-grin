@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Effect.Memory</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Effect.Memory<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Effect.Memory</h1><dl class="decls"><dt id="Effect.Memory.MemoryChunk"><span class="word">data&nbsp;</span><span class="name type" title="Effect.Memory.MemoryChunk">MemoryChunk</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a> ->
+<a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a> ->
+<span class="type" title="Type">Type</span></span></dt><dd><dl class="decls"><dt id="Effect.Memory.CH"><span class="name constructor" title="Effect.Memory.CH">CH</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Ptr" href="[builtins].html#Ptr">Ptr</a> ->
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">size</span>
+<span class="implicit boundvar" title="">initialized</span></span></dt><dd></dd></dl></dd><dt id="Effect.Memory.MoveDescriptor"><span class="word">data&nbsp;</span><span class="name type" title="Effect.Memory.MoveDescriptor">MoveDescriptor</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Type">Type</span></span></dt><dd><dl class="decls"><dt id="Effect.Memory.Dst"><span class="name constructor" title="Effect.Memory.Dst">Dst</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Effect.Memory.MoveDescriptor" href="Effect.Memory.html#Effect.Memory.MoveDescriptor">MoveDescriptor</a></span></dt><dd></dd><dt id="Effect.Memory.Src"><span class="name constructor" title="Effect.Memory.Src">Src</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Effect.Memory.MoveDescriptor" href="Effect.Memory.html#Effect.Memory.MoveDescriptor">MoveDescriptor</a></span></dt><dd></dd></dl></dd><dt id="Effect.Memory.RAW_MEMORY"><span class="name function" title="Effect.Memory.RAW_MEMORY">RAW_MEMORY</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Type">Type</span> ->
+<a class="type" title="Effects.EFFECT" href="Effects.html#Effects.EFFECT">EFFECT</a></span></dt><dd></dd><dt id="Effect.Memory.RawMemory"><span class="word">data&nbsp;</span><span class="name type" title="Effect.Memory.RawMemory">RawMemory</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="function" title="Effects.Effect" href="Effects.html#Effects.Effect">Effect</a></span></dt><dd><dl class="decls"><dt id="Effect.Memory.Allocate"><span class="name constructor" title="Effect.Memory.Allocate">Allocate</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">n</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+<a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="boundvar" title="">n</span>
+(<a class="function" title="Prelude.Interfaces.fromInteger" href="Prelude.Interfaces.html#Prelude.Interfaces.fromInteger">fromInteger</a> <span class="data" title="0">0</span>))</span></dt><dd></dd><dt id="Effect.Memory.Free"><span class="name constructor" title="Effect.Memory.Free">Free</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+(<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Unit" href="[builtins].html#Unit">()</a>)</span></dt><dd></dd><dt id="Effect.Memory.Initialize"><span class="name constructor" title="Effect.Memory.Initialize">Initialize</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Bits8">Bits8</span> ->
+(<span class="boundvar" title="">size</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="implicit boundvar" title="">i</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">n</span>) ->
+<a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+(<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+(<span class="implicit boundvar" title="">i</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span>))</span></dt><dd></dd><dt id="Effect.Memory.Peek"><span class="name constructor" title="Effect.Memory.Peek">Peek</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">size</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">i</span>) ->
+<a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> (<a class="type" title="Data.Vect.Vect" href="Data.Vect.html#Data.Vect.Vect">Vect</a> <span class="boundvar" title="">size</span>
+<span class="type" title="Bits8">Bits8</span>)
+(<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)</span></dt><dd></dd><dt id="Effect.Memory.Poke"><span class="name constructor" title="Effect.Memory.Poke">Poke</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.Vect.Vect" href="Data.Vect.html#Data.Vect.Vect">Vect</a> <span class="implicit boundvar" title="">size</span>
+<span class="type" title="Bits8">Bits8</span> ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">i</span> <a class="function" title="Prelude.Bool.&amp;&amp;" href="Prelude.Bool.html#Prelude.Bool.&amp;&amp;">&amp;&amp;</a>
+<a class="constructor" title="Delay" href="[builtins].html#Delay">Delay</a> (<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="implicit boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">n</span>)) ->
+<a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+(<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+(<a class="function" title="Prelude.Interfaces.max" href="Prelude.Interfaces.html#Prelude.Interfaces.max">max</a> <span class="implicit boundvar" title="">i</span>
+(<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="implicit boundvar" title="">size</span>)))</span></dt><dd></dd><dt id="Effect.Memory.Move"><span class="name constructor" title="Effect.Memory.Move">Move</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">src</span> : <a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">src_size</span>
+<span class="implicit boundvar" title="">src_init</span>) ->
+(<span class="boundvar" title="">dst_offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">src_offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">size</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">dst_offset</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">dst_init</span> <a class="function" title="Prelude.Bool.&amp;&amp;" href="Prelude.Bool.html#Prelude.Bool.&amp;&amp;">&amp;&amp;</a>
+<a class="constructor" title="Delay" href="[builtins].html#Delay">Delay</a> (<span class="boundvar" title="">dst_offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">dst_size</span>)) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">src_offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">src_init</span>) ->
+<a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+(<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">dst_size</span>
+<span class="implicit boundvar" title="">dst_init</span>)
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">dst_size</span>
+(<a class="function" title="Prelude.Interfaces.max" href="Prelude.Interfaces.html#Prelude.Interfaces.max">max</a> <span class="implicit boundvar" title="">dst_init</span>
+(<span class="boundvar" title="">dst_offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span>)))</span></dt><dd></dd><dt id="Effect.Memory.GetRawPtr"><span class="name constructor" title="Effect.Memory.GetRawPtr">GetRawPtr</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Effect.Memory.RawMemory" href="Effect.Memory.html#Effect.Memory.RawMemory">RawMemory</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)
+(<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)
+(\<span class="boundvar" title="">v</span> =>
+<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)</span></dt><dd></dd></dl></dd><dt id="Effect.Memory.allocate"><span class="name function" title="Effect.Memory.allocate">allocate</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">n</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="function" title="Effects.DepEff.Eff" href="Effects.DepEff.html#Effects.DepEff.Eff">Eff</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a><span class="data" title="]">]</span>
+(\<span class="boundvar" title="">v</span> =>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="boundvar" title="">n</span>
+(<a class="function" title="Prelude.Interfaces.fromInteger" href="Prelude.Interfaces.html#Prelude.Interfaces.fromInteger">fromInteger</a> <span class="data" title="0">0</span>))<span class="data" title="]">]</span>)</span></dt><dd></dd><dt id="Effect.Memory.free"><span class="name function" title="Effect.Memory.free">free</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="function" title="Effects.DepEff.Eff" href="Effects.DepEff.html#Effects.DepEff.Eff">Eff</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)<span class="data" title="]">]</span>
+(\<span class="boundvar" title="">v</span> =>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a><span class="data" title="]">]</span>)</span></dt><dd></dd><dt id="Effect.Memory.initialize"><span class="name function" title="Effect.Memory.initialize">initialize</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Bits8">Bits8</span> ->
+(<span class="boundvar" title="">size</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="implicit boundvar" title="">i</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">n</span>) ->
+<a class="function" title="Effects.DepEff.Eff" href="Effects.DepEff.html#Effects.DepEff.Eff">Eff</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)<span class="data" title="]">]</span>
+(\<span class="boundvar" title="">v</span> =>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+(<span class="implicit boundvar" title="">i</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span>))<span class="data" title="]">]</span>)</span></dt><dd></dd><dt id="Effect.Memory.move"><span class="name function" title="Effect.Memory.move">move</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">dst_offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">src_offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">size</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">dst_offset</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">dst_init</span> <a class="function" title="Prelude.Bool.&amp;&amp;" href="Prelude.Bool.html#Prelude.Bool.&amp;&amp;">&amp;&amp;</a>
+<a class="constructor" title="Delay" href="[builtins].html#Delay">Delay</a> (<span class="boundvar" title="">dst_offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">dst_size</span>)) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">src_offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">src_init</span>) ->
+<a class="function" title="Effects.DepEff.Eff" href="Effects.DepEff.html#Effects.DepEff.Eff">Eff</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+<span class="data" title="[">[</span><a class="constructor" title="Effect.Memory.Dst" href="Effect.Memory.html#Effect.Memory.Dst">Dst</a> <a class="function" title="Effects.:::" href="Effects.html#Effects.:::">:::</a>
+<a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">dst_size</span>
+<span class="implicit boundvar" title="">dst_init</span>)<span class="data" title=",">,</span>
+<a class="constructor" title="Effect.Memory.Src" href="Effect.Memory.html#Effect.Memory.Src">Src</a> <a class="function" title="Effects.:::" href="Effects.html#Effects.:::">:::</a>
+<a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">src_size</span>
+<span class="implicit boundvar" title="">src_init</span>)<span class="data" title="]">]</span>
+(\<span class="boundvar" title="">v</span> =>
+<span class="data" title="[">[</span><a class="constructor" title="Effect.Memory.Dst" href="Effect.Memory.html#Effect.Memory.Dst">Dst</a> <a class="function" title="Effects.:::" href="Effects.html#Effects.:::">:::</a>
+<a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">dst_size</span>
+(<a class="function" title="Prelude.Interfaces.max" href="Prelude.Interfaces.html#Prelude.Interfaces.max">max</a> <span class="implicit boundvar" title="">dst_init</span>
+(<span class="boundvar" title="">dst_offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span>)))<span class="data" title=",">,</span>
+<a class="constructor" title="Effect.Memory.Src" href="Effect.Memory.html#Effect.Memory.Src">Src</a> <a class="function" title="Effects.:::" href="Effects.html#Effects.:::">:::</a>
+<a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">src_size</span>
+<span class="implicit boundvar" title="">src_init</span>)<span class="data" title="]">]</span>)</span></dt><dd></dd><dt id="Effect.Memory.peek"><span class="name function" title="Effect.Memory.peek">peek</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+(<span class="boundvar" title="">size</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">i</span>) ->
+<a class="function" title="Effects.DepEff.Eff" href="Effects.DepEff.html#Effects.DepEff.Eff">Eff</a> (<a class="type" title="Data.Vect.Vect" href="Data.Vect.html#Data.Vect.Vect">Vect</a> <span class="boundvar" title="">size</span>
+<span class="type" title="Bits8">Bits8</span>)
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)<span class="data" title="]">]</span>
+(\<span class="boundvar" title="">result</span> =>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)<span class="data" title="]">]</span>)</span></dt><dd></dd><dt id="Effect.Memory.poke"><span class="name function" title="Effect.Memory.poke">poke</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">offset</span> : <a class="type" title="Prelude.Nat.Nat" href="Prelude.Nat.html#Prelude.Nat.Nat">Nat</a>) ->
+<a class="type" title="Data.Vect.Vect" href="Data.Vect.html#Data.Vect.Vect">Vect</a> <span class="implicit boundvar" title="">size</span>
+<span class="type" title="Bits8">Bits8</span> ->
+<a class="type" title="Data.So.So" href="Data.So.html#Data.So.So">So</a> (<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">i</span> <a class="function" title="Prelude.Bool.&amp;&amp;" href="Prelude.Bool.html#Prelude.Bool.&amp;&amp;">&amp;&amp;</a>
+<a class="constructor" title="Delay" href="[builtins].html#Delay">Delay</a> (<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="implicit boundvar" title="">size</span> <a class="function" title="Prelude.Interfaces.&lt;=" href="Prelude.Interfaces.html#Prelude.Interfaces.&lt;=">&lt;=</a>
+<span class="implicit boundvar" title="">n</span>)) ->
+<a class="function" title="Effects.DepEff.Eff" href="Effects.DepEff.html#Effects.DepEff.Eff">Eff</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+<span class="implicit boundvar" title="">i</span>)<span class="data" title="]">]</span>
+(\<span class="boundvar" title="">v</span> =>
+<span class="data" title="[">[</span><a class="function" title="Effect.Memory.RAW_MEMORY" href="Effect.Memory.html#Effect.Memory.RAW_MEMORY">RAW_MEMORY</a> (<a class="type" title="Effect.Memory.MemoryChunk" href="Effect.Memory.html#Effect.Memory.MemoryChunk">MemoryChunk</a> <span class="implicit boundvar" title="">n</span>
+(<a class="function" title="Prelude.Interfaces.max" href="Prelude.Interfaces.html#Prelude.Interfaces.max">max</a> <span class="implicit boundvar" title="">i</span>
+(<span class="boundvar" title="">offset</span> <a class="function" title="Prelude.Interfaces.+" href="Prelude.Interfaces.html#Prelude.Interfaces.+">+</a>
+<span class="implicit boundvar" title="">size</span>)))<span class="data" title="]">]</span>)</span></dt><dd></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

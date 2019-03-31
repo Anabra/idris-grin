@@ -1,0 +1,2135 @@
+Heap
+    0      -> {CGrInt[{T_Int64}]}
+    1      -> {Cidr_Prelude.Interfaces.EQ[]
+              ,Cidr_Prelude.Interfaces.GT[]
+              ,Cidr_Prelude.Interfaces.LT[]}
+    2      -> {CGrInt[{T_Int64}]}
+    3      -> {CGrInt[{T_Int64}]}
+    4      -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    5      -> {CGrInt[{T_Int64}]}
+    6      -> {Cidr_Prelude.Interfaces.EQ[]
+              ,Cidr_Prelude.Interfaces.GT[]
+              ,Cidr_Prelude.Interfaces.LT[]}
+    7      -> {CGrInt[{T_Int64}]}
+    8      -> {CGrInt[{T_Int64}]}
+    9      -> {CErased[]}
+    10     -> {CErased[]}
+    11     -> {CGrInt[{T_Int64}]}
+    12     -> {CGrInt[{T_Int64}]}
+    13     -> {CErased[]}
+    14     -> {CErased[]}
+    15     -> {C"idr_{U_Main.{main_0}_1}"[]}
+    16     -> {CErased[]}
+    17     -> {C"idr_{U_Main.{main_1}_1}"[]}
+    18     -> {Cidr_Main.Nil[]}
+    19     -> {CGrString[{T_String}]}
+    20     -> {Cidr_MkUnit[]}
+    21     -> {CErased[]}
+    22     -> {CErased[]}
+    23     -> {C"idr_{U_Main.{main_1}_1}"[]}
+    24     -> {CErased[]}
+    25     -> {CErased[]}
+    26     -> {CGrInt[{T_Int64}]}
+    27     -> {CGrInt[{T_Int64}]}
+    28     -> {Cidr_Main.Cons[{26,90},{91}],Cidr_Main.Nil[]}
+    29     -> {CGrInt[{T_Int64}]}
+    30     -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    31     -> {CGrInt[{T_Int64}]}
+    32     -> {CGrInt[{T_Int64}]}
+    33     -> {Cidr_Prelude.Interfaces.EQ[]
+              ,Cidr_Prelude.Interfaces.GT[]
+              ,Cidr_Prelude.Interfaces.LT[]}
+    34     -> {CGrInt[{T_Int64}]}
+    35     -> {CGrInt[{T_Int64}]}
+    36     -> {CGrInt[{T_Int64}]}
+    37     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    38     -> {CGrString[{T_String}]}
+    39     -> {CGrInt[{T_Int64}]}
+    40     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    41     -> {Cidr_Prelude.Bool.True[]}
+    42     -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    43     -> {CGrInt[{T_Int64}]}
+    44     -> {CGrInt[{T_Int64}]}
+    45     -> {CGrInt[{T_Int64}]}
+    46     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    47     -> {CGrString[{T_String}]}
+    48     -> {CGrString[{T_String}]}
+    49     -> {CGrString[{T_String}]}
+    50     -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    51     -> {CGrString[{T_String}]}
+    52     -> {CGrString[{T_String}]}
+    53     -> {CUnit[]}
+    54     -> {CGrString[{T_String}]}
+    55     -> {CGrInt[{T_Int64}]}
+    56     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    57     -> {Cidr_Prelude.Bool.True[]}
+    58     -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    59     -> {CGrInt[{T_Int64}]}
+    60     -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    61     -> {CGrString[{T_String}]}
+    62     -> {CGrString[{T_String}]}
+    63     -> {C"idr_{U_Prelude.Show.{showLitChar_10}_1}"[]}
+    64     -> {CGrString[{T_String}]}
+    65     -> {CErased[]}
+    66     -> {CGrInt[{T_Int64}]}
+    67     -> {CGrInt[{T_Int64}]}
+    68     -> {CErased[]}
+    69     -> {Cidr_Prelude.List.::[{182},{245}]}
+    70     -> {Cidr_Prelude.Maybe.Just[{182
+                                       ,183
+                                       ,184
+                                       ,185
+                                       ,186
+                                       ,187
+                                       ,188
+                                       ,189
+                                       ,190
+                                       ,191
+                                       ,192
+                                       ,193
+                                       ,194
+                                       ,195
+                                       ,196
+                                       ,197
+                                       ,198
+                                       ,199
+                                       ,200
+                                       ,201
+                                       ,202
+                                       ,203
+                                       ,204
+                                       ,205
+                                       ,206
+                                       ,207
+                                       ,208
+                                       ,209
+                                       ,210
+                                       ,211
+                                       ,212
+                                       ,213}]
+              ,Cidr_Prelude.Maybe.Nothing[]}
+    71     -> {CGrInt[{T_Int64}]}
+    72     -> {Cidr_Prelude.Interfaces.EQ[]
+              ,Cidr_Prelude.Interfaces.GT[]
+              ,Cidr_Prelude.Interfaces.LT[]}
+    73     -> {}
+    74     -> {}
+    75     -> {}
+    76     -> {}
+    77     -> {}
+    78     -> {}
+    79     -> {}
+    80     -> {}
+    81     -> {CGrString[{T_String}]}
+    82     -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    83     -> {C"idr_{U_Prelude.Show.protectEsc_1}"[{63},{64}]
+              ,C"idr_{U_Prelude.Show.{showLitChar_11}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_12}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_13}_1}"[{182
+                                                          ,183
+                                                          ,184
+                                                          ,185
+                                                          ,186
+                                                          ,187
+                                                          ,188
+                                                          ,189
+                                                          ,190
+                                                          ,191
+                                                          ,192
+                                                          ,193
+                                                          ,194
+                                                          ,195
+                                                          ,196
+                                                          ,197
+                                                          ,198
+                                                          ,199
+                                                          ,200
+                                                          ,201
+                                                          ,202
+                                                          ,203
+                                                          ,204
+                                                          ,205
+                                                          ,206
+                                                          ,207
+                                                          ,208
+                                                          ,209
+                                                          ,210
+                                                          ,211
+                                                          ,212
+                                                          ,213}]
+              ,C"idr_{U_Prelude.Show.{showLitChar_14}_1}"[{98,107,258}]
+              ,C"idr_{U_Prelude.Show.{showLitChar_3}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_4}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_5}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_6}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_7}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_8}_1}"[]
+              ,C"idr_{U_Prelude.Show.{showLitChar_9}_1}"[]
+              ,C"idr_{U_prim__strCons_1}"[{98,107,258}]}
+    84     -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    85     -> {}
+    86     -> {}
+    87     -> {Cidr_Prelude.Interfaces.EQ[]
+              ,Cidr_Prelude.Interfaces.GT[]
+              ,Cidr_Prelude.Interfaces.LT[]}
+    88     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    89     -> {CGrInt[{T_Int64}]}
+    90     -> {CGrInt[{T_Int64}]}
+    91     -> {Cidr_Main.Cons[{26,90},{91}],Cidr_Main.Nil[]}
+    92     -> {CGrInt[{T_Int64}]}
+    93     -> {CGrString[{T_String}]}
+    94     -> {CGrInt[{T_Int64}]}
+    95     -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    96     -> {Cidr_Prelude.Bool.True[]}
+    97     -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    98     -> {CGrInt[{T_Int64}]}
+    99     -> {CErased[]}
+    100    -> {CGrString[{T_String}]}
+    101    -> {CGrString[{T_String}]}
+    102    -> {CGrInt[{T_Int64}]}
+    103    -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    104    -> {Cidr_Prelude.Bool.True[]}
+    105    -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    106    -> {CGrString[{T_String}]}
+    107    -> {CGrInt[{T_Int64}]}
+    108    -> {CGrString[{T_String}]}
+    109    -> {CGrString[{T_String}]}
+    110    -> {Cidr_Prelude.Strings.StrCons[{107},{109}]
+              ,Cidr_Prelude.Strings.StrNil[]}
+    111    -> {Cidr_Prelude.List.::[{107,258},{261}]
+              ,Cidr_Prelude.List.Nil[]}
+    112    -> {Cidr_Prelude.List.::[{98},{111}]
+              ,Cidr_Prelude.List.Nil[]}
+    113    -> {CGrString[{T_String}]}
+    114    -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    115    -> {CErased[]}
+    116    -> {Cidr_MkUnit[]}
+    117    -> {CErased[]}
+    118    -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    119    -> {Cidr_Prelude.Show.Open[]}
+    120    -> {CGrString[{T_String}]}
+    121    -> {CGrString[{T_String}]}
+    122    -> {CGrString[{T_String}]}
+    123    -> {CGrString[{T_String}]}
+    124    -> {CGrString[{T_String}]}
+    125    -> {CGrString[{T_String}]}
+    126    -> {CGrString[{T_String}]}
+    127    -> {CGrInt[{T_Int64}]}
+    128    -> {CGrInt[{T_Int64}]}
+    129    -> {CGrString[{T_String}]}
+    130    -> {CGrString[{T_String}]}
+    131    -> {CGrInt[{T_Int64}]}
+    132    -> {CGrString[{T_String}]}
+    133    -> {CGrInt[{T_Int64}]}
+    134    -> {C"idr_{U_Prelude.Chars.isDigit_1}"[]}
+    135    -> {CErased[]}
+    136    -> {C"idr_{U_prim__toStrInt_1}"[]}
+    137    -> {Cidr_Prelude.Show.Open[]}
+    138    -> {CGrInt[{T_Int64}]}
+    139    -> {CGrString[{T_String}]
+              ,Cidr_Prelude.Bool.False[]
+              ,Cidr_Prelude.Bool.True[]}
+    140    -> {CGrString[{T_String}]}
+    141    -> {CGrInt[{T_Int64}]}
+    142    -> {CGrInt[{T_Int64}]}
+    143    -> {CGrInt[{T_Int64}]}
+    144    -> {CGrInt[{T_Int64}]}
+    145    -> {}
+    146    -> {}
+    147    -> {}
+    148    -> {}
+    149    -> {}
+    150    -> {}
+    151    -> {}
+    152    -> {}
+    153    -> {CGrInt[{T_Int64}]}
+    154    -> {CGrInt[{T_Int64}]}
+    155    -> {CGrInt[{T_Int64}]}
+    156    -> {CGrInt[{T_Int64}]}
+    157    -> {CGrInt[{T_Int64}]}
+    158    -> {CGrInt[{T_Int64}]}
+    159    -> {}
+    160    -> {}
+    161    -> {CGrInt[{T_Int64}]}
+    162    -> {CGrInt[{T_Int64}]}
+    163    -> {CGrInt[{T_Int64}]}
+    164    -> {CGrInt[{T_Int64}]}
+    165    -> {}
+    166    -> {}
+    167    -> {}
+    168    -> {}
+    169    -> {}
+    170    -> {}
+    171    -> {}
+    172    -> {}
+    173    -> {}
+    174    -> {}
+    175    -> {}
+    176    -> {}
+    177    -> {}
+    178    -> {}
+    179    -> {}
+    180    -> {}
+    181    -> {}
+    182    -> {CGrString[{T_String}]}
+    183    -> {CGrString[{T_String}]}
+    184    -> {CGrString[{T_String}]}
+    185    -> {CGrString[{T_String}]}
+    186    -> {CGrString[{T_String}]}
+    187    -> {CGrString[{T_String}]}
+    188    -> {CGrString[{T_String}]}
+    189    -> {CGrString[{T_String}]}
+    190    -> {CGrString[{T_String}]}
+    191    -> {CGrString[{T_String}]}
+    192    -> {CGrString[{T_String}]}
+    193    -> {CGrString[{T_String}]}
+    194    -> {CGrString[{T_String}]}
+    195    -> {CGrString[{T_String}]}
+    196    -> {CGrString[{T_String}]}
+    197    -> {CGrString[{T_String}]}
+    198    -> {CGrString[{T_String}]}
+    199    -> {CGrString[{T_String}]}
+    200    -> {CGrString[{T_String}]}
+    201    -> {CGrString[{T_String}]}
+    202    -> {CGrString[{T_String}]}
+    203    -> {CGrString[{T_String}]}
+    204    -> {CGrString[{T_String}]}
+    205    -> {CGrString[{T_String}]}
+    206    -> {CGrString[{T_String}]}
+    207    -> {CGrString[{T_String}]}
+    208    -> {CGrString[{T_String}]}
+    209    -> {CGrString[{T_String}]}
+    210    -> {CGrString[{T_String}]}
+    211    -> {CGrString[{T_String}]}
+    212    -> {CGrString[{T_String}]}
+    213    -> {CGrString[{T_String}]}
+    214    -> {Cidr_Prelude.List.Nil[]}
+    215    -> {Cidr_Prelude.List.::[{213},{214}]}
+    216    -> {Cidr_Prelude.List.::[{212},{215}]}
+    217    -> {Cidr_Prelude.List.::[{211},{216}]}
+    218    -> {Cidr_Prelude.List.::[{210},{217}]}
+    219    -> {Cidr_Prelude.List.::[{209},{218}]}
+    220    -> {Cidr_Prelude.List.::[{208},{219}]}
+    221    -> {Cidr_Prelude.List.::[{207},{220}]}
+    222    -> {Cidr_Prelude.List.::[{206},{221}]}
+    223    -> {Cidr_Prelude.List.::[{205},{222}]}
+    224    -> {Cidr_Prelude.List.::[{204},{223}]}
+    225    -> {Cidr_Prelude.List.::[{203},{224}]}
+    226    -> {Cidr_Prelude.List.::[{202},{225}]}
+    227    -> {Cidr_Prelude.List.::[{201},{226}]}
+    228    -> {Cidr_Prelude.List.::[{200},{227}]}
+    229    -> {Cidr_Prelude.List.::[{199},{228}]}
+    230    -> {Cidr_Prelude.List.::[{198},{229}]}
+    231    -> {Cidr_Prelude.List.::[{197},{230}]}
+    232    -> {Cidr_Prelude.List.::[{196},{231}]}
+    233    -> {Cidr_Prelude.List.::[{195},{232}]}
+    234    -> {Cidr_Prelude.List.::[{194},{233}]}
+    235    -> {Cidr_Prelude.List.::[{193},{234}]}
+    236    -> {Cidr_Prelude.List.::[{192},{235}]}
+    237    -> {Cidr_Prelude.List.::[{191},{236}]}
+    238    -> {Cidr_Prelude.List.::[{190},{237}]}
+    239    -> {Cidr_Prelude.List.::[{189},{238}]}
+    240    -> {Cidr_Prelude.List.::[{188},{239}]}
+    241    -> {Cidr_Prelude.List.::[{187},{240}]}
+    242    -> {Cidr_Prelude.List.::[{186},{241}]}
+    243    -> {Cidr_Prelude.List.::[{185},{242}]}
+    244    -> {Cidr_Prelude.List.::[{184},{243}]}
+    245    -> {Cidr_Prelude.List.::[{183},{244}]}
+    246    -> {CGrInt[{T_Int64}]}
+    247    -> {CGrInt[{T_Int64}]}
+    248    -> {CErased[]}
+    249    -> {}
+    250    -> {}
+    251    -> {}
+    252    -> {CErased[]}
+    253    -> {CGrString[{T_String}]}
+    254    -> {CGrInt[{T_Int64}]}
+    255    -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    256    -> {Cidr_Prelude.Bool.True[]}
+    257    -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    258    -> {CGrInt[{T_Int64}]}
+    259    -> {CGrString[{T_String}]}
+    260    -> {Cidr_Prelude.Strings.StrCons[{258},{259}]
+              ,Cidr_Prelude.Strings.StrNil[]}
+    261    -> {Cidr_Prelude.List.::[{107,258},{261}]
+              ,Cidr_Prelude.List.Nil[]}
+Env
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00" -> {40
+                                                                                            ,56
+                                                                                            ,95
+                                                                                            ,103
+                                                                                            ,255}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val" -> {}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_219" -> {Cidr_Prelude.Bool.False[]
+                                                                                                    ,Cidr_Prelude.Bool.True[]}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01" -> {41
+                                                                                            ,57
+                                                                                            ,96
+                                                                                            ,104
+                                                                                            ,256}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:01_val" -> {Cidr_Prelude.Bool.True[]}
+    idr_Main.length0 -> {9,24}
+    idr_Main.length1 -> {10,25}
+    idr_Main.length2 -> {28,91}
+    idr_Main.length2_val -> {Cidr_Main.Cons[{26,90},{91}]
+                            ,Cidr_Main.Nil[]}
+    idr_Main.length3 -> {26,90}
+    idr_Main.length4 -> {91}
+    idr_Main.length5 -> {9}
+    idr_Main.length5_22 -> {11}
+    idr_Main.length5_val -> {CGrInt[{T_Int64}]}
+    idr_Main.length5_val_21 -> {CErased[]}
+    idr_Main.length6 -> {10}
+    idr_Main.length6_24 -> {12}
+    idr_Main.length6_val -> {CErased[]}
+    idr_Main.length6_val_23 -> {CGrInt[{T_Int64}]}
+    idr_Main.main0 -> {115}
+    idr_Main.main1 -> {13}
+    idr_Main.main1_28 -> {20}
+    idr_Main.main1_val -> {Cidr_MkUnit[]}
+    idr_Main.main1_val_25 -> {CErased[]}
+    idr_Main.main2 -> {14}
+    idr_Main.main2_30 -> {21}
+    idr_Main.main2_val -> {CErased[]}
+    idr_Main.main2_val_29 -> {CErased[]}
+    idr_Main.main3 -> {15}
+    idr_Main.main3_32 -> {22}
+    idr_Main.main3_val -> {C"idr_{U_Main.{main_0}_1}"[]}
+    idr_Main.main3_val_31 -> {CErased[]}
+    idr_Main.main4 -> {16}
+    idr_Main.main4_27 -> {19}
+    idr_Main.main4_34 -> {23}
+    idr_Main.main4_val -> {CGrString[{T_String}]}
+    idr_Main.main4_val_26 -> {CErased[]}
+    idr_Main.main4_val_33 -> {C"idr_{U_Main.{main_1}_1}"[]}
+    idr_Main.main5 -> {17}
+    idr_Main.main5_37 -> {24}
+    idr_Main.main5_42 -> {29}
+    idr_Main.main5_val -> {C"idr_{U_Main.{main_1}_1}"[]}
+    idr_Main.main5_val_35 -> {CGrInt[{T_Int64}]}
+    idr_Main.main5_val_36 -> {CErased[]}
+    idr_Main.main6 -> {18}
+    idr_Main.main6_39 -> {25}
+    idr_Main.main6_val -> {Cidr_Main.Nil[]}
+    idr_Main.main6_val_38 -> {CErased[]}
+    idr_Main.main7 -> {26}
+    idr_Main.main7_41 -> {28}
+    idr_Main.main7_val -> {Cidr_Main.Cons[{26,90},{91}]
+                          ,Cidr_Main.Nil[]}
+    idr_Main.main7_val_40 -> {CGrInt[{T_Int64}]}
+    idr_Main.main8 -> {27}
+    idr_Main.main8_val -> {CGrInt[{T_Int64}]}
+    idr_Main.upto0 -> {26,90}
+    idr_Main.upto1 -> {27}
+    idr_Main.upto2 -> {87}
+    idr_Main.upto2_164 -> {88}
+    idr_Main.upto2_val -> {Cidr_Prelude.Bool.False[]
+                          ,Cidr_Prelude.Bool.True[]}
+    idr_Main.upto2_val_162 -> {Cidr_Prelude.Interfaces.EQ[]
+                              ,Cidr_Prelude.Interfaces.GT[]
+                              ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Main.upto2_val_163 -> {Cidr_Prelude.Interfaces.EQ[]
+                              ,Cidr_Prelude.Interfaces.GT[]
+                              ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Main.upto2_val_165 -> {Cidr_Prelude.Bool.False[]
+                              ,Cidr_Prelude.Bool.True[]}
+    idr_Main.upto3 -> {89}
+    idr_Main.upto3_168 -> {90}
+    idr_Main.upto3_169 -> {91}
+    idr_Main.upto3_val -> {Cidr_Main.Cons[{26,90},{91}]
+                          ,Cidr_Main.Nil[]}
+    idr_Main.upto3_val_166 -> {CGrInt[{T_Int64}]}
+    idr_Main.upto3_val_167 -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}0" -> {19,29,59,84,138}
+    "idr_Main.{main_0}1" -> {92}
+    "idr_Main.{main_0}1_val" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}2" -> {93}
+    "idr_Main.{main_0}2_178" -> {94}
+    "idr_Main.{main_0}2_180" -> {95}
+    "idr_Main.{main_0}2_181" -> {97}
+    "idr_Main.{main_0}2_206" -> {112}
+    "idr_Main.{main_0}2_209" -> {114}
+    "idr_Main.{main_0}2_val" -> {CGrString[{T_String}]
+                                ,Cidr_Prelude.Bool.False[]
+                                ,Cidr_Prelude.Bool.True[]}
+    "idr_Main.{main_0}2_val_173" -> {Cidr_Prelude.List.::[{98}
+                                                         ,{111}]
+                                    ,Cidr_Prelude.List.Nil[]}
+    "idr_Main.{main_0}2_val_174" -> {Cidr_Prelude.Basics.No[]
+                                    ,Cidr_Prelude.Basics.Yes[]}
+    "idr_Main.{main_0}2_val_175" -> {Cidr_Prelude.Bool.False[]
+                                    ,Cidr_Prelude.Bool.True[]}
+    "idr_Main.{main_0}2_val_176" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}2_val_177" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}2_val_179" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}2_val_182" -> {Cidr_Prelude.Basics.No[]
+                                    ,Cidr_Prelude.Basics.Yes[]}
+    "idr_Main.{main_0}3" -> {96}
+    "idr_Main.{main_0}3_184" -> {98}
+    "idr_Main.{main_0}3_208" -> {113}
+    "idr_Main.{main_0}3_val" -> {Cidr_Prelude.Bool.True[]}
+    "idr_Main.{main_0}3_val_183" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}3_val_207" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}4" -> {99}
+    "idr_Main.{main_0}4_205" -> {111}
+    "idr_Main.{main_0}4_val" -> {Cidr_Prelude.List.::[{107,258}
+                                                     ,{261}]
+                                ,Cidr_Prelude.List.Nil[]}
+    "idr_Main.{main_0}4_val_185" -> {CErased[]}
+    "idr_Main.{main_0}5" -> {100}
+    "idr_Main.{main_0}5_190" -> {102}
+    "idr_Main.{main_0}5_193" -> {103}
+    "idr_Main.{main_0}5_196" -> {105}
+    "idr_Main.{main_0}5_204" -> {110}
+    "idr_Main.{main_0}5_val" -> {Cidr_Prelude.Strings.StrCons[{107}
+                                                             ,{109}]
+                                ,Cidr_Prelude.Strings.StrNil[]}
+    "idr_Main.{main_0}5_val_186" -> {Cidr_Prelude.Basics.No[]
+                                    ,Cidr_Prelude.Basics.Yes[]}
+    "idr_Main.{main_0}5_val_187" -> {Cidr_Prelude.Bool.False[]
+                                    ,Cidr_Prelude.Bool.True[]}
+    "idr_Main.{main_0}5_val_188" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}5_val_189" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}5_val_191" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}5_val_197" -> {Cidr_Prelude.Basics.No[]
+                                    ,Cidr_Prelude.Basics.Yes[]}
+    "idr_Main.{main_0}6" -> {101}
+    "idr_Main.{main_0}6_195" -> {104}
+    "idr_Main.{main_0}6_200" -> {106}
+    "idr_Main.{main_0}6_201" -> {107}
+    "idr_Main.{main_0}6_val" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}6_val_194" -> {Cidr_Prelude.Bool.True[]}
+    "idr_Main.{main_0}6_val_198" -> {CGrInt[{T_Int64}]}
+    "idr_Main.{main_0}6_val_199" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}7" -> {108}
+    "idr_Main.{main_0}7_203" -> {109}
+    "idr_Main.{main_0}7_val" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}7_val_202" -> {CGrString[{T_String}]}
+    "idr_Main.{main_0}_cpat_LInt64_0" -> {T_Int64}
+    "idr_Main.{main_0}_cpat_LInt64_0_192" -> {T_Int64}
+    "idr_Main.{main_1}0" -> {19,29,59,84,138}
+    "idr_Main.{main_1}1" -> {117}
+    "idr_Main.{main_1}1_val" -> {CErased[]}
+    "idr_Main.{main_1}2" -> {118}
+    "idr_Main.{main_1}2_val" -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    "idr_Main.{main_1}3" -> {119}
+    "idr_Main.{main_1}3_val" -> {Cidr_Prelude.Show.Open[]}
+    idr_Prelude.Chars.isDigit0 -> {19,29,59,84,138}
+    idr_Prelude.Chars.isDigit1 -> {0}
+    idr_Prelude.Chars.isDigit1_10 -> {4}
+    idr_Prelude.Chars.isDigit1_5 -> {1}
+    idr_Prelude.Chars.isDigit1_val -> {Cidr_Prelude.Bool.False[]
+                                      ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Chars.isDigit1_val_11 -> {Cidr_Prelude.Bool.False[]
+                                         ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Chars.isDigit1_val_3 -> {Cidr_Prelude.Interfaces.EQ[]
+                                        ,Cidr_Prelude.Interfaces.GT[]
+                                        ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Chars.isDigit1_val_4 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit1_val_6 -> {Cidr_Prelude.Interfaces.EQ[]
+                                        ,Cidr_Prelude.Interfaces.GT[]
+                                        ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Chars.isDigit2 -> {2}
+    idr_Prelude.Chars.isDigit2_14 -> {5}
+    idr_Prelude.Chars.isDigit2_15 -> {6}
+    idr_Prelude.Chars.isDigit2_8 -> {3}
+    idr_Prelude.Chars.isDigit2_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit2_val_12 -> {Cidr_Prelude.Interfaces.EQ[]
+                                         ,Cidr_Prelude.Interfaces.GT[]
+                                         ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Chars.isDigit2_val_13 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit2_val_16 -> {Cidr_Prelude.Interfaces.EQ[]
+                                         ,Cidr_Prelude.Interfaces.GT[]
+                                         ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Chars.isDigit2_val_7 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit2_val_9 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit3 -> {7}
+    idr_Prelude.Chars.isDigit3_18 -> {8}
+    idr_Prelude.Chars.isDigit3_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit3_val_17 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit3_val_19 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Chars.isDigit_cpat_LInt64_0 -> {T_Int64}
+    idr_Prelude.Chars.isDigit_cpat_LInt64_0_20 -> {T_Int64}
+    idr_Prelude.Interactive.printLn'0 -> {13,21}
+    idr_Prelude.Interactive.printLn'1 -> {14,22}
+    idr_Prelude.Interactive.printLn'2 -> {15,23}
+    idr_Prelude.Interactive.printLn'3 -> {19,29}
+    idr_Prelude.Interactive.printLn'4 -> {115}
+    idr_Prelude.Interactive.printLn'5 -> {50}
+    idr_Prelude.Interactive.printLn'5_85 -> {52}
+    idr_Prelude.Interactive.printLn'5_86 -> {53}
+    idr_Prelude.Interactive.printLn'5_val -> {CUnit[]}
+    idr_Prelude.Interactive.printLn'5_val_83 -> {CGrString[{T_String}]}
+    idr_Prelude.Interactive.printLn'5_val_84 -> {CGrString[{T_String}]
+                                                ,Cidr_Prelude.Bool.False[]
+                                                ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Interactive.printLn'6 -> {51}
+    idr_Prelude.Interactive.printLn'6_val -> {CGrString[{T_String}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:00" -> {19
+                                                                                            ,29
+                                                                                            ,59
+                                                                                            ,84
+                                                                                            ,98
+                                                                                            ,107
+                                                                                            ,138
+                                                                                            ,258}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:01" -> {0
+                                                                                            ,5
+                                                                                            ,71}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:02" -> {153}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:02_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:02_val_245" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:03" -> {154}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:03_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:03_val_246" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:0_cpat_LInt64_0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:0_cpat_LInt64_0_247" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:00" -> {31}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:01" -> {32}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02" -> {155}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:02_val_248" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03" -> {156}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:03_val_249" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0_cpat_LInt64_0_250" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:00" -> {26
+                                                                              ,90
+                                                                              ,144}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:00_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:00_val_223" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:00_val_235" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:01" -> {27
+                                                                              ,142}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:01_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02" -> {141}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_222" -> {142}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_233" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_234" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_val_221" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_val_231" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:02_val_232" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03" -> {143}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_226" -> {144}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_229" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_230" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_239" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_240" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_243" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_244" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_225" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_227" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_228" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_237" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_238" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_241" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:03_val_242" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:0_cpat_LInt64_0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:0_cpat_LInt64_0_220" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:0_cpat_LInt64_0_224" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:0_cpat_LInt64_0_236" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00" -> {26
+                                                                                    ,90
+                                                                                    ,164}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_262" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_274" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01" -> {27
+                                                                                    ,162}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02" -> {157}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_253" -> {158}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_256" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_257" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_260" -> {161}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_261" -> {162}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_272" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_273" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_252" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_254" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_255" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_258" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_259" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_270" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_271" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03" -> {163}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_265" -> {164}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_268" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_269" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_278" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_279" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_282" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_283" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_264" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_266" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_267" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_276" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_277" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_280" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_281" -> {}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_251" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_263" -> {T_Int64}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_275" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:00" -> {16}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:01" -> {17}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:02" -> {18}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:02_val" -> {Cidr_Main.Nil[]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:03" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:04" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:05" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:05_val" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:06" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:06_291" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:06_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:06_val_284" -> {CGrString[{T_String}]
+                                                                          ,Cidr_Prelude.Bool.False[]
+                                                                          ,Cidr_Prelude.Bool.True[]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:07" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:07_290" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:07_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:07_val_285" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:08" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:08_288" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:08_289" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:08_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:08_val_286" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:08_val_287" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:09" -> {}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:09_val" -> {}
+    idr_Prelude.Show.primNumShow0 -> {117,135}
+    idr_Prelude.Show.primNumShow1 -> {118,136}
+    idr_Prelude.Show.primNumShow2 -> {119,137}
+    idr_Prelude.Show.primNumShow2_val -> {Cidr_Prelude.Show.Open[]}
+    idr_Prelude.Show.primNumShow2_val_50 -> {Cidr_Prelude.Show.Open[]}
+    idr_Prelude.Show.primNumShow3 -> {19,29,59,84,138}
+    idr_Prelude.Show.primNumShow4 -> {30}
+    idr_Prelude.Show.primNumShow4_val -> {CGrString[{T_String}]
+                                         ,Cidr_Prelude.Bool.False[]
+                                         ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5 -> {31}
+    idr_Prelude.Show.primNumShow5_46 -> {33}
+    idr_Prelude.Show.primNumShow5_54 -> {37}
+    idr_Prelude.Show.primNumShow5_75 -> {46}
+    idr_Prelude.Show.primNumShow5_val -> {Cidr_Prelude.Bool.False[]
+                                         ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_43 -> {Cidr_Prelude.Bool.False[]
+                                            ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_44 -> {Cidr_Prelude.Interfaces.EQ[]
+                                            ,Cidr_Prelude.Interfaces.GT[]
+                                            ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.primNumShow5_val_45 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow5_val_47 -> {Cidr_Prelude.Interfaces.EQ[]
+                                            ,Cidr_Prelude.Interfaces.GT[]
+                                            ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.primNumShow5_val_55 -> {Cidr_Prelude.Bool.False[]
+                                            ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow5_val_76 -> {Cidr_Prelude.Bool.False[]
+                                            ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow6 -> {32}
+    idr_Prelude.Show.primNumShow6_51 -> {34}
+    idr_Prelude.Show.primNumShow6_52 -> {36}
+    idr_Prelude.Show.primNumShow6_60 -> {38}
+    idr_Prelude.Show.primNumShow6_61 -> {39}
+    idr_Prelude.Show.primNumShow6_64 -> {40}
+    idr_Prelude.Show.primNumShow6_67 -> {42}
+    idr_Prelude.Show.primNumShow6_78 -> {47}
+    idr_Prelude.Show.primNumShow6_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_48 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_49 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_53 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_56 -> {Cidr_Prelude.Basics.No[]
+                                            ,Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.primNumShow6_val_57 -> {Cidr_Prelude.Bool.False[]
+                                            ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow6_val_58 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_59 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.primNumShow6_val_62 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow6_val_68 -> {Cidr_Prelude.Basics.No[]
+                                            ,Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.primNumShow6_val_77 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.primNumShow7 -> {35}
+    idr_Prelude.Show.primNumShow7_66 -> {41}
+    idr_Prelude.Show.primNumShow7_71 -> {43}
+    idr_Prelude.Show.primNumShow7_72 -> {45}
+    idr_Prelude.Show.primNumShow7_81 -> {48}
+    idr_Prelude.Show.primNumShow7_82 -> {49}
+    idr_Prelude.Show.primNumShow7_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow7_val_65 -> {Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.primNumShow7_val_69 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow7_val_70 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow7_val_73 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow7_val_79 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.primNumShow7_val_80 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.primNumShow8 -> {44}
+    idr_Prelude.Show.primNumShow8_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.primNumShow_cpat_LInt64_0 -> {T_Int64}
+    idr_Prelude.Show.primNumShow_cpat_LInt64_0_63 -> {T_Int64}
+    idr_Prelude.Show.primNumShow_cpat_LInt64_0_74 -> {T_Int64}
+    idr_Prelude.Show.protectEsc0 -> {63,134}
+    idr_Prelude.Show.protectEsc1 -> {64,139}
+    idr_Prelude.Show.protectEsc2 -> {19,29,59,84,138}
+    idr_Prelude.Show.protectEsc3 -> {54}
+    idr_Prelude.Show.protectEsc3_100 -> {60}
+    idr_Prelude.Show.protectEsc3_102 -> {61}
+    idr_Prelude.Show.protectEsc3_103 -> {62}
+    idr_Prelude.Show.protectEsc3_93 -> {55}
+    idr_Prelude.Show.protectEsc3_95 -> {56}
+    idr_Prelude.Show.protectEsc3_96 -> {58}
+    idr_Prelude.Show.protectEsc3_val -> {CGrString[{T_String}]}
+    idr_Prelude.Show.protectEsc3_val_101 -> {CGrString[{T_String}]
+                                            ,Cidr_Prelude.Bool.False[]
+                                            ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.protectEsc3_val_87 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.protectEsc3_val_88 -> {CGrString[{T_String}]
+                                           ,Cidr_Prelude.Bool.False[]
+                                           ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.protectEsc3_val_89 -> {Cidr_Prelude.Basics.No[]
+                                           ,Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.protectEsc3_val_90 -> {Cidr_Prelude.Bool.False[]
+                                           ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.protectEsc3_val_91 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.protectEsc3_val_92 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.protectEsc3_val_94 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.protectEsc3_val_97 -> {Cidr_Prelude.Basics.No[]
+                                           ,Cidr_Prelude.Basics.Yes[]}
+    idr_Prelude.Show.protectEsc4 -> {57}
+    idr_Prelude.Show.protectEsc4_99 -> {59}
+    idr_Prelude.Show.protectEsc4_val -> {Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.protectEsc4_val_98 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.protectEsc_cpat_LInt64_0 -> {T_Int64}
+    idr_Prelude.Show.showLitChar0 -> {98,107,258}
+    idr_Prelude.Show.showLitChar0_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar1 -> {63}
+    idr_Prelude.Show.showLitChar1_106 -> {65}
+    idr_Prelude.Show.showLitChar1_113 -> {70}
+    idr_Prelude.Show.showLitChar1_123 -> {}
+    idr_Prelude.Show.showLitChar1_132 -> {}
+    idr_Prelude.Show.showLitChar1_val -> {C"idr_{U_Prelude.Show.{showLitChar_10}_1}"[]}
+    idr_Prelude.Show.showLitChar1_val_104 -> {Cidr_Prelude.Maybe.Just[{182
+                                                                      ,183
+                                                                      ,184
+                                                                      ,185
+                                                                      ,186
+                                                                      ,187
+                                                                      ,188
+                                                                      ,189
+                                                                      ,190
+                                                                      ,191
+                                                                      ,192
+                                                                      ,193
+                                                                      ,194
+                                                                      ,195
+                                                                      ,196
+                                                                      ,197
+                                                                      ,198
+                                                                      ,199
+                                                                      ,200
+                                                                      ,201
+                                                                      ,202
+                                                                      ,203
+                                                                      ,204
+                                                                      ,205
+                                                                      ,206
+                                                                      ,207
+                                                                      ,208
+                                                                      ,209
+                                                                      ,210
+                                                                      ,211
+                                                                      ,212
+                                                                      ,213}]
+                                             ,Cidr_Prelude.Maybe.Nothing[]}
+    idr_Prelude.Show.showLitChar1_val_105 -> {CErased[]}
+    idr_Prelude.Show.showLitChar1_val_114 -> {Cidr_Prelude.Maybe.Just[{182
+                                                                      ,183
+                                                                      ,184
+                                                                      ,185
+                                                                      ,186
+                                                                      ,187
+                                                                      ,188
+                                                                      ,189
+                                                                      ,190
+                                                                      ,191
+                                                                      ,192
+                                                                      ,193
+                                                                      ,194
+                                                                      ,195
+                                                                      ,196
+                                                                      ,197
+                                                                      ,198
+                                                                      ,199
+                                                                      ,200
+                                                                      ,201
+                                                                      ,202
+                                                                      ,203
+                                                                      ,204
+                                                                      ,205
+                                                                      ,206
+                                                                      ,207
+                                                                      ,208
+                                                                      ,209
+                                                                      ,210
+                                                                      ,211
+                                                                      ,212
+                                                                      ,213}]
+                                             ,Cidr_Prelude.Maybe.Nothing[]}
+    idr_Prelude.Show.showLitChar1_val_121 -> {Cidr_Prelude.Maybe.Just[{182
+                                                                      ,183
+                                                                      ,184
+                                                                      ,185
+                                                                      ,186
+                                                                      ,187
+                                                                      ,188
+                                                                      ,189
+                                                                      ,190
+                                                                      ,191
+                                                                      ,192
+                                                                      ,193
+                                                                      ,194
+                                                                      ,195
+                                                                      ,196
+                                                                      ,197
+                                                                      ,198
+                                                                      ,199
+                                                                      ,200
+                                                                      ,201
+                                                                      ,202
+                                                                      ,203
+                                                                      ,204
+                                                                      ,205
+                                                                      ,206
+                                                                      ,207
+                                                                      ,208
+                                                                      ,209
+                                                                      ,210
+                                                                      ,211
+                                                                      ,212
+                                                                      ,213}]
+                                             ,Cidr_Prelude.Maybe.Nothing[]}
+    idr_Prelude.Show.showLitChar1_val_122 -> {}
+    idr_Prelude.Show.showLitChar1_val_133 -> {}
+    idr_Prelude.Show.showLitChar2 -> {64}
+    idr_Prelude.Show.showLitChar2_109 -> {66}
+    idr_Prelude.Show.showLitChar2_110 -> {67}
+    idr_Prelude.Show.showLitChar2_115 -> {182
+                                         ,183
+                                         ,184
+                                         ,185
+                                         ,186
+                                         ,187
+                                         ,188
+                                         ,189
+                                         ,190
+                                         ,191
+                                         ,192
+                                         ,193
+                                         ,194
+                                         ,195
+                                         ,196
+                                         ,197
+                                         ,198
+                                         ,199
+                                         ,200
+                                         ,201
+                                         ,202
+                                         ,203
+                                         ,204
+                                         ,205
+                                         ,206
+                                         ,207
+                                         ,208
+                                         ,209
+                                         ,210
+                                         ,211
+                                         ,212
+                                         ,213}
+    idr_Prelude.Show.showLitChar2_118 -> {71}
+    idr_Prelude.Show.showLitChar2_119 -> {72}
+    idr_Prelude.Show.showLitChar2_126 -> {}
+    idr_Prelude.Show.showLitChar2_127 -> {}
+    idr_Prelude.Show.showLitChar2_134 -> {}
+    idr_Prelude.Show.showLitChar2_137 -> {}
+    idr_Prelude.Show.showLitChar2_138 -> {}
+    idr_Prelude.Show.showLitChar2_val -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar2_val_107 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar2_val_108 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar2_val_116 -> {Cidr_Prelude.Interfaces.EQ[]
+                                             ,Cidr_Prelude.Interfaces.GT[]
+                                             ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.showLitChar2_val_117 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar2_val_120 -> {Cidr_Prelude.Interfaces.EQ[]
+                                             ,Cidr_Prelude.Interfaces.GT[]
+                                             ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.showLitChar2_val_124 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar2_val_125 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar2_val_135 -> {Cidr_Prelude.Interfaces.EQ[]
+                                             ,Cidr_Prelude.Interfaces.GT[]
+                                             ,Cidr_Prelude.Interfaces.LT[]}
+    idr_Prelude.Show.showLitChar2_val_136 -> {}
+    idr_Prelude.Show.showLitChar2_val_139 -> {}
+    idr_Prelude.Show.showLitChar3 -> {68}
+    idr_Prelude.Show.showLitChar3_112 -> {69}
+    idr_Prelude.Show.showLitChar3_130 -> {}
+    idr_Prelude.Show.showLitChar3_131 -> {}
+    idr_Prelude.Show.showLitChar3_val -> {Cidr_Prelude.List.::[{182}
+                                                              ,{245}]}
+    idr_Prelude.Show.showLitChar3_val_111 -> {CErased[]}
+    idr_Prelude.Show.showLitChar3_val_128 -> {Cidr_Prelude.List.::[{182}
+                                                                  ,{245}]}
+    idr_Prelude.Show.showLitChar3_val_129 -> {}
+    idr_Prelude.Show.showLitChar:asciiTab:100 -> {68}
+    idr_Prelude.Show.showLitChar:asciiTab:101 -> {182}
+    idr_Prelude.Show.showLitChar:asciiTab:1010 -> {191}
+    idr_Prelude.Show.showLitChar:asciiTab:1010_345 -> {237}
+    idr_Prelude.Show.showLitChar:asciiTab:1010_val -> {Cidr_Prelude.List.::[{191}
+                                                                           ,{236}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1010_val_300 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1011 -> {192}
+    idr_Prelude.Show.showLitChar:asciiTab:1011_344 -> {236}
+    idr_Prelude.Show.showLitChar:asciiTab:1011_val -> {Cidr_Prelude.List.::[{192}
+                                                                           ,{235}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1011_val_301 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1012 -> {193}
+    idr_Prelude.Show.showLitChar:asciiTab:1012_343 -> {235}
+    idr_Prelude.Show.showLitChar:asciiTab:1012_val -> {Cidr_Prelude.List.::[{193}
+                                                                           ,{234}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1012_val_302 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1013 -> {194}
+    idr_Prelude.Show.showLitChar:asciiTab:1013_342 -> {234}
+    idr_Prelude.Show.showLitChar:asciiTab:1013_val -> {Cidr_Prelude.List.::[{194}
+                                                                           ,{233}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1013_val_303 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1014 -> {195}
+    idr_Prelude.Show.showLitChar:asciiTab:1014_341 -> {233}
+    idr_Prelude.Show.showLitChar:asciiTab:1014_val -> {Cidr_Prelude.List.::[{195}
+                                                                           ,{232}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1014_val_304 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1015 -> {196}
+    idr_Prelude.Show.showLitChar:asciiTab:1015_340 -> {232}
+    idr_Prelude.Show.showLitChar:asciiTab:1015_val -> {Cidr_Prelude.List.::[{196}
+                                                                           ,{231}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1015_val_305 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1016 -> {197}
+    idr_Prelude.Show.showLitChar:asciiTab:1016_339 -> {231}
+    idr_Prelude.Show.showLitChar:asciiTab:1016_val -> {Cidr_Prelude.List.::[{197}
+                                                                           ,{230}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1016_val_306 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1017 -> {198}
+    idr_Prelude.Show.showLitChar:asciiTab:1017_338 -> {230}
+    idr_Prelude.Show.showLitChar:asciiTab:1017_val -> {Cidr_Prelude.List.::[{198}
+                                                                           ,{229}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1017_val_307 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1018 -> {199}
+    idr_Prelude.Show.showLitChar:asciiTab:1018_337 -> {229}
+    idr_Prelude.Show.showLitChar:asciiTab:1018_val -> {Cidr_Prelude.List.::[{199}
+                                                                           ,{228}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1018_val_308 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1019 -> {200}
+    idr_Prelude.Show.showLitChar:asciiTab:1019_336 -> {228}
+    idr_Prelude.Show.showLitChar:asciiTab:1019_val -> {Cidr_Prelude.List.::[{200}
+                                                                           ,{227}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1019_val_309 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:101_val -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:102 -> {183}
+    idr_Prelude.Show.showLitChar:asciiTab:1020 -> {201}
+    idr_Prelude.Show.showLitChar:asciiTab:1020_335 -> {227}
+    idr_Prelude.Show.showLitChar:asciiTab:1020_val -> {Cidr_Prelude.List.::[{201}
+                                                                           ,{226}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1020_val_310 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1021 -> {202}
+    idr_Prelude.Show.showLitChar:asciiTab:1021_334 -> {226}
+    idr_Prelude.Show.showLitChar:asciiTab:1021_val -> {Cidr_Prelude.List.::[{202}
+                                                                           ,{225}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1021_val_311 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1022 -> {203}
+    idr_Prelude.Show.showLitChar:asciiTab:1022_333 -> {225}
+    idr_Prelude.Show.showLitChar:asciiTab:1022_val -> {Cidr_Prelude.List.::[{203}
+                                                                           ,{224}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1022_val_312 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1023 -> {204}
+    idr_Prelude.Show.showLitChar:asciiTab:1023_332 -> {224}
+    idr_Prelude.Show.showLitChar:asciiTab:1023_val -> {Cidr_Prelude.List.::[{204}
+                                                                           ,{223}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1023_val_313 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1024 -> {205}
+    idr_Prelude.Show.showLitChar:asciiTab:1024_331 -> {223}
+    idr_Prelude.Show.showLitChar:asciiTab:1024_val -> {Cidr_Prelude.List.::[{205}
+                                                                           ,{222}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1024_val_314 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1025 -> {206}
+    idr_Prelude.Show.showLitChar:asciiTab:1025_330 -> {222}
+    idr_Prelude.Show.showLitChar:asciiTab:1025_val -> {Cidr_Prelude.List.::[{206}
+                                                                           ,{221}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1025_val_315 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1026 -> {207}
+    idr_Prelude.Show.showLitChar:asciiTab:1026_329 -> {221}
+    idr_Prelude.Show.showLitChar:asciiTab:1026_val -> {Cidr_Prelude.List.::[{207}
+                                                                           ,{220}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1026_val_316 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1027 -> {208}
+    idr_Prelude.Show.showLitChar:asciiTab:1027_328 -> {220}
+    idr_Prelude.Show.showLitChar:asciiTab:1027_val -> {Cidr_Prelude.List.::[{208}
+                                                                           ,{219}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1027_val_317 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1028 -> {209}
+    idr_Prelude.Show.showLitChar:asciiTab:1028_327 -> {219}
+    idr_Prelude.Show.showLitChar:asciiTab:1028_val -> {Cidr_Prelude.List.::[{209}
+                                                                           ,{218}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1028_val_318 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1029 -> {210}
+    idr_Prelude.Show.showLitChar:asciiTab:1029_326 -> {218}
+    idr_Prelude.Show.showLitChar:asciiTab:1029_val -> {Cidr_Prelude.List.::[{210}
+                                                                           ,{217}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1029_val_319 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:102_353 -> {245}
+    idr_Prelude.Show.showLitChar:asciiTab:102_val -> {Cidr_Prelude.List.::[{183}
+                                                                          ,{244}]}
+    idr_Prelude.Show.showLitChar:asciiTab:102_val_292 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:103 -> {184}
+    idr_Prelude.Show.showLitChar:asciiTab:1030 -> {211}
+    idr_Prelude.Show.showLitChar:asciiTab:1030_325 -> {217}
+    idr_Prelude.Show.showLitChar:asciiTab:1030_val -> {Cidr_Prelude.List.::[{211}
+                                                                           ,{216}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1030_val_320 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1031 -> {212}
+    idr_Prelude.Show.showLitChar:asciiTab:1031_324 -> {216}
+    idr_Prelude.Show.showLitChar:asciiTab:1031_val -> {Cidr_Prelude.List.::[{212}
+                                                                           ,{215}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1031_val_321 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1032 -> {213}
+    idr_Prelude.Show.showLitChar:asciiTab:1032_323 -> {215}
+    idr_Prelude.Show.showLitChar:asciiTab:1032_val -> {Cidr_Prelude.List.::[{213}
+                                                                           ,{214}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1032_val_322 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:1033 -> {214}
+    idr_Prelude.Show.showLitChar:asciiTab:1033_val -> {Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Show.showLitChar:asciiTab:103_352 -> {244}
+    idr_Prelude.Show.showLitChar:asciiTab:103_val -> {Cidr_Prelude.List.::[{184}
+                                                                          ,{243}]}
+    idr_Prelude.Show.showLitChar:asciiTab:103_val_293 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:104 -> {185}
+    idr_Prelude.Show.showLitChar:asciiTab:104_351 -> {243}
+    idr_Prelude.Show.showLitChar:asciiTab:104_val -> {Cidr_Prelude.List.::[{185}
+                                                                          ,{242}]}
+    idr_Prelude.Show.showLitChar:asciiTab:104_val_294 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:105 -> {186}
+    idr_Prelude.Show.showLitChar:asciiTab:105_350 -> {242}
+    idr_Prelude.Show.showLitChar:asciiTab:105_val -> {Cidr_Prelude.List.::[{186}
+                                                                          ,{241}]}
+    idr_Prelude.Show.showLitChar:asciiTab:105_val_295 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:106 -> {187}
+    idr_Prelude.Show.showLitChar:asciiTab:106_349 -> {241}
+    idr_Prelude.Show.showLitChar:asciiTab:106_val -> {Cidr_Prelude.List.::[{187}
+                                                                          ,{240}]}
+    idr_Prelude.Show.showLitChar:asciiTab:106_val_296 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:107 -> {188}
+    idr_Prelude.Show.showLitChar:asciiTab:107_348 -> {240}
+    idr_Prelude.Show.showLitChar:asciiTab:107_val -> {Cidr_Prelude.List.::[{188}
+                                                                          ,{239}]}
+    idr_Prelude.Show.showLitChar:asciiTab:107_val_297 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:108 -> {189}
+    idr_Prelude.Show.showLitChar:asciiTab:108_347 -> {239}
+    idr_Prelude.Show.showLitChar:asciiTab:108_val -> {Cidr_Prelude.List.::[{189}
+                                                                          ,{238}]}
+    idr_Prelude.Show.showLitChar:asciiTab:108_val_298 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:asciiTab:109 -> {190}
+    idr_Prelude.Show.showLitChar:asciiTab:109_346 -> {238}
+    idr_Prelude.Show.showLitChar:asciiTab:109_val -> {Cidr_Prelude.List.::[{190}
+                                                                          ,{237}]}
+    idr_Prelude.Show.showLitChar:asciiTab:109_val_299 -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar:getAt:100 -> {65,248}
+    idr_Prelude.Show.showLitChar:getAt:101 -> {67,247}
+    idr_Prelude.Show.showLitChar:getAt:101_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar:getAt:102 -> {69
+                                              ,214
+                                              ,215
+                                              ,216
+                                              ,217
+                                              ,218
+                                              ,219
+                                              ,220
+                                              ,221
+                                              ,222
+                                              ,223
+                                              ,224
+                                              ,225
+                                              ,226
+                                              ,227
+                                              ,228
+                                              ,229
+                                              ,230
+                                              ,231
+                                              ,232
+                                              ,233
+                                              ,234
+                                              ,235
+                                              ,236
+                                              ,237
+                                              ,238
+                                              ,239
+                                              ,240
+                                              ,241
+                                              ,242
+                                              ,243
+                                              ,244
+                                              ,245}
+    idr_Prelude.Show.showLitChar:getAt:102_val -> {Cidr_Prelude.List.::[{182
+                                                                        ,183
+                                                                        ,184
+                                                                        ,185
+                                                                        ,186
+                                                                        ,187
+                                                                        ,188
+                                                                        ,189
+                                                                        ,190
+                                                                        ,191
+                                                                        ,192
+                                                                        ,193
+                                                                        ,194
+                                                                        ,195
+                                                                        ,196
+                                                                        ,197
+                                                                        ,198
+                                                                        ,199
+                                                                        ,200
+                                                                        ,201
+                                                                        ,202
+                                                                        ,203
+                                                                        ,204
+                                                                        ,205
+                                                                        ,206
+                                                                        ,207
+                                                                        ,208
+                                                                        ,209
+                                                                        ,210
+                                                                        ,211
+                                                                        ,212
+                                                                        ,213}
+                                                                       ,{214
+                                                                        ,215
+                                                                        ,216
+                                                                        ,217
+                                                                        ,218
+                                                                        ,219
+                                                                        ,220
+                                                                        ,221
+                                                                        ,222
+                                                                        ,223
+                                                                        ,224
+                                                                        ,225
+                                                                        ,226
+                                                                        ,227
+                                                                        ,228
+                                                                        ,229
+                                                                        ,230
+                                                                        ,231
+                                                                        ,232
+                                                                        ,233
+                                                                        ,234
+                                                                        ,235
+                                                                        ,236
+                                                                        ,237
+                                                                        ,238
+                                                                        ,239
+                                                                        ,240
+                                                                        ,241
+                                                                        ,242
+                                                                        ,243
+                                                                        ,244
+                                                                        ,245}]
+                                                  ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Show.showLitChar:getAt:103 -> {182
+                                              ,183
+                                              ,184
+                                              ,185
+                                              ,186
+                                              ,187
+                                              ,188
+                                              ,189
+                                              ,190
+                                              ,191
+                                              ,192
+                                              ,193
+                                              ,194
+                                              ,195
+                                              ,196
+                                              ,197
+                                              ,198
+                                              ,199
+                                              ,200
+                                              ,201
+                                              ,202
+                                              ,203
+                                              ,204
+                                              ,205
+                                              ,206
+                                              ,207
+                                              ,208
+                                              ,209
+                                              ,210
+                                              ,211
+                                              ,212
+                                              ,213}
+    idr_Prelude.Show.showLitChar:getAt:104 -> {214
+                                              ,215
+                                              ,216
+                                              ,217
+                                              ,218
+                                              ,219
+                                              ,220
+                                              ,221
+                                              ,222
+                                              ,223
+                                              ,224
+                                              ,225
+                                              ,226
+                                              ,227
+                                              ,228
+                                              ,229
+                                              ,230
+                                              ,231
+                                              ,232
+                                              ,233
+                                              ,234
+                                              ,235
+                                              ,236
+                                              ,237
+                                              ,238
+                                              ,239
+                                              ,240
+                                              ,241
+                                              ,242
+                                              ,243
+                                              ,244
+                                              ,245}
+    idr_Prelude.Show.showLitChar:getAt:105 -> {246}
+    idr_Prelude.Show.showLitChar:getAt:105_355 -> {247}
+    idr_Prelude.Show.showLitChar:getAt:105_358 -> {}
+    idr_Prelude.Show.showLitChar:getAt:105_359 -> {}
+    idr_Prelude.Show.showLitChar:getAt:105_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar:getAt:105_val_354 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar:getAt:105_val_356 -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitChar:getAt:105_val_357 -> {}
+    idr_Prelude.Show.showLitChar:getAt:106 -> {248}
+    idr_Prelude.Show.showLitChar:getAt:106_361 -> {}
+    idr_Prelude.Show.showLitChar:getAt:106_val -> {CErased[]}
+    idr_Prelude.Show.showLitChar:getAt:106_val_360 -> {}
+    idr_Prelude.Show.showLitChar:getAt:10_cpat_LInt64_0 -> {T_Int64}
+    idr_Prelude.Show.showLitChar_cpat_LInt64_7 -> {T_Int64}
+    idr_Prelude.Show.showLitString0 -> {111,112,261}
+    idr_Prelude.Show.showLitString0_val -> {Cidr_Prelude.List.::[{98
+                                                                 ,107
+                                                                 ,258}
+                                                                ,{111,261}]
+                                           ,Cidr_Prelude.List.Nil[]}
+    idr_Prelude.Show.showLitString1 -> {113}
+    idr_Prelude.Show.showLitString2 -> {98,107,258}
+    idr_Prelude.Show.showLitString2_val -> {CGrInt[{T_Int64}]}
+    idr_Prelude.Show.showLitString3 -> {111,261}
+    idr_Prelude.Show.showLitString4 -> {81}
+    idr_Prelude.Show.showLitString4_141 -> {83}
+    idr_Prelude.Show.showLitString4_145 -> {}
+    idr_Prelude.Show.showLitString4_val -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitString4_val_140 -> {C"idr_{U_Prelude.Show.protectEsc_1}"[{63}
+                                                                                    ,{64}]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_11}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_12}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_13}_1}"[{182
+                                                                                           ,183
+                                                                                           ,184
+                                                                                           ,185
+                                                                                           ,186
+                                                                                           ,187
+                                                                                           ,188
+                                                                                           ,189
+                                                                                           ,190
+                                                                                           ,191
+                                                                                           ,192
+                                                                                           ,193
+                                                                                           ,194
+                                                                                           ,195
+                                                                                           ,196
+                                                                                           ,197
+                                                                                           ,198
+                                                                                           ,199
+                                                                                           ,200
+                                                                                           ,201
+                                                                                           ,202
+                                                                                           ,203
+                                                                                           ,204
+                                                                                           ,205
+                                                                                           ,206
+                                                                                           ,207
+                                                                                           ,208
+                                                                                           ,209
+                                                                                           ,210
+                                                                                           ,211
+                                                                                           ,212
+                                                                                           ,213}]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_14}_1}"[{98,107,258}]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_3}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_4}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_5}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_6}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_7}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_8}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_9}_1}"[]
+                                               ,C"idr_{U_prim__strCons_1}"[{98,107,258}]}
+    idr_Prelude.Show.showLitString4_val_144 -> {C"idr_{U_Prelude.Show.protectEsc_1}"[{63}
+                                                                                    ,{64}]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_11}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_12}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_13}_1}"[{182
+                                                                                           ,183
+                                                                                           ,184
+                                                                                           ,185
+                                                                                           ,186
+                                                                                           ,187
+                                                                                           ,188
+                                                                                           ,189
+                                                                                           ,190
+                                                                                           ,191
+                                                                                           ,192
+                                                                                           ,193
+                                                                                           ,194
+                                                                                           ,195
+                                                                                           ,196
+                                                                                           ,197
+                                                                                           ,198
+                                                                                           ,199
+                                                                                           ,200
+                                                                                           ,201
+                                                                                           ,202
+                                                                                           ,203
+                                                                                           ,204
+                                                                                           ,205
+                                                                                           ,206
+                                                                                           ,207
+                                                                                           ,208
+                                                                                           ,209
+                                                                                           ,210
+                                                                                           ,211
+                                                                                           ,212
+                                                                                           ,213}]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_14}_1}"[{98,107,258}]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_3}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_4}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_5}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_6}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_7}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_8}_1}"[]
+                                               ,C"idr_{U_Prelude.Show.{showLitChar_9}_1}"[]
+                                               ,C"idr_{U_prim__strCons_1}"[{98,107,258}]}
+    idr_Prelude.Show.showLitString5 -> {82}
+    idr_Prelude.Show.showLitString5_143 -> {84}
+    idr_Prelude.Show.showLitString5_147 -> {}
+    idr_Prelude.Show.showLitString5_val -> {CGrString[{T_String}]
+                                           ,Cidr_Prelude.Bool.False[]
+                                           ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.showLitString5_val_142 -> {CGrString[{T_String}]
+                                               ,Cidr_Prelude.Bool.False[]
+                                               ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.showLitString5_val_146 -> {CGrString[{T_String}]
+                                               ,Cidr_Prelude.Bool.False[]
+                                               ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.showLitString_cpat_LInt64_34 -> {T_Int64}
+    "idr_Prelude.Show.{showLitChar_10}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_10}1" -> {127}
+    "idr_Prelude.Show.{showLitChar_10}1_213" -> {128}
+    "idr_Prelude.Show.{showLitChar_10}1_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Show.{showLitChar_10}1_val_212" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Show.{showLitChar_10}1_val_214" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Show.{showLitChar_10}_cpat_LInt64_0" -> {T_Int64}
+    "idr_Prelude.Show.{showLitChar_11}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_11}1" -> {129}
+    "idr_Prelude.Show.{showLitChar_11}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_12}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_12}1" -> {130}
+    "idr_Prelude.Show.{showLitChar_12}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_13}0" -> {182
+                                            ,183
+                                            ,184
+                                            ,185
+                                            ,186
+                                            ,187
+                                            ,188
+                                            ,189
+                                            ,190
+                                            ,191
+                                            ,192
+                                            ,193
+                                            ,194
+                                            ,195
+                                            ,196
+                                            ,197
+                                            ,198
+                                            ,199
+                                            ,200
+                                            ,201
+                                            ,202
+                                            ,203
+                                            ,204
+                                            ,205
+                                            ,206
+                                            ,207
+                                            ,208
+                                            ,209
+                                            ,210
+                                            ,211
+                                            ,212
+                                            ,213}
+    "idr_Prelude.Show.{showLitChar_13}1" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_13}2" -> {131}
+    "idr_Prelude.Show.{showLitChar_13}2_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Show.{showLitChar_13}3" -> {132}
+    "idr_Prelude.Show.{showLitChar_13}3_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_14}0" -> {98,107,258}
+    "idr_Prelude.Show.{showLitChar_14}1" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_14}2" -> {133}
+    "idr_Prelude.Show.{showLitChar_14}2_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Show.{showLitChar_14}3" -> {134}
+    "idr_Prelude.Show.{showLitChar_14}3_218" -> {140}
+    "idr_Prelude.Show.{showLitChar_14}3_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_14}3_val_215" -> {C"idr_{U_Prelude.Chars.isDigit_1}"[]}
+    "idr_Prelude.Show.{showLitChar_14}4" -> {135}
+    "idr_Prelude.Show.{showLitChar_14}4_217" -> {139}
+    "idr_Prelude.Show.{showLitChar_14}4_val" -> {CGrString[{T_String}]
+                                                ,Cidr_Prelude.Bool.False[]
+                                                ,Cidr_Prelude.Bool.True[]}
+    "idr_Prelude.Show.{showLitChar_14}4_val_216" -> {CErased[]}
+    "idr_Prelude.Show.{showLitChar_14}5" -> {136}
+    "idr_Prelude.Show.{showLitChar_14}5_val" -> {C"idr_{U_prim__toStrInt_1}"[]}
+    "idr_Prelude.Show.{showLitChar_14}6" -> {137}
+    "idr_Prelude.Show.{showLitChar_14}6_val" -> {Cidr_Prelude.Show.Open[]}
+    "idr_Prelude.Show.{showLitChar_14}7" -> {138}
+    "idr_Prelude.Show.{showLitChar_14}7_val" -> {CGrInt[{T_Int64}]}
+    "idr_Prelude.Show.{showLitChar_3}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_3}1" -> {120}
+    "idr_Prelude.Show.{showLitChar_3}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_4}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_4}1" -> {121}
+    "idr_Prelude.Show.{showLitChar_4}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_5}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_5}1" -> {122}
+    "idr_Prelude.Show.{showLitChar_5}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_6}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_6}1" -> {123}
+    "idr_Prelude.Show.{showLitChar_6}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_7}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_7}1" -> {124}
+    "idr_Prelude.Show.{showLitChar_7}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_8}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_8}1" -> {125}
+    "idr_Prelude.Show.{showLitChar_8}1_val" -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_9}0" -> {19,29,59,84,138}
+    "idr_Prelude.Show.{showLitChar_9}1" -> {126}
+    "idr_Prelude.Show.{showLitChar_9}1_val" -> {CGrString[{T_String}]}
+    idr__Prelude.Strings.unpack_with_360 -> {99,252}
+    idr__Prelude.Strings.unpack_with_361 -> {110,260}
+    idr__Prelude.Strings.unpack_with_361_val -> {Cidr_Prelude.Strings.StrCons[{107
+                                                                              ,258}
+                                                                             ,{109,259}]
+                                                ,Cidr_Prelude.Strings.StrNil[]}
+    idr__Prelude.Strings.unpack_with_362 -> {107,258}
+    idr__Prelude.Strings.unpack_with_363 -> {109,259}
+    idr__Prelude.Strings.unpack_with_364 -> {252}
+    idr__Prelude.Strings.unpack_with_364_375 -> {261}
+    idr__Prelude.Strings.unpack_with_364_val -> {Cidr_Prelude.List.::[{107
+                                                                      ,258}
+                                                                     ,{261}]
+                                                ,Cidr_Prelude.List.Nil[]}
+    idr__Prelude.Strings.unpack_with_364_val_362 -> {CErased[]}
+    idr__Prelude.Strings.unpack_with_365 -> {253}
+    idr__Prelude.Strings.unpack_with_365_367 -> {254}
+    idr__Prelude.Strings.unpack_with_365_369 -> {255}
+    idr__Prelude.Strings.unpack_with_365_370 -> {257}
+    idr__Prelude.Strings.unpack_with_365_374 -> {260}
+    idr__Prelude.Strings.unpack_with_365_val -> {Cidr_Prelude.Strings.StrCons[{258}
+                                                                             ,{259}]
+                                                ,Cidr_Prelude.Strings.StrNil[]}
+    idr__Prelude.Strings.unpack_with_365_val_363 -> {Cidr_Prelude.Basics.No[]
+                                                    ,Cidr_Prelude.Basics.Yes[]}
+    idr__Prelude.Strings.unpack_with_365_val_364 -> {Cidr_Prelude.Bool.False[]
+                                                    ,Cidr_Prelude.Bool.True[]}
+    idr__Prelude.Strings.unpack_with_365_val_365 -> {CGrInt[{T_Int64}]}
+    idr__Prelude.Strings.unpack_with_365_val_366 -> {CGrString[{T_String}]}
+    idr__Prelude.Strings.unpack_with_365_val_368 -> {CGrInt[{T_Int64}]}
+    idr__Prelude.Strings.unpack_with_365_val_371 -> {Cidr_Prelude.Basics.No[]
+                                                    ,Cidr_Prelude.Basics.Yes[]}
+    idr__Prelude.Strings.unpack_with_366 -> {256}
+    idr__Prelude.Strings.unpack_with_366_373 -> {258}
+    idr__Prelude.Strings.unpack_with_366_val -> {Cidr_Prelude.Bool.True[]}
+    idr__Prelude.Strings.unpack_with_366_val_372 -> {CGrInt[{T_Int64}]}
+    idr__Prelude.Strings.unpack_with_367 -> {259}
+    idr__Prelude.Strings.unpack_with_367_val -> {CGrString[{T_String}]}
+    idr__Prelude.Strings.unpack_with_36_cpat_LInt64_0 -> {T_Int64}
+    idr_prim__strCons0 -> {98,107,131,133,258}
+    idr_prim__strCons1 -> {19,29,59,84,132,138,140}
+    idr_prim__toStrBigInt0 -> {19,29,59,84,138}
+    idr_prim__toStrInt0 -> {19,29,59,84,138}
+    "idr_{APPLY_0}0" -> {15,23,63,83,118,134,136}
+    "idr_{APPLY_0}0_val" -> {C"idr_{U_Main.{main_0}_1}"[]
+                            ,C"idr_{U_Main.{main_1}_1}"[]
+                            ,C"idr_{U_Prelude.Chars.isDigit_1}"[]
+                            ,C"idr_{U_Prelude.Show.protectEsc_1}"[{63},{64}]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_10}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_11}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_12}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_13}_1}"[{182
+                                                                        ,183
+                                                                        ,184
+                                                                        ,185
+                                                                        ,186
+                                                                        ,187
+                                                                        ,188
+                                                                        ,189
+                                                                        ,190
+                                                                        ,191
+                                                                        ,192
+                                                                        ,193
+                                                                        ,194
+                                                                        ,195
+                                                                        ,196
+                                                                        ,197
+                                                                        ,198
+                                                                        ,199
+                                                                        ,200
+                                                                        ,201
+                                                                        ,202
+                                                                        ,203
+                                                                        ,204
+                                                                        ,205
+                                                                        ,206
+                                                                        ,207
+                                                                        ,208
+                                                                        ,209
+                                                                        ,210
+                                                                        ,211
+                                                                        ,212
+                                                                        ,213}]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_14}_1}"[{98,107,258}]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_3}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_4}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_5}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_6}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_7}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_8}_1}"[]
+                            ,C"idr_{U_Prelude.Show.{showLitChar_9}_1}"[]
+                            ,C"idr_{U_prim__strCons_1}"[{98,107,258}]
+                            ,C"idr_{U_prim__toStrBigInt_1}"[]
+                            ,C"idr_{U_prim__toStrInt_1}"[]}
+    "idr_{APPLY_0}1" -> {19,29,59,84,138}
+    "idr_{APPLY_0}2" -> {63}
+    "idr_{APPLY_0}2_170" -> {182
+                            ,183
+                            ,184
+                            ,185
+                            ,186
+                            ,187
+                            ,188
+                            ,189
+                            ,190
+                            ,191
+                            ,192
+                            ,193
+                            ,194
+                            ,195
+                            ,196
+                            ,197
+                            ,198
+                            ,199
+                            ,200
+                            ,201
+                            ,202
+                            ,203
+                            ,204
+                            ,205
+                            ,206
+                            ,207
+                            ,208
+                            ,209
+                            ,210
+                            ,211
+                            ,212
+                            ,213}
+    "idr_{APPLY_0}2_171" -> {98,107,258}
+    "idr_{APPLY_0}2_172" -> {98,107,258}
+    "idr_{APPLY_0}3" -> {64}
+    "idr_{EVAL_0}0" -> {116}
+    "idr_{EVAL_0}0_val" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0" -> {115}
+    "idr_{runMain_0}0_211" -> {116}
+    "idr_{runMain_0}0_val" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0_val_210" -> {CErased[]}
+    idris_ch_int1 -> {98,107,258}
+    idris_ch_int2 -> {T_Int64}
+    idris_int_add0 -> {11,26,90}
+    idris_int_add0_1 -> {T_Int64}
+    idris_int_add1 -> {12,89}
+    idris_int_add1_1 -> {T_Int64}
+    idris_int_add2 -> {T_Int64}
+    idris_int_eq0 -> {19,29,31,34,43,59,84,98,107,138,258}
+    idris_int_eq0_1 -> {T_Int64}
+    idris_int_eq1 -> {0,2,5,7,32,35,44,71,127}
+    idris_int_eq1_1 -> {T_Int64}
+    idris_int_eq2 -> {T_Bool}
+    idris_int_lt0 -> {19,29,31,59,84,98,107,138,258}
+    idris_int_lt0_1 -> {T_Int64}
+    idris_int_lt1 -> {0,5,32,71}
+    idris_int_lt1_1 -> {T_Int64}
+    idris_int_lt2 -> {T_Bool}
+    idris_int_str1 -> {19,29,59,84,138}
+    idris_int_str1_0 -> {T_Int64}
+    idris_int_str2 -> {T_String}
+    idris_int_sub0 -> {26,27,67,90,142,144,162,164,247}
+    idris_int_sub0_1 -> {T_Int64}
+    idris_int_sub1 -> {141,143,157,161,163,246}
+    idris_int_sub1_1 -> {T_Int64}
+    idris_int_sub2 -> {T_Int64}
+    idris_ls_ext1 -> {66}
+    idris_ls_ext2 -> {T_Int64}
+    idris_ls_ext3 -> {T_Int64}
+    idris_str_concat1 -> {30
+                         ,47
+                         ,50
+                         ,61
+                         ,64
+                         ,81
+                         ,120
+                         ,121
+                         ,122
+                         ,123
+                         ,124
+                         ,125
+                         ,126
+                         ,129
+                         ,130
+                         ,139
+                         ,182
+                         ,183
+                         ,184
+                         ,185
+                         ,186
+                         ,187
+                         ,188
+                         ,189
+                         ,190
+                         ,191
+                         ,192
+                         ,193
+                         ,194
+                         ,195
+                         ,196
+                         ,197
+                         ,198
+                         ,199
+                         ,200
+                         ,201
+                         ,202
+                         ,203
+                         ,204
+                         ,205
+                         ,206
+                         ,207
+                         ,208
+                         ,209
+                         ,210
+                         ,211
+                         ,212
+                         ,213}
+    idris_str_concat1_0 -> {T_String}
+    idris_str_concat2 -> {19,29,48,49,51,59,62,82,84,138}
+    idris_str_concat2_0 -> {T_String}
+    idris_str_concat3 -> {T_String}
+    idris_str_cons1 -> {92,98,107,131,133,258}
+    idris_str_cons1_0 -> {T_Int64}
+    idris_str_cons2 -> {19,29,59,84,114,132,138,140}
+    idris_str_cons2_0 -> {T_String}
+    idris_str_cons3 -> {T_String}
+    idris_str_eq1 -> {19,29,30,59,84,100,109,138,259}
+    idris_str_eq1_0 -> {T_String}
+    idris_str_eq2 -> {38,54,93,101,253}
+    idris_str_eq2_0 -> {T_String}
+    idris_str_eq3 -> {T_Bool}
+    idris_str_head1 -> {19,29,30,59,84,106,109,138,259}
+    idris_str_head1_0 -> {T_String}
+    idris_str_head2 -> {T_Int64}
+    idris_str_tail1 -> {19,29,59,84,108,109,138,259}
+    idris_str_tail1_0 -> {T_String}
+    idris_str_tail2 -> {T_String}
+    idris_write_str1 -> {115}
+    idris_write_str2 -> {52}
+    idris_write_str2_0 -> {T_String}
+    r      -> {Cidr_MkUnit[]}
+Function
+    _prim_int_add :: {T_Int64} -> {T_Int64} -> {T_Int64}
+    _prim_int_eq :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_lt :: {T_Int64} -> {T_Int64} -> {T_Bool}
+    _prim_int_str :: {T_Int64} -> {T_String}
+    _prim_int_sub :: {T_Int64} -> {T_Int64} -> {T_Int64}
+    _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
+    _prim_string_cons :: {T_Int64} -> {T_String} -> {T_String}
+    _prim_string_eq :: {T_String} -> {T_String} -> {T_Bool}
+    _prim_string_head :: {T_String} -> {T_Int64}
+    _prim_string_print :: {T_String} -> {T_Unit}
+    _prim_string_tail :: {T_String} -> {T_String}
+    grinMain :: {T_Unit}
+    "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:0" :: {40
+                                                                                           ,56
+                                                                                           ,95
+                                                                                           ,103
+                                                                                           ,255}
+                                                                                        -> {41,57,96,104,256}
+                                                                                        -> {Cidr_Prelude.Basics.No[],Cidr_Prelude.Basics.Yes[]}
+    idr_Main.length :: {9,24}
+                    -> {10,25}
+                    -> {28,91}
+                    -> {CGrInt[{T_Int64}]}
+    idr_Main.main :: {115} -> {Cidr_MkUnit[]}
+    idr_Main.upto :: {26,90}
+                  -> {27}
+                  -> {Cidr_Main.Cons[{26,90},{91}],Cidr_Main.Nil[]}
+    "idr_Main.{main_0}" :: {19,29,59,84,138}
+                        -> {CGrString[{T_String}]}
+    "idr_Main.{main_1}" :: {19,29,59,84,138}
+                        -> {CGrString[{T_String}]
+                           ,Cidr_Prelude.Bool.False[]
+                           ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Chars.isDigit :: {19,29,59,84,138}
+                              -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Interactive.printLn' :: {13,21}
+                                     -> {14,22}
+                                     -> {15,23}
+                                     -> {19,29}
+                                     -> {115}
+                                     -> {Cidr_MkUnit[]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Char:!compare:0" :: {19
+                                                                                           ,29
+                                                                                           ,59
+                                                                                           ,84
+                                                                                           ,98
+                                                                                           ,107
+                                                                                           ,138
+                                                                                           ,258}
+                                                                                        -> {0,5,71}
+                                                                                        -> {Cidr_Prelude.Interfaces.EQ[]
+                                                                                           ,Cidr_Prelude.Interfaces.GT[]
+                                                                                           ,Cidr_Prelude.Interfaces.LT[]}
+    "idr_Prelude.Interfaces.Prelude.Interfaces.@Prelude.Interfaces.Ord$Integer:!compare:0" :: {31}
+                                                                                           -> {32}
+                                                                                           -> {Cidr_Prelude.Interfaces.EQ[]
+                                                                                              ,Cidr_Prelude.Interfaces.GT[]
+                                                                                              ,Cidr_Prelude.Interfaces.LT[]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Eq$Nat:!==:0" :: {26
+                                                                             ,90
+                                                                             ,144}
+                                                                          -> {27,142}
+                                                                          -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" :: {26
+                                                                                   ,90
+                                                                                   ,164}
+                                                                                -> {27,162}
+                                                                                -> {Cidr_Prelude.Interfaces.EQ[]
+                                                                                   ,Cidr_Prelude.Interfaces.GT[]
+                                                                                   ,Cidr_Prelude.Interfaces.LT[]}
+    "idr_Prelude.Show.Main.@Prelude.Show.Show$List a:!show:0" :: {16}
+                                                              -> {17}
+                                                              -> {18}
+                                                              -> {CGrString[{T_String}]}
+    idr_Prelude.Show.primNumShow :: {117,135}
+                                 -> {118,136}
+                                 -> {119,137}
+                                 -> {19,29,59,84,138}
+                                 -> {CGrString[{T_String}]
+                                    ,Cidr_Prelude.Bool.False[]
+                                    ,Cidr_Prelude.Bool.True[]}
+    idr_Prelude.Show.protectEsc :: {63,134}
+                                -> {64,139}
+                                -> {19,29,59,84,138}
+                                -> {CGrString[{T_String}]}
+    idr_Prelude.Show.showLitChar :: {98,107,258}
+                                 -> {C"idr_{U_Prelude.Show.protectEsc_1}"[{63},{64}]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_11}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_12}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_13}_1}"[{182
+                                                                                ,183
+                                                                                ,184
+                                                                                ,185
+                                                                                ,186
+                                                                                ,187
+                                                                                ,188
+                                                                                ,189
+                                                                                ,190
+                                                                                ,191
+                                                                                ,192
+                                                                                ,193
+                                                                                ,194
+                                                                                ,195
+                                                                                ,196
+                                                                                ,197
+                                                                                ,198
+                                                                                ,199
+                                                                                ,200
+                                                                                ,201
+                                                                                ,202
+                                                                                ,203
+                                                                                ,204
+                                                                                ,205
+                                                                                ,206
+                                                                                ,207
+                                                                                ,208
+                                                                                ,209
+                                                                                ,210
+                                                                                ,211
+                                                                                ,212
+                                                                                ,213}]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_14}_1}"[{98,107,258}]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_3}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_4}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_5}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_6}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_7}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_8}_1}"[]
+                                    ,C"idr_{U_Prelude.Show.{showLitChar_9}_1}"[]
+                                    ,C"idr_{U_prim__strCons_1}"[{98,107,258}]}
+    idr_Prelude.Show.showLitChar:asciiTab:10 :: {68}
+                                             -> {Cidr_Prelude.List.::[{182},{245}]}
+    idr_Prelude.Show.showLitChar:getAt:10 :: {65,248}
+                                          -> {67,247}
+                                          -> {69
+                                             ,214
+                                             ,215
+                                             ,216
+                                             ,217
+                                             ,218
+                                             ,219
+                                             ,220
+                                             ,221
+                                             ,222
+                                             ,223
+                                             ,224
+                                             ,225
+                                             ,226
+                                             ,227
+                                             ,228
+                                             ,229
+                                             ,230
+                                             ,231
+                                             ,232
+                                             ,233
+                                             ,234
+                                             ,235
+                                             ,236
+                                             ,237
+                                             ,238
+                                             ,239
+                                             ,240
+                                             ,241
+                                             ,242
+                                             ,243
+                                             ,244
+                                             ,245}
+                                          -> {Cidr_Prelude.Maybe.Just[{182
+                                                                      ,183
+                                                                      ,184
+                                                                      ,185
+                                                                      ,186
+                                                                      ,187
+                                                                      ,188
+                                                                      ,189
+                                                                      ,190
+                                                                      ,191
+                                                                      ,192
+                                                                      ,193
+                                                                      ,194
+                                                                      ,195
+                                                                      ,196
+                                                                      ,197
+                                                                      ,198
+                                                                      ,199
+                                                                      ,200
+                                                                      ,201
+                                                                      ,202
+                                                                      ,203
+                                                                      ,204
+                                                                      ,205
+                                                                      ,206
+                                                                      ,207
+                                                                      ,208
+                                                                      ,209
+                                                                      ,210
+                                                                      ,211
+                                                                      ,212
+                                                                      ,213}]
+                                             ,Cidr_Prelude.Maybe.Nothing[]}
+    idr_Prelude.Show.showLitString :: {111,112,261}
+                                   -> {113}
+                                   -> {CGrString[{T_String}]
+                                      ,Cidr_Prelude.Bool.False[]
+                                      ,Cidr_Prelude.Bool.True[]}
+    "idr_Prelude.Show.{showLitChar_10}" :: {19,29,59,84,138}
+                                        -> {Cidr_Prelude.Bool.False[],Cidr_Prelude.Bool.True[]}
+    "idr_Prelude.Show.{showLitChar_11}" :: {19,29,59,84,138}
+                                        -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_12}" :: {19,29,59,84,138}
+                                        -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_13}" :: {182
+                                           ,183
+                                           ,184
+                                           ,185
+                                           ,186
+                                           ,187
+                                           ,188
+                                           ,189
+                                           ,190
+                                           ,191
+                                           ,192
+                                           ,193
+                                           ,194
+                                           ,195
+                                           ,196
+                                           ,197
+                                           ,198
+                                           ,199
+                                           ,200
+                                           ,201
+                                           ,202
+                                           ,203
+                                           ,204
+                                           ,205
+                                           ,206
+                                           ,207
+                                           ,208
+                                           ,209
+                                           ,210
+                                           ,211
+                                           ,212
+                                           ,213}
+                                        -> {19,29,59,84,138}
+                                        -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_14}" :: {98,107,258}
+                                        -> {19,29,59,84,138}
+                                        -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_3}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_4}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_5}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_6}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_7}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_8}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    "idr_Prelude.Show.{showLitChar_9}" :: {19,29,59,84,138}
+                                       -> {CGrString[{T_String}]}
+    idr__Prelude.Strings.unpack_with_36 :: {99,252}
+                                        -> {110,260}
+                                        -> {Cidr_Prelude.List.::[{107,258},{261}]
+                                           ,Cidr_Prelude.List.Nil[]}
+    idr_prim__strCons :: {98,107,131,133,258}
+                      -> {19,29,59,84,132,138,140}
+                      -> {CGrString[{T_String}]}
+    idr_prim__toStrBigInt :: {19,29,59,84,138}
+                          -> {CGrString[{T_String}]}
+    idr_prim__toStrInt :: {19,29,59,84,138}
+                       -> {CGrString[{T_String}]}
+    "idr_{APPLY_0}" :: {15,23,63,83,118,134,136}
+                    -> {19,29,59,84,138}
+                    -> {CGrString[{T_String}]
+                       ,Cidr_Prelude.Bool.False[]
+                       ,Cidr_Prelude.Bool.True[]}
+    "idr_{EVAL_0}" :: {116} -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}" :: {Cidr_MkUnit[]}
+    idris_ch_int :: {98,107,258} -> {CGrInt[{T_Int64}]}
+    idris_int_add :: {11,26,90} -> {12,89} -> {CGrInt[{T_Int64}]}
+    idris_int_eq :: {19,29,31,34,43,59,84,98,107,138,258}
+                 -> {0,2,5,7,32,35,44,71,127}
+                 -> {CGrInt[{T_Int64}]}
+    idris_int_lt :: {19,29,31,59,84,98,107,138,258}
+                 -> {0,5,32,71}
+                 -> {CGrInt[{T_Int64}]}
+    idris_int_str :: {19,29,59,84,138} -> {CGrString[{T_String}]}
+    idris_int_sub :: {26,27,67,90,142,144,162,164,247}
+                  -> {141,143,157,161,163,246}
+                  -> {CGrInt[{T_Int64}]}
+    idris_ls_ext :: {66} -> {CGrInt[{T_Int64}]}
+    idris_str_concat :: {30
+                        ,47
+                        ,50
+                        ,61
+                        ,64
+                        ,81
+                        ,120
+                        ,121
+                        ,122
+                        ,123
+                        ,124
+                        ,125
+                        ,126
+                        ,129
+                        ,130
+                        ,139
+                        ,182
+                        ,183
+                        ,184
+                        ,185
+                        ,186
+                        ,187
+                        ,188
+                        ,189
+                        ,190
+                        ,191
+                        ,192
+                        ,193
+                        ,194
+                        ,195
+                        ,196
+                        ,197
+                        ,198
+                        ,199
+                        ,200
+                        ,201
+                        ,202
+                        ,203
+                        ,204
+                        ,205
+                        ,206
+                        ,207
+                        ,208
+                        ,209
+                        ,210
+                        ,211
+                        ,212
+                        ,213}
+                     -> {19,29,48,49,51,59,62,82,84,138}
+                     -> {CGrString[{T_String}]}
+    idris_str_cons :: {92,98,107,131,133,258}
+                   -> {19,29,59,84,114,132,138,140}
+                   -> {CGrString[{T_String}]}
+    idris_str_eq :: {19,29,30,59,84,100,109,138,259}
+                 -> {38,54,93,101,253}
+                 -> {CGrInt[{T_Int64}]}
+    idris_str_head :: {19,29,30,59,84,106,109,138,259}
+                   -> {CGrInt[{T_Int64}]}
+    idris_str_tail :: {19,29,59,84,108,109,138,259}
+                   -> {CGrString[{T_String}]}
+    idris_write_str :: {115} -> {52} -> {CUnit[]}

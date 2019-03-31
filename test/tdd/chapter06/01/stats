@@ -1,0 +1,106 @@
+# Compile time
+
+before:
+```
+Definitions:     71
+Binds:           1998
+Blocks:          0
+Cases:           202
+Alternatives:    454
+Function calls:  613
+Returns:         627
+Stores:          909
+Fethces:         172
+Updates:         0
+------------------
+Node summary:    5046
+
+Variables:       2309
+Tags:            65
+```
+
+after intraprocedural opts:
+```
+Definitions:     14
+Binds:           1458
+Blocks:          0
+Cases:           552
+Alternatives:    1132
+Function calls:  481
+Returns:         1333
+Stores:          183
+Fethces:         55
+Updates:         0
+------------------
+Node summary:    5208
+
+Variables:       1564
+Tags:            50
+```
+
+after DDE:
+```
+Definitions:     14
+Binds:           1726
+Blocks:          0
+Cases:           552
+Alternatives:    1132
+Function calls:  478
+Returns:         1612
+Stores:          175
+Fethces:         55
+Updates:         0
+------------------
+Node summary:    5744
+
+Variables:       1828
+Tags:            49
+```
+
+Here DDE removed a node argument in a recursive function,
+so it still recuded the data movement to and from the heap.
+(function was: idr_Data.Vect.foldrImpl)
+
+It also removed other node arguments and some redundant stores as well.
+
+
+# Runtime
+
+before
+```
+Binds:           8821
+Blocks:          0
+Cases:           1940
+Alternatives:    6308
+Function calls:  2198
+Returns:         2713
+Stores:          2739
+Fethces:         2606
+Updates:         0
+```
+
+after intraprocedural opts.
+```
+Binds:           3643
+Blocks:          0
+Cases:           1183
+Alternatives:    2564
+Function calls:  1046
+Returns:         1656
+Stores:          781
+Fethces:         548
+Updates:         0
+```
+
+after DDE:
+```
+Binds:           3957
+Blocks:          0
+Cases:           1183
+Alternatives:    2564
+Function calls:  1046
+Returns:         1974
+Stores:          777
+Fethces:         548
+Updates:         0
+```

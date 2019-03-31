@@ -11,6 +11,7 @@ We keep the failing test cases for reference and regression detecting.
 spec :: Spec
 spec = describe "Idris and Grin matches for:" $ forM_ [NonOptimised, Optimised] $ \mode ->
   describe (show mode) $ do
+    it "List length" $ timed $ idris mode 60 "test/other/list_length/list_len.idr"
     it "TDD 01 - 01 Hello World" $ timed $ idris mode 60 "test/tdd/chapter01/01_HelloWorld.idr"
     it "TDD 01 - 02 CalcType" $ timed $ idris mode 60 "test/tdd/chapter01/02_CalcType.idr"
     it "TDD 02 - 01 Average" $ timed $ idris mode 60 "test/tdd/chapter02/01_Average.idr"

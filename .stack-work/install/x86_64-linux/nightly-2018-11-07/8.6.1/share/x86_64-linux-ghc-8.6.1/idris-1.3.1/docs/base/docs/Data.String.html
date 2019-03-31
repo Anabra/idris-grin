@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Data.String</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Data.String<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Data.String</h1><dl class="decls"><dt id="Data.String.parseDouble"><span class="name function" title="Data.String.parseDouble">parseDouble</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="String">String</span> ->
+<a class="type" title="Prelude.Maybe.Maybe" href="Prelude.Maybe.html#Prelude.Maybe.Maybe">Maybe</a> <span class="type" title="Double">Double</span></span></dt><dd><p>Convert a number string to a Double.</p>
+<pre class="idris"><code>parseDouble &quot;+123.123e-2&quot;
+</code></pre>
+<pre class="idris"><code>parseDouble {a=Int} &quot; -123.123E+2&quot;
+</code></pre>
+<pre class="idris"><code>parseDouble {a=Int} &quot; +123.123&quot;
+</code></pre>
+</dd><dt id="Data.String.parseInteger"><span class="name function" title="Data.String.parseInteger">parseInteger</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Interfaces.Num" href="Prelude.Interfaces.html#Prelude.Interfaces.Num">Num</a> <span class="implicit boundvar" title="">a</span> =>
+<a class="type" title="Prelude.Interfaces.Neg" href="Prelude.Interfaces.html#Prelude.Interfaces.Neg">Neg</a> <span class="implicit boundvar" title="">a</span> =>
+<span class="type" title="String">String</span> ->
+<a class="type" title="Prelude.Maybe.Maybe" href="Prelude.Maybe.html#Prelude.Maybe.Maybe">Maybe</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>Convert a number string to a Num.</p>
+<pre class="idris"><code>parseInteger &quot; 123&quot;
+</code></pre>
+<pre class="idris"><code>parseInteger {a=Int} &quot; -123&quot;
+</code></pre>
+</dd><dt id="Data.String.parsePositive"><span class="name function" title="Data.String.parsePositive">parsePositive</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Interfaces.Num" href="Prelude.Interfaces.html#Prelude.Interfaces.Num">Num</a> <span class="implicit boundvar" title="">a</span> =>
+<span class="type" title="String">String</span> ->
+<a class="type" title="Prelude.Maybe.Maybe" href="Prelude.Maybe.html#Prelude.Maybe.Maybe">Maybe</a> <span class="implicit boundvar" title="">a</span></span></dt><dd><p>Convert a positive number string to a Num.</p>
+<pre class="idris"><code>parsePositive &quot;123&quot;
+</code></pre>
+<pre class="idris"><code>parsePositive {a=Int} &quot; +123&quot;
+</code></pre>
+</dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

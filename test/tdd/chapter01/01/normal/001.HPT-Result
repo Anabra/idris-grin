@@ -1,0 +1,28 @@
+Heap
+    0      -> {CGrString[{T_String}]}
+    1      -> {CUnit[]}
+    2      -> {CErased[]}
+    3      -> {Cidr_MkUnit[]}
+Env
+    idr_Main.main0 -> {2}
+    idr_Main.main1 -> {0}
+    idr_Main.main1_4 -> {1}
+    idr_Main.main1_val -> {CUnit[]}
+    idr_Main.main1_val_3 -> {CGrString[{T_String}]}
+    "idr_{EVAL_0}0" -> {3}
+    "idr_{EVAL_0}0_val" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0" -> {2}
+    "idr_{runMain_0}0_6" -> {3}
+    "idr_{runMain_0}0_val" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0_val_5" -> {CErased[]}
+    idris_write_str1 -> {2}
+    idris_write_str2 -> {0}
+    idris_write_str2_0 -> {T_String}
+    r      -> {Cidr_MkUnit[]}
+Function
+    _prim_string_print :: {T_String} -> {T_Unit}
+    grinMain :: {T_Unit}
+    idr_Main.main :: {2} -> {Cidr_MkUnit[]}
+    "idr_{EVAL_0}" :: {3} -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}" :: {Cidr_MkUnit[]}
+    idris_write_str :: {2} -> {0} -> {CUnit[]}

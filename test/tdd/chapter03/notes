@@ -1,0 +1,24 @@
+idr_Data.Vect.foldrImpl idr_Data.Vect.foldrImpl0 idr_Data.Vect.foldrImpl1 idr_Data.Vect.foldrImpl2 idr_Data.Vect.foldrImpl3 idr_Data.Vect.foldrImpl4 idr_Data.Vect.foldrImpl5 idr_Data.Vect.foldrImpl6 =
+  idr_Data.Vect.foldrImpl6_val <- fetch idr_Data.Vect.foldrImpl6
+  case idr_Data.Vect.foldrImpl6_val of
+    (Cidr_Data.Vect.:: idr_Data.Vect.foldrImpl7 idr_Data.Vect.foldrImpl8) ->
+      idr_Data.Vect.foldrImpl9_val <- pure (CErased)
+      idr_Data.Vect.foldrImpl9 <- store idr_Data.Vect.foldrImpl9_val
+      idr_Data.Vect.foldrImpl10_val <- pure (CErased)
+      idr_Data.Vect.foldrImpl10 <- store idr_Data.Vect.foldrImpl10_val
+      idr_Data.Vect.foldrImpl11_val <- pure (CErased)
+      idr_Data.Vect.foldrImpl11 <- store idr_Data.Vect.foldrImpl11_val
+      idr_Data.Vect.foldrImpl12_val <- pure (C"idr_{U_Data.Vect.{foldrImpl_0}_1}" idr_Data.Vect.foldrImpl5 idr_Data.Vect.foldrImpl3 idr_Data.Vect.foldrImpl7)
+      idr_Data.Vect.foldrImpl12 <- store idr_Data.Vect.foldrImpl12_val
+      idr_Data.Vect.foldrImpl $ idr_Data.Vect.foldrImpl9 idr_Data.Vect.foldrImpl10 idr_Data.Vect.foldrImpl11 idr_Data.Vect.foldrImpl3 idr_Data.Vect.foldrImpl4 idr_Data.Vect.foldrImpl12 idr_Data.Vect.foldrImpl8
+    (Cidr_Data.Vect.Nil) ->
+      "idr_{APPLY_0}" $ idr_Data.Vect.foldrImpl5 idr_Data.Vect.foldrImpl4
+
+- first three arguments do not matter
+- idr_Data.Vect.foldrImpl3: some function as well ...
+- idr_Data.Vect.foldrImpl4: initial value
+- idr_Data.Vect.foldrImpl5: function to apply
+- idr_Data.Vect.foldrImpl6: current ctor
+- idr_Data.Vect.foldrImpl7: head of (::)
+- idr_Data.Vect.foldrImpl8: tail of (::)
+

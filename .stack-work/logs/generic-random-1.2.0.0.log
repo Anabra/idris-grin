@@ -1,0 +1,17 @@
+Configuring generic-random-1.2.0.0...
+Preprocessing library for generic-random-1.2.0.0..
+Building library for generic-random-1.2.0.0..
+[1 of 4] Compiling Generic.Random.Internal.Generic ( src/Generic/Random/Internal/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Generic/Random/Internal/Generic.o )
+[2 of 4] Compiling Generic.Random.Internal.BaseCase ( src/Generic/Random/Internal/BaseCase.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Generic/Random/Internal/BaseCase.o )
+[3 of 4] Compiling Generic.Random   ( src/Generic/Random.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Generic/Random.o )
+[4 of 4] Compiling Generic.Random.Tutorial ( src/Generic/Random/Tutorial.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Generic/Random/Tutorial.o )
+
+[;1msrc/Generic/Random/Tutorial.hs:236:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Generic.Random’ is redundant
+      except perhaps to import instances from ‘Generic.Random’
+    To import instances alone, use: import Generic.Random()[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m236 |[0m[0m [;1m[35mimport Generic.Random[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mInstalling library in /home/anabra/.stack/snapshots/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/generic-random-1.2.0.0-3J8hQ6Fz675LsHuWTWwhNy
+Registering library for generic-random-1.2.0.0..

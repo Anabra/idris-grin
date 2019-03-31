@@ -1,0 +1,51 @@
+Configuring cheapskate-0.1.1.1...
+Preprocessing library for cheapskate-0.1.1.1..
+Building library for cheapskate-0.1.1.1..
+[1 of 8] Compiling Cheapskate.ParserCombinators ( Cheapskate/ParserCombinators.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate/ParserCombinators.o )
+[2 of 8] Compiling Cheapskate.Types ( Cheapskate/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate/Types.o )
+[3 of 8] Compiling Cheapskate.Html  ( Cheapskate/Html.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate/Html.o )
+
+[;1mCheapskate/Html.hs:10:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m10 |[0m[0m [;1m[35mimport Data.Monoid[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[4 of 8] Compiling Cheapskate.Util  ( Cheapskate/Util.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate/Util.o )
+[5 of 8] Compiling Cheapskate.Inlines ( Cheapskate/Inlines.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate/Inlines.o )
+
+[;1mCheapskate/Inlines.hs:16:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m [;1m[35mimport Data.Monoid[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[6 of 8] Compiling Cheapskate.Parse ( Cheapskate/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate/Parse.o )
+
+[;1mCheapskate/Parse.hs:15:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m15 |[0m[0m [;1m[35mimport Data.Monoid[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[7 of 8] Compiling Cheapskate       ( Cheapskate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Cheapskate.o )
+[8 of 8] Compiling Paths_cheapskate ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/Paths_cheapskate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Paths_cheapskate.o )
+Preprocessing executable 'cheapskate' for cheapskate-0.1.1.1..
+Building executable 'cheapskate' for cheapskate-0.1.1.1..
+
+[;1m<no location info>: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wmissing-home-modules[0m[0m[;1m][0m[0m[;1m
+    These modules are needed for compilation but not listed in your .cabal file's other-modules: 
+        Paths_cheapskate[0m[0m
+[0m[0m[0m[1 of 2] Compiling Paths_cheapskate ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/cheapskate/autogen/Paths_cheapskate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/cheapskate/cheapskate-tmp/Paths_cheapskate.o )
+[2 of 2] Compiling Main             ( bin/main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/cheapskate/cheapskate-tmp/Main.o )
+
+[;1m<no location info>: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wmissing-home-modules[0m[0m[;1m][0m[0m[;1m
+    These modules are needed for compilation but not listed in your .cabal file's other-modules: 
+        Paths_cheapskate[0m[0m
+[0m[0m[0mLinking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/cheapskate/cheapskate ...
+Installing library in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/cheapskate-0.1.1.1-LBATGFPXh9VFLrzDg385eW
+Installing executable cheapskate in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/bin
+Registering library for cheapskate-0.1.1.1..

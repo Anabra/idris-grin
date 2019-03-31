@@ -1,0 +1,97 @@
+Heap
+    0      -> {Cidr_Prelude.Bool.True[]}
+    1      -> {Cidr_Prelude.Bool.True[]}
+    2      -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    3      -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    4      -> {CGrString[{T_String}]}
+    5      -> {CGrString[{T_String}]}
+    6      -> {CUnit[]}
+    7      -> {Cidr_MkUnit[]}
+    8      -> {Cidr_Prelude.Bool.False[]}
+    9      -> {Cidr_Prelude.Bool.False[]}
+    10     -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    11     -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    12     -> {CGrString[{T_String}]}
+    13     -> {CGrString[{T_String}]}
+    14     -> {CUnit[]}
+    15     -> {CErased[]}
+    16     -> {Cidr_MkUnit[]}
+Env
+    idr_Main.getStringOrInt0 -> {1,9}
+    idr_Main.getStringOrInt0_val -> {Cidr_Prelude.Bool.False[]
+                                    ,Cidr_Prelude.Bool.True[]}
+    idr_Main.main0 -> {15}
+    idr_Main.main1 -> {0}
+    idr_Main.main1_12 -> {5}
+    idr_Main.main1_13 -> {6}
+    idr_Main.main1_14 -> {7}
+    idr_Main.main1_9 -> {3}
+    idr_Main.main1_val -> {Cidr_MkUnit[]}
+    idr_Main.main1_val_3 -> {CUnit[]}
+    idr_Main.main1_val_4 -> {CGrString[{T_String}]}
+    idr_Main.main1_val_5 -> {CGrInt[{T_Int64}]
+                            ,CGrString[{T_String}]}
+    idr_Main.main1_val_6 -> {Cidr_Prelude.Bool.True[]}
+    idr_Main.main2 -> {1}
+    idr_Main.main2_11 -> {4}
+    idr_Main.main2_19 -> {8}
+    idr_Main.main2_22 -> {11}
+    idr_Main.main2_25 -> {13}
+    idr_Main.main2_26 -> {14}
+    idr_Main.main2_8 -> {2}
+    idr_Main.main2_val -> {CGrInt[{T_Int64}]
+                          ,CGrString[{T_String}]}
+    idr_Main.main2_val_10 -> {CGrString[{T_String}]}
+    idr_Main.main2_val_15 -> {CUnit[]}
+    idr_Main.main2_val_16 -> {CGrString[{T_String}]}
+    idr_Main.main2_val_17 -> {CGrInt[{T_Int64}]
+                             ,CGrString[{T_String}]}
+    idr_Main.main2_val_18 -> {Cidr_Prelude.Bool.False[]}
+    idr_Main.main2_val_7 -> {Cidr_Prelude.Bool.True[]}
+    idr_Main.main3 -> {9}
+    idr_Main.main3_21 -> {10}
+    idr_Main.main3_24 -> {12}
+    idr_Main.main3_val -> {CGrInt[{T_Int64}]
+                          ,CGrString[{T_String}]}
+    idr_Main.main3_val_20 -> {Cidr_Prelude.Bool.False[]}
+    idr_Main.main3_val_23 -> {CGrString[{T_String}]}
+    idr_Main.valToString0 -> {0,8}
+    idr_Main.valToString0_val -> {Cidr_Prelude.Bool.False[]
+                                 ,Cidr_Prelude.Bool.True[]}
+    idr_Main.valToString1 -> {2,10}
+    "idr_{EVAL_0}0" -> {16}
+    "idr_{EVAL_0}0_val" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0" -> {15}
+    "idr_{runMain_0}0_28" -> {16}
+    "idr_{runMain_0}0_val" -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}0_val_27" -> {CErased[]}
+    idris_int_str1 -> {2,10}
+    idris_int_str1_0 -> {T_Int64}
+    idris_int_str2 -> {T_String}
+    idris_str_concat1 -> {3,11}
+    idris_str_concat1_0 -> {T_String}
+    idris_str_concat2 -> {4,12}
+    idris_str_concat2_0 -> {T_String}
+    idris_str_concat3 -> {T_String}
+    idris_write_str1 -> {15}
+    idris_write_str2 -> {5,13}
+    idris_write_str2_0 -> {T_String}
+    r      -> {Cidr_MkUnit[]}
+Function
+    _prim_int_str :: {T_Int64} -> {T_String}
+    _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
+    _prim_string_print :: {T_String} -> {T_Unit}
+    grinMain :: {T_Unit}
+    idr_Main.getStringOrInt :: {1,9}
+                            -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    idr_Main.main :: {15} -> {Cidr_MkUnit[]}
+    idr_Main.valToString :: {0,8}
+                         -> {2,10}
+                         -> {CGrInt[{T_Int64}],CGrString[{T_String}]}
+    "idr_{EVAL_0}" :: {16} -> {Cidr_MkUnit[]}
+    "idr_{runMain_0}" :: {Cidr_MkUnit[]}
+    idris_int_str :: {2,10} -> {CGrString[{T_String}]}
+    idris_str_concat :: {3,11}
+                     -> {4,12}
+                     -> {CGrString[{T_String}]}
+    idris_write_str :: {15} -> {5,13} -> {CUnit[]}

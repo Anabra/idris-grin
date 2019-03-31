@@ -1,0 +1,15 @@
+Definitions:     23
+Binds:           850
+Blocks:          0
+Cases:           135
+Alternatives:    268
+Function calls:  142
+Returns:         720
+Stores:          103
+Fethces:         41
+Updates:         0
+------------------
+Node summary:    2282
+
+Variables:       959
+Tags:            22

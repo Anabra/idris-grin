@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Data.Combinators</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Data.Combinators<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Data.Combinators</h1><p>Combinators that are thought to be at least situationally useful, mostly for<br />
+tacit (or point-free) programming. &quot;To Mock a Mockingbird&quot; refers to the book<br />
+&quot;To Mock a Mockingbird and Other Logic Puzzles: Including an Amazing Adventure<br />
+in Combinatory Logic&quot;, by Raymond Smullyan (which the author of this module<br />
+hasn&#39;t actually read). See<br />
+<a href="http://www.angelfire.com/tx4/cus/combinator/birds.html">http://www.angelfire.com/tx4/cus/combinator/birds.html</a> and<br />
+<a href="https://hackage.haskell.org/package/data-aviary-0.4.0/docs/Data-Aviary-Birds.html">https://hackage.haskell.org/package/data-aviary-0.4.0/docs/Data-Aviary-Birds.html</a><br />
+an (incomplete?) list of birds introduced.</p>
+<dl class="decls"><dt id="Data.Combinators...."><span class="name function" title="Data.Combinators....">(...)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="implicit boundvar" title="">c</span> ->
+<span class="implicit boundvar" title="">d</span>) ->
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">c</span>) ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">d</span></span></dt><dd><p>Blackbird, as named in &quot;To Mock a Mockingbird&quot;. This is like<br />
+function composition, but second function takes two arguments. See the talk<br />
+&quot;Point-Free or Die: Tacit Programming in Haskell and Beyond&quot; by Amar Shah<br />
+(<a href="https://youtu.be/seVSlKazsNk">https://youtu.be/seVSlKazsNk</a>).</p>
+<dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixl 9">Left associative, precedence 9</dd></dl></dd><dt id="Data.Combinators.fork2"><span class="name function" title="Data.Combinators.fork2">fork2</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">c</span> ->
+<span class="implicit boundvar" title="">d</span>) ->
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span>) ->
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">c</span>) ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">d</span></span></dt><dd><p>Phoenix, according to Data.Aviary.<br />
+See <a href="http://code.jsoftware.com/wiki/Vocabulary/fork">http://code.jsoftware.com/wiki/Vocabulary/fork</a>.<br />
+Equivalent to <code>liftA2</code> on the Reader monad (<code>(-&gt;) e</code> in Haskell)</p>
+</dd><dt id="Data.Combinators.on"><span class="name function" title="Data.Combinators.on">on</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">b</span> ->
+<span class="implicit boundvar" title="">c</span>) ->
+(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span>) ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">c</span></span></dt><dd><p>Psi combinator - psi bird (?) - Haskell on.</p>
+</dd><dt id="Data.Combinators.reflex"><span class="name function" title="Data.Combinators.reflex">reflex</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span>) ->
+<span class="implicit boundvar" title="">a</span> ->
+<span class="implicit boundvar" title="">b</span></span></dt><dd><p>Warbler, as named in &quot;To Mock a Mockingbird&quot;.<br />
+See <a href="http://code.jsoftware.com/wiki/Vocabulary/tilde">http://code.jsoftware.com/wiki/Vocabulary/tilde</a><br />
+Equivalent to <code>join</code> on the Reader monad (<code>(-&gt;) e</code> in Haskell)</p>
+</dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

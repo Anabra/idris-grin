@@ -1,0 +1,57 @@
+before:
+```
+Definitions:     89
+Binds:           1459
+Blocks:          0
+Cases:           134
+Alternatives:    343
+Function calls:  319
+Returns:         645
+Stores:          659
+Fethces:         134
+Updates:         0
+------------------
+Node summary:    3782
+
+Variables:       1851
+Tags:            96
+```
+
+after intraprocedural opts:
+```
+Definitions:     19
+Binds:           957
+Blocks:          0
+Cases:           265
+Alternatives:    569
+Function calls:  241
+Returns:         805
+Stores:          177
+Fethces:         57
+Updates:         0
+------------------
+Node summary:    3090
+
+Variables:       1084
+Tags:            56
+```
+
+after DDE:
+```
+Definitions:     19
+Binds:           1190
+Blocks:          0
+Cases:           265
+Alternatives:    569
+Function calls:  241
+Returns:         1039
+Stores:          176
+Fethces:         57
+Updates:         0
+------------------
+Node summary:    3556
+
+Variables:       1313
+Tags:            55
+```
+foldrImpl stuff + something I could not find

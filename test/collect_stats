@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# collect_stats normal_dir optimized_dir dde_dir output_file
+
+rm -f $4
+
+# finds stats files, sorts them, gets rid of useless lines, groups the results by their transformations
+egrep --no-filename  "^\w" $(find $1 -type f -name "*Statistics*" | sort) | sed '0~13 a\\' >> $4
+echo -e "" >> $4
+egrep --no-filename  "^\w" $(find $2 -type f -name "*Statistics*" | sort) | sed '0~13 a\\' >> $4
+echo -e "" >> $4
+egrep --no-filename  "^\w" $(find $3 -type f -name "*Statistics*" | sort) | sed '0~13 a\\' >> $4
+
+# Corrects typo
+sed -i 's/Fethces/Fetches/g' $4

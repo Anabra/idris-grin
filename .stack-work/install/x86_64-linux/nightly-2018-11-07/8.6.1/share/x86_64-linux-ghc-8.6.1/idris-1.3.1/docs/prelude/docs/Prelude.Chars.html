@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Prelude.Chars</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Prelude.Chars<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Prelude.Chars</h1><p>Functions operating over Chars.</p>
+<p>The representation of a Char is backend dependent,<br />
+for the C backend, it is a Unicode code point.</p>
+<dl class="decls"><dt id="Prelude.Chars.chr"><span class="name function" title="Prelude.Chars.chr">chr</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Int">Int</span> ->
+<span class="type" title="Char">Char</span></span></dt><dd><p>Convert the number to its backend dependent (usually Unicode) Char equivelent.</p>
+</dd><dt id="Prelude.Chars.isAlpha"><span class="name function" title="Prelude.Chars.isAlpha">isAlpha</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is in the ranges [A-Z][a-z].</p>
+</dd><dt id="Prelude.Chars.isAlphaNum"><span class="name function" title="Prelude.Chars.isAlphaNum">isAlphaNum</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is in the ranges [A-Z][a-z][0-9]</p>
+</dd><dt id="Prelude.Chars.isControl"><span class="name function" title="Prelude.Chars.isControl">isControl</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is a control character.</p>
+</dd><dt id="Prelude.Chars.isDigit"><span class="name function" title="Prelude.Chars.isDigit">isDigit</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is in the range [0-9]</p>
+</dd><dt id="Prelude.Chars.isHexDigit"><span class="name function" title="Prelude.Chars.isHexDigit">isHexDigit</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is a hexadecimal digit i.e. in the range [0-9][a-f][A-F]</p>
+</dd><dt id="Prelude.Chars.isLower"><span class="name function" title="Prelude.Chars.isLower">isLower</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is in the range [a-z]</p>
+</dd><dt id="Prelude.Chars.isNL"><span class="name function" title="Prelude.Chars.isNL">isNL</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character represents a new line.</p>
+</dd><dt id="Prelude.Chars.isOctDigit"><span class="name function" title="Prelude.Chars.isOctDigit">isOctDigit</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is an octal digit.</p>
+</dd><dt id="Prelude.Chars.isSpace"><span class="name function" title="Prelude.Chars.isSpace">isSpace</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is a whitespace character.</p>
+</dd><dt id="Prelude.Chars.isUpper"><span class="name function" title="Prelude.Chars.isUpper">isUpper</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="type" title="Prelude.Bool.Bool" href="Prelude.Bool.html#Prelude.Bool.Bool">Bool</a></span></dt><dd><p>Returns true if the character is in the range [A-Z].</p>
+</dd><dt id="Prelude.Chars.ord"><span class="name function" title="Prelude.Chars.ord">ord</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<span class="type" title="Int">Int</span></span></dt><dd><p>Return the backend dependent (usually Unicode) numerical equivelent of the Char.</p>
+</dd><dt id="Prelude.Chars.toLower"><span class="name function" title="Prelude.Chars.toLower">toLower</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<span class="type" title="Char">Char</span></span></dt><dd><p>Convert a letter to the corresponding lower-case letter, if any.<br />
+Non-letters are ignored.</p>
+</dd><dt id="Prelude.Chars.toUpper"><span class="name function" title="Prelude.Chars.toUpper">toUpper</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<span class="type" title="Char">Char</span></span></dt><dd><p>Convert a letter to the corresponding upper-case letter, if any.<br />
+Non-letters are ignored.</p>
+</dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

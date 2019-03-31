@@ -1,0 +1,7 @@
+1) Idris, Idris and Grin matches for:, NonOptimised, TDD 02 - 02 Average
+       expected: Enter a string: The average word length is: 4
+                 Enter a string: The average word length is: 4.5
+                 Enter a string: The average word length is: -nan
+
+        but got: Enter a string: The average word length is: 4
+                 Enter a string: The average word length is: 4.5

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Control.ST.Loop</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Control.ST.Loop<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Control.ST.Loop</h1><dl class="decls"><dt id="Control.ST.Loop.&gt;&gt;="><span class="name function" title="Control.ST.Loop.&gt;&gt;=">(&gt;&gt;=)</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.ST.STrans" href="Control.ST.html#Control.ST.STrans">STrans</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">a</span>
+<span class="implicit boundvar" title="">st1</span>
+<span class="implicit boundvar" title="">st2_fn</span> ->
+((<span class="boundvar" title="">result</span> : <span class="implicit boundvar" title="">a</span>) ->
+<a class="function" title="Inf" href="[builtins].html#Inf">Inf</a> (<a class="type" title="Control.ST.Loop.STransLoop" href="Control.ST.Loop.html#Control.ST.Loop.STransLoop">STransLoop</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">b</span>
+(<span class="implicit boundvar" title="">st2_fn</span> <span class="boundvar" title="">result</span>)
+<span class="implicit boundvar" title="">st3_fn</span>)) ->
+<a class="type" title="Control.ST.Loop.STransLoop" href="Control.ST.Loop.html#Control.ST.Loop.STransLoop">STransLoop</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">b</span>
+<span class="implicit boundvar" title="">st1</span>
+<span class="implicit boundvar" title="">st3_fn</span></span></dt><dd><dl><dt class="fixity">Fixity</dt><dd class="fixity" title="infixl 1">Left associative, precedence 1</dd></dl></dd><dt id="Control.ST.Loop.STransLoop"><span class="word">data&nbsp;</span><span class="name type" title="Control.ST.Loop.STransLoop">STransLoop</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">m</span> : <span class="type" title="Type">Type</span> ->
+<span class="type" title="Type">Type</span>) ->
+(<span class="boundvar" title="">ty</span> : <span class="type" title="Type">Type</span>) ->
+<a class="type" title="Control.ST.Resources.Resources" href="Control.ST.Resources.html#Control.ST.Resources.Resources">Resources</a> ->
+(<span class="boundvar" title="">ty</span> ->
+<a class="type" title="Control.ST.Resources.Resources" href="Control.ST.Resources.html#Control.ST.Resources.Resources">Resources</a>) ->
+<span class="type" title="Type">Type</span></span></dt><dd><dl class="decls"><dt id="Control.ST.Loop.Bind"><span class="name constructor" title="Control.ST.Loop.Bind">Bind</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Control.ST.STrans" href="Control.ST.html#Control.ST.STrans">STrans</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">a</span>
+<span class="implicit boundvar" title="">st1</span>
+<span class="implicit boundvar" title="">st2_fn</span> ->
+((<span class="boundvar" title="">result</span> : <span class="implicit boundvar" title="">a</span>) ->
+<a class="function" title="Inf" href="[builtins].html#Inf">Inf</a> (<a class="type" title="Control.ST.Loop.STransLoop" href="Control.ST.Loop.html#Control.ST.Loop.STransLoop">STransLoop</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">b</span>
+(<span class="implicit boundvar" title="">st2_fn</span> <span class="boundvar" title="">result</span>)
+<span class="implicit boundvar" title="">st3_fn</span>)) ->
+<a class="type" title="Control.ST.Loop.STransLoop" href="Control.ST.Loop.html#Control.ST.Loop.STransLoop">STransLoop</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">b</span>
+<span class="implicit boundvar" title="">st1</span>
+<span class="implicit boundvar" title="">st3_fn</span></span></dt><dd></dd><dt id="Control.ST.Loop.Pure"><span class="name constructor" title="Control.ST.Loop.Pure">Pure</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">result</span> : <span class="implicit boundvar" title="">ty</span>) ->
+<a class="type" title="Control.ST.Loop.STransLoop" href="Control.ST.Loop.html#Control.ST.Loop.STransLoop">STransLoop</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">ty</span>
+(<span class="implicit boundvar" title="">out_fn</span> <span class="boundvar" title="">result</span>)
+<span class="implicit boundvar" title="">out_fn</span></span></dt><dd></dd></dl></dd><dt id="Control.ST.Loop.pure"><span class="name function" title="Control.ST.Loop.pure">pure</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">result</span> : <span class="implicit boundvar" title="">ty</span>) ->
+<a class="type" title="Control.ST.Loop.STransLoop" href="Control.ST.Loop.html#Control.ST.Loop.STransLoop">STransLoop</a> <span class="implicit boundvar" title="">m</span>
+<span class="implicit boundvar" title="">ty</span>
+(<span class="implicit boundvar" title="">out_fn</span> <span class="boundvar" title="">result</span>)
+<span class="implicit boundvar" title="">out_fn</span></span></dt><dd></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

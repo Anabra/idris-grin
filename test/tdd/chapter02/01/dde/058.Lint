@@ -1,0 +1,537 @@
+grinMain =
+  v.0 <- pure (C"idr_{U_Main.{average_0}_2}")
+  idr_Main.average3.0 <- store v.0
+  v.1 <- pure (CGrInt 0)
+  idr_Main.average4.0 <- store v.1
+  v.2 <- pure (C"idr_{U_Main.{average_1}_1}")
+  idr_Main.average7.0 <- store v.2
+  idr_Main.average0.48.0.arity.1.0 <- pure #"This is a test sentence!"
+  idr_Main.average8_val.0 <- idr_Prelude.Strings.words idr_Main.average0.48.0.arity.1.0
+  idr_Main.average8.0 <- store idr_Main.average8_val.0
+  idr_Main.average5_val.0 <- "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:0" idr_Main.average7.0 idr_Main.average8.0
+  idr_Main.average5_4.0 <- store idr_Main.average5_val.0
+  idr_Main.average1_val_1.0 <- "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:0" idr_Main.average3.0 idr_Main.average4.0 idr_Main.average5_4.0
+  -- LINT: Invalid pattern match for (CGrInt idris_int_float1_0.0). Expected pattern of type: {CGrInt[T_Int64]}, but got: {CGrInt[T_Int64]
+  ,CGrString[T_String]}
+  (CGrInt idris_int_float1_0.0) <- pure idr_Main.average1_val_1.0
+  idris_int_float2.0 <- _prim_int_float idris_int_float1_0.0
+  idr_Main.average3_12.0 <- store idr_Main.average8_val.0
+  unboxed.CGrInt.1.0 <- idr_Prelude.List.length.unboxed idr_Main.average3_12.0
+  idris_int_float2.1 <- _prim_int_float unboxed.CGrInt.1.0
+  idris_float_div2.0 <- _prim_float_div idris_int_float2.0 idris_int_float2.1
+  idris_float_str2.0.0 <- _prim_float_string idris_float_div2.0
+  ccp.3.0 <- pure 0
+  idr_Prelude.Show.primNumShow6.40.10.arity.1.0 <- pure 5
+  idris_int_eq2.0 <- _prim_int_eq ccp.3.0 idr_Prelude.Show.primNumShow6.40.10.arity.1.0
+  ccp.0.0 <- case idris_int_eq2.0 of
+    #False ->
+      pure ccp.3.0
+    #True ->
+      pure 1
+  idr_Prelude.Show.primNumShow5_val_64.0 <- case ccp.0.0 of
+    0 ->
+      idris_int_lt2.0 <- _prim_int_lt ccp.3.0 idr_Prelude.Show.primNumShow6.40.10.arity.1.0
+      ccp.1.0 <- case idris_int_lt2.0 of
+        #False ->
+          pure ccp.0.0
+        #True ->
+          pure 1
+      case ccp.1.0 of
+        0 ->
+          v.3 <- pure (Cidr_Prelude.Interfaces.GT)
+          pure v.3
+        #default ->
+          v.4 <- pure (Cidr_Prelude.Interfaces.LT)
+          pure v.4
+    #default ->
+      v.5 <- pure (Cidr_Prelude.Interfaces.EQ)
+      pure v.5
+  idr_Prelude.Show.primNumShow5_val_63.0 <- case idr_Prelude.Show.primNumShow5_val_64.0 of
+    (Cidr_Prelude.Interfaces.GT) ->
+      v.6 <- pure (Cidr_Prelude.Bool.True)
+      pure v.6
+    #default ->
+      idris_int_eq2.1 <- _prim_int_eq ccp.3.0 idr_Prelude.Show.primNumShow6.40.10.arity.1.0
+      ccp.0.1 <- case idris_int_eq2.1 of
+        #False ->
+          pure ccp.3.0
+        #True ->
+          pure 1
+      case ccp.0.1 of
+        0 ->
+          v.7 <- pure (Cidr_Prelude.Bool.False)
+          pure v.7
+        #default ->
+          v.8 <- pure (Cidr_Prelude.Bool.True)
+          pure v.8
+  idr_Prelude.Show.primNumShow5_val.0 <- case idr_Prelude.Show.primNumShow5_val_63.0 of
+    (Cidr_Prelude.Bool.False) ->
+      v.9 <- pure (Cidr_Prelude.Bool.False)
+      pure v.9
+    (Cidr_Prelude.Bool.True) ->
+      idr_Prelude.Show.primNumShow6_80.32.14.arity.1.0 <- pure #""
+      idris_str_eq3.0 <- _prim_string_eq idris_float_str2.0.0 idr_Prelude.Show.primNumShow6_80.32.14.arity.1.0
+      ccp.2.0 <- case idris_str_eq3.0 of
+        #False ->
+          pure ccp.3.0
+        #True ->
+          pure 1
+      idr_Prelude.Show.primNumShow6_val_77.0 <- case ccp.2.0 of
+        0 ->
+          v.10 <- pure (Cidr_Prelude.Bool.True)
+          pure v.10
+        #default ->
+          v.11 <- pure (Cidr_Prelude.Bool.False)
+          pure v.11
+      v.12 <- pure (Cidr_Prelude.Bool.True)
+      case idr_Prelude.Show.primNumShow6_val_77.0 of
+        (Cidr_Prelude.Bool.False) ->
+          v.13 <- pure (Cidr_Prelude.Bool.False)
+          pure v.13
+        (Cidr_Prelude.Bool.True) ->
+          idris_str_head2.0.0 <- _prim_string_head idris_float_str2.0.0
+          idr_Prelude.Show.primNumShow8.32.16.arity.1.0.0 <- pure 45
+          idris_int_eq2.2.0 <- _prim_int_eq idris_str_head2.0.0 idr_Prelude.Show.primNumShow8.32.16.arity.1.0.0
+          ccp.0.2.0 <- case idris_int_eq2.2.0 of
+            #False ->
+              pure ccp.3.0
+            #True ->
+              pure 1
+          case ccp.0.2.0 of
+            0 ->
+              v.14 <- pure (Cidr_Prelude.Bool.False)
+              pure v.14
+            #default ->
+              pure v.12
+  unboxed.CGrString.6.0 <- case idr_Prelude.Show.primNumShow5_val.0 of
+    (Cidr_Prelude.Bool.False) ->
+      pure idris_float_str2.0.0
+    (Cidr_Prelude.Bool.True) ->
+      idr_Prelude.Show.primNumShow7_101.32.17.arity.1.0 <- pure #")"
+      idris_str_concat3.0 <- _prim_string_concat idris_float_str2.0.0 idr_Prelude.Show.primNumShow7_101.32.17.arity.1.0
+      idr_Prelude.Show.primNumShow6_98.40.16.arity.1.0 <- pure #"("
+      idris_str_concat3.1 <- _prim_string_concat idr_Prelude.Show.primNumShow6_98.40.16.arity.1.0 idris_str_concat3.0
+      pure idris_str_concat3.1
+  idr_Main.main3_56.32.9.arity.1.0 <- pure #"\n"
+  idris_str_concat3.2 <- _prim_string_concat unboxed.CGrString.6.0 idr_Main.main3_56.32.9.arity.1.0
+  idr_Main.main1.40.8.arity.1.0 <- pure #"The average word length is: "
+  idris_str_concat3.3 <- _prim_string_concat idr_Main.main1.40.8.arity.1.0 idris_str_concat3.2
+  idris_str_concat3.4 <- _prim_string_concat idris_str_concat3.3 idr_Main.main3_56.32.9.arity.1.0
+  _prim_string_print idris_str_concat3.4
+
+idr_Prelude.List.dropWhile idr_Prelude.List.dropWhile2 =
+  idr_Prelude.List.dropWhile2_val <- fetch idr_Prelude.List.dropWhile2
+  case idr_Prelude.List.dropWhile2_val of
+    (Cidr_Prelude.List.:: idr_Prelude.List.dropWhile3 idr_Prelude.List.dropWhile4) ->
+      p.8 <- fetch idr_Prelude.List.dropWhile3
+      (CGrInt "idr_{APPLY_0}1.0.48.2.arity.1") <- pure p.8
+      idr_Prelude.Chars.isSpace1.32.1.arity.1.0 <- pure 32
+      idris_int_eq2.3.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace1.32.1.arity.1.0
+      ccp.0.3.0 <- case idris_int_eq2.3.0 of
+        #False ->
+          pure 0
+        #True ->
+          pure 1
+      idr_Prelude.List.dropWhile5_val <- case ccp.0.3.0 of
+        0 ->
+          idr_Prelude.Chars.isSpace2.32.2.arity.1.0 <- pure 9
+          idris_int_eq2.4.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace2.32.2.arity.1.0
+          ccp.0.4.0 <- case idris_int_eq2.4.0 of
+            #False ->
+              pure ccp.0.3.0
+            #True ->
+              pure 1
+          case ccp.0.4.0 of
+            0 ->
+              idr_Prelude.Chars.isSpace3.32.3.arity.1.0 <- pure 13
+              idris_int_eq2.5.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace3.32.3.arity.1.0
+              ccp.0.5.0 <- case idris_int_eq2.5.0 of
+                #False ->
+                  pure ccp.0.3.0
+                #True ->
+                  pure 1
+              case ccp.0.5.0 of
+                0 ->
+                  idr_Prelude.Chars.isSpace4.32.4.arity.1.0 <- pure 10
+                  idris_int_eq2.6.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace4.32.4.arity.1.0
+                  ccp.0.6.0 <- case idris_int_eq2.6.0 of
+                    #False ->
+                      pure ccp.0.3.0
+                    #True ->
+                      pure 1
+                  case ccp.0.6.0 of
+                    0 ->
+                      idr_Prelude.Chars.isSpace5.32.5.arity.1.0 <- pure 12
+                      idris_int_eq2.7.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace5.32.5.arity.1.0
+                      ccp.0.7.0 <- case idris_int_eq2.7.0 of
+                        #False ->
+                          pure ccp.0.3.0
+                        #True ->
+                          pure 1
+                      case ccp.0.7.0 of
+                        0 ->
+                          idr_Prelude.Chars.isSpace6.32.6.arity.1.0 <- pure 11
+                          idris_int_eq2.8.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace6.32.6.arity.1.0
+                          ccp.0.8.0 <- case idris_int_eq2.8.0 of
+                            #False ->
+                              pure ccp.0.3.0
+                            #True ->
+                              pure 1
+                          case ccp.0.8.0 of
+                            0 ->
+                              idr_Prelude.Chars.isSpace7.32.7.arity.1.0 <- pure 160
+                              idris_int_eq2.9.0 <- _prim_int_eq "idr_{APPLY_0}1.0.48.2.arity.1" idr_Prelude.Chars.isSpace7.32.7.arity.1.0
+                              ccp.0.9.0 <- case idris_int_eq2.9.0 of
+                                #False ->
+                                  pure ccp.0.3.0
+                                #True ->
+                                  pure 1
+                              case ccp.0.9.0 of
+                                0 ->
+                                  v.15 <- pure (Cidr_Prelude.Bool.False)
+                                  pure v.15
+                                #default ->
+                                  v.16 <- pure (Cidr_Prelude.Bool.True)
+                                  pure v.16
+                            #default ->
+                              v.17 <- pure (Cidr_Prelude.Bool.True)
+                              pure v.17
+                        #default ->
+                          v.18 <- pure (Cidr_Prelude.Bool.True)
+                          pure v.18
+                    #default ->
+                      v.19 <- pure (Cidr_Prelude.Bool.True)
+                      pure v.19
+                #default ->
+                  v.20 <- pure (Cidr_Prelude.Bool.True)
+                  pure v.20
+            #default ->
+              v.21 <- pure (Cidr_Prelude.Bool.True)
+              pure v.21
+        #default ->
+          v.22 <- pure (Cidr_Prelude.Bool.True)
+          pure v.22
+      case idr_Prelude.List.dropWhile5_val of
+        (Cidr_Prelude.Bool.False) ->
+          v.23 <- pure (Cidr_Prelude.List.:: idr_Prelude.List.dropWhile3 idr_Prelude.List.dropWhile4)
+          pure v.23
+        (Cidr_Prelude.Bool.True) ->
+          idr_Prelude.List.dropWhile idr_Prelude.List.dropWhile4
+    (Cidr_Prelude.List.Nil) ->
+      pure idr_Prelude.List.dropWhile2_val
+
+idr_Prelude.List.length.unboxed idr_Prelude.List.length1 =
+  idr_Prelude.List.length1_val <- fetch idr_Prelude.List.length1
+  case idr_Prelude.List.length1_val of
+    (Cidr_Prelude.List.:: idr_Prelude.List.length2 idr_Prelude.List.length3) ->
+      unboxed.CGrInt.9 <- idr_Prelude.List.length.unboxed idr_Prelude.List.length3
+      idris_int_add1_1.0 <- pure 1
+      idris_int_add2.0 <- _prim_int_add unboxed.CGrInt.9 idris_int_add1_1.0
+      pure idris_int_add2.0
+    (Cidr_Prelude.List.Nil) ->
+      pure 0
+
+idr_Prelude.List.span idr_Prelude.List.span2 =
+  idr_Prelude.List.span2_val <- fetch idr_Prelude.List.span2
+  case idr_Prelude.List.span2_val of
+    (Cidr_Prelude.List.:: idr_Prelude.List.span3 idr_Prelude.List.span4) ->
+      p.11 <- fetch idr_Prelude.List.span3
+      (CGrInt "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1") <- pure p.11
+      idr_Prelude.Chars.isSpace1.32.1.arity.1.1 <- pure 32
+      idris_int_eq2.3.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace1.32.1.arity.1.1
+      ccp.0.3.1 <- case idris_int_eq2.3.1 of
+        #False ->
+          pure 0
+        #True ->
+          pure 1
+      "idr_Prelude.Strings.{words'_3}1_val.0" <- case ccp.0.3.1 of
+        0 ->
+          idr_Prelude.Chars.isSpace2.32.2.arity.1.1 <- pure 9
+          idris_int_eq2.4.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace2.32.2.arity.1.1
+          ccp.0.4.1 <- case idris_int_eq2.4.1 of
+            #False ->
+              pure ccp.0.3.1
+            #True ->
+              pure 1
+          case ccp.0.4.1 of
+            0 ->
+              idr_Prelude.Chars.isSpace3.32.3.arity.1.1 <- pure 13
+              idris_int_eq2.5.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace3.32.3.arity.1.1
+              ccp.0.5.1 <- case idris_int_eq2.5.1 of
+                #False ->
+                  pure ccp.0.3.1
+                #True ->
+                  pure 1
+              case ccp.0.5.1 of
+                0 ->
+                  idr_Prelude.Chars.isSpace4.32.4.arity.1.1 <- pure 10
+                  idris_int_eq2.6.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace4.32.4.arity.1.1
+                  ccp.0.6.1 <- case idris_int_eq2.6.1 of
+                    #False ->
+                      pure ccp.0.3.1
+                    #True ->
+                      pure 1
+                  case ccp.0.6.1 of
+                    0 ->
+                      idr_Prelude.Chars.isSpace5.32.5.arity.1.1 <- pure 12
+                      idris_int_eq2.7.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace5.32.5.arity.1.1
+                      ccp.0.7.1 <- case idris_int_eq2.7.1 of
+                        #False ->
+                          pure ccp.0.3.1
+                        #True ->
+                          pure 1
+                      case ccp.0.7.1 of
+                        0 ->
+                          idr_Prelude.Chars.isSpace6.32.6.arity.1.1 <- pure 11
+                          idris_int_eq2.8.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace6.32.6.arity.1.1
+                          ccp.0.8.1 <- case idris_int_eq2.8.1 of
+                            #False ->
+                              pure ccp.0.3.1
+                            #True ->
+                              pure 1
+                          case ccp.0.8.1 of
+                            0 ->
+                              idr_Prelude.Chars.isSpace7.32.7.arity.1.1 <- pure 160
+                              idris_int_eq2.9.1 <- _prim_int_eq "idr_Prelude.Strings.{words'_3}0.0.48.4.arity.1" idr_Prelude.Chars.isSpace7.32.7.arity.1.1
+                              ccp.0.9.1 <- case idris_int_eq2.9.1 of
+                                #False ->
+                                  pure ccp.0.3.1
+                                #True ->
+                                  pure 1
+                              case ccp.0.9.1 of
+                                0 ->
+                                  v.24 <- pure (Cidr_Prelude.Bool.False)
+                                  pure v.24
+                                #default ->
+                                  v.25 <- pure (Cidr_Prelude.Bool.True)
+                                  pure v.25
+                            #default ->
+                              v.26 <- pure (Cidr_Prelude.Bool.True)
+                              pure v.26
+                        #default ->
+                          v.27 <- pure (Cidr_Prelude.Bool.True)
+                          pure v.27
+                    #default ->
+                      v.28 <- pure (Cidr_Prelude.Bool.True)
+                      pure v.28
+                #default ->
+                  v.29 <- pure (Cidr_Prelude.Bool.True)
+                  pure v.29
+            #default ->
+              v.30 <- pure (Cidr_Prelude.Bool.True)
+              pure v.30
+        #default ->
+          v.31 <- pure (Cidr_Prelude.Bool.True)
+          pure v.31
+      case "idr_Prelude.Strings.{words'_3}1_val.0" of
+        (Cidr_Prelude.Bool.False) ->
+          idr_Prelude.List.span6_val_106.0 <- idr_Prelude.List.span idr_Prelude.List.span4
+          (Cidr_Builtins.MkPair idr_Prelude.List.span7_111.0 idr_Prelude.List.span8.0) <- pure idr_Prelude.List.span6_val_106.0
+          v.32 <- pure (Cidr_Prelude.List.:: idr_Prelude.List.span3 idr_Prelude.List.span7_111.0)
+          idr_Prelude.List.span9.0 <- store v.32
+          v.33 <- pure (Cidr_Builtins.MkPair idr_Prelude.List.span9.0 idr_Prelude.List.span8.0)
+          pure v.33
+        (Cidr_Prelude.Bool.True) ->
+          v.34 <- pure (Cidr_Prelude.List.Nil)
+          idr_Prelude.List.span6.0 <- store v.34
+          v.35 <- pure (Cidr_Prelude.List.:: idr_Prelude.List.span3 idr_Prelude.List.span4)
+          idr_Prelude.List.span7.0 <- store v.35
+          v.36 <- pure (Cidr_Builtins.MkPair idr_Prelude.List.span6.0 idr_Prelude.List.span7.0)
+          pure v.36
+    (Cidr_Prelude.List.Nil) ->
+      v.37 <- pure (Cidr_Prelude.List.Nil)
+      idr_Prelude.List.span3_112 <- store v.37
+      v.38 <- pure (Cidr_Builtins.MkPair idr_Prelude.List.span3_112 idr_Prelude.List.span3_112)
+      pure v.38
+
+idr_Prelude.Strings.words idr_Prelude.Strings.words0.48.arity.1 =
+  v.39 <- pure (C"idr_{U_Prelude.Strings.{words_2}_1}")
+  idr_Prelude.Strings.words3 <- store v.39
+  idr_Prelude.Strings.words4.32.20.arity.1 <- pure #""
+  idris_str_eq3.1 <- _prim_string_eq idr_Prelude.Strings.words0.48.arity.1 idr_Prelude.Strings.words4.32.20.arity.1
+  ccp.2.1 <- case idris_str_eq3.1 of
+    #False ->
+      pure 0
+    #True ->
+      pure 1
+  idr_Prelude.Strings.words4_val_128 <- case ccp.2.1 of
+    0 ->
+      v.40 <- pure (Cidr_Prelude.Bool.True)
+      pure v.40
+    #default ->
+      v.41 <- pure (Cidr_Prelude.Bool.False)
+      pure v.41
+  v.42 <- pure (Cidr_Prelude.Bool.True)
+  idr_Prelude.Strings.words4_val_126 <- case idr_Prelude.Strings.words4_val_128 of
+    (Cidr_Prelude.Bool.False) ->
+      v.43 <- pure (Cidr_Prelude.List.Nil)
+      pure v.43
+    (Cidr_Prelude.Bool.True) ->
+      idris_str_head2.1.0 <- _prim_string_head idr_Prelude.Strings.words0.48.arity.1
+      v.44 <- pure (CGrInt idris_str_head2.1.0)
+      idr_Prelude.Strings.words5_137.0 <- store v.44
+      idris_str_tail2.0.0 <- _prim_string_tail idr_Prelude.Strings.words0.48.arity.1
+      idris_str_eq3.2.0 <- _prim_string_eq idris_str_tail2.0.0 idr_Prelude.Strings.words4.32.20.arity.1
+      ccp.2.2.0 <- case idris_str_eq3.2.0 of
+        #False ->
+          pure 0
+        #True ->
+          pure 1
+      idr_Prelude.Strings.words7_val_140.0 <- case ccp.2.2.0 of
+        0 ->
+          pure v.42
+        #default ->
+          v.45 <- pure (Cidr_Prelude.Bool.False)
+          pure v.45
+      idr_Prelude.Strings.words7_val.0 <- case idr_Prelude.Strings.words7_val_140.0 of
+        (Cidr_Prelude.Bool.False) ->
+          v.46 <- pure (Cidr_Prelude.Strings.StrNil)
+          pure v.46
+        (Cidr_Prelude.Bool.True) ->
+          idris_str_head2.2.0.0 <- _prim_string_head idris_str_tail2.0.0
+          v.47 <- pure (CGrInt idris_str_head2.2.0.0)
+          idr_Prelude.Strings.words8_154.0.0 <- store v.47
+          idris_str_tail2.3.0.0 <- _prim_string_tail idris_str_tail2.0.0
+          v.48 <- pure (CGrString idris_str_tail2.3.0.0)
+          idr_Prelude.Strings.words9_156.0.0 <- store v.48
+          v.49 <- pure (Cidr_Prelude.Strings.StrCons idr_Prelude.Strings.words8_154.0.0 idr_Prelude.Strings.words9_156.0.0)
+          pure v.49
+      idr_Prelude.Strings.words7_157.0 <- store idr_Prelude.Strings.words7_val.0
+      idr_Prelude.Strings.words6_val.0 <- idr__Prelude.Strings.unpack_with_36 idr_Prelude.Strings.words7_157.0
+      idr_Prelude.Strings.words6_158.0 <- store idr_Prelude.Strings.words6_val.0
+      v.50 <- pure (Cidr_Prelude.List.:: idr_Prelude.Strings.words5_137.0 idr_Prelude.Strings.words6_158.0)
+      pure v.50
+  idr_Prelude.Strings.words4_159 <- store idr_Prelude.Strings.words4_val_126
+  idr_Prelude.Strings.words4_val <- idr_Prelude.Strings.words' idr_Prelude.Strings.words4_159
+  idr_Prelude.Strings.words4_160 <- store idr_Prelude.Strings.words4_val
+  "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:0" idr_Prelude.Strings.words3 idr_Prelude.Strings.words4_160
+
+idr_Prelude.Strings.words' idr_Prelude.Strings.words'0 =
+  idr_Prelude.Strings.words'1_val <- idr_Prelude.List.dropWhile idr_Prelude.Strings.words'0
+  case idr_Prelude.Strings.words'1_val of
+    (Cidr_Prelude.List.Nil) ->
+      v.51 <- pure (Cidr_Prelude.List.Nil)
+      pure v.51
+    #default ->
+      idr_Prelude.Strings.words'4_168 <- store idr_Prelude.Strings.words'1_val
+      idr_Prelude.Strings.words'2_val_164 <- idr_Prelude.List.span idr_Prelude.Strings.words'4_168
+      (Cidr_Builtins.MkPair idr_Prelude.Strings.words'3_171 idr_Prelude.Strings.words'4_172) <- pure idr_Prelude.Strings.words'2_val_164
+      idr_Prelude.Strings.words'5_val_173 <- idr_Prelude.Strings.words' idr_Prelude.Strings.words'4_172
+      idr_Prelude.Strings.words'5_174 <- store idr_Prelude.Strings.words'5_val_173
+      v.52 <- pure (Cidr_Prelude.List.:: idr_Prelude.Strings.words'3_171 idr_Prelude.Strings.words'5_174)
+      pure v.52
+
+"idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:0" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:02" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:03" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:04" =
+  "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:04_val" <- fetch "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:04"
+  -- LINT: case has non-covered alternative CGrInt
+  -- LINT: case has non-covered alternative CGrString
+  case "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:04_val" of
+    (Cidr_Prelude.List.:: "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:05" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:06") ->
+      "idr_{APPLY_0}0_val.3" <- fetch "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:02"
+      "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:07_val" <- case "idr_{APPLY_0}0_val.3" of
+        (C"idr_{U_Main.{average_0}_2}") ->
+          v.53 <- pure (C"idr_{U_Main.{average_0}_1}" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:05")
+          pure v.53
+        (C"idr_{U_prim__strCons_2}") ->
+          v.54 <- pure (C"idr_{U_prim__strCons_1}" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:05")
+          pure v.54
+      "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:08_val" <- "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:0" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:02" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:03" "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:06"
+      case "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:07_val" of
+        (C"idr_{U_Main.{average_0}_1}" "idr_{APPLY_0}2.4") ->
+          p.15 <- fetch "idr_{APPLY_0}2.4"
+          -- LINT: Invalid pattern match for (CGrInt idris_int_add0_1.1.0). Expected pattern of type: {CGrInt[T_Int64]}, but got: {CGrInt[T_Int64]
+          ,CGrString[T_String]}
+          (CGrInt idris_int_add0_1.1.0) <- pure p.15
+          -- LINT: Invalid pattern match for (CGrInt idris_int_add1_1.1.0). Expected pattern of type: {CGrInt[T_Int64]}, but got: {CGrInt[T_Int64]
+          ,CGrString[T_String]}
+          (CGrInt idris_int_add1_1.1.0) <- pure "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:08_val"
+          idris_int_add2.1.0 <- _prim_int_add idris_int_add0_1.1.0 idris_int_add1_1.1.0
+          v.55 <- pure (CGrInt idris_int_add2.1.0)
+          pure v.55
+        (C"idr_{U_prim__strCons_1}" "idr_{APPLY_0}2_175.4") ->
+          p.17 <- fetch "idr_{APPLY_0}2_175.4"
+          -- LINT: Invalid pattern match for (CGrInt idris_str_cons1_0.0.0). Expected pattern of type: {CGrInt[T_Int64]}, but got: {CGrInt[T_Int64]
+          ,CGrString[T_String]}
+          (CGrInt idris_str_cons1_0.0.0) <- pure p.17
+          -- LINT: Invalid pattern match for (CGrString idris_str_cons2_0.0.0). Expected pattern of type: {CGrString[T_String]}, but got: {CGrInt[T_Int64]
+          ,CGrString[T_String]}
+          (CGrString idris_str_cons2_0.0.0) <- pure "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:08_val"
+          idris_str_cons3.0.0 <- _prim_string_cons idris_str_cons1_0.0.0 idris_str_cons2_0.0.0
+          v.56 <- pure (CGrString idris_str_cons3.0.0)
+          pure v.56
+    (Cidr_Prelude.List.Nil) ->
+      fetch "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:03"
+
+"idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:0" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:02" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03" =
+  "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03_val" <- fetch "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03"
+  case "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03_val" of
+    (Cidr_Prelude.List.:: "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:04" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:05") ->
+      "idr_{APPLY_0}0_val.5" <- fetch "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:02"
+      "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:06_val" <- case "idr_{APPLY_0}0_val.5" of
+        (C"idr_{U_Main.{average_1}_1}") ->
+          p.19 <- fetch "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:04"
+          -- LINT: Invalid pattern match for (CGrString idris_str_len2.0). Expected pattern of type: {CGrString[T_String]}, but got: {CGrInt[T_Int64]
+          ,CGrString[T_String]
+          ,Cidr_Prelude.List.::[{11,12,24}
+                               ,{6,7,9}]
+          ,Cidr_Prelude.List.Nil[]}
+          (CGrString idris_str_len2.0) <- pure p.19
+          idris_str_len3.0 <- _prim_string_len idris_str_len2.0
+          idris_lz_ext3.0 <- _prim_int_add idris_str_len3.0 0
+          v.57 <- pure (CGrInt idris_lz_ext3.0)
+          pure v.57
+        (C"idr_{U_Prelude.Strings.{words_2}_1}") ->
+          v.58 <- pure (C"idr_{U_prim__strCons_2}")
+          "idr_Prelude.Strings.{words_2}3.0" <- store v.58
+          v.59 <- pure (CGrString #"")
+          "idr_Prelude.Strings.{words_2}4.0" <- store v.59
+          "idr_Prelude.Foldable.Prelude.List.@Prelude.Foldable.Foldable$List:!foldr:0" "idr_Prelude.Strings.{words_2}3.0" "idr_Prelude.Strings.{words_2}4.0" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:04"
+      "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:06" <- store "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:06_val"
+      "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:07_val" <- "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:0" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:02" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:05"
+      "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:07_183" <- store "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:07_val"
+      v.60 <- pure (Cidr_Prelude.List.:: "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:06" "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:07_183")
+      pure v.60
+    (Cidr_Prelude.List.Nil) ->
+      pure "idr_Prelude.Functor.Prelude.List.@Prelude.Functor.Functor$List:!map:03_val"
+
+idr__Prelude.Strings.unpack_with_36 idr__Prelude.Strings.unpack_with_361 =
+  idr__Prelude.Strings.unpack_with_361_val <- fetch idr__Prelude.Strings.unpack_with_361
+  case idr__Prelude.Strings.unpack_with_361_val of
+    (Cidr_Prelude.Strings.StrCons idr__Prelude.Strings.unpack_with_362 idr__Prelude.Strings.unpack_with_363) ->
+      idr__Prelude.Strings.unpack_with_365.32.30.arity.1 <- pure #""
+      p.20 <- fetch idr__Prelude.Strings.unpack_with_363
+      (CGrString idr__Prelude.Strings.unpack_with_363.40.22.arity.1) <- pure p.20
+      idris_str_eq3.3 <- _prim_string_eq idr__Prelude.Strings.unpack_with_363.40.22.arity.1 idr__Prelude.Strings.unpack_with_365.32.30.arity.1
+      ccp.2.3 <- case idris_str_eq3.3 of
+        #False ->
+          pure 0
+        #True ->
+          pure 1
+      idr__Prelude.Strings.unpack_with_365_val_189 <- case ccp.2.3 of
+        0 ->
+          v.61 <- pure (Cidr_Prelude.Bool.True)
+          pure v.61
+        #default ->
+          v.62 <- pure (Cidr_Prelude.Bool.False)
+          pure v.62
+      idr__Prelude.Strings.unpack_with_365_val <- case idr__Prelude.Strings.unpack_with_365_val_189 of
+        (Cidr_Prelude.Bool.False) ->
+          v.63 <- pure (Cidr_Prelude.Strings.StrNil)
+          pure v.63
+        (Cidr_Prelude.Bool.True) ->
+          idris_str_head2.3.0 <- _prim_string_head idr__Prelude.Strings.unpack_with_363.40.22.arity.1
+          v.64 <- pure (CGrInt idris_str_head2.3.0)
+          idr__Prelude.Strings.unpack_with_366_198.0 <- store v.64
+          idris_str_tail2.4.0 <- _prim_string_tail idr__Prelude.Strings.unpack_with_363.40.22.arity.1
+          v.65 <- pure (CGrString idris_str_tail2.4.0)
+          idr__Prelude.Strings.unpack_with_367.0 <- store v.65
+          v.66 <- pure (Cidr_Prelude.Strings.StrCons idr__Prelude.Strings.unpack_with_366_198.0 idr__Prelude.Strings.unpack_with_367.0)
+          pure v.66
+      idr__Prelude.Strings.unpack_with_365_199 <- store idr__Prelude.Strings.unpack_with_365_val
+      idr__Prelude.Strings.unpack_with_364_val <- idr__Prelude.Strings.unpack_with_36 idr__Prelude.Strings.unpack_with_365_199
+      idr__Prelude.Strings.unpack_with_364_200 <- store idr__Prelude.Strings.unpack_with_364_val
+      v.67 <- pure (Cidr_Prelude.List.:: idr__Prelude.Strings.unpack_with_362 idr__Prelude.Strings.unpack_with_364_200)
+      pure v.67
+    (Cidr_Prelude.Strings.StrNil) ->
+      v.68 <- pure (Cidr_Prelude.List.Nil)
+      pure v.68

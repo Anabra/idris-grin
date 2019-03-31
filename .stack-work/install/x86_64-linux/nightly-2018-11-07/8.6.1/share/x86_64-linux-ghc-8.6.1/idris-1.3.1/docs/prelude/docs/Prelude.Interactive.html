@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Prelude.Interactive</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Prelude.Interactive<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Prelude.Interactive</h1><p>Various helper functions for creating simple interactive systems.</p>
+<p>These are mostly intended for helping with teaching, in that they will allow<br />
+the easy creation of interactive programs without needing to teach IO<br />
+or Effects first, but they also capture some common patterns of interactive<br />
+programming.</p>
+<dl class="decls"><dt id="Prelude.Interactive.disableBuffering"><span class="name function" title="Prelude.Interactive.disableBuffering">disableBuffering</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Disables buffering in both stdin and stdout:<br />
+so that output is written immediately (never stored in the buffer)<br />
+and the next input item is read and returned</p>
+<p>this is useful to circumvent problems with IO on some Windows systems<br />
+where stdout output right before a prompt is only shown after<br />
+the input-line from stdin is produced</p>
+</dd><dt id="Prelude.Interactive.getArgs"><span class="name function" title="Prelude.Interactive.getArgs">getArgs</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.List.List" href="Prelude.List.html#Prelude.List.List">List</a> <span class="type" title="String">String</span>)</span></dt><dd><p>Get the command-line arguments that the program was called with.</p>
+</dd><dt id="Prelude.Interactive.getChar"><span class="name function" title="Prelude.Interactive.getChar">getChar</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="function" title="IO" href="[builtins].html#IO">IO</a> <span class="type" title="Char">Char</span></span></dt><dd><p>Read a single character from stdin</p>
+</dd><dt id="Prelude.Interactive.getLine"><span class="name function" title="Prelude.Interactive.getLine">getLine</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="function" title="IO" href="[builtins].html#IO">IO</a> <span class="type" title="String">String</span></span></dt><dd><p>Read one line of input from stdin, without the trailing newline</p>
+</dd><dt id="Prelude.Interactive.getLine&#39;"><span class="name function" title="Prelude.Interactive.getLine&#39;">getLine&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="IO&#39;" href="[builtins].html#IO&#39;">IO&#39;</a> <span class="implicit boundvar" title="">ffi</span>
+<span class="type" title="String">String</span></span></dt><dd><p>Read one line of input from stdin, without the trailing newline, for any FFI<br />
+descriptor</p>
+</dd><dt id="Prelude.Interactive.print"><span class="name function" title="Prelude.Interactive.print">print</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Show.Show" href="Prelude.Show.html#Prelude.Show.Show">Show</a> <span class="implicit boundvar" title="">ty</span> =>
+<span class="implicit boundvar" title="">ty</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output something showable to stdout, without a trailing newline</p>
+</dd><dt id="Prelude.Interactive.print&#39;"><span class="name function" title="Prelude.Interactive.print&#39;">print&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Show.Show" href="Prelude.Show.html#Prelude.Show.Show">Show</a> <span class="implicit boundvar" title="">ty</span> =>
+<span class="implicit boundvar" title="">ty</span> ->
+<a class="type" title="IO&#39;" href="[builtins].html#IO&#39;">IO&#39;</a> <span class="implicit boundvar" title="">ffi</span>
+<a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output something showable to stdout, without a trailing newline, for any FFI<br />
+descriptor</p>
+</dd><dt id="Prelude.Interactive.printLn"><span class="name function" title="Prelude.Interactive.printLn">printLn</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Show.Show" href="Prelude.Show.html#Prelude.Show.Show">Show</a> <span class="implicit boundvar" title="">ty</span> =>
+<span class="implicit boundvar" title="">ty</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output something showable to stdout, with a trailing newline</p>
+</dd><dt id="Prelude.Interactive.printLn&#39;"><span class="name function" title="Prelude.Interactive.printLn&#39;">printLn&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Show.Show" href="Prelude.Show.html#Prelude.Show.Show">Show</a> <span class="implicit boundvar" title="">ty</span> =>
+<span class="implicit boundvar" title="">ty</span> ->
+<a class="type" title="IO&#39;" href="[builtins].html#IO&#39;">IO&#39;</a> <span class="implicit boundvar" title="">ffi</span>
+<a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output something showable to stdout, with a trailing newline, for any FFI<br />
+descriptor</p>
+</dd><dt id="Prelude.Interactive.processHandle"><span class="name function" title="Prelude.Interactive.processHandle">processHandle</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.File.File" href="Prelude.File.html#Prelude.File.File">File</a> ->
+(<span class="documented boundvar" title="the input state">state</span> : <span class="implicit boundvar" title="">a</span>) ->
+(<span class="documented boundvar" title="the function to run on reading a line, returning a String to&lt;br /&gt;
+output and a new state">onRead</span> : <span class="implicit boundvar" title="">a</span> ->
+<span class="type" title="String">String</span> ->
+<a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">(</a><span class="type" title="String">String</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<span class="implicit boundvar" title="">a</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">)</a>) ->
+(<span class="documented boundvar" title="the function to run on reaching end of file, returning a String&lt;br /&gt;
+to output">onEOF</span> : <span class="implicit boundvar" title="">a</span> ->
+<span class="type" title="String">String</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Process input from an open file handle, while maintaining a state.</p>
+<dl><dt>state</dt><dd><p>the input state</p>
+</dd><dt>onRead</dt><dd><p>the function to run on reading a line, returning a String to<br />
+output and a new state</p>
+</dd><dt>onEOF</dt><dd><p>the function to run on reaching end of file, returning a String<br />
+to output</p>
+</dd></dl></dd><dt id="Prelude.Interactive.processStdin"><span class="name function" title="Prelude.Interactive.processStdin">processStdin</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the input state">state</span> : <span class="implicit boundvar" title="">a</span>) ->
+(<span class="documented boundvar" title="the function to run on reading a line, returning a String to&lt;br /&gt;
+output and a new state">onRead</span> : <span class="implicit boundvar" title="">a</span> ->
+<span class="type" title="String">String</span> ->
+<a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">(</a><span class="type" title="String">String</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<span class="implicit boundvar" title="">a</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">)</a>) ->
+(<span class="documented boundvar" title="the function to run on reaching end of input, returning a String&lt;br /&gt;
+to output">onEOI</span> : <span class="implicit boundvar" title="">a</span> ->
+<span class="type" title="String">String</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Process input from the standard input stream, while maintaining a state.</p>
+<dl><dt>state</dt><dd><p>the input state</p>
+</dd><dt>onRead</dt><dd><p>the function to run on reading a line, returning a String to<br />
+output and a new state</p>
+</dd><dt>onEOI</dt><dd><p>the function to run on reaching end of input, returning a String<br />
+to output</p>
+</dd></dl></dd><dt id="Prelude.Interactive.putChar"><span class="name function" title="Prelude.Interactive.putChar">putChar</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Write a single character to stdout</p>
+</dd><dt id="Prelude.Interactive.putCharLn"><span class="name function" title="Prelude.Interactive.putCharLn">putCharLn</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="Char">Char</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Write a single character to stdout, with a trailing newline</p>
+</dd><dt id="Prelude.Interactive.putStr"><span class="name function" title="Prelude.Interactive.putStr">putStr</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="String">String</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output a string to stdout without a trailing newline</p>
+</dd><dt id="Prelude.Interactive.putStr&#39;"><span class="name function" title="Prelude.Interactive.putStr&#39;">putStr&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="String">String</span> ->
+<a class="type" title="IO&#39;" href="[builtins].html#IO&#39;">IO&#39;</a> <span class="implicit boundvar" title="">ffi</span>
+<a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output a string to stdout without a trailing newline, for any FFI<br />
+descriptor</p>
+</dd><dt id="Prelude.Interactive.putStrLn"><span class="name function" title="Prelude.Interactive.putStrLn">putStrLn</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="String">String</span> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output a string to stdout with a trailing newline</p>
+</dd><dt id="Prelude.Interactive.putStrLn&#39;"><span class="name function" title="Prelude.Interactive.putStrLn&#39;">putStrLn&#39;</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><span class="type" title="String">String</span> ->
+<a class="type" title="IO&#39;" href="[builtins].html#IO&#39;">IO&#39;</a> <span class="implicit boundvar" title="">ffi</span>
+<a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Output a string to stdout with a trailing newline, for any FFI<br />
+descriptor</p>
+</dd><dt id="Prelude.Interactive.repl"><span class="name function" title="Prelude.Interactive.repl">repl</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the prompt to show">prompt</span> : <span class="type" title="String">String</span>) ->
+(<span class="documented boundvar" title="the function to run on reading input, returning a String to&lt;br /&gt;
+output">onInput</span> : <span class="type" title="String">String</span> ->
+<span class="type" title="String">String</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>A basic read-eval-print loop</p>
+<dl><dt>prompt</dt><dd><p>the prompt to show</p>
+</dd><dt>onInput</dt><dd><p>the function to run on reading input, returning a String to<br />
+output</p>
+</dd></dl></dd><dt id="Prelude.Interactive.replWith"><span class="name function" title="Prelude.Interactive.replWith">replWith</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="the input state">state</span> : <span class="implicit boundvar" title="">a</span>) ->
+(<span class="documented boundvar" title="the prompt to show">prompt</span> : <span class="type" title="String">String</span>) ->
+(<span class="documented boundvar" title="the function to run on reading input, returning a String to&lt;br /&gt;
+output and a new state. Returns Nothing if the repl should exit">onInput</span> : <span class="implicit boundvar" title="">a</span> ->
+<span class="type" title="String">String</span> ->
+<a class="type" title="Prelude.Maybe.Maybe" href="Prelude.Maybe.html#Prelude.Maybe.Maybe">Maybe</a> <a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">(</a><span class="type" title="String">String</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<span class="implicit boundvar" title="">a</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">)</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>A basic read-eval-print loop, maintaining a state</p>
+<dl><dt>state</dt><dd><p>the input state</p>
+</dd><dt>prompt</dt><dd><p>the prompt to show</p>
+</dd><dt>onInput</dt><dd><p>the function to run on reading input, returning a String to<br />
+output and a new state. Returns Nothing if the repl should exit</p>
+</dd></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

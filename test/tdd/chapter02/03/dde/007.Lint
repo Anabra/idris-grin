@@ -1,0 +1,152 @@
+idris_int_sub.unboxed idris_int_sub0 idris_int_sub1 =
+  (CGrInt idris_int_sub0_1) <- fetch idris_int_sub0
+  (CGrInt idris_int_sub1_1) <- fetch idris_int_sub1
+  idris_int_sub2 <- _prim_int_sub idris_int_sub0_1 idris_int_sub1_1
+  pure idris_int_sub2 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_sub1_1) -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_sub0_1)
+
+idris_write_str idris_write_str2 =
+  (CGrString idris_write_str2_0) <- fetch idris_write_str2
+  _prim_string_print idris_write_str2_0
+  pure (CUnit) -- LINT: Last return expressions can only return non-node values: pure (CUnit) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_write_str2_0)
+
+idris_str_concat.unboxed idris_str_concat1 idris_str_concat2 =
+  (CGrString idris_str_concat1_0) <- fetch idris_str_concat1
+  (CGrString idris_str_concat2_0) <- fetch idris_str_concat2
+  idris_str_concat3 <- _prim_string_concat idris_str_concat1_0 idris_str_concat2_0
+  pure idris_str_concat3 -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_concat2_0) -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_concat1_0)
+
+idris_str_len.unboxed idris_str_len1 =
+  (CGrString idris_str_len2) <- fetch idris_str_len1
+  idris_str_len3 <- _prim_string_len idris_str_len2
+  pure idris_str_len3 -- LINT: The result of Fetch can only be bound to a variable: (CGrString idris_str_len2)
+
+idris_int_str.unboxed idris_int_str1 =
+  (CGrInt idris_int_str1_0) <- fetch idris_int_str1
+  idris_int_str2 <- _prim_int_str idris_int_str1_0
+  pure idris_int_str2 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_int_str1_0)
+
+idris_lz_ext.unboxed idris_lz_ext1 =
+  (CGrInt idris_lz_ext2) <- fetch idris_lz_ext1
+  idris_lz_ext3 <- _prim_int_add idris_lz_ext2 0
+  pure idris_lz_ext3 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt idris_lz_ext2)
+
+grinMain =
+  r <- "idr_{runMain_0}"
+  pure ()
+
+idr_Main.longer.unboxed idr_Main.longer0 idr_Main.longer1 =
+  idr_Main.longer2_val_3 <- do
+    unboxed.CGrInt.2 <- idris_str_len.unboxed idr_Main.longer0
+    pure (CGrInt unboxed.CGrInt.2) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.2)
+  idr_Main.longer2 <- store idr_Main.longer2_val_3
+  idr_Main.longer2_val <- do
+    unboxed.CGrInt.3 <- idris_lz_ext.unboxed idr_Main.longer2
+    pure (CGrInt unboxed.CGrInt.3) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.3)
+  idr_Main.longer2_4 <- store idr_Main.longer2_val
+  idr_Main.longer3_val_5 <- do
+    unboxed.CGrInt.4 <- idris_str_len.unboxed idr_Main.longer1
+    pure (CGrInt unboxed.CGrInt.4) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.4)
+  idr_Main.longer3 <- store idr_Main.longer3_val_5
+  idr_Main.longer3_val <- do
+    unboxed.CGrInt.5 <- idris_lz_ext.unboxed idr_Main.longer3
+    pure (CGrInt unboxed.CGrInt.5) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.5)
+  idr_Main.longer3_6 <- store idr_Main.longer3_val
+  idr_Main.longer4_val <- "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" idr_Main.longer2_4 idr_Main.longer3_6
+  idr_Main.longer4 <- store idr_Main.longer4_val
+  idr_Main.longer4_val_7 <- fetch idr_Main.longer4
+  case idr_Main.longer4_val_7 of
+    (Cidr_Prelude.Interfaces.GT) ->
+      do
+        (CGrInt unboxed.CGrInt.0) <- fetch idr_Main.longer2_4
+        pure unboxed.CGrInt.0 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt unboxed.CGrInt.0)
+    #default ->
+      do
+        (CGrInt unboxed.CGrInt.1) <- fetch idr_Main.longer3_6
+        pure unboxed.CGrInt.1 -- LINT: The result of Fetch can only be bound to a variable: (CGrInt unboxed.CGrInt.1)
+
+idr_Main.main =
+  idr_Main.main1_val_9 <- pure (CGrString #"12\n")
+  idr_Main.main1 <- store idr_Main.main1_val_9
+  idr_Main.main1_val_8 <- idris_write_str idr_Main.main1
+  idr_Main.main1_10 <- store idr_Main.main1_val_8
+  idr_Main.main1_val <- pure (Cidr_MkUnit)
+  idr_Main.main1_11 <- store idr_Main.main1_val
+  idr_Main.main2_val_16 <- pure (CGrString #"Hello")
+  idr_Main.main2 <- store idr_Main.main2_val_16
+  idr_Main.main3_val <- pure (CGrString #"World!")
+  idr_Main.main3 <- store idr_Main.main3_val
+  idr_Main.main2_val_15 <- do
+    unboxed.CGrInt.6 <- idr_Main.longer.unboxed idr_Main.main2 idr_Main.main3
+    pure (CGrInt unboxed.CGrInt.6) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.6)
+  idr_Main.main2_17 <- store idr_Main.main2_val_15
+  idr_Main.main2_val_14 <- do
+    unboxed.CGrString.0 <- idris_int_str.unboxed idr_Main.main2_17
+    pure (CGrString unboxed.CGrString.0) -- LINT: Last return expressions can only return non-node values: pure (CGrString unboxed.CGrString.0)
+  idr_Main.main2_18 <- store idr_Main.main2_val_14
+  idr_Main.main3_val_19 <- pure (CGrString #"\n")
+  idr_Main.main3_20 <- store idr_Main.main3_val_19
+  idr_Main.main2_val_13 <- do
+    unboxed.CGrString.1 <- idris_str_concat.unboxed idr_Main.main2_18 idr_Main.main3_20
+    pure (CGrString unboxed.CGrString.1) -- LINT: Last return expressions can only return non-node values: pure (CGrString unboxed.CGrString.1)
+  idr_Main.main2_21 <- store idr_Main.main2_val_13
+  idr_Main.main2_val_12 <- idris_write_str idr_Main.main2_21
+  idr_Main.main2_22 <- store idr_Main.main2_val_12
+  idr_Main.main2_val <- pure (Cidr_MkUnit)
+  idr_Main.main2_23 <- store idr_Main.main2_val
+  idr_Main.main3_val_25 <- pure (CGrString #"3.1622776601683795\n")
+  idr_Main.main3_26 <- store idr_Main.main3_val_25
+  idr_Main.main3_val_24 <- idris_write_str idr_Main.main3_26
+  idr_Main.main3_27 <- store idr_Main.main3_val_24
+  pure (Cidr_MkUnit) -- LINT: Last return expressions can only return non-node values: pure (Cidr_MkUnit)
+
+"idr_{runMain_0}" =
+  "idr_{runMain_0}0_val_28" <- pure (CErased)
+  "idr_{runMain_0}0" <- store "idr_{runMain_0}0_val_28"
+  "idr_{runMain_0}0_val" <- idr_Main.main
+  "idr_{runMain_0}0_29" <- store "idr_{runMain_0}0_val"
+  do
+    "idr_{EVAL_0}0.0" <- pure "idr_{runMain_0}0_29"
+    "idr_{EVAL_0}0_val.0" <- fetch "idr_{EVAL_0}0.0"
+    fetch "idr_{EVAL_0}0.0"
+
+"idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01" =
+  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01"
+  case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" of
+    (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0") ->
+      case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0" of
+        0 ->
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00"
+          case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" of
+            (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_30") ->
+              case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_30" of
+                0 ->
+                  pure (Cidr_Prelude.Interfaces.EQ) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.EQ)
+                #default ->
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_31" <- pure (CGrInt 1)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_31"
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val" <- do
+                    unboxed.CGrInt.7 <- idris_int_sub.unboxed "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02"
+                    pure (CGrInt unboxed.CGrInt.7) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.7)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_32" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val"
+                  pure (Cidr_Prelude.Interfaces.GT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.GT)
+        #default ->
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38" <- pure (CGrInt 1)
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38"
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_37" <- do
+            unboxed.CGrInt.8 <- idris_int_sub.unboxed "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39"
+            pure (CGrInt unboxed.CGrInt.8) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.8)
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_37"
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_41" <- fetch "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00"
+          case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_41" of
+            (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_42") ->
+              case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_42" of
+                0 ->
+                  pure (Cidr_Prelude.Interfaces.LT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.LT)
+                #default ->
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_43" <- pure (CGrInt 1)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_43"
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val" <- do
+                    unboxed.CGrInt.9 <- idris_int_sub.unboxed "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03"
+                    pure (CGrInt unboxed.CGrInt.9) -- LINT: Last return expressions can only return non-node values: pure (CGrInt unboxed.CGrInt.9)
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44" <- store "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val"
+                  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40"

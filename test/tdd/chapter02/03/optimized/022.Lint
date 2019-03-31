@@ -1,0 +1,119 @@
+grinMain =
+  idr_Main.main1_val_9.0 <- pure (CGrString #"12\n")
+  idr_Main.main1.32.4.arity.1.0 <- pure #"12\n"
+  idris_write_str2.32.arity.1.0 <- pure idr_Main.main1.32.4.arity.1.0
+  idris_write_str2_0.0 <- pure idr_Main.main1.32.4.arity.1.0
+  _prim_string_print idr_Main.main1.32.4.arity.1.0
+  idr_Main.main2_val_16.0 <- pure (CGrString #"Hello")
+  idr_Main.main3_val.0 <- pure (CGrString #"World!")
+  idr_Main.main2.40.1.arity.1.0 <- pure #"Hello"
+  idr_Main.main3.40.1.arity.1.0 <- pure #"World!"
+  idr_Main.longer0.40.arity.1.0 <- pure idr_Main.main2.40.1.arity.1.0
+  idr_Main.longer1.40.arity.1.0 <- pure idr_Main.main3.40.1.arity.1.0
+  idr_Main.longer0.32.0.arity.1.0 <- pure idr_Main.main2.40.1.arity.1.0
+  idris_str_len1.32.arity.1.0 <- pure idr_Main.main2.40.1.arity.1.0
+  idris_str_len2.0 <- pure idr_Main.main2.40.1.arity.1.0
+  idris_str_len3.0 <- _prim_string_len idr_Main.main2.40.1.arity.1.0
+  unboxed.CGrInt.2.0 <- pure idris_str_len3.0
+  idr_Main.longer2_val_3.0 <- pure (CGrInt idris_str_len3.0)
+  idr_Main.longer2.32.1.arity.1.0 <- pure idris_str_len3.0
+  idris_lz_ext1.32.arity.1.0 <- pure idris_str_len3.0
+  idris_lz_ext2.0 <- pure idris_str_len3.0
+  idris_lz_ext3.0 <- _prim_int_add idris_str_len3.0 0
+  unboxed.CGrInt.3.0 <- pure idris_lz_ext3.0
+  idr_Main.longer2_val.0 <- pure (CGrInt idris_lz_ext3.0)
+  idr_Main.longer1.32.2.arity.1.0 <- pure idr_Main.main3.40.1.arity.1.0
+  idris_str_len1.32.arity.1.1 <- pure idr_Main.main3.40.1.arity.1.0
+  idris_str_len2.1 <- pure idr_Main.main3.40.1.arity.1.0
+  idris_str_len3.1 <- _prim_string_len idr_Main.main3.40.1.arity.1.0
+  unboxed.CGrInt.4.0 <- pure idris_str_len3.1
+  idr_Main.longer3_val_5.0 <- pure (CGrInt idris_str_len3.1)
+  idr_Main.longer3.32.3.arity.1.0 <- pure idris_str_len3.1
+  idris_lz_ext1.32.arity.1.1 <- pure idris_str_len3.1
+  idris_lz_ext2.1 <- pure idris_str_len3.1
+  idris_lz_ext3.1 <- _prim_int_add idris_str_len3.1 0
+  unboxed.CGrInt.5.0 <- pure idris_lz_ext3.1
+  idr_Main.longer3_val.0 <- pure (CGrInt idris_lz_ext3.1)
+  idr_Main.longer2_4.40.0.arity.1.0 <- pure idris_lz_ext3.0
+  idr_Main.longer3_6.40.0.arity.1.0 <- pure idris_lz_ext3.1
+  idr_Main.longer4_val.0 <- "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" idris_lz_ext3.0 idris_lz_ext3.1
+  idr_Main.longer4_val_7.0 <- pure idr_Main.longer4_val.0
+  unboxed.CGrInt.6.0 <- case idr_Main.longer4_val.0 of
+    (Cidr_Prelude.Interfaces.GT) ->
+      unboxed.CGrInt.0.0 <- pure idris_lz_ext3.0
+      pure idris_lz_ext3.0
+    #default ->
+      unboxed.CGrInt.1.0 <- pure idris_lz_ext3.1
+      pure idris_lz_ext3.1
+  idr_Main.main2_val_15.0 <- pure (CGrInt unboxed.CGrInt.6.0)
+  idr_Main.main2_17.32.5.arity.1.0 <- pure unboxed.CGrInt.6.0
+  idris_int_str1.32.arity.1.0 <- pure unboxed.CGrInt.6.0
+  idris_int_str1_0.0 <- pure unboxed.CGrInt.6.0
+  idris_int_str2.0 <- _prim_int_str unboxed.CGrInt.6.0
+  unboxed.CGrString.0.0 <- pure idris_int_str2.0
+  idr_Main.main2_val_14.0 <- pure (CGrString idris_int_str2.0)
+  idr_Main.main3_val_19.0 <- pure (CGrString #"\n")
+  idr_Main.main2_18.32.6.arity.1.0 <- pure idris_int_str2.0
+  idr_Main.main3_20.32.6.arity.1.0 <- pure #"\n"
+  idris_str_concat1.32.arity.1.0 <- pure idris_int_str2.0
+  idris_str_concat2.32.arity.1.0 <- pure idr_Main.main3_20.32.6.arity.1.0
+  idris_str_concat1_0.0 <- pure idris_int_str2.0
+  idris_str_concat2_0.0 <- pure idr_Main.main3_20.32.6.arity.1.0
+  idris_str_concat3.0 <- _prim_string_concat idris_int_str2.0 idr_Main.main3_20.32.6.arity.1.0
+  unboxed.CGrString.1.0 <- pure idris_str_concat3.0
+  idr_Main.main2_val_13.0 <- pure (CGrString idris_str_concat3.0)
+  idr_Main.main2_21.32.7.arity.1.0 <- pure idris_str_concat3.0
+  idris_write_str2.32.arity.1.1 <- pure idris_str_concat3.0
+  idris_write_str2_0.1 <- pure idris_str_concat3.0
+  _prim_string_print idris_str_concat3.0
+  idr_Main.main3_val_25.0 <- pure (CGrString #"3.1622776601683795\n")
+  idr_Main.main3_26.32.8.arity.1.0 <- pure #"3.1622776601683795\n"
+  idris_write_str2.32.arity.1.2 <- pure idr_Main.main3_26.32.8.arity.1.0
+  idris_write_str2_0.2 <- pure idr_Main.main3_26.32.8.arity.1.0
+  _prim_string_print idr_Main.main3_26.32.8.arity.1.0
+
+"idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" =
+  "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01_val" <- pure (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1")
+  do
+    "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1"
+    case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" of
+      0 ->
+        "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val" <- pure (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1")
+        do
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_30" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1"
+          case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" of
+            0 ->
+              pure (Cidr_Prelude.Interfaces.EQ) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.EQ)
+            #default ->
+              pure (Cidr_Prelude.Interfaces.GT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.GT)
+      #default ->
+        "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38" <- pure (CGrInt 1)
+        "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.32.10.arity.1" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1"
+        "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1" <- pure 1
+        idris_int_sub0.32.arity.1.1 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1"
+        idris_int_sub1.32.arity.1.1 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1"
+        idris_int_sub0_1.1 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1"
+        idris_int_sub1_1.1 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1"
+        idris_int_sub2.1 <- _prim_int_sub "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:01.40.arity.1" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_39.32.10.arity.1"
+        unboxed.CGrInt.8 <- pure idris_int_sub2.1
+        "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_37" <- pure (CGrInt idris_int_sub2.1)
+        "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00_val_41" <- pure (CGrInt "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1")
+        do
+          "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0_cpat_LInt64_0_42" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1"
+          case "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" of
+            0 ->
+              pure (Cidr_Prelude.Interfaces.LT) -- LINT: Last return expressions can only return non-node values: pure (Cidr_Prelude.Interfaces.LT)
+            #default ->
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val_43" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_val_38"
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.32.11.arity.1" <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1"
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1" <- pure 1
+              idris_int_sub0.32.arity.1.2 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1"
+              idris_int_sub1.32.arity.1.2 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1"
+              idris_int_sub0_1.2 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1"
+              idris_int_sub1_1.2 <- pure "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1"
+              idris_int_sub2.2 <- _prim_int_sub "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:00.40.arity.1" "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03.32.11.arity.1"
+              unboxed.CGrInt.9 <- pure idris_int_sub2.2
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_val" <- pure (CGrInt idris_int_sub2.2)
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:03_44.40.2.arity.1" <- pure idris_int_sub2.2
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:02_40.40.2.arity.1" <- pure idris_int_sub2.1
+              "idr_Prelude.Interfaces.Prelude.Nat.@Prelude.Interfaces.Ord$Nat:!compare:0" idris_int_sub2.2 idris_int_sub2.1

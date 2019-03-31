@@ -1,0 +1,53 @@
+Configuring llvm-hs-pure-7.0.0...
+Preprocessing library for llvm-hs-pure-7.0.0..
+Building library for llvm-hs-pure-7.0.0..
+[ 1 of 32] Compiling LLVM.Prelude     ( src/LLVM/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/Prelude.o )
+[ 2 of 32] Compiling LLVM.IRBuilder.Internal.SnocList ( src/LLVM/IRBuilder/Internal/SnocList.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/IRBuilder/Internal/SnocList.o )
+[ 3 of 32] Compiling LLVM.AST.Visibility ( src/LLVM/AST/Visibility.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Visibility.o )
+[ 4 of 32] Compiling LLVM.AST.ThreadLocalStorage ( src/LLVM/AST/ThreadLocalStorage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/ThreadLocalStorage.o )
+[ 5 of 32] Compiling LLVM.AST.RMWOperation ( src/LLVM/AST/RMWOperation.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/RMWOperation.o )
+[ 6 of 32] Compiling LLVM.AST.ParameterAttribute ( src/LLVM/AST/ParameterAttribute.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/ParameterAttribute.o )
+[ 7 of 32] Compiling LLVM.AST.Name    ( src/LLVM/AST/Name.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Name.o )
+[ 8 of 32] Compiling LLVM.AST.Linkage ( src/LLVM/AST/Linkage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Linkage.o )
+[ 9 of 32] Compiling LLVM.AST.IntegerPredicate ( src/LLVM/AST/IntegerPredicate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/IntegerPredicate.o )
+[10 of 32] Compiling LLVM.AST.FunctionAttribute ( src/LLVM/AST/FunctionAttribute.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/FunctionAttribute.o )
+[11 of 32] Compiling LLVM.AST.Attribute ( src/LLVM/AST/Attribute.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Attribute.o )
+[12 of 32] Compiling LLVM.AST.FloatingPointPredicate ( src/LLVM/AST/FloatingPointPredicate.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/FloatingPointPredicate.o )
+[13 of 32] Compiling LLVM.AST.Float   ( src/LLVM/AST/Float.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Float.o )
+[14 of 32] Compiling LLVM.AST.DLL     ( src/LLVM/AST/DLL.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/DLL.o )
+[15 of 32] Compiling LLVM.AST.CallingConvention ( src/LLVM/AST/CallingConvention.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/CallingConvention.o )
+[16 of 32] Compiling LLVM.AST.COMDAT  ( src/LLVM/AST/COMDAT.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/COMDAT.o )
+[17 of 32] Compiling LLVM.AST.AddrSpace ( src/LLVM/AST/AddrSpace.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/AddrSpace.o )
+[18 of 32] Compiling LLVM.AST.Type    ( src/LLVM/AST/Type.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Type.o )
+[19 of 32] Compiling LLVM.AST.InlineAssembly ( src/LLVM/AST/InlineAssembly.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/InlineAssembly.o )
+[20 of 32] Compiling LLVM.AST.Constant ( src/LLVM/AST/Constant.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Constant.o )
+[21 of 32] Compiling LLVM.AST.Operand ( src/LLVM/AST/Operand.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Operand.o )
+[22 of 32] Compiling LLVM.AST.Instruction ( src/LLVM/AST/Instruction.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Instruction.o )
+[23 of 32] Compiling LLVM.AST.Global  ( src/LLVM/AST/Global.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Global.o )
+[24 of 32] Compiling LLVM.AST.DataLayout ( src/LLVM/AST/DataLayout.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/DataLayout.o )
+[25 of 32] Compiling LLVM.DataLayout  ( src/LLVM/DataLayout.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/DataLayout.o )
+[26 of 32] Compiling LLVM.AST         ( src/LLVM/AST.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST.o )
+[27 of 32] Compiling LLVM.IRBuilder.Monad ( src/LLVM/IRBuilder/Monad.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/IRBuilder/Monad.o )
+
+[;1msrc/LLVM/IRBuilder/Monad.hs:287:46: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class ‘ListT’
+    (imported from Control.Monad.List, but defined in Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m287 |[0m[0m instance MonadIRBuilder m => MonadIRBuilder ([;1m[35mListT[0m[0m m)
+[;1m[34m    |[0m[0m[;1m[35m                                              ^^^^^[0m[0m
+[0m[0m[0m[28 of 32] Compiling LLVM.AST.Typed   ( src/LLVM/AST/Typed.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/AST/Typed.o )
+[29 of 32] Compiling LLVM.IRBuilder.Module ( src/LLVM/IRBuilder/Module.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/IRBuilder/Module.o )
+
+[;1msrc/LLVM/IRBuilder/Module.hs:261:54: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class ‘ListT’
+    (imported from Control.Monad.List, but defined in Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m261 |[0m[0m instance MonadModuleBuilder m => MonadModuleBuilder ([;1m[35mListT[0m[0m m)
+[;1m[34m    |[0m[0m[;1m[35m                                                      ^^^^^[0m[0m
+[0m[0m[0m[30 of 32] Compiling LLVM.IRBuilder.Instruction ( src/LLVM/IRBuilder/Instruction.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/IRBuilder/Instruction.o )
+[31 of 32] Compiling LLVM.IRBuilder.Constant ( src/LLVM/IRBuilder/Constant.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/IRBuilder/Constant.o )
+[32 of 32] Compiling LLVM.IRBuilder   ( src/LLVM/IRBuilder.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/LLVM/IRBuilder.o )
+Installing library in /home/anabra/.stack/snapshots/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/llvm-hs-pure-7.0.0-1nMXUDYEF1oLuFa5s0wIBH
+Registering library for llvm-hs-pure-7.0.0..

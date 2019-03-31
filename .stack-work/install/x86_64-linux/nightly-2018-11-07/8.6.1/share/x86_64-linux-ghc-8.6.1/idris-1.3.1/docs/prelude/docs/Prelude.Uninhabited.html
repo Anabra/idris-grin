@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Prelude.Uninhabited</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Prelude.Uninhabited<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Prelude.Uninhabited</h1><p>Utilities for working with uninhabited types, to record explicit<br />
+locations for canonical proofs of emptiness. Typically, one should<br />
+use the <code>absurd</code> function.</p>
+<dl class="decls"><dt id="Prelude.Uninhabited.Uninhabited"><span class="word">interface&nbsp;</span><span class="name type" title="Prelude.Uninhabited.Uninhabited">Uninhabited</span><span class="signature">&nbsp;</span></dt><dd><p>A canonical proof that some type is empty</p>
+<dl class="decls"><dt id="Prelude.Uninhabited.uninhabited"><span class="name function" title="Prelude.Uninhabited.uninhabited">uninhabited</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Uninhabited.Uninhabited" href="Prelude.Uninhabited.html#Prelude.Uninhabited.Uninhabited">Uninhabited</a> <span class="implicit boundvar" title="">t</span> =>
+<span class="implicit boundvar" title="">t</span> ->
+<a class="type" title="Void" href="[builtins].html#Void">Void</a></span></dt><dd><p>If I have a t, I&#39;ve had a contradiction</p>
+</dd></dl></dd><dt id="Prelude.Uninhabited.absurd"><span class="name function" title="Prelude.Uninhabited.absurd">absurd</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Prelude.Uninhabited.Uninhabited" href="Prelude.Uninhabited.html#Prelude.Uninhabited.Uninhabited">Uninhabited</a> <span class="implicit documented boundvar" title="some empty type">t</span> =>
+(<span class="documented boundvar" title="the contradictory hypothesis">h</span> : <span class="implicit documented boundvar" title="some empty type">t</span>) ->
+<span class="implicit documented boundvar" title="the goal type">a</span></span></dt><dd><p>Use an absurd assumption to discharge a proof obligation</p>
+<dl><dt>a</dt><dd><p>the goal type</p>
+</dd><dt>t</dt><dd><p>some empty type</p>
+</dd><dt>h</dt><dd><p>the contradictory hypothesis</p>
+</dd></dl></dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

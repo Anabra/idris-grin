@@ -1,0 +1,932 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-13 11:44:54.797184231 UTC
+
+interface main:Test.Hspec.IdrisFrontend [orphan module] [family instance module] 8061
+  interface hash: d97af327d6de3bc52750aa100d3d067e
+  ABI hash: 415c7a88eeb0e4767d36415baf71b538
+  export-list hash: 760145faacaa2f86108c70bbabc3558f
+  orphan hash: 503db18dec59083ecc0f7207939a25de
+  flag hash: bfcc458e6c5f95c1fab8aebe2b1798e1
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Test.Hspec.IdrisFrontend.bisect
+  Test.Hspec.IdrisFrontend.idris
+  Test.Hspec.IdrisFrontend.idrisWithStdin
+  Test.Hspec.IdrisFrontend.timed
+  Test.Hspec.IdrisFrontend.timeout
+  Test.Hspec.IdrisFrontend.IdrisCodeGen{Test.Hspec.IdrisFrontend.IdrisCodeGen input optimised source timeoutInSecs}
+  Test.Hspec.IdrisFrontend.OptMode{Test.Hspec.IdrisFrontend.NonOptimised Test.Hspec.IdrisFrontend.Optimised}
+  Test.Hspec.IdrisFrontend.Timed{Test.Hspec.IdrisFrontend.Timed}
+module dependencies:
+package dependencies: HUnit-1.6.0.0 QuickCheck-2.11.3 array-0.5.2.0
+                      base-4.12.0.0 call-stack-0.1.0 containers-0.6.0.1 deepseq-1.4.4.0
+                      directory-1.3.3.0 filepath-1.4.2.1 ghc-boot-th-8.6.1 ghc-prim-0.5.3
+                      hspec-core-2.5.5 hspec-expectations-0.8.2 integer-gmp-1.0.2.0
+                      mtl-2.2.2 pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.3.0
+                      quickcheck-io-0.2.0 random-1.1 stm-2.5.0.0
+                      template-haskell-2.14.0.0 tf-random-0.5 time-1.8.0.2
+                      transformers-0.5.5.0 unix-2.7.2.2
+orphans: quickcheck-io-0.2.0:Test.QuickCheck.IO
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         stm-2.5.0.0:Control.Monad.STM time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal
+                         ghc-boot-th-8.6.1:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.1:GHC.LanguageExtensions.Type
+                         hspec-core-2.5.5:Test.Hspec.Core.Example
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+import  -/  base-4.12.0.0:Control.Arrow 8b37eeab5a5db6d34fb11e9f4bdd618f
+import  -/  base-4.12.0.0:Control.Concurrent f7bb9d73e97a72e5e875bddef1fc52a5
+import  -/  base-4.12.0.0:Control.Monad d0708a5f5ab32942262c7052425f1f38
+import  -/  base-4.12.0.0:Data.Char 66e13571ca81cfaf778f1cbabc20aafe
+import  -/  base-4.12.0.0:Data.Either 61bd63621a96c42fce225777f516843f
+import  -/  base-4.12.0.0:Data.Foldable af1426d675202318cb43c7b8b48a48f7
+import  -/  base-4.12.0.0:Data.IORef 286b3c2677d49ea28cc4c8aadca16d63
+import  -/  base-4.12.0.0:Data.List fd97abd705fb5ad3df1892ccbda2abf9
+import  -/  base-4.12.0.0:Data.Maybe 1e8e1362415df45376dffd98f8a47766
+import  -/  base-4.12.0.0:Data.OldList aa3cb22f55737317f760023e16efbced
+import  -/  base-4.12.0.0:Data.Tuple c92a835d04b6c075a7031d4e28e53c71
+import  -/  base-4.12.0.0:GHC.Base d5cff7070e23886f90cafac81647867a
+import  -/  base-4.12.0.0:GHC.Conc.IO 0969801c65f211a7b94088234c907d10
+import  -/  base-4.12.0.0:GHC.IO.Exception 0c41f0f5ce04c35414782b14ec3a3b05
+import  -/  base-4.12.0.0:GHC.IO.Handle 6d14521ee90b791fa223efa2cd1e74ca
+import  -/  base-4.12.0.0:GHC.IO.Handle.Text 79b5fd655563ef285b41e7ed5e5e1744
+import  -/  base-4.12.0.0:GHC.IORef 569d756556676efb52be1acf562b8539
+import  -/  base-4.12.0.0:GHC.List e394293afd9fe09ca9e682ffb0a4baf7
+import  -/  base-4.12.0.0:GHC.Num a5e1edf0672ef21ec6671c0dfd2adee5
+import  -/  base-4.12.0.0:GHC.Real a9a5a052cebbce163f38cfe330dcb228
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:GHC.Unicode 076b19e7fbb8ab6b51b9949a83db912a
+import  -/  base-4.12.0.0:Prelude 4efa7a96beba0aef4f05942bacd5fe4a
+import  -/  base-4.12.0.0:System.Exit 9470efc8d0d34a68f7f1c38306428726
+import  -/  base-4.12.0.0:System.IO facce82fdfd090416f33d46d1e5e3e38
+import  -/  base-4.12.0.0:Text.Printf 63269c6f8a418be4687e6da2a1e2491f
+import  -/  base-4.12.0.0:Text.Read e6dcd4a5c6e6bff8b8e9c463426083a7
+import  -/  containers-0.6.0.1:Data.Map c62415fac86c76553751d5bac1d287d0
+import  -/  containers-0.6.0.1:Data.Map.Internal a8e6fe165587091dc26ba8011e4ce2af
+import  -/  directory-1.3.3.0:System.Directory 8657072f36bd29894371161489217fe3
+import  -/  filepath-1.4.2.1:System.FilePath c971c297e3386bbcb1a240ee5f98b1aa
+import  -/  filepath-1.4.2.1:System.FilePath.Posix bb903849fb2060fe06bc9ab55bd69cd9
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  hspec-core-2.5.5:Test.Hspec.Core.Example 809abdabac0ab6334d08dcff8ff36324
+import  -/  hspec-core-2.5.5:Test.Hspec.Core.Spec 270f71d5602dd834c293bde7bae3b0b2
+import  -/  mtl-2.2.2:Control.Monad.Trans 162f661d50edcfe7dd5ff6a21da5eea5
+import  -/  process-1.6.3.0:System.Process a6f974d969e2d4d1b6e5f9a11d4d3b74
+import  -/  process-1.6.3.0:System.Process.Common f84e51792ead8cc196237183e14279e3
+import  -/  process-1.6.3.0:System.Process.Internals 11d40fc6f451beda4e416206059a88ac
+import  -/  time-1.8.0.2:Data.Time.Clock d02824f8dac1ce589588288a65ac4d73
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCDiff a72173984a4b087a2c62c44c82087e56
+import  -/  time-1.8.0.2:Data.Time.Clock.POSIX bd5ab95f8d0e34e6ffc9bd19d233c3ba
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Class 48a25176ca11bd7479e0f0112554be75
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Error d32ac807496500265444471ce230d18f
+24215ada8f36999465eb9a79070bce58
+  $fErrorResultStatus ::
+    Control.Monad.Trans.Error.Error
+      Test.Hspec.Core.Example.ResultStatus
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Test.Hspec.Core.Example.ResultStatus
+                  Test.Hspec.IdrisFrontend.$fErrorResultStatus_$cnoMsg
+                  Test.Hspec.IdrisFrontend.$fErrorResultStatus_$cstrMsg -}
+a02cfb3b187a5e92547ec2933bd28127
+  $fErrorResultStatus_$cnoMsg :: Test.Hspec.Core.Example.ResultStatus
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Test.Hspec.Core.Example.Failure
+                   (GHC.Maybe.Nothing @ Test.Hspec.Core.Example.Location.Location)
+                   Test.Hspec.Core.Example.NoReason) -}
+893e9ed40db36abf0fc6145d0de242cf
+  $fErrorResultStatus_$cstrMsg ::
+    GHC.Base.String -> Test.Hspec.Core.Example.ResultStatus
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m3,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Base.String) ->
+                 Test.Hspec.Core.Example.Failure
+                   (GHC.Maybe.Nothing @ Test.Hspec.Core.Example.Location.Location)
+                   (Test.Hspec.Core.Example.Reason x)) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  $fExampleIdrisCodeGen ::
+    Test.Hspec.Core.Example.Example
+      Test.Hspec.IdrisFrontend.IdrisCodeGen
+  DFunId
+  {- Arity: 5,
+     Strictness: <S,1*U(U,U,U,U(U))><L,A><C(C(S(SL))),1*C1(C1(U(U,A)))><L,C(C1(U(U,A)))><S,U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Test.Hspec.IdrisFrontend.$fExampleIdrisCodeGen1
+                  `cast`
+                ((<Test.Hspec.IdrisFrontend.IdrisCodeGen>_R
+                  ->_R <Test.Hspec.Core.Example.Params>_R
+                  ->_R <Test.Hspec.Core.Example.ActionWith
+                          (Test.Hspec.Core.Example.Arg Test.Hspec.IdrisFrontend.IdrisCodeGen)
+                        -> GHC.Types.IO ()>_R
+                  ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <Test.Hspec.Core.Example.Result>_R)) ; Sym (Test.Hspec.Core.Example.N:Example[0]
+                                                                                <Test.Hspec.IdrisFrontend.IdrisCodeGen>_N)) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  $fExampleIdrisCodeGen1 ::
+    Test.Hspec.IdrisFrontend.IdrisCodeGen
+    -> Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.IdrisFrontend.IdrisCodeGen)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Test.Hspec.Core.Example.Result #)
+  {- Arity: 5,
+     Strictness: <S,1*U(U,U,U,U(U))><L,A><C(C(S(SL))),1*C1(C1(U(U,A)))><L,C(C1(U(U,A)))><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ (w :: Test.Hspec.IdrisFrontend.IdrisCodeGen)
+                   (w1 :: Test.Hspec.Core.Example.Params)
+                   (w2 :: Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.IdrisFrontend.IdrisCodeGen)
+                          -> GHC.Types.IO ())
+                   (w3 :: Test.Hspec.Core.Example.ProgressCallback)
+                   (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { Test.Hspec.IdrisFrontend.IdrisCodeGen ww1 ww2 ww3 ww4 ->
+                 Test.Hspec.IdrisFrontend.$w$cevaluateExample
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   w2
+                   w3
+                   w4 }) -}
+352cf9f567298362b5aa6b5097f232cf
+  $fExampleTimed ::
+    Test.Hspec.Core.Example.Example a =>
+    Test.Hspec.Core.Example.Example (Test.Hspec.IdrisFrontend.Timed a)
+  DFunId
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U(U,1*U(U,U)))))))><S,1*U(U)><L,U><L,U><L,U><S,U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                Test.Hspec.IdrisFrontend.$fExampleTimed1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Test.Hspec.Core.Example.Example a>_R
+                 ->_R (<Test.Hspec.IdrisFrontend.Timed a>_R
+                       ->_R <Test.Hspec.Core.Example.Params>_R
+                       ->_R <Test.Hspec.Core.Example.ActionWith
+                               (Test.Hspec.Core.Example.Arg (Test.Hspec.IdrisFrontend.Timed a))
+                             -> GHC.Types.IO ()>_R
+                       ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <Test.Hspec.Core.Example.Result>_R)) ; Sym (Test.Hspec.Core.Example.N:Example[0]
+                                                                                     <Test.Hspec.IdrisFrontend.Timed
+                                                                                        a>_N)) -}
+352cf9f567298362b5aa6b5097f232cf
+  $fExampleTimed1 ::
+    Test.Hspec.Core.Example.Example a =>
+    Test.Hspec.IdrisFrontend.Timed a
+    -> Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg (Test.Hspec.IdrisFrontend.Timed a))
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Test.Hspec.Core.Example.Result #)
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U(U,1*U(U,U)))))))><S,1*U(U)><L,U><L,U><L,U><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   (w :: Test.Hspec.Core.Example.Example a)
+                   (w1 :: Test.Hspec.IdrisFrontend.Timed a)
+                   (w2 :: Test.Hspec.Core.Example.Params)
+                   (w3 :: Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg (Test.Hspec.IdrisFrontend.Timed a))
+                          -> GHC.Types.IO ())
+                   (w4 :: Test.Hspec.Core.Example.ProgressCallback)
+                   (w5 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { Test.Hspec.IdrisFrontend.Timed ww1 ->
+                 Test.Hspec.IdrisFrontend.$w$cevaluateExample1
+                   @ a
+                   w
+                   ww1
+                   w2
+                   w3
+                   w4
+                   w5 }) -}
+3d96c45f9b0d849aa917928de970fadc
+  $fExampleTimed2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+1a912ee5d6529b48d476ea4a09f9ee43
+  $fExampleTimed3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1000) -}
+96f61bc1734bad6e4d69e54848b91231
+  $fExampleTimed4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Test.Hspec.IdrisFrontend.$fExampleTimed5) -}
+cc1bf13e15083ddd84e2bcba62e8730b
+  $fExampleTimed5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("%.6f ms"#) -}
+8951dc1fe001632b2a1c1ed11d527358
+  $fExampleTimed6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" "#) -}
+68933abe3d03869fcad73d4f4a884f4b
+  $fShowOptMode :: GHC.Show.Show Test.Hspec.IdrisFrontend.OptMode
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Test.Hspec.IdrisFrontend.OptMode
+                  Test.Hspec.IdrisFrontend.$fShowOptMode_$cshowsPrec
+                  Test.Hspec.IdrisFrontend.$fShowOptMode_$cshow
+                  Test.Hspec.IdrisFrontend.$fShowOptMode_$cshowList -}
+68933abe3d03869fcad73d4f4a884f4b
+  $fShowOptMode1 ::
+    Test.Hspec.IdrisFrontend.OptMode -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds2 :: Test.Hspec.IdrisFrontend.OptMode)
+                   (eta :: GHC.Base.String) ->
+                 case ds2 of wild {
+                   Test.Hspec.IdrisFrontend.Optimised
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Test.Hspec.IdrisFrontend.$fShowOptMode4)
+                        eta
+                   Test.Hspec.IdrisFrontend.NonOptimised
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Test.Hspec.IdrisFrontend.$fShowOptMode2)
+                        eta }) -}
+df63891c40529ceffef1199c06ed6bd7
+  $fShowOptMode2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Test.Hspec.IdrisFrontend.$fShowOptMode3) -}
+dd9afe305d02c7be38a6de1438f20ba2
+  $fShowOptMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NonOptimised"#) -}
+25fd0d62d87bbc2c4fc7341c8ec493f2
+  $fShowOptMode4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Test.Hspec.IdrisFrontend.$fShowOptMode5) -}
+e2d2e7ae30e37831a07b7e1eb17785ee
+  $fShowOptMode5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Optimised"#) -}
+68933abe3d03869fcad73d4f4a884f4b
+  $fShowOptMode_$cshow ::
+    Test.Hspec.IdrisFrontend.OptMode -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Test.Hspec.IdrisFrontend.OptMode) ->
+                 case x of wild {
+                   Test.Hspec.IdrisFrontend.Optimised
+                   -> Test.Hspec.IdrisFrontend.$fShowOptMode4
+                   Test.Hspec.IdrisFrontend.NonOptimised
+                   -> Test.Hspec.IdrisFrontend.$fShowOptMode2 }) -}
+68933abe3d03869fcad73d4f4a884f4b
+  $fShowOptMode_$cshowList ::
+    [Test.Hspec.IdrisFrontend.OptMode] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Test.Hspec.IdrisFrontend.OptMode])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Test.Hspec.IdrisFrontend.OptMode
+                   Test.Hspec.IdrisFrontend.$fShowOptMode1
+                   ls
+                   s) -}
+68933abe3d03869fcad73d4f4a884f4b
+  $fShowOptMode_$cshowsPrec ::
+    GHC.Types.Int -> Test.Hspec.IdrisFrontend.OptMode -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (ds3 :: Test.Hspec.IdrisFrontend.OptMode)
+                   (eta :: GHC.Base.String) ->
+                 case ds3 of wild {
+                   Test.Hspec.IdrisFrontend.Optimised
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Test.Hspec.IdrisFrontend.$fShowOptMode4)
+                        eta
+                   Test.Hspec.IdrisFrontend.NonOptimised
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Test.Hspec.IdrisFrontend.$fShowOptMode2)
+                        eta }) -}
+779e50be947d0cc53b2a15e7eb7e14ab
+  $sfromList ::
+    [(GHC.Types.Int, a)] -> Data.Map.Internal.Map GHC.Types.Int a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds2 :: [(GHC.Types.Int, a)]) ->
+                 case ds2 of wild {
+                   [] -> Data.Map.Internal.Tip @ GHC.Types.Int @ a
+                   : ds3 ds4
+                   -> case ds3 of wild1 { (,) kx x ->
+                      case ds4 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.I# ipv ->
+                           Data.Map.Internal.Bin
+                             @ GHC.Types.Int
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ GHC.Types.Int @ a)
+                             (Data.Map.Internal.Tip @ GHC.Types.Int @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds5 ->
+                           case kx of wild4 { GHC.Types.I# x1 ->
+                           case ky of wild5 { GHC.Types.I# y ->
+                           case GHC.Prim.>=# x1 y of lwild {
+                             DEFAULT
+                             -> Test.Hspec.IdrisFrontend.$wpoly_go13
+                                  @ a
+                                  1#
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Types.Int
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Types.Int @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Types.Int @ a))
+                                  wild2
+                             1#
+                             -> Test.Hspec.IdrisFrontend.$sfromList1
+                                  @ a
+                                  wild2
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Types.Int
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Types.Int @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Types.Int @ a)) } } } } } } }) -}
+ebbfd34ad4e472eefa084af6d55fd363
+  $sfromList1 ::
+    [(GHC.Types.Int, a)]
+    -> Data.Map.Internal.Map GHC.Types.Int a
+    -> Data.Map.Internal.Map GHC.Types.Int a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+edace50361cab0fff2f5d1a944bd8117
+  $tc'IdrisCodeGen :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7484073021874437990##
+                   9174214733489162727##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tc'IdrisCodeGen2
+                   0#
+                   Test.Hspec.IdrisFrontend.$tc'IdrisCodeGen1) -}
+6c4cfefef4a987e55736f03aa2b7097c
+  $tc'IdrisCodeGen1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b372ef2a4ae14a72a9e33448406f8f3d
+  $tc'IdrisCodeGen2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tc'IdrisCodeGen3) -}
+37beceed8fa3f712d7e596bb80c19564
+  $tc'IdrisCodeGen3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IdrisCodeGen"#) -}
+fb487f000161d9240b6e6243601a15e3
+  $tc'NonOptimised :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12575442908661331308##
+                   14397251465231201336##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tc'NonOptimised2
+                   0#
+                   Test.Hspec.IdrisFrontend.$tc'NonOptimised1) -}
+169cceeff33303d3f67e222abbe057c6
+  $tc'NonOptimised1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+140e1849553c68010b4fc58ab3b7224d
+  $tc'NonOptimised2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tc'NonOptimised3) -}
+2b49e30fabf4ac4318f55ca93def73af
+  $tc'NonOptimised3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NonOptimised"#) -}
+e4b45e3fe016223971645f20d15e3bb9
+  $tc'Optimised :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10393740321191415515##
+                   16489781627087362467##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tc'Optimised1
+                   0#
+                   Test.Hspec.IdrisFrontend.$tc'NonOptimised1) -}
+0c1b4ecf15dd3546688e1bf5091b3afa
+  $tc'Optimised1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tc'Optimised2) -}
+2c2f64ec2ef536e52a2bb08b3ee6c000
+  $tc'Optimised2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Optimised"#) -}
+079779b6a2bd94ce8323e951f9b69e16
+  $tc'Timed :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17430097352936055233##
+                   1854867706092939869##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tc'Timed2
+                   1#
+                   Test.Hspec.IdrisFrontend.$tc'Timed1) -}
+16fc808a39ef2e3fd86bbcb1faf9c200
+  $tc'Timed1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+88dd80ddccf381550a59e82b96827bac
+  $tc'Timed2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tc'Timed3) -}
+65054069efd1433789003614679d1d5f
+  $tc'Timed3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Timed"#) -}
+403fc5635208f35eb88fcadd4e3f5ad4
+  $tcIdrisCodeGen :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18138209601150440605##
+                   18426126928198202132##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tcIdrisCodeGen1
+                   0#
+                   GHC.Types.krep$*) -}
+07cfa03a7e8e1af01ac60e357f177d49
+  $tcIdrisCodeGen1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tcIdrisCodeGen2) -}
+aea84826199b132db967515fa44c45d3
+  $tcIdrisCodeGen2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("IdrisCodeGen"#) -}
+90c817dde19b5da1d1bfdad494a4c89a
+  $tcOptMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14339671001222644471##
+                   16098273291035404019##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tcOptMode1
+                   0#
+                   GHC.Types.krep$*) -}
+6aa2e0d0558e34b0c5b6203a868f3724
+  $tcOptMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tcOptMode2) -}
+04856b4db78dfbff78d88ed2d9579ad9
+  $tcOptMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("OptMode"#) -}
+44d81f201ab53a89b3528a68c48de12f
+  $tcTimed :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1559638243203260208##
+                   2670479845241191440##
+                   Test.Hspec.IdrisFrontend.$trModule
+                   Test.Hspec.IdrisFrontend.$tcTimed1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+5f1f1a8efc9d0ac26de271fd953d717b
+  $tcTimed1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$tcTimed2) -}
+5c5b05798ea31df48d4dc9124876046e
+  $tcTimed2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Timed"#) -}
+cf5a05c910f578dae68422b5b511dbc3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Test.Hspec.IdrisFrontend.$trModule3
+                   Test.Hspec.IdrisFrontend.$trModule1) -}
+7a550113f902270cf9782751a90cf57c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$trModule2) -}
+41c838b8d3d4561d69c1da3f8f906914
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Test.Hspec.IdrisFrontend"#) -}
+bbed172136c990dafc6d757a6455b9d5
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Test.Hspec.IdrisFrontend.$trModule4) -}
+53db24dfbb5d5e2291c10ec2d4ce6b50
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  $w$cevaluateExample ::
+    GHC.Base.String
+    -> GHC.Maybe.Maybe GHC.Base.String
+    -> Test.Hspec.IdrisFrontend.OptMode
+    -> GHC.Types.Int
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.IdrisFrontend.IdrisCodeGen)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Test.Hspec.Core.Example.Result #)
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,U><L,U(U)><C(C(S(SL))),1*C1(C1(U(U,A)))><L,C(C1(U(U,A)))><S,U>,
+     Inline: [2] -}
+352cf9f567298362b5aa6b5097f232cf
+  $w$cevaluateExample1 ::
+    Test.Hspec.Core.Example.Example a =>
+    a
+    -> Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg (Test.Hspec.IdrisFrontend.Timed a))
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Test.Hspec.Core.Example.Result #)
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U(U,1*U(U,U)))))))><L,U><L,U><L,U><L,U><S,U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (w :: Test.Hspec.Core.Example.Example a)
+                   (ww :: a)
+                   (w1 :: Test.Hspec.Core.Example.Params)
+                   (w2 :: Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg (Test.Hspec.IdrisFrontend.Timed a))
+                          -> GHC.Types.IO ())
+                   (w3 :: Test.Hspec.Core.Example.ProgressCallback)
+                   (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Data.Time.Clock.Internal.CTimespec.$wclockGetTime
+                        0#
+                        w4 of ds2 { (#,#) ipv ipv1 ->
+                 case Test.Hspec.Core.Example.safeEvaluateExample1
+                        @ a
+                        w
+                        ww
+                        w1
+                        w2
+                          `cast`
+                        ((Sub (Test.Hspec.IdrisFrontend.D:R:ArgTimed[0] <a>_N)
+                          ->_R <GHC.Types.IO ()>_R)
+                         ->_R <GHC.Types.IO ()>_R)
+                        w3
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 case Data.Time.Clock.Internal.CTimespec.$wclockGetTime
+                        0#
+                        ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                 (# ipv4,
+                    case ipv3 of wild { Test.Hspec.Core.Example.Result ds5 ds6 ->
+                    Test.Hspec.Core.Example.Result
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         ds5
+                         (GHC.CString.unpackAppendCString#
+                            Test.Hspec.IdrisFrontend.$fExampleTimed6
+                            (Text.Printf.uprintfs
+                               Test.Hspec.IdrisFrontend.$fExampleTimed4
+                               (let {
+                                  a1 :: GHC.Types.Double
+                                  = case ipv5 of wild1 { Data.Time.Clock.Internal.CTimespec.MkCTimespec ds7 ds8 ->
+                                    case ds7
+                                           `cast`
+                                         (Foreign.C.Types.N:CTime[0]) of dt { GHC.Int.I64# dt1 ->
+                                    case ds8
+                                           `cast`
+                                         (Foreign.C.Types.N:CLong[0]) of wild2 { GHC.Int.I64# x# ->
+                                    case Data.Time.Clock.System.$wsystemToUTCTime
+                                           dt1
+                                           (GHC.Prim.narrow32Word#
+                                              (GHC.Prim.int2Word# x#)) of ww3 { (#,#) ww4 ww5 ->
+                                    case ipv1 of wild3 { Data.Time.Clock.Internal.CTimespec.MkCTimespec ds9 ds10 ->
+                                    case ds9
+                                           `cast`
+                                         (Foreign.C.Types.N:CTime[0]) of dt2 { GHC.Int.I64# dt3 ->
+                                    case ds10
+                                           `cast`
+                                         (Foreign.C.Types.N:CLong[0]) of wild4 { GHC.Int.I64# x#1 ->
+                                    case Data.Time.Clock.System.$wsystemToUTCTime
+                                           dt3
+                                           (GHC.Prim.narrow32Word#
+                                              (GHC.Prim.int2Word# x#1)) of ww1 { (#,#) ww2 ww6 ->
+                                    case GHC.Real.$w$s$c/
+                                           (GHC.Integer.Type.minusInteger
+                                              (Data.Time.Clock.POSIX.$wutcTimeToPOSIXSeconds
+                                                 ww4
+                                                 ww5)
+                                                `cast`
+                                              (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0] ; Data.Fixed.N:Fixed[0]
+                                                                                                                   <Data.Fixed.E12>_P)
+                                              (Data.Time.Clock.POSIX.$wutcTimeToPOSIXSeconds
+                                                 ww2
+                                                 ww6)
+                                                `cast`
+                                              (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0] ; Data.Fixed.N:Fixed[0]
+                                                                                                                   <Data.Fixed.E12>_P))
+                                           GHC.Real.$fEnumRatio1
+                                           Data.Fixed.$fHasResolutionE5
+                                           GHC.Real.$fEnumRatio1 of ww7 { (#,#) ww8 ww9 ->
+                                    case GHC.Real.$w$sreduce
+                                           (GHC.Integer.Type.timesInteger
+                                              Test.Hspec.IdrisFrontend.$fExampleTimed3
+                                              ww8)
+                                           (GHC.Integer.Type.timesInteger
+                                              Test.Hspec.IdrisFrontend.$fExampleTimed2
+                                              ww9) of ww10 { (#,#) ww11 ww12 ->
+                                    GHC.Float.rationalToDouble ww11 ww12 } } } } } } } } } }
+                                } in
+                                GHC.List.reverse1
+                                  @ Text.Printf.UPrintf
+                                  (GHC.Types.:
+                                     @ (Text.Printf.ModifierParser, Text.Printf.FieldFormatter)
+                                     (Text.Printf.$fPrintfArgDouble_$cparseFormat a1,
+                                      Text.Printf.$fPrintfArgDouble_$sformatRealFloat a1)
+                                     (GHC.Types.[] @ Text.Printf.UPrintf))
+                                  (GHC.Types.[] @ Text.Printf.UPrintf))
+                               (GHC.Types.[] @ GHC.Types.Char))))
+                      ds6 } #) } } }) -}
+8b42abfa01f30d5b40b4e6cb003841a7
+  $w$sgo13 ::
+    GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [2] -}
+e1f38359e66c8693fe10f37655b5c201
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Int a -> GHC.Maybe.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [2] -}
+8de87f85208808fc7a9dffa508d60c41
+  $wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Int a
+    -> [(GHC.Types.Int, a)]
+    -> Data.Map.Internal.Map GHC.Types.Int a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [2] -}
+840f1a32385f4efed5990b6eab0e2e2b
+  $wtimeout ::
+    GHC.Prim.Int#
+    -> System.Process.Common.ProcessHandle
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.IO.Exception.ExitCode #)
+  {- Arity: 3, Strictness: <S,U><L,1*U(U,U,U)><L,U>, Inline: [2] -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  axiom Test.Hspec.IdrisFrontend.D:R:ArgIdrisCodeGen::
+      Test.Hspec.Core.Example.Arg Test.Hspec.IdrisFrontend.IdrisCodeGen
+        = ()
+352cf9f567298362b5aa6b5097f232cf
+  axiom Test.Hspec.IdrisFrontend.D:R:ArgTimed::
+      Test.Hspec.Core.Example.Arg (Test.Hspec.IdrisFrontend.Timed a)
+        = Test.Hspec.Core.Example.Arg a
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  data IdrisCodeGen
+    = IdrisCodeGen {source :: GHC.Base.String,
+                    input :: GHC.Maybe.Maybe GHC.Base.String,
+                    optimised :: Test.Hspec.IdrisFrontend.OptMode,
+                    timeoutInSecs :: GHC.Types.Int}
+68933abe3d03869fcad73d4f4a884f4b
+  data OptMode = Optimised | NonOptimised
+352cf9f567298362b5aa6b5097f232cf
+  data Timed a = Timed a
+2b9efbd898dada575ac9760333920d31
+  bisect ::
+    (GHC.Maybe.Maybe GHC.IO.Handle.Types.Handle
+     -> Control.Monad.Trans.Error.ErrorT
+          Test.Hspec.Core.Example.ResultStatus GHC.Types.IO a)
+    -> GHC.Types.Int
+    -> GHC.IO.FilePath
+    -> System.Process.Common.StdStream
+    -> GHC.Base.String
+    -> Control.Monad.Trans.Error.ErrorT
+         Test.Hspec.Core.Example.ResultStatus GHC.Types.IO ()
+  {- Arity: 6,
+     Strictness: <L,C(C1(U(U,1*U)))><L,1*U(U)><L,U><L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Test.Hspec.IdrisFrontend.bisect1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Maybe.Maybe GHC.IO.Handle.Types.Handle
+                  -> Control.Monad.Trans.Error.ErrorT
+                       Test.Hspec.Core.Example.ResultStatus GHC.Types.IO a>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.IO.FilePath>_R
+                 ->_R <System.Process.Common.StdStream>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Test.Hspec.Core.Example.ResultStatus
+                                  ()>_R) ; Sym (Control.Monad.Trans.Error.N:ErrorT[0]
+                                                    <Test.Hspec.Core.Example.ResultStatus>_N
+                                                    <GHC.Types.IO>_R
+                                                    <()>_N)) -}
+e5a0f34a9fb9d9e24bd2ed7bbcacff75
+  bisect1 ::
+    (GHC.Maybe.Maybe GHC.IO.Handle.Types.Handle
+     -> Control.Monad.Trans.Error.ErrorT
+          Test.Hspec.Core.Example.ResultStatus GHC.Types.IO a)
+    -> GHC.Types.Int
+    -> GHC.IO.FilePath
+    -> System.Process.Common.StdStream
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either Test.Hspec.Core.Example.ResultStatus () #)
+  {- Arity: 6,
+     Strictness: <L,C(C1(U(U,1*U)))><L,1*U(U)><L,U><L,U><L,U><S,U> -}
+7c00a6a00235291b5fe3d6c63d95cd06
+  idris ::
+    Test.Hspec.IdrisFrontend.OptMode
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> Test.Hspec.IdrisFrontend.IdrisCodeGen
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,U>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ (o :: Test.Hspec.IdrisFrontend.OptMode)
+                   (t :: GHC.Types.Int)
+                   (fp :: GHC.Base.String) ->
+                 Test.Hspec.IdrisFrontend.IdrisCodeGen
+                   fp
+                   (GHC.Maybe.Nothing @ GHC.Base.String)
+                   o
+                   t) -}
+b6b50ec3eb9e9e5caae7a72d88e03acf
+  idrisWithStdin ::
+    Test.Hspec.IdrisFrontend.OptMode
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> Test.Hspec.IdrisFrontend.IdrisCodeGen
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><L,U>m,
+     Unfolding: InlineRule (4, True, False)
+                (\ (o :: Test.Hspec.IdrisFrontend.OptMode)
+                   (t :: GHC.Types.Int)
+                   (fp :: GHC.Base.String)
+                   (inp :: GHC.Base.String) ->
+                 Test.Hspec.IdrisFrontend.IdrisCodeGen
+                   fp
+                   (GHC.Maybe.Just @ GHC.Base.String inp)
+                   o
+                   t) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  input ::
+    Test.Hspec.IdrisFrontend.IdrisCodeGen
+    -> GHC.Maybe.Maybe GHC.Base.String
+  RecSel Left Test.Hspec.IdrisFrontend.IdrisCodeGen
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: Test.Hspec.IdrisFrontend.IdrisCodeGen) ->
+                 case ds2 of wild { Test.Hspec.IdrisFrontend.IdrisCodeGen ds3 ds4 ds5 ds6 ->
+                 ds4 }) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  optimised ::
+    Test.Hspec.IdrisFrontend.IdrisCodeGen
+    -> Test.Hspec.IdrisFrontend.OptMode
+  RecSel Left Test.Hspec.IdrisFrontend.IdrisCodeGen
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: Test.Hspec.IdrisFrontend.IdrisCodeGen) ->
+                 case ds2 of wild { Test.Hspec.IdrisFrontend.IdrisCodeGen ds3 ds4 ds5 ds6 ->
+                 ds5 }) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  source :: Test.Hspec.IdrisFrontend.IdrisCodeGen -> GHC.Base.String
+  RecSel Left Test.Hspec.IdrisFrontend.IdrisCodeGen
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: Test.Hspec.IdrisFrontend.IdrisCodeGen) ->
+                 case ds2 of wild { Test.Hspec.IdrisFrontend.IdrisCodeGen ds3 ds4 ds5 ds6 ->
+                 ds3 }) -}
+348434bb11930e5ad26c4b20e77e6a81
+  timed :: a -> Test.Hspec.IdrisFrontend.Timed a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (0, True, True)
+                Test.Hspec.IdrisFrontend.Timed -}
+3b634a82809682e238e0222ad20e2fac
+  timeout ::
+    GHC.Types.Int
+    -> System.Process.Common.ProcessHandle
+    -> GHC.Types.IO GHC.IO.Exception.ExitCode
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U(U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Test.Hspec.IdrisFrontend.timeout1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R <System.Process.Common.ProcessHandle>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.Exception.ExitCode>_R)) -}
+79828271b53fa485980fe9f9be38bf0d
+  timeout1 ::
+    GHC.Types.Int
+    -> System.Process.Common.ProcessHandle
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.IO.Exception.ExitCode #)
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U(U,U,U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: System.Process.Common.ProcessHandle)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Test.Hspec.IdrisFrontend.$wtimeout ww1 w1 w2 }) -}
+0cc5e7a6427bdcf3262ed6eb24e16f75
+  timeoutInSecs ::
+    Test.Hspec.IdrisFrontend.IdrisCodeGen -> GHC.Types.Int
+  RecSel Left Test.Hspec.IdrisFrontend.IdrisCodeGen
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: Test.Hspec.IdrisFrontend.IdrisCodeGen) ->
+                 case ds2 of wild { Test.Hspec.IdrisFrontend.IdrisCodeGen ds3 ds4 ds5 ds6 ->
+                 ds6 }) -}
+instance [orphan] Control.Monad.Trans.Error.Error [Test.Hspec.Core.Example.ResultStatus]
+  = Test.Hspec.IdrisFrontend.$fErrorResultStatus
+instance Test.Hspec.Core.Example.Example [Test.Hspec.IdrisFrontend.IdrisCodeGen]
+  = Test.Hspec.IdrisFrontend.$fExampleIdrisCodeGen
+instance Test.Hspec.Core.Example.Example [Test.Hspec.IdrisFrontend.Timed]
+  = Test.Hspec.IdrisFrontend.$fExampleTimed
+instance GHC.Show.Show [Test.Hspec.IdrisFrontend.OptMode]
+  = Test.Hspec.IdrisFrontend.$fShowOptMode
+family instance Test.Hspec.Core.Example.Arg [Test.Hspec.IdrisFrontend.Timed]
+  = Test.Hspec.IdrisFrontend.D:R:ArgTimed
+family instance Test.Hspec.Core.Example.Arg [Test.Hspec.IdrisFrontend.IdrisCodeGen]
+  = Test.Hspec.IdrisFrontend.D:R:ArgIdrisCodeGen
+"SPEC/Test.Hspec.IdrisFrontend fromList @ Int _" [orphan] forall @ a
+                                                                 ($dOrd :: GHC.Classes.Ord
+                                                                             GHC.Types.Int)
+  Data.Map.Internal.fromList @ GHC.Types.Int @ a $dOrd
+  = Test.Hspec.IdrisFrontend.$sfromList @ a
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

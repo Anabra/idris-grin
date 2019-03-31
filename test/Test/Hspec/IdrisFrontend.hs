@@ -80,7 +80,7 @@ instance Example IdrisCodeGen where
       let runTest = (shell "./test.bin")
                     { std_in = stdInCreate, std_out = CreatePipe, std_err = NoStream }
       let idrisGrinCmd = case optimised of
-            Optimised     -> "stack exec idris -- %s --codegen grin -o test.grin --cg-opt --quiet --cg-opt --binary-intermed"
+            Optimised     -> "stack exec idris -- %s --codegen grin -o test.grin --cg-opt --binary-intermed"
             NonOptimised  -> "stack exec idris -- %s --codegen grin -o test.grin --cg-opt --O0 --cg-opt --quiet"
       let idrisGrin = (shell (printf idrisGrinCmd source))
                       { std_in = stdInCreate, std_out = CreatePipe, std_err = NoStream }

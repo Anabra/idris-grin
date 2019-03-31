@@ -1,0 +1,2829 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-13 00:41:01.353137343 UTC
+
+interface idris-grin-0.1.0.0-AEuBwdE1GOx4e7haHj28Uf:Idris.PrimOps 8061
+  interface hash: fc8575869ac90a83c798e384bbd913d9
+  ABI hash: 19fe7fd5bd243a38a365d7fcb506f483
+  export-list hash: 9a9b94cf9744de8849db82cf02f7cf81
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 037b7e39f28f9de76f7a1a3c99ed582b
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Idris.PrimOps.idrisPrimOps
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.12.0.0 base-orphans-0.8
+                      base-prelude-1.3 bifunctors-5.5.3 binary-0.8.6.0
+                      bytestring-0.10.8.2 case-insensitive-1.2.0.11 comonad-5.0.4
+                      containers-0.6.0.1 deepseq-1.4.4.0 distributive-0.6
+                      exceptions-0.10.0 free-5.1 ghc-boot-th-8.6.1 ghc-prim-0.5.3
+                      grin-0.1.0.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.2 megaparsec-6.5.0 microlens-0.4.10
+                      microlens-ghc-0.4.10 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.11 microlens-th-0.4.2.3 mtl-2.2.2
+                      neat-interpolation-0.3.2.2 parser-combinators-1.0.0 pretty-1.1.3.6
+                      primitive-0.6.4.0 profunctors-5.3 recursion-schemes-5.0.3
+                      scientific-0.3.6.2 semigroupoids-5.3.1 stm-2.5.0.0 tagged-0.8.6
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.2.8.0
+                      transformers-0.5.5.0 transformers-base-0.4.5.2
+                      transformers-compat-0.6.2 unordered-containers-0.2.9.0
+                      vector-0.12.0.1
+orphans: stm-2.5.0.0:Control.Monad.STM grin-0.1.0.0:Grin.Syntax
+         microlens-platform-0.3.11:Lens.Micro.Platform
+         microlens-ghc-0.4.10:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         text-1.2.3.1:Data.Text.Lazy
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.3:Data.Bifunctor.Biff
+                         bifunctors-5.5.3:Data.Bifunctor.Clown
+                         bifunctors-5.5.3:Data.Bifunctor.Flip
+                         bifunctors-5.5.3:Data.Bifunctor.Join
+                         bifunctors-5.5.3:Data.Bifunctor.Joker
+                         bifunctors-5.5.3:Data.Bifunctor.Product
+                         bifunctors-5.5.3:Data.Bifunctor.Sum
+                         bifunctors-5.5.3:Data.Bifunctor.Tannen
+                         bifunctors-5.5.3:Data.Bifunctor.Wrapped
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         free-5.1:Control.Comonad.Cofree
+                         free-5.1:Control.Comonad.Trans.Cofree free-5.1:Control.Monad.Free
+                         free-5.1:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.1:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.1:GHC.LanguageExtensions.Type
+                         grin-0.1.0.0:Grin.Syntax grin-0.1.0.0:Grin.SyntaxDefs
+                         grin-0.1.0.0:Grin.TypeEnvDefs
+                         megaparsec-6.5.0:Text.Megaparsec.Error
+                         megaparsec-6.5.0:Text.Megaparsec.Pos
+                         megaparsec-6.5.0:Text.Megaparsec.State
+                         megaparsec-6.5.0:Text.Megaparsec.Stream
+                         microlens-0.4.10:Lens.Micro.Internal
+                         microlens-ghc-0.4.10:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.11:Lens.Micro.Platform
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         recursion-schemes-5.0.3:Data.Functor.Base
+                         recursion-schemes-5.0.3:Data.Functor.Foldable
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.12.0.0:Prelude 4efa7a96beba0aef4f05942bacd5fe4a
+import  -/  grin-0.1.0.0:Grin.Grin 757e969940c387a075aeab3c6ea01e4c
+import  -/  grin-0.1.0.0:Grin.Parse.AST dc5cc46c74362e00f8dcce6cea0d87da
+import  -/  grin-0.1.0.0:Grin.PrimOpsPrelude 5308cf8ea864b785db0554f45d9b4cfb
+import  -/  grin-0.1.0.0:Grin.TH 3485518537bf3f8a072693de83671229
+import  -/  text-1.2.3.1:Data.Text 370c2ecf26d0839e6283d21666e68ca2
+import  -/  text-1.2.3.1:Data.Text.Internal 350e6290f11d2c43f1f8c35821c1643a
+73685a9c7f97b342f27c75b0af3238da
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Idris.PrimOps.$trModule3
+                   Idris.PrimOps.$trModule1) -}
+3d79b3797f205462c78e149da564a2ec
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Idris.PrimOps.$trModule2) -}
+6c0fb89b345f3c8db549034afd45b9cf
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Idris.PrimOps"#) -}
+e73f4bb84c793088990b4f8889688e3b
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Idris.PrimOps.$trModule4) -}
+dea9a2220a91b741b2bcd8e2f44aef59
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris-grin-0.1.0.0-AEuBwdE1GOx4e7haHj28Uf"#) -}
+0eebdd89a32a1688439965f7acdc13ad
+  idrisPrimOps :: Grin.Syntax.Program
+  {- Strictness: m1,
+     Unfolding: (Grin.Syntax.Program
+                   Idris.PrimOps.idrisPrimOps525
+                   Idris.PrimOps.idrisPrimOps1) -}
+34cbebf6a40d1dcb64c7318542189fff
+  idrisPrimOps1 :: [Grin.Syntax.Def]
+  {- Unfolding: (case Idris.PrimOps.idrisPrimOps_ds of wild { (,) exts defs ->
+                 Grin.Grin.concatPrograms_go defs }) -}
+aa16489d1d6dfac5f4337c7c97d2691a
+  idrisPrimOps10 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps514
+                   Idris.PrimOps.idrisPrimOps11) -}
+9c5478343536e6a999159a461ccbec0b
+  idrisPrimOps100 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps384
+                   Idris.PrimOps.idrisPrimOps101) -}
+49d1ec76e11231a478e3e546579a3cd2
+  idrisPrimOps101 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps382
+                   Idris.PrimOps.idrisPrimOps102) -}
+8e22d2292216bf67bbebd17367e6435b
+  idrisPrimOps102 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps103) -}
+60b5f22b0aabf53763f1b18374b05f6e
+  idrisPrimOps103 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps380
+                   Idris.PrimOps.idrisPrimOps104) -}
+abc9d6cfc12364ef77e1e99d166952ea
+  idrisPrimOps104 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps378
+                   Idris.PrimOps.idrisPrimOps105) -}
+0dc2b5b153339c3733f184edecc8772b
+  idrisPrimOps105 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps376
+                   Idris.PrimOps.idrisPrimOps106) -}
+54a3df27aa508e350265e954ecd23d77
+  idrisPrimOps106 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps374
+                   Idris.PrimOps.idrisPrimOps107) -}
+87428ad4eb5393bedbe27dd150d565df
+  idrisPrimOps107 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps372
+                   Idris.PrimOps.idrisPrimOps108) -}
+7288f2bceaba180480dd7e003b333983
+  idrisPrimOps108 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps109) -}
+d48feaa9c672cd94286fda902ca678c6
+  idrisPrimOps109 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps370
+                   Idris.PrimOps.idrisPrimOps110) -}
+c4724b7c0b03d6a94e22d3b3c0f7962a
+  idrisPrimOps11 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps360
+                   Idris.PrimOps.idrisPrimOps12) -}
+c31407f21a2eb18e8587f94af130be3d
+  idrisPrimOps110 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps368
+                   Idris.PrimOps.idrisPrimOps111) -}
+aa9576731704f203fd03f2d1d38f45f3
+  idrisPrimOps111 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps366
+                   Idris.PrimOps.idrisPrimOps112) -}
+add883bad95747c428015f7463186047
+  idrisPrimOps112 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps364
+                   Idris.PrimOps.idrisPrimOps113) -}
+3cac62085c286b8a2e218be65fac4147
+  idrisPrimOps113 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps362
+                   Idris.PrimOps.idrisPrimOps114) -}
+1cea624ef9c6ae8a5afe976bed833120
+  idrisPrimOps114 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps360
+                   Idris.PrimOps.idrisPrimOps115) -}
+0eba488d6daf0b37379b9dedda09e1de
+  idrisPrimOps115 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps358
+                   Idris.PrimOps.idrisPrimOps116) -}
+efa4b3bae278d0df34b78e56ab2b6c17
+  idrisPrimOps116 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps117) -}
+1e262c267749439fbe010d90956d0501
+  idrisPrimOps117 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps356
+                   Idris.PrimOps.idrisPrimOps118) -}
+c8cae2c5c1abee78098d8b4713d864ca
+  idrisPrimOps118 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps354
+                   Idris.PrimOps.idrisPrimOps119) -}
+46331f41960d3b3c9e425e8363909e04
+  idrisPrimOps119 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps352
+                   Idris.PrimOps.idrisPrimOps120) -}
+234442ef16e381e46a857f8b682e2e04
+  idrisPrimOps12 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps358
+                   Idris.PrimOps.idrisPrimOps13) -}
+0c3e5949cc7ee6cd4ff5d92829ad12bb
+  idrisPrimOps120 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps350
+                   Idris.PrimOps.idrisPrimOps121) -}
+34f9c31dd2156a23a8d2ca195882c37d
+  idrisPrimOps121 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps348
+                   Idris.PrimOps.idrisPrimOps122) -}
+17520283b96af51134d1bfd5b27514c0
+  idrisPrimOps122 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps346
+                   Idris.PrimOps.idrisPrimOps123) -}
+f53cfd99da1a0fc9b7e796c37d50f77d
+  idrisPrimOps123 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps344
+                   Idris.PrimOps.idrisPrimOps124) -}
+5698556115d63ed795a9890ea38d6281
+  idrisPrimOps124 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps125) -}
+68381c8182a9b6d074e533a6e6a28f73
+  idrisPrimOps125 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps342
+                   Idris.PrimOps.idrisPrimOps126) -}
+0ec02c254efbf1c5209adb99319bb246
+  idrisPrimOps126 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps340
+                   Idris.PrimOps.idrisPrimOps127) -}
+6586064b1c505c9e0e057566f02f76dd
+  idrisPrimOps127 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps338
+                   Idris.PrimOps.idrisPrimOps128) -}
+0b96a4f3bb0032bec5fd746718a3ee16
+  idrisPrimOps128 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps336
+                   Idris.PrimOps.idrisPrimOps129) -}
+612a64349ae1bf60f72a23997e05c297
+  idrisPrimOps129 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps130) -}
+587f6ec03126e49768eec9504302561a
+  idrisPrimOps13 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps14) -}
+42dd70719998531a3453bbe282419863
+  idrisPrimOps130 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps334
+                   Idris.PrimOps.idrisPrimOps131) -}
+c11460e5042d9ef43fe8592df7d764c8
+  idrisPrimOps131 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps332
+                   Idris.PrimOps.idrisPrimOps132) -}
+607ad9d7dc98da3cb8bbf54d24886d87
+  idrisPrimOps132 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps330
+                   Idris.PrimOps.idrisPrimOps133) -}
+e7ba7ffe38f5bcec0ea5c8bbad984f26
+  idrisPrimOps133 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps328
+                   Idris.PrimOps.idrisPrimOps134) -}
+8a66be3190132e06d2ed11e6b7a19d06
+  idrisPrimOps134 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps135) -}
+135cae85ce46c3b9391f1dda1b2b73a1
+  idrisPrimOps135 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps326
+                   Idris.PrimOps.idrisPrimOps136) -}
+549f7a1c537364a80fd7fff294618cf9
+  idrisPrimOps136 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps324
+                   Idris.PrimOps.idrisPrimOps137) -}
+f407d50e43883eba874e8553292cc87e
+  idrisPrimOps137 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps322
+                   Idris.PrimOps.idrisPrimOps138) -}
+6d32bbbb4d59a0c69220a930b883ca7a
+  idrisPrimOps138 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps320
+                   Idris.PrimOps.idrisPrimOps139) -}
+91651d8f348590e34ada2adadc6cf010
+  idrisPrimOps139 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps140) -}
+488f3c82d0704df00142229cb7225d9f
+  idrisPrimOps14 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps512
+                   Idris.PrimOps.idrisPrimOps15) -}
+6fb45b72ab94729d947e7db9115c7202
+  idrisPrimOps140 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps318
+                   Idris.PrimOps.idrisPrimOps141) -}
+aa38d210b0319f13d49c2d915c5637a9
+  idrisPrimOps141 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps316
+                   Idris.PrimOps.idrisPrimOps142) -}
+2f482b5291a13bb7a773951815821b41
+  idrisPrimOps142 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps314
+                   Idris.PrimOps.idrisPrimOps143) -}
+0bbbe45c039b2426c01eed6264fe747f
+  idrisPrimOps143 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps312
+                   Idris.PrimOps.idrisPrimOps144) -}
+c133ddf3a4b4037c955ec8f0e3a5ea75
+  idrisPrimOps144 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps145) -}
+9df9fa1014f8547448c4e61b16de1499
+  idrisPrimOps145 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps310
+                   Idris.PrimOps.idrisPrimOps146) -}
+b47be6c1befae6d057f6676e73993948
+  idrisPrimOps146 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps308
+                   Idris.PrimOps.idrisPrimOps147) -}
+79aa2c2fab13e65187d512fea40ee9b7
+  idrisPrimOps147 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps306
+                   Idris.PrimOps.idrisPrimOps148) -}
+4178f0999405eff04ea79c8ed8543790
+  idrisPrimOps148 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps304
+                   Idris.PrimOps.idrisPrimOps149) -}
+d0a482ffbfa40d37afcaf8e1f363c66d
+  idrisPrimOps149 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps302
+                   Idris.PrimOps.idrisPrimOps150) -}
+3e6b5538256992a0d4a84221934a72b8
+  idrisPrimOps15 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps510
+                   Idris.PrimOps.idrisPrimOps16) -}
+6a015f97f24f3d143babf1a3f1461f16
+  idrisPrimOps150 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps151) -}
+b2bca32e5ae353ee616350fb9bf734e5
+  idrisPrimOps151 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps300
+                   Idris.PrimOps.idrisPrimOps152) -}
+be56d85885c77c6c17128e6b304c01b7
+  idrisPrimOps152 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps298
+                   Idris.PrimOps.idrisPrimOps153) -}
+1bb68f4cc31d9089161bdc7bdd6b38c8
+  idrisPrimOps153 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps296
+                   Idris.PrimOps.idrisPrimOps154) -}
+09a3b4442a20d73e37647cf69082e3d2
+  idrisPrimOps154 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps294
+                   Idris.PrimOps.idrisPrimOps155) -}
+ee27522989174d19035f99cefb07666c
+  idrisPrimOps155 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps156) -}
+5c284153678d35655938940e1a5ceb7e
+  idrisPrimOps156 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps292
+                   Idris.PrimOps.idrisPrimOps157) -}
+14007abe05ca9c52fe1606230c3e525f
+  idrisPrimOps157 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps290
+                   Idris.PrimOps.idrisPrimOps158) -}
+a6e0381b31c8ad1de000d41de7681819
+  idrisPrimOps158 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps288
+                   Idris.PrimOps.idrisPrimOps159) -}
+6cbd35a148581ae851fe78f92eeb7bc2
+  idrisPrimOps159 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps286
+                   Idris.PrimOps.idrisPrimOps160) -}
+35dcd45d2364cfa5087d3f24677ce6b2
+  idrisPrimOps16 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps508
+                   Idris.PrimOps.idrisPrimOps17) -}
+9692bd07eb36471a7cc640a4b79275be
+  idrisPrimOps160 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps161) -}
+8edc165ae84702f56413df926c51eb63
+  idrisPrimOps161 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps284
+                   Idris.PrimOps.idrisPrimOps162) -}
+aada06475fa5afda295769b54a9e59ad
+  idrisPrimOps162 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps282
+                   Idris.PrimOps.idrisPrimOps163) -}
+ab016be0f60c99b27a4754622a719ecd
+  idrisPrimOps163 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps280
+                   Idris.PrimOps.idrisPrimOps164) -}
+f4b177fa7122b0062a84742b9eb26810
+  idrisPrimOps164 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps278
+                   Idris.PrimOps.idrisPrimOps165) -}
+bd5752e1bd25cb1be6548b32c407c2ea
+  idrisPrimOps165 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps166) -}
+8f7e4f6a981a101abf64083d045ab639
+  idrisPrimOps166 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps276
+                   Idris.PrimOps.idrisPrimOps167) -}
+bf85ba2836fb2ce6034743be76286373
+  idrisPrimOps167 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps274
+                   Idris.PrimOps.idrisPrimOps168) -}
+c86a4b8bddb50811a52d37ba991648ea
+  idrisPrimOps168 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps272
+                   Idris.PrimOps.idrisPrimOps169) -}
+75876d8f3d3a58be3db0619dd7e30089
+  idrisPrimOps169 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps270
+                   Idris.PrimOps.idrisPrimOps170) -}
+750173b0ae8a84dc62b15613ae2ab9c1
+  idrisPrimOps17 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps506
+                   Idris.PrimOps.idrisPrimOps18) -}
+b1fe90980777ee1af75fbff6aee55bb1
+  idrisPrimOps170 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps171) -}
+2b41036b29beb7ae76bb7375024b56ff
+  idrisPrimOps171 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps268
+                   Idris.PrimOps.idrisPrimOps172) -}
+fc0193c988fc96ca0bd337902dcc4799
+  idrisPrimOps172 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps266
+                   Idris.PrimOps.idrisPrimOps173) -}
+aa313cb519e60c47ce8d9e2a8d1c9bb4
+  idrisPrimOps173 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps264
+                   Idris.PrimOps.idrisPrimOps174) -}
+c196fcb37c4c221b0cea11a063ab31a0
+  idrisPrimOps174 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps262
+                   Idris.PrimOps.idrisPrimOps175) -}
+249a8881ed566c21e2111af057bb7834
+  idrisPrimOps175 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps176) -}
+8a06ae283854a1a66a6d215f92d4064f
+  idrisPrimOps176 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps260
+                   Idris.PrimOps.idrisPrimOps177) -}
+8072713b79b10f31809c39b3878c1ee8
+  idrisPrimOps177 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps258
+                   Idris.PrimOps.idrisPrimOps178) -}
+7a97092adb289da035d27858d6f3f0a0
+  idrisPrimOps178 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps256
+                   Idris.PrimOps.idrisPrimOps179) -}
+e2845296ec421123d8e2723afe2b2078
+  idrisPrimOps179 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps254
+                   Idris.PrimOps.idrisPrimOps180) -}
+67cfacc5008380505f8cc0404d616cc4
+  idrisPrimOps18 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps504
+                   Idris.PrimOps.idrisPrimOps19) -}
+6179859ef59f9b20ee0422e5c306de2e
+  idrisPrimOps180 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps181) -}
+1894a8f40fe83dac194dcb6dd263cafe
+  idrisPrimOps181 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps252
+                   Idris.PrimOps.idrisPrimOps182) -}
+936ac24be3a3c2779d82f269ea2f10d2
+  idrisPrimOps182 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps250
+                   Idris.PrimOps.idrisPrimOps183) -}
+56aa43ba35c7245e1887e70e4a82c98a
+  idrisPrimOps183 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps248
+                   Idris.PrimOps.idrisPrimOps184) -}
+41081341d73fc907a0aa6a0d87313d38
+  idrisPrimOps184 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps246
+                   Idris.PrimOps.idrisPrimOps185) -}
+35abedfede2752a7e3b8d3c58fcbba80
+  idrisPrimOps185 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps186) -}
+6f625e5e909743ba7de916d3bb414e64
+  idrisPrimOps186 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps244
+                   Idris.PrimOps.idrisPrimOps187) -}
+08815f63215ebd4634ce71b185b24982
+  idrisPrimOps187 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps242
+                   Idris.PrimOps.idrisPrimOps188) -}
+c21f9dc52ca9dcf21b609f50f6ff143f
+  idrisPrimOps188 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps240
+                   Idris.PrimOps.idrisPrimOps189) -}
+79413b1a9c2cca28a17aaef5eb1ed92e
+  idrisPrimOps189 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps190) -}
+7ce54f25a088743b3e733496a2cf8f5f
+  idrisPrimOps19 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps360
+                   Idris.PrimOps.idrisPrimOps20) -}
+5a15aa2e6ddb4d0ceb1098291dcfd67b
+  idrisPrimOps190 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps238
+                   Idris.PrimOps.idrisPrimOps191) -}
+2c5bbb12a4dccd925956082f9a4cbccf
+  idrisPrimOps191 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps236
+                   Idris.PrimOps.idrisPrimOps192) -}
+469d1b1d356d24b4c79e24addfe2eee9
+  idrisPrimOps192 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps234
+                   Idris.PrimOps.idrisPrimOps193) -}
+646583e551104df2d52e7cb889625486
+  idrisPrimOps193 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps232
+                   Idris.PrimOps.idrisPrimOps194) -}
+1cb93a61a7ed93695bf7ef1a98d8fb49
+  idrisPrimOps194 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps195) -}
+ff815bcbaf6bfb9da8db88a9350d9e7d
+  idrisPrimOps195 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps230
+                   Idris.PrimOps.idrisPrimOps196) -}
+76927d403dc7a23a3423e30efe0d3e9b
+  idrisPrimOps196 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps228
+                   Idris.PrimOps.idrisPrimOps197) -}
+a6e30159cedb5c59031d4e6b3eb26dfa
+  idrisPrimOps197 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps198) -}
+2a671be576146376f65c3180e892332d
+  idrisPrimOps198 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps226
+                   Idris.PrimOps.idrisPrimOps199) -}
+77e4f0ef60389b57250f433761b952a4
+  idrisPrimOps199 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps224
+                   Idris.PrimOps.idrisPrimOps200) -}
+0d62bf5f8b32c01342774dc23c71eb40
+  idrisPrimOps2 :: [Grin.Syntax.Program]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Grin.Syntax.Program
+                   Grin.PrimOpsPrelude.primPrelude
+                   Idris.PrimOps.idrisPrimOps3) -}
+54eb4ecd6b764b0fc04953691c62d5d5
+  idrisPrimOps20 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps358
+                   Idris.PrimOps.idrisPrimOps21) -}
+d3531ac44b4b0fbff7edc83055af5745
+  idrisPrimOps200 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps201) -}
+431d010350fe3cbc57d220f472e7ae0b
+  idrisPrimOps201 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps222
+                   Idris.PrimOps.idrisPrimOps202) -}
+9e72cb7beb9ef439829d6e7ef2966506
+  idrisPrimOps202 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps220
+                   Idris.PrimOps.idrisPrimOps203) -}
+d47d35cfcfbfcb534dce248460a7e0ab
+  idrisPrimOps203 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps204) -}
+8d19095b18fb7655545506647ff801fb
+  idrisPrimOps204 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps218
+                   Idris.PrimOps.idrisPrimOps205) -}
+a6340a114923df7dd2894f128ad70e96
+  idrisPrimOps205 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps216
+                   Idris.PrimOps.idrisPrimOps206) -}
+127b3238d5a222c2816593c473d6333b
+  idrisPrimOps206 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps207) -}
+6e84eeea157b4d44404e1eb474590dca
+  idrisPrimOps207 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps214
+                   Idris.PrimOps.idrisPrimOps208) -}
+2acdcbcdf9ef409d482f63f4d6d26825
+  idrisPrimOps208 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps212
+                   Idris.PrimOps.idrisPrimOps209) -}
+a032d55c054369381d97f47bc2b1120c
+  idrisPrimOps209 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps210
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+92a3d7827d1bb8515d3c58295c3f6ffd
+  idrisPrimOps21 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps22) -}
+f58479c41bb8d5934474ec0eab7f7adb
+  idrisPrimOps210 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps211) -}
+49e191c29158a6e0f5811e185b05c8ca
+  idrisPrimOps211 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure ()"#) -}
+cad2346c5bbeed57f70e999a024449ca
+  idrisPrimOps212 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps213) -}
+4eba9490b881d25136eecc358d267acf
+  idrisPrimOps213 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  r <- \"idr_{runMain_0}\""#) -}
+b9f46d1394e5f341848e15386ad4e20a
+  idrisPrimOps214 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps215) -}
+c34abf050330b63b0fe486153ae44d67
+  idrisPrimOps215 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("grinMain ="#) -}
+989314b4e03cef4ac962cdbd50f67026
+  idrisPrimOps216 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps217) -}
+61ebff374eb24a50760611faaf613d63
+  idrisPrimOps217 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt 2)"#) -}
+3341740979d4c3597de24df923cb1b19
+  idrisPrimOps218 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps219) -}
+81ccecc6710e76c5a24e0d897d5b300e
+  idrisPrimOps219 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("prim__stderr ="#) -}
+ad015f56e8e6a10f0b88a84b00f6b285
+  idrisPrimOps22 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps502
+                   Idris.PrimOps.idrisPrimOps23) -}
+e5f0a8ff2dcf2bf856329a908efa4232
+  idrisPrimOps220 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps221) -}
+8903ea2e9590c44fde0d88ec6f895c4d
+  idrisPrimOps221 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt 1)"#) -}
+228c24e76e8391f6a22b17e124312edb
+  idrisPrimOps222 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps223) -}
+48752e88461fd3bbed0bbf18e5b9bcc7
+  idrisPrimOps223 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("prim__stdout ="#) -}
+c3fb6ce150c53b664bcd51a181d0c90c
+  idrisPrimOps224 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps225) -}
+15f1d78545e9252c7870e41e417ebfe6
+  idrisPrimOps225 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt 0)"#) -}
+95b56d413c40216f89cddde4fe3ae6c5
+  idrisPrimOps226 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps227) -}
+18b77eb148bc59af790710b1f4567b55
+  idrisPrimOps227 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("prim__stdin ="#) -}
+b468cf161df9da046c8cac205c447c7f
+  idrisPrimOps228 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps229) -}
+f964fcb8e74c4aea43d6372237869a09
+  idrisPrimOps229 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  _prim_error idris_error1"#) -}
+33ad3e4a9f1b2e83e6e73188c2353b2d
+  idrisPrimOps23 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps500
+                   Idris.PrimOps.idrisPrimOps24) -}
+45f0e673b60452fc30fb1ba7cffb5806
+  idrisPrimOps230 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps231) -}
+eba5e0afbbd5236d5d3e612b8a6e749e
+  idrisPrimOps231 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_error idris_error1 ="#) -}
+3c7b44d87279f25ad1b7b54653542c67
+  idrisPrimOps232 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps233) -}
+3079eed901f5424d4a5722c149cae9cf
+  idrisPrimOps233 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure () -- Maybe it needs another void like type?"#) -}
+6df09a8b7eadc782ba108b86a421bc7e
+  idrisPrimOps234 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps235) -}
+bb712e99cd04f7fcbee0efbb0c93a3e7
+  idrisPrimOps235 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  _prim_usleep idris_usleep1_0"#) -}
+67b62f4c3be403ce036d062e26a303e3
+  idrisPrimOps236 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps237) -}
+9e6c144f13045db0f29c7f5a319eb5d8
+  idrisPrimOps237 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_usleep1_0) <- fetch idris_usleep1"#) -}
+40dffa1f665a867d0812631b577f6f1c
+  idrisPrimOps238 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps239) -}
+173a13613d71adffc6cee951051f0dca
+  idrisPrimOps239 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_usleep idris_usleep1 ="#) -}
+5e252584e23d28f93a0893a8e08b9b46
+  idrisPrimOps24 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps498
+                   Idris.PrimOps.idrisPrimOps25) -}
+bb1026a477ea44338564d4491dfd743f
+  idrisPrimOps240 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps241) -}
+79ee6fa65b478bb52b2ae720e4087a2b
+  idrisPrimOps241 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_ch_int2)"#) -}
+0a9f320a0459fb63e016123bfdbbd47a
+  idrisPrimOps242 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps243) -}
+7edab1e16ac582b69d4baccbe7e8bffd
+  idrisPrimOps243 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_ch_int2) <- fetch idris_ch_int1"#) -}
+4df5cb00f3ad6996035856c09f34980c
+  idrisPrimOps244 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps245) -}
+ea5d25e88ed61db2ef9b91f6460daa5a
+  idrisPrimOps245 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_ch_int idris_ch_int1 ="#) -}
+3fe2f341e35962d01626f846aa4538e9
+  idrisPrimOps246 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps247) -}
+d545e89ffdb72e8be171b809cef06cd6
+  idrisPrimOps247 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_ls_ext3)"#) -}
+9c7fa81daade25e827ea7916dccde2e2
+  idrisPrimOps248 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps249) -}
+b34b2e260cea52cde82171eacbc090ee
+  idrisPrimOps249 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_ls_ext3 <- _prim_int_add idris_ls_ext2 0"#) -}
+63c85971ba179b16c93c58941a73bcfd
+  idrisPrimOps25 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps496
+                   Idris.PrimOps.idrisPrimOps26) -}
+c54ce8d297787aa3abce976523d2e8e7
+  idrisPrimOps250 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps251) -}
+47132fb520ed5777d55d78aeb9c7895a
+  idrisPrimOps251 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_ls_ext2) <- fetch idris_ls_ext1"#) -}
+6a86700bf338876635cdd9a3ea6250b5
+  idrisPrimOps252 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps253) -}
+44fa2c8869cb227d918e5c72d60e3917
+  idrisPrimOps253 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_ls_ext idris_ls_ext1 ="#) -}
+d6ccfe609f0d0a5931b80c8bf65b3daa
+  idrisPrimOps254 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps255) -}
+95f9d37a2596524759d11c6323f77fce
+  idrisPrimOps255 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_lz_ext3)"#) -}
+693a490f118ae9775cfa926c1eca5623
+  idrisPrimOps256 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps257) -}
+38027fc9dadf13a97f3a3e47b490ca21
+  idrisPrimOps257 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_lz_ext3 <- _prim_int_add idris_lz_ext2 0"#) -}
+d078ebc21384d2ad09551dffb2f26438
+  idrisPrimOps258 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps259) -}
+356591abebb8dc7ab2745d90c1eaaf41
+  idrisPrimOps259 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_lz_ext2) <- fetch idris_lz_ext1"#) -}
+a3a259b7cd307930420d63c4fbd5fb4e
+  idrisPrimOps26 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps494
+                   Idris.PrimOps.idrisPrimOps27) -}
+f2d2ce5eb79268599c045b7d8d4f3b17
+  idrisPrimOps260 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps261) -}
+764c4077a5ac89952d7b4305ccdef7e2
+  idrisPrimOps261 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_lz_ext idris_lz_ext1 ="#) -}
+b6c22bf663ef8ccc3418fc382501927f
+  idrisPrimOps262 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps263) -}
+e6eb44d0882728a3bd1881a2c9b3c0ac
+  idrisPrimOps263 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrInt idris_ffi_file_eof2)"#) -}
+1dc376221052f769534d7e2a6c47b850
+  idrisPrimOps264 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps265) -}
+df1dc527fdaf5a789204788968c12af0
+  idrisPrimOps265 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_ffi_file_eof2 <- _prim_ffi_file_eof idris_ffi_file_eof1_0"#) -}
+0693d99f8f5fb55fc42201740a65af2f
+  idrisPrimOps266 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps267) -}
+d97cdcb787c07f524843d9e691c2e1c6
+  idrisPrimOps267 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_ffi_file_eof1_0) <- fetch idris_ffi_file_eof1"#) -}
+0b5716623c8e27d3d145fceb49ff97ef
+  idrisPrimOps268 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps269) -}
+b87da6e9c0cf2786ab266aaf47a11a9a
+  idrisPrimOps269 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_ffi_file_eof idris_ffi_file_eof1 ="#) -}
+9f3cb92d444f3cb76a30dfd9c5f6c86d
+  idrisPrimOps27 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps346
+                   Idris.PrimOps.idrisPrimOps28) -}
+d31213b80b31ac49e11154a16d758447
+  idrisPrimOps270 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps271) -}
+883fafc11c146e830a50ae95e93d1a32
+  idrisPrimOps271 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_float_str2)"#) -}
+8ba086de994c3acd468042d75a3829b1
+  idrisPrimOps272 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps273) -}
+2b02fcbe6b04eb90dd0a78d3d48750d3
+  idrisPrimOps273 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_float_str2 <- _prim_float_string idris_float_str1_0"#) -}
+4eec33d460004d56fbf9e327a7e0589e
+  idrisPrimOps274 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps275) -}
+a8afd1b65beb76f6e221218c964a7f43
+  idrisPrimOps275 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_str1_0) <- fetch idris_float_str1"#) -}
+cd162e1ffc33b7a0122fa2d0db3829ac
+  idrisPrimOps276 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps277) -}
+7e71a7921bd2ad01dade394531f578d9
+  idrisPrimOps277 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_float_str idris_float_str1 ="#) -}
+759b4a81c0f1b9c2cd4b52a97da8603d
+  idrisPrimOps278 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps279) -}
+ab276f3b60ccc2f44f614e0617d80ee0
+  idrisPrimOps279 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrFloat idris_int_float2)"#) -}
+d919b154ba5b038de875cd6067bef597
+  idrisPrimOps28 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps344
+                   Idris.PrimOps.idrisPrimOps29) -}
+21620e9d6d50d70d24b38a410c0875bb
+  idrisPrimOps280 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps281) -}
+fe9d9cc0116e36dd62790349ef8032c8
+  idrisPrimOps281 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_float2 <- _prim_int_float idris_int_float1_0"#) -}
+5fbe0071de6096ae7e7c857797b1f238
+  idrisPrimOps282 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps283) -}
+ea1c9cfc64c0bbb36418254366559307
+  idrisPrimOps283 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_float1_0) <- fetch idris_int_float1"#) -}
+7a8e3c50bcd570e4f1476b542362ba2a
+  idrisPrimOps284 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps285) -}
+ebca48d0f7ef2dd680f802eb861e24a9
+  idrisPrimOps285 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_float idris_int_float1 ="#) -}
+3fb4bc6b18aee48d5147456e1ec31485
+  idrisPrimOps286 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps287) -}
+58882e00f49ff7e1b9d0fb82c050cf1f
+  idrisPrimOps287 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_str_int2)"#) -}
+d9ca566ea485338325089ff524ddc3cc
+  idrisPrimOps288 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps289) -}
+47f15ebe778b3644afe4d32c575ce08f
+  idrisPrimOps289 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_int2 <- _prim_str_int idris_str_int1_0"#) -}
+74007d36806c7fece03480751595b418
+  idrisPrimOps29 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps30) -}
+094d818728964980321470ec1e34f3f4
+  idrisPrimOps290 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps291) -}
+fbe3b59aa0a98839fd5c251ec898b741
+  idrisPrimOps291 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_int1_0) <- fetch idris_str_int1"#) -}
+6fe238c62d2c848edc04724a85056b33
+  idrisPrimOps292 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps293) -}
+4fab4972f5e157ee11976f5e202c2c19
+  idrisPrimOps293 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_str_int idris_str_int1 ="#) -}
+1acd9b7eb17c43e62fcbd00e90f527b0
+  idrisPrimOps294 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps295) -}
+1c338daa7251b18034a174a4c71aff7f
+  idrisPrimOps295 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_int_str2)"#) -}
+327925170590f636409e11b06f7b1094
+  idrisPrimOps296 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps297) -}
+87de50dee95199971209d321eff193fc
+  idrisPrimOps297 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_str2 <- _prim_int_str idris_int_str1_0"#) -}
+efefaae3ab0271a92a673bb1374e1fd3
+  idrisPrimOps298 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps299) -}
+ee93c0bb1e8e999097955ac3ad38a4aa
+  idrisPrimOps299 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_str1_0) <- fetch idris_int_str1"#) -}
+175f6658311af56dada576170b9140c7
+  idrisPrimOps3 :: [Grin.Syntax.Program]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Grin.Syntax.Program
+                   Idris.PrimOps.idrisPrimOps4
+                   (GHC.Types.[] @ Grin.Syntax.Program)) -}
+9a1988bbf8993de398ce0c56e23da207
+  idrisPrimOps30 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps492
+                   Idris.PrimOps.idrisPrimOps31) -}
+fea54d29c6af828daeba5d8cbde914c5
+  idrisPrimOps300 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps301) -}
+b17b47793ab32401ef7ba449a7bc99ce
+  idrisPrimOps301 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_int_str idris_int_str1 ="#) -}
+92cecdee0db4357d7f37fb72ff0adb30
+  idrisPrimOps302 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps303) -}
+f57b74e868b038b76c3de6c7951c57ad
+  idrisPrimOps303 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_str_cons3)"#) -}
+1934e013fe916dfcd79638496a95e0c8
+  idrisPrimOps304 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps305) -}
+c6f21ff54be73aae478b1314bb59406a
+  idrisPrimOps305 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_cons3 <- _prim_string_cons idris_str_cons1_0 idris_str_cons2_0"#) -}
+7a86f2559f043e76eaf4c68d131180ee
+  idrisPrimOps306 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps307) -}
+74728f449c4b811986f302a4fab1877f
+  idrisPrimOps307 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_cons2_0) <- fetch idris_str_cons2"#) -}
+3a538c3cac1ec1438fbd988d3af402f3
+  idrisPrimOps308 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps309) -}
+6b2bf7fcca4d3b732cb83e6a230b6d73
+  idrisPrimOps309 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_str_cons1_0)    <- fetch idris_str_cons1"#) -}
+e4b4be3699b621ebf894627a2eddd59b
+  idrisPrimOps31 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps490
+                   Idris.PrimOps.idrisPrimOps32) -}
+866553847c7e57f5570cc42d0bafc9be
+  idrisPrimOps310 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps311) -}
+6ad69a3ad02298978cecce9a94685a7f
+  idrisPrimOps311 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_str_cons idris_str_cons1 idris_str_cons2 ="#) -}
+4ace8072113182f8ebd5dae5e07cde16
+  idrisPrimOps312 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps313) -}
+bb3702d8265c7eeaf8d995e88b8c66c0
+  idrisPrimOps313 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_str_tail2)"#) -}
+9cdfbe8dedb3a66eab0919c6601285dc
+  idrisPrimOps314 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps315) -}
+a97dd4fc44b3a3bc56ceb0bf428ddf39
+  idrisPrimOps315 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_tail2 <- _prim_string_tail idris_str_tail1_0"#) -}
+389d7878312ae2e78cb965e47b64470f
+  idrisPrimOps316 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps317) -}
+6de547e43f6e1c1f6a993b31d4c835ad
+  idrisPrimOps317 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_tail1_0) <- fetch idris_str_tail1"#) -}
+4b2f6bb4da1df96548cb2fdc738cbd98
+  idrisPrimOps318 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps319) -}
+0f747f3648943152f434ff92e8e88e37
+  idrisPrimOps319 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_str_tail idris_str_tail1 ="#) -}
+cd8e164d17a3a6656ef0e1013e2e5195
+  idrisPrimOps32 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps488
+                   Idris.PrimOps.idrisPrimOps33) -}
+7ad1e707b0c62a02a1085059b9da4a4e
+  idrisPrimOps320 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps321) -}
+7c639f0225793a8d763499f45069e7fe
+  idrisPrimOps321 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_str_head2)"#) -}
+86085b5d6333ddcb16b0798f2b7f6515
+  idrisPrimOps322 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps323) -}
+075d9368cc162b485ab2eb3c872ff084
+  idrisPrimOps323 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_head2 <- _prim_string_head idris_str_head1_0"#) -}
+be933368d59023e2a870ecb9690fcfeb
+  idrisPrimOps324 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps325) -}
+84c0d69d7d1c8f719f2f5945c78227b8
+  idrisPrimOps325 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_head1_0) <- fetch idris_str_head1"#) -}
+f93644df5c4c8cc0ce88d57bfb6e55a5
+  idrisPrimOps326 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps327) -}
+e9f3e0f61ba7701dfbba3e3e6fa85400
+  idrisPrimOps327 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_str_head idris_str_head1 ="#) -}
+398d92271d08e96a51ab498f737b09e5
+  idrisPrimOps328 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps329) -}
+9f0c44e389902096cb5258ee3ac25502
+  idrisPrimOps329 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_str_rev2)"#) -}
+0f41952246405b64b840beabc5070855
+  idrisPrimOps33 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps486
+                   Idris.PrimOps.idrisPrimOps34) -}
+d8c475d4135dd9646886add876a3ce3c
+  idrisPrimOps330 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps331) -}
+08866b5919248795d09f86ada1eba702
+  idrisPrimOps331 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_rev2 <- _prim_string_reverse idris_str_rev1_0"#) -}
+54ab1677004013ba57c5df63ecadccfb
+  idrisPrimOps332 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps333) -}
+2deb773596b6a4c51c08ddb1d2d69ce4
+  idrisPrimOps333 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_rev1_0) <- fetch idris_str_rev1"#) -}
+005b07fed68dc0b739fb24e8e818ccdc
+  idrisPrimOps334 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps335) -}
+ae82874eb1ca03fd4f6dace1e54276b8
+  idrisPrimOps335 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_str_rev idris_str_rev1 ="#) -}
+f85b868e7b764178aab21cc5b29aa59d
+  idrisPrimOps336 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps337) -}
+ad467aef2da31c5fec59412fbc58b377
+  idrisPrimOps337 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_str_len3)"#) -}
+e1c404c859d407d711b320647d8ec3db
+  idrisPrimOps338 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps339) -}
+a642a55fa1d4f4e3e8cdb0a2dd568fa1
+  idrisPrimOps339 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_len3 <- _prim_string_len idris_str_len2"#) -}
+2e87cf3a176b0c9b471fa1d7cd7505c4
+  idrisPrimOps34 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps484
+                   Idris.PrimOps.idrisPrimOps35) -}
+f67b952996dd77d40a174c1926fcffbf
+  idrisPrimOps340 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps341) -}
+99a6ad4fd8ce16a50b06bd8791fda00c
+  idrisPrimOps341 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_len2) <- fetch idris_str_len1"#) -}
+dd43f7440f2a9507b381920a5a162bfc
+  idrisPrimOps342 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps343) -}
+abf7bcb23d4bcee1f49ecf1a98b6e5b2
+  idrisPrimOps343 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("idris_str_len idris_str_len1 ="#) -}
+4fa2517164fa734e1f2ec2d3cdf01f51
+  idrisPrimOps344 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps345) -}
+e08fbd750e1f2a2abe6e70ee277553e7
+  idrisPrimOps345 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("    #True  -> pure (CGrInt 1)"#) -}
+a7e31abe80e9231696f6d3737c6bbb21
+  idrisPrimOps346 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps347) -}
+62008c9c8283cb8d3bb15497c1e195ac
+  idrisPrimOps347 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("    #False -> pure (CGrInt 0)"#) -}
+529352fb8edf85c306bab16b54a57e82
+  idrisPrimOps348 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps349) -}
+194debe0e9ad390ca1e938c4c5b445e3
+  idrisPrimOps349 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_str_lt3 of"#) -}
+ce1755a99e13d652097a0d94d530c52c
+  idrisPrimOps35 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps360
+                   Idris.PrimOps.idrisPrimOps36) -}
+dac143530dddda9434e9cbe512740048
+  idrisPrimOps350 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps351) -}
+1bb06bd7871aac73141392149622c684
+  idrisPrimOps351 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_lt3 <- _prim_string_lt idris_str_lt1_0 idris_str_lt2_0"#) -}
+7a02bea62f593e1c8e5e9d4f30e84ea3
+  idrisPrimOps352 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps353) -}
+66d32fccb2137b386432d23f100134b3
+  idrisPrimOps353 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_lt2_0) <- fetch idris_str_lt2"#) -}
+247f7108926145741bdcabfe829548ca
+  idrisPrimOps354 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps355) -}
+3a4df823501e62bc99a72b821d4dcce6
+  idrisPrimOps355 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_lt1_0) <- fetch idris_str_lt1"#) -}
+0196cbf91f2c4369bf106be47d5d719b
+  idrisPrimOps356 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps357) -}
+6940b4835256727efa708a02ec486c96
+  idrisPrimOps357 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_str_lt idris_str_lt1 idris_str_lt2 ="#) -}
+06f51f42c16f6fa6941c8dc4e1c98977
+  idrisPrimOps358 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps359) -}
+947f576d00cbed12dc72ac38259d4e0d
+  idrisPrimOps359 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("    #True   -> pure (CGrInt 1)"#) -}
+47c6e568eff6d12786c2903f3cfa9ed0
+  idrisPrimOps36 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps358
+                   Idris.PrimOps.idrisPrimOps37) -}
+94564a591bbbb08dfb657368dde369cd
+  idrisPrimOps360 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps361) -}
+c23faf284ac42748ec5f57260506337f
+  idrisPrimOps361 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("    #False  -> pure (CGrInt 0)"#) -}
+2d8ecbda62a90c7ab5516ff965aebe32
+  idrisPrimOps362 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps363) -}
+1b34f1af07c3ba49f81bf165b49d49d2
+  idrisPrimOps363 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_str_eq3 of"#) -}
+328806467d33f4315c2d3e418c142250
+  idrisPrimOps364 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps365) -}
+bfbfcca5849a5e6ac06f7672edfad56b
+  idrisPrimOps365 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_eq3 <- _prim_string_eq idris_str_eq1_0 idris_str_eq2_0"#) -}
+e09bdff93f36f9e536ddfc6fea5d6b0f
+  idrisPrimOps366 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps367) -}
+bc1786b025d918134f96a990296a4e96
+  idrisPrimOps367 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_eq2_0) <- fetch idris_str_eq2"#) -}
+ba26e11595a4f74f97d6a933f3b20824
+  idrisPrimOps368 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps369) -}
+80c2c2fce0b3d6e66e485ec7174639a3
+  idrisPrimOps369 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_eq1_0) <- fetch idris_str_eq1"#) -}
+4ace66c03a7887d15af2ee17cb5d325d
+  idrisPrimOps37 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps38) -}
+6516a46d987d50c6fc0061164743b647
+  idrisPrimOps370 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps371) -}
+1e79702e3168ee457f03ca98edae48af
+  idrisPrimOps371 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_str_eq idris_str_eq1 idris_str_eq2 ="#) -}
+0139f383cf1f9d38aaae5f54396b3511
+  idrisPrimOps372 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps373) -}
+0b7cbd5a1d4448dd3494437bd457ea65
+  idrisPrimOps373 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_str_concat3)"#) -}
+726de421893a83bf28e55b1a734e420b
+  idrisPrimOps374 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps375) -}
+9312dac64e549571e7f46163dca33940
+  idrisPrimOps375 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_str_concat3 <- _prim_string_concat idris_str_concat1_0 idris_str_concat2_0"#) -}
+6f22d792418461d6abcce5f6bae9506e
+  idrisPrimOps376 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps377) -}
+9eab84f4053c3e4a9e0ab40ab55adc4a
+  idrisPrimOps377 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_concat2_0) <- fetch idris_str_concat2"#) -}
+d466955a05fee531af956d14dc76e100
+  idrisPrimOps378 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps379) -}
+06adc2332d3041078c30d1ff69a23925
+  idrisPrimOps379 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_str_concat1_0) <- fetch idris_str_concat1"#) -}
+3c0b0c0bc09687ce70fd03605defe2d2
+  idrisPrimOps38 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps482
+                   Idris.PrimOps.idrisPrimOps39) -}
+de875a6a31611302b9f8024e33e60bd2
+  idrisPrimOps380 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps381) -}
+795edc925b3b0335b650498a8acc88d6
+  idrisPrimOps381 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_str_concat idris_str_concat1 idris_str_concat2 ="#) -}
+b638c584603a9b50f0992f42ebe276d5
+  idrisPrimOps382 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps383) -}
+637c9c3ed78ef62d1978f933d4e93312
+  idrisPrimOps383 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrString idris_read_str1)"#) -}
+912494450256b0feec78f20fb32ab45a
+  idrisPrimOps384 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps385) -}
+39ee43b7cf129cc1b67b4f4472d0897d
+  idrisPrimOps385 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_read_str1 <- _prim_read_string"#) -}
+e3c964237ce55709789ab6eb79d0d256
+  idrisPrimOps386 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps387) -}
+44e76d21891069bcab9f7f6a8244481b
+  idrisPrimOps387 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  -- This parameter will be an int that addresses the stream..."#) -}
+aca254f5e46f76c1bc3f73288e29a1de
+  idrisPrimOps388 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps389) -}
+6e75040112377af790164937afddb910
+  idrisPrimOps389 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_read_str idris_read_str0 ="#) -}
+dcc540e3bdf7c5dbea5c375b25e232b9
+  idrisPrimOps39 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps480
+                   Idris.PrimOps.idrisPrimOps40) -}
+5e2041238a478db6f832dd3798783dd6
+  idrisPrimOps390 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps391) -}
+5e68d3eebd555abbe9909c14d768bc25
+  idrisPrimOps391 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CUnit)"#) -}
+d37253f0f180f30ebc73abed994f19da
+  idrisPrimOps392 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps393) -}
+53cc2c860ac6c13d1f3d3fb85f8aba59
+  idrisPrimOps393 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  _prim_string_print idris_write_str2_0"#) -}
+f44f6bc44b597b2bc8a7addd69c84ee5
+  idrisPrimOps394 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps395) -}
+0c466bf459a0c3afc0e5c17650d1fed9
+  idrisPrimOps395 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrString idris_write_str2_0) <- fetch idris_write_str2"#) -}
+427a428032cee1e87109a0669c483bc8
+  idrisPrimOps396 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps397) -}
+2e0083e2c4f87a03bf36c071697d5c26
+  idrisPrimOps397 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_write_str idris_write_str1 idris_write_str2 ="#) -}
+4208172d97e432cc695a8c2a316fd477
+  idrisPrimOps398 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps399) -}
+e68c6af6fe53a8fb3e4e2c7eaa859d8d
+  idrisPrimOps399 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrFloat idris_float_div2)"#) -}
+c0e99ae9980277b3102460c1f00365e6
+  idrisPrimOps4 :: Grin.Syntax.Exp
+  {- Unfolding: (Grin.Parse.AST.parseProg
+                   Idris.PrimOps.idrisPrimOps5) -}
+6c7c1fdbbcbfff45d2869220c01d68cc
+  idrisPrimOps40 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps478
+                   Idris.PrimOps.idrisPrimOps41) -}
+b3f28bb3e357a8c478b5ad3209dc9799
+  idrisPrimOps400 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps401) -}
+4a8aa486be2bc42aa48bdb75a93aab13
+  idrisPrimOps401 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_float_div2 <- _prim_float_div idris_float_div0_1 idris_float_div1_1"#) -}
+3b07f5e3b5486e028c985befcc6b0181
+  idrisPrimOps402 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps403) -}
+587286d4a02882040f139244a22a04de
+  idrisPrimOps403 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_div1_1) <- fetch idris_float_div1"#) -}
+51fc3a2113d0d4983c7f5296b91cba47
+  idrisPrimOps404 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps405) -}
+9d99ed7c1587110b7484b5eeeba4f700
+  idrisPrimOps405 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_div0_1) <- fetch idris_float_div0"#) -}
+219972284918b6c9ba303b03bd41272e
+  idrisPrimOps406 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps407) -}
+4fa298f2f1d72723d9cce16481798a2c
+  idrisPrimOps407 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_float_div idris_float_div0 idris_float_div1 ="#) -}
+1ce7f699410c1538985d7f38cd95fbee
+  idrisPrimOps408 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps409) -}
+aed1eda80ec83682da6fb724d829ee7b
+  idrisPrimOps409 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_int_div2)"#) -}
+9d0fb2950e4aaaebad91eafc67f2effb
+  idrisPrimOps41 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps476
+                   Idris.PrimOps.idrisPrimOps42) -}
+27597a4105408d25cd4dde4fd7a11ed5
+  idrisPrimOps410 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps411) -}
+13edb33b23d2842954bc6cce2eaf8e55
+  idrisPrimOps411 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_div2 <- _prim_int_div idris_int_div0_1 idris_int_div1_1"#) -}
+3cbc28af6262aef6bdeda6596a61a5c8
+  idrisPrimOps412 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps413) -}
+2c977cc602f4b9c96aa30e4fa3b59f6c
+  idrisPrimOps413 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_div1_1) <- fetch idris_int_div1"#) -}
+fc1fd04dd2ddda6653e66c56ea8b20cb
+  idrisPrimOps414 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps415) -}
+588ac1b548f75ed032fcd81aae2fd795
+  idrisPrimOps415 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_div0_1) <- fetch idris_int_div0"#) -}
+b6f4cb227a5929fda21ea59f4fcc3065
+  idrisPrimOps416 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps417) -}
+eba6eeee65d340c898c5eb8bff79cdec
+  idrisPrimOps417 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_div idris_int_div0 idris_int_div1 ="#) -}
+c5fa233de99348ad7ff4880c7d51e6a5
+  idrisPrimOps418 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps419) -}
+3e1379429c5215567db5cdbc02414897
+  idrisPrimOps419 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_int_mul2)"#) -}
+8e4c487692884da1af13591f27103fa7
+  idrisPrimOps42 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps474
+                   Idris.PrimOps.idrisPrimOps43) -}
+3bd57983f7ea67cfb6a9a206e13a18d2
+  idrisPrimOps420 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps421) -}
+b06bec5395e3eaf04153be9ce98cb617
+  idrisPrimOps421 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_mul2 <- _prim_int_mul idris_int_mul0_1 idris_int_mul1_1"#) -}
+a5c76fe66511ca4ad250b863b3fda2f0
+  idrisPrimOps422 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps423) -}
+7d83c88e3d54a103b5afcc56177c39e6
+  idrisPrimOps423 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_mul1_1) <- fetch idris_int_mul1"#) -}
+2d3eade09008c2b3ea9c65ce13d2f6a4
+  idrisPrimOps424 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps425) -}
+febec1deb94ec57aae818ac38b1f92a1
+  idrisPrimOps425 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_mul0_1) <- fetch idris_int_mul0"#) -}
+15c4291d117cbcc148bf9814ed7febd0
+  idrisPrimOps426 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps427) -}
+fd68fc5d4ae394ec64a7892dfbc302b9
+  idrisPrimOps427 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_mul idris_int_mul0 idris_int_mul1 ="#) -}
+eb1a3f1792af14bdff5634b2860383d4
+  idrisPrimOps428 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps429) -}
+09bd5c114c187f17500fa1d2ade7998a
+  idrisPrimOps429 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_int_sub2)"#) -}
+74c56e65c2091712f52af9fabbc74a48
+  idrisPrimOps43 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps346
+                   Idris.PrimOps.idrisPrimOps44) -}
+01a68ab24a760fee1285ffd0ec2b1fdc
+  idrisPrimOps430 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps431) -}
+a8867db3543960e74a8ce9b77972a948
+  idrisPrimOps431 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_sub2 <- _prim_int_sub idris_int_sub0_1 idris_int_sub1_1"#) -}
+ccf2b2a87f416ae51ff11169c0d1671b
+  idrisPrimOps432 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps433) -}
+0b695292b13700ae22985ba55d19514c
+  idrisPrimOps433 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_sub1_1) <- fetch idris_int_sub1"#) -}
+6564a10b2eea5c89909727fb0cdff317
+  idrisPrimOps434 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps435) -}
+26c880d5e6e654280fa4f09f66f203f6
+  idrisPrimOps435 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_sub0_1) <- fetch idris_int_sub0"#) -}
+7cd81d055ddd7d9fea9c04a1b74f2f98
+  idrisPrimOps436 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps437) -}
+1bbcce788b4b0dcae5163fc9a4ca3b90
+  idrisPrimOps437 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_sub idris_int_sub0 idris_int_sub1 ="#) -}
+b8b523eb4a529fff938815c2c834dcfe
+  idrisPrimOps438 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps439) -}
+010e8efccb40df41f0f01fde05be50ae
+  idrisPrimOps439 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  pure (CGrInt idris_int_add2)"#) -}
+a4ebb375f520adc7dabb202b18c078fe
+  idrisPrimOps44 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps344
+                   Idris.PrimOps.idrisPrimOps45) -}
+223fd488a1f8b8884eb6dd57e9b1972c
+  idrisPrimOps440 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps441) -}
+bfa13f1de95a5b6f89a85aa556be8d9d
+  idrisPrimOps441 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_add2 <- _prim_int_add idris_int_add0_1 idris_int_add1_1"#) -}
+88e4db2e6a4240e43d6857fb0d41e7ca
+  idrisPrimOps442 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps443) -}
+860b3fdf3058bdc4cbfd55900150667f
+  idrisPrimOps443 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_add1_1) <- fetch idris_int_add1"#) -}
+f6e2c02be3538526e4647aed67d7eb6e
+  idrisPrimOps444 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps445) -}
+9dabf3bbc9822d09a521217106ff73b4
+  idrisPrimOps445 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_add0_1) <- fetch idris_int_add0"#) -}
+6e7fbd246f93bf7fb5773918efece528
+  idrisPrimOps446 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps447) -}
+92a82b7a9604e248ccda9f336238015a
+  idrisPrimOps447 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_add idris_int_add0 idris_int_add1 ="#) -}
+bc0aff103f2ca1e9505ec2c392655e7f
+  idrisPrimOps448 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps449) -}
+ab0c82071345d4d6d7113c1ec9b16c85
+  idrisPrimOps449 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrFloat idris_float_mul3)"#) -}
+909066c9b6be11b2a56d492194ddbe50
+  idrisPrimOps45 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps46) -}
+34c8ee3f1f29c3f091f5a2354b0dfcbc
+  idrisPrimOps450 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps451) -}
+09127d2b901e14396bc909d8baf59279
+  idrisPrimOps451 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_float_mul3 <- _prim_float_mul idris_float_mul0_1 idris_float_mul1_1"#) -}
+53139d2732910a2aa95c66f956d0aabe
+  idrisPrimOps452 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps453) -}
+53977f8bb60dede234c42e182dff097c
+  idrisPrimOps453 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_mul1_1) <- fetch idris_float_mul1"#) -}
+9a72c6981843487c4c9c87f2db0b7d19
+  idrisPrimOps454 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps455) -}
+df06fd68a14e75fb263eea392dfad906
+  idrisPrimOps455 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_mul0_1) <- fetch idris_float_mul0"#) -}
+8edcd6618fa57e51266afc38d200f7a0
+  idrisPrimOps456 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps457) -}
+d119ba65bac432940c170cb492feeb86
+  idrisPrimOps457 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_float_mul idris_float_mul0 idris_float_mul1 ="#) -}
+91ea53e4b28ea8342008b3210ddb475f
+  idrisPrimOps458 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps459) -}
+08977f52179e215a044b4eba8916828e
+  idrisPrimOps459 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  pure (CGrFloat idris_float_add3)"#) -}
+38f4b311848b1fbedb671c5449401d7e
+  idrisPrimOps46 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps472
+                   Idris.PrimOps.idrisPrimOps47) -}
+05dd4b52802d2cab34a97f1d833352ea
+  idrisPrimOps460 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps461) -}
+d0ebb1dc46f73b65e7e32420052d1b10
+  idrisPrimOps461 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_float_add3 <- _prim_float_add idris_float_add0_1 idris_float_add1_1"#) -}
+6b2ee8ae00c9f13eee872341c8e4635b
+  idrisPrimOps462 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps463) -}
+67161934249aa3e3390827fec8ab3305
+  idrisPrimOps463 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_add1_1) <- fetch idris_float_add1"#) -}
+c7644659e850f0be2564d62400fbed42
+  idrisPrimOps464 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps465) -}
+16c21ef65b4211b17094edaf5bbeb1fb
+  idrisPrimOps465 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrFloat idris_float_add0_1) <- fetch idris_float_add0"#) -}
+673cb8a0fa60cd342b3262abd8b58f6a
+  idrisPrimOps466 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps467) -}
+409d6a2ec69e0873c9bc6d2289c87fcb
+  idrisPrimOps467 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_float_add idris_float_add0 idris_float_add1 ="#) -}
+782e61cd0cab06c5574e32f53c038178
+  idrisPrimOps468 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps469) -}
+a340c9540a8367cce3a26b21621805ac
+  idrisPrimOps469 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  _prim_int_print idris_int_print0_1"#) -}
+e4696df97db260932d4a56e60e0c109b
+  idrisPrimOps47 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps470
+                   Idris.PrimOps.idrisPrimOps48) -}
+b5cf59e02b31d68aecc51b94fcb42d10
+  idrisPrimOps470 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps471) -}
+70ad23ef11dba04a3c7506bd737c4325
+  idrisPrimOps471 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_print0_1) <- fetch idris_int_print0"#) -}
+fc579d8089a8353ff28c42391f723114
+  idrisPrimOps472 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps473) -}
+717796c467426c54fdc9803fd97a05e1
+  idrisPrimOps473 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_print idris_int_print0 ="#) -}
+8d619bbc2f3b3dbf075fbc57ec3a68c8
+  idrisPrimOps474 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps475) -}
+c0d54f0113e10387bb59d5c69fb11c31
+  idrisPrimOps475 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_int_ge2 of"#) -}
+8993f3400d7df1c1ca890c1d85062088
+  idrisPrimOps476 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps477) -}
+ea6b61ac77f5bc5c1e9753b8b767c714
+  idrisPrimOps477 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_ge2 <- _prim_int_ge idris_int_ge0_1 idris_int_ge1_1"#) -}
+76ef073cc225669029705e2521a6f2b2
+  idrisPrimOps478 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps479) -}
+e32217dad09cc358b56715521956eae4
+  idrisPrimOps479 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_ge1_1) <- fetch idris_int_ge1"#) -}
+e41499b973349c1ad0d1afd1bd0534bf
+  idrisPrimOps48 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps468
+                   Idris.PrimOps.idrisPrimOps49) -}
+a100dce22901a68e2ae0d5057b1cdd5e
+  idrisPrimOps480 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps481) -}
+6fa6f9b4a0288099d827bf50a7b918e2
+  idrisPrimOps481 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_ge0_1) <- fetch idris_int_ge0"#) -}
+eac737da99155a074d9896acae96df1f
+  idrisPrimOps482 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps483) -}
+445c147517810064e3172eae97f5cc54
+  idrisPrimOps483 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_ge idris_int_ge0 idris_int_ge1 ="#) -}
+f14f96aebbafe7d17e4af1fe670475bf
+  idrisPrimOps484 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps485) -}
+03fc0a2094c2e0df5cb55b02e9dbc8f6
+  idrisPrimOps485 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_int_gt2 of"#) -}
+491471fdb3bc062cc17e2af7d6c4a4b5
+  idrisPrimOps486 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps487) -}
+9307d2c4ba612242d05ff8c979129524
+  idrisPrimOps487 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_gt2 <- _prim_int_gt idris_int_gt0_1 idris_int_gt1_1"#) -}
+afbb9c279daff99193c5a2ad2e4b0738
+  idrisPrimOps488 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps489) -}
+c69701024a5aec0280b202b469aead8a
+  idrisPrimOps489 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_gt1_1) <- fetch idris_int_gt1"#) -}
+53f4aa70dc2bb73dd7b067451ddccb48
+  idrisPrimOps49 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps390
+                   Idris.PrimOps.idrisPrimOps50) -}
+6a637d2f1772cb25378ef74da33ece7b
+  idrisPrimOps490 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps491) -}
+5f30dfbfabb43bbe119ca6d13eb7b8d7
+  idrisPrimOps491 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_gt0_1) <- fetch idris_int_gt0"#) -}
+07337dd9fbc67db5e56aba7a33d07272
+  idrisPrimOps492 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps493) -}
+2013e83e704e4d9a57fa0f66fb919635
+  idrisPrimOps493 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_gt idris_int_gt0 idris_int_gt1 ="#) -}
+a63174c7b8a941b5a2b71e9bc54666c6
+  idrisPrimOps494 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps495) -}
+350518ad408586c229700d6435b5c3f8
+  idrisPrimOps495 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_int_le2 of"#) -}
+ef5858a7d4012567049a8368b3542bdb
+  idrisPrimOps496 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps497) -}
+b27519c2764ea59607d14250d14d3c2f
+  idrisPrimOps497 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_le2 <- _prim_int_le idris_int_le0_1 idris_int_le1_1"#) -}
+bb670c24e4ad9b346e07ddba27a72ab8
+  idrisPrimOps498 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps499) -}
+57ee46a5a09066948e53ade3b8bb605f
+  idrisPrimOps499 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_le1_1) <- fetch idris_int_le1"#) -}
+b16c818b9212c4e24dc7a5b97753b9e6
+  idrisPrimOps5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.concat
+                   (GHC.Base.map
+                      @ Data.Text.Internal.Text
+                      @ Data.Text.Internal.Text
+                      Idris.PrimOps.idrisPrimOps524
+                      Idris.PrimOps.idrisPrimOps6)) -}
+bcf4ea706a11812426f15d9e5fb5345b
+  idrisPrimOps50 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps51) -}
+f7d941c0d447c5a3ae172093e01a41d6
+  idrisPrimOps500 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps501) -}
+a056a713de025070a28bcf2645c8229f
+  idrisPrimOps501 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_le0_1) <- fetch idris_int_le0"#) -}
+5410ff7c46f2dec6b50fbd23eda41d1b
+  idrisPrimOps502 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps503) -}
+03112440482db4f944e5e01a63557d4a
+  idrisPrimOps503 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_le idris_int_le0 idris_int_le1 ="#) -}
+6e6b389c44ab261577172da62015f322
+  idrisPrimOps504 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps505) -}
+9debd5831773fd516c508b72ce5f595f
+  idrisPrimOps505 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_int_lt2 of"#) -}
+1f8064f7fa04c1f087bf8362c59d0766
+  idrisPrimOps506 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps507) -}
+12040c2e397b93623c1e31d7fdeab375
+  idrisPrimOps507 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_lt2 <- _prim_int_lt idris_int_lt0_1 idris_int_lt1_1"#) -}
+ddedd754f0089c70e0ab48e5f5645c8a
+  idrisPrimOps508 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps509) -}
+40dd30e36985e053edd03bd867523413
+  idrisPrimOps509 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_lt1_1) <- fetch idris_int_lt1"#) -}
+3b9c34b24c1bc00c956504891572fcb1
+  idrisPrimOps51 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps466
+                   Idris.PrimOps.idrisPrimOps52) -}
+70b8db920960d0548a0fc109911f7ce3
+  idrisPrimOps510 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps511) -}
+cc4b210397f68d3220c65897b6ad3d6e
+  idrisPrimOps511 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_lt0_1) <- fetch idris_int_lt0"#) -}
+efa011d7f411ff4a555fd8f45c6dbdb5
+  idrisPrimOps512 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps513) -}
+6805c30fa72ac569e157462e121c311f
+  idrisPrimOps513 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_lt idris_int_lt0 idris_int_lt1 ="#) -}
+97ce431c0ff42830e3df745c3248e180
+  idrisPrimOps514 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps515) -}
+d702ae8047f1c93924422c703199204d
+  idrisPrimOps515 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("  case idris_int_eq2 of"#) -}
+f7b9aab283037a5f549262234229e955
+  idrisPrimOps516 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps517) -}
+ccc00e3e6083b9def7de17b11992ba33
+  idrisPrimOps517 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  idris_int_eq2 <- _prim_int_eq idris_int_eq0_1 idris_int_eq1_1"#) -}
+29a86ab5f7480bdb86f421717fd8850c
+  idrisPrimOps518 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps519) -}
+3330d8ec3efc20122fcf8a2ab23add96
+  idrisPrimOps519 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_eq1_1) <- fetch idris_int_eq1"#) -}
+c9d8e6431c47d4e930d8563a2cb68572
+  idrisPrimOps52 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps464
+                   Idris.PrimOps.idrisPrimOps53) -}
+e04f70833dc50ca3bcadd14f49376101
+  idrisPrimOps520 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps521) -}
+a23d3331190abe340bf2bdf146a35ce1
+  idrisPrimOps521 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("  (CGrInt idris_int_eq0_1) <- fetch idris_int_eq0"#) -}
+59f1b30f0fe3344be5575e9c895ac2c3
+  idrisPrimOps522 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Idris.PrimOps.idrisPrimOps523) -}
+745eaceafe860c4d5ad4e46c9d8b1491
+  idrisPrimOps523 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("idris_int_eq idris_int_eq0 idris_int_eq1 ="#) -}
+371a4a11b2f9e4003287af4a5330619a
+  idrisPrimOps524 ::
+    Data.Text.Internal.Text -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(LSS),1*U(U,U,U)> -}
+005de3eb486fa907ef292e125de8b214
+  idrisPrimOps525 :: [Grin.Syntax.External]
+  {- Unfolding: (case Idris.PrimOps.idrisPrimOps_ds of wild { (,) exts defs ->
+                 Grin.Grin.concatPrograms_go1 exts }) -}
+da173448f8c8128b3179f682a3edda86
+  idrisPrimOps53 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps462
+                   Idris.PrimOps.idrisPrimOps54) -}
+584ad14fadb84330b161dc08cb8c2626
+  idrisPrimOps54 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps460
+                   Idris.PrimOps.idrisPrimOps55) -}
+29cb9599d870ac68d1bfd99341e44c9a
+  idrisPrimOps55 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps458
+                   Idris.PrimOps.idrisPrimOps56) -}
+9d28232c46f78c1c81f2b5a2c284e0d5
+  idrisPrimOps56 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps57) -}
+38f9e1a575154918b35472b51332302d
+  idrisPrimOps57 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps456
+                   Idris.PrimOps.idrisPrimOps58) -}
+00338b709e4eb02eb467e0cf1269dde3
+  idrisPrimOps58 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps454
+                   Idris.PrimOps.idrisPrimOps59) -}
+ff3af248dae2e59da077114e83e35079
+  idrisPrimOps59 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps452
+                   Idris.PrimOps.idrisPrimOps60) -}
+e889c9144d5025d72234758c75ebd3d3
+  idrisPrimOps6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps522
+                   Idris.PrimOps.idrisPrimOps7) -}
+d25a24bc37a4371b01b98ae75ed39fdf
+  idrisPrimOps60 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps450
+                   Idris.PrimOps.idrisPrimOps61) -}
+ada38cb753559be58f425bb589e90b0e
+  idrisPrimOps61 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps448
+                   Idris.PrimOps.idrisPrimOps62) -}
+540a876dae850a3b3fc60d9a4f976cec
+  idrisPrimOps62 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps63) -}
+ae2f42162ca9294bd9d384b100ca9f33
+  idrisPrimOps63 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps446
+                   Idris.PrimOps.idrisPrimOps64) -}
+847637ae9f4d3bd60a6c171085b5a776
+  idrisPrimOps64 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps444
+                   Idris.PrimOps.idrisPrimOps65) -}
+30baa6c95d4454aee52b6cbd796dbe93
+  idrisPrimOps65 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps442
+                   Idris.PrimOps.idrisPrimOps66) -}
+4869be3fa2551c3525d0a7bfd3f6dbea
+  idrisPrimOps66 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps440
+                   Idris.PrimOps.idrisPrimOps67) -}
+9ead37f9085ab5779635308fd351e80a
+  idrisPrimOps67 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps438
+                   Idris.PrimOps.idrisPrimOps68) -}
+cb175ee7f36224c02ce7cc2a2959a73c
+  idrisPrimOps68 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps69) -}
+a57bb698322a146e23d4056861863b22
+  idrisPrimOps69 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps436
+                   Idris.PrimOps.idrisPrimOps70) -}
+43299166b9d1239cf6637c40e5352dbc
+  idrisPrimOps7 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps520
+                   Idris.PrimOps.idrisPrimOps8) -}
+0a0bda874c6bd6283f6953533d37e2ba
+  idrisPrimOps70 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps434
+                   Idris.PrimOps.idrisPrimOps71) -}
+62083acb2409c45c026244c775fc6205
+  idrisPrimOps71 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps432
+                   Idris.PrimOps.idrisPrimOps72) -}
+914e860e976cc23d5079cebbb305470e
+  idrisPrimOps72 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps430
+                   Idris.PrimOps.idrisPrimOps73) -}
+98193fe50e37c055164a2627e24fc3d1
+  idrisPrimOps73 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps428
+                   Idris.PrimOps.idrisPrimOps74) -}
+b5645de7d9bdde24c7b00cc4570613e5
+  idrisPrimOps74 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps75) -}
+a8ad1bf5eb6af4e11014b8eb306dfd38
+  idrisPrimOps75 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps426
+                   Idris.PrimOps.idrisPrimOps76) -}
+6ce3e0857bad779fa886d9a95991491d
+  idrisPrimOps76 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps424
+                   Idris.PrimOps.idrisPrimOps77) -}
+5387110476435f802f2589281a016c1a
+  idrisPrimOps77 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps422
+                   Idris.PrimOps.idrisPrimOps78) -}
+18c3ba70871cd35d8962d3595dcfbdaf
+  idrisPrimOps78 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps420
+                   Idris.PrimOps.idrisPrimOps79) -}
+abcf6e4c308429a3b4dd068d0b530323
+  idrisPrimOps79 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps418
+                   Idris.PrimOps.idrisPrimOps80) -}
+9dfc5798e13fd0c6fd5e4a432145b091
+  idrisPrimOps8 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps518
+                   Idris.PrimOps.idrisPrimOps9) -}
+f8a5039c8e32163b6bd000e51bdbd931
+  idrisPrimOps80 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps81) -}
+471b732b3903ca061121c91162d077dc
+  idrisPrimOps81 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps416
+                   Idris.PrimOps.idrisPrimOps82) -}
+b1e9e469179a3c5d1ca8e8545dcb94a5
+  idrisPrimOps82 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps414
+                   Idris.PrimOps.idrisPrimOps83) -}
+22e648fb4331ea510b922954fafc0df8
+  idrisPrimOps83 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps412
+                   Idris.PrimOps.idrisPrimOps84) -}
+d8570995962303a82462049b3a83117e
+  idrisPrimOps84 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps410
+                   Idris.PrimOps.idrisPrimOps85) -}
+e3cb14449f041fd6115de9305cf0c6dd
+  idrisPrimOps85 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps408
+                   Idris.PrimOps.idrisPrimOps86) -}
+ca513aa7c93e219e61c0e89e8a9ddc76
+  idrisPrimOps86 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps87) -}
+82fe133154bb8bd1ca485df9d8a6acf8
+  idrisPrimOps87 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps406
+                   Idris.PrimOps.idrisPrimOps88) -}
+a59abb0d5b3859e7b9303af34143183d
+  idrisPrimOps88 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps404
+                   Idris.PrimOps.idrisPrimOps89) -}
+2f21ac72ac9cdce33b139af470f89299
+  idrisPrimOps89 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps402
+                   Idris.PrimOps.idrisPrimOps90) -}
+b87c01f1893a965b7214ad9a47012f82
+  idrisPrimOps9 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps516
+                   Idris.PrimOps.idrisPrimOps10) -}
+83468ff7d070fe82f39d12e27d9e9aa5
+  idrisPrimOps90 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps400
+                   Idris.PrimOps.idrisPrimOps91) -}
+b0585eedb5f37f327e3f4f14f7a3bd15
+  idrisPrimOps91 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps398
+                   Idris.PrimOps.idrisPrimOps92) -}
+e0170e2fe2c489dd82b3d0342bf70ca9
+  idrisPrimOps92 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps93) -}
+0a51ef2a10c9abf43198671a1e62b5cd
+  idrisPrimOps93 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps396
+                   Idris.PrimOps.idrisPrimOps94) -}
+a6daffba08ec672cd08306c4652b144a
+  idrisPrimOps94 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps394
+                   Idris.PrimOps.idrisPrimOps95) -}
+49277e9a88416326c31b3f1b2a7c6ff0
+  idrisPrimOps95 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps392
+                   Idris.PrimOps.idrisPrimOps96) -}
+975c9ac6f96c9248a717ba1a606158c7
+  idrisPrimOps96 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps390
+                   Idris.PrimOps.idrisPrimOps97) -}
+46268282a9e6911a0ee43dbe6edf41fd
+  idrisPrimOps97 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Data.Text.Internal.empty
+                   Idris.PrimOps.idrisPrimOps98) -}
+e41949d11f2ee697d7812b32bdf8a73a
+  idrisPrimOps98 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps388
+                   Idris.PrimOps.idrisPrimOps99) -}
+deb5592b9642dccaf89c5a1ea5ca987d
+  idrisPrimOps99 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Idris.PrimOps.idrisPrimOps386
+                   Idris.PrimOps.idrisPrimOps100) -}
+e619a3780a322f83bc62ded8388e81d6
+  idrisPrimOps_ds :: ([[Grin.Syntax.External]], [[Grin.Syntax.Def]])
+  {- Unfolding: (Grin.Grin.concatPrograms_go2
+                   Idris.PrimOps.idrisPrimOps2) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

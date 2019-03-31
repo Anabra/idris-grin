@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>IdrisDoc: Network.Socket</title><link type="text/css" rel="stylesheet" href="../styles.css"></head><body class="namespace"><div class="wrapper"><header><strong>IdrisDoc</strong>: Network.Socket<nav><a href="../index.html">Index</a></nav></header><div class="container"><h1>Network.Socket</h1><p>Low-Level C Sockets bindings for Idris. Used by higher-level, cleverer things.</p>
+<p>Original (C) SimonJF, MIT Licensed, 2014<br />
+Modified (C) The Idris Community, 2015, 2016</p>
+<dl class="decls"><dt id="Network.Socket.accept"><span class="name function" title="Network.Socket.accept">accept</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The socket used to establish connection.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">(</a><a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<a class="type" title="Network.Socket.Data.SocketAddress" href="Network.Socket.Data.html#Network.Socket.Data.SocketAddress">SocketAddress</a><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">)</a>)</span></dt><dd><p>Accept a connection on the provided socket.</p>
+<p>Returns on failure a <code>SocketError</code><br />
+Returns on success a pairing of:</p>
+<ul>
+<li><code>Socket</code> :: The socket representing the connection.</li>
+<li><code>SocketAddress</code> :: The</li>
+</ul>
+<dl><dt>sock</dt><dd><p>The socket used to establish connection.</p>
+</dd></dl></dd><dt id="Network.Socket.bind"><span class="name function" title="Network.Socket.bind">bind</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+(<span class="boundvar" title="">addr</span> : <a class="type" title="Prelude.Maybe.Maybe" href="Prelude.Maybe.html#Prelude.Maybe.Maybe">Maybe</a> <a class="type" title="Network.Socket.Data.SocketAddress" href="Network.Socket.Data.html#Network.Socket.Data.SocketAddress">SocketAddress</a>) ->
+(<span class="boundvar" title="">port</span> : <a class="function" title="Network.Socket.Data.Port" href="Network.Socket.Data.html#Network.Socket.Data.Port">Port</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <span class="type" title="Int">Int</span></span></dt><dd><p>Binds a socket to the given socket address and port.<br />
+Returns 0 on success, an error code otherwise.</p>
+</dd><dt id="Network.Socket.close"><span class="name function" title="Network.Socket.close">close</span><span class="word">&nbsp;:&nbsp;</span><span class="signature"><a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a> ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="type" title="Unit" href="[builtins].html#Unit">()</a></span></dt><dd><p>Close a socket</p>
+</dd><dt id="Network.Socket.connect"><span class="name function" title="Network.Socket.connect">connect</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+(<span class="boundvar" title="">addr</span> : <a class="type" title="Network.Socket.Data.SocketAddress" href="Network.Socket.Data.html#Network.Socket.Data.SocketAddress">SocketAddress</a>) ->
+(<span class="boundvar" title="">port</span> : <a class="function" title="Network.Socket.Data.Port" href="Network.Socket.Data.html#Network.Socket.Data.Port">Port</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <a class="function" title="Network.Socket.Data.ResultCode" href="Network.Socket.Data.html#Network.Socket.Data.ResultCode">ResultCode</a></span></dt><dd><p>Connects to a given address and port.<br />
+Returns 0 on success, and an error number on error.</p>
+</dd><dt id="Network.Socket.listen"><span class="name function" title="Network.Socket.listen">listen</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The socket to listen on.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> <span class="type" title="Int">Int</span></span></dt><dd><p>Listens on a bound socket.</p>
+<dl><dt>sock</dt><dd><p>The socket to listen on.</p>
+</dd></dl></dd><dt id="Network.Socket.recv"><span class="name function" title="Network.Socket.recv">recv</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The socket on which to receive the message.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+(<span class="documented boundvar" title="How much of the data to receive.">len</span> : <a class="function" title="Network.Socket.Data.ByteLength" href="Network.Socket.Data.html#Network.Socket.Data.ByteLength">ByteLength</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">(</a><span class="type" title="String">String</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<a class="function" title="Network.Socket.Data.ResultCode" href="Network.Socket.Data.html#Network.Socket.Data.ResultCode">ResultCode</a><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">)</a>)</span></dt><dd><p>Receive data on the specified socket.</p>
+<p>Returns on failure a <code>SocketError</code><br />
+Returns on success a pairing of:</p>
+<ul>
+<li><code>String</code> :: The payload.</li>
+<li><code>ResultCode</code> :: The result of the underlying function.</li>
+</ul>
+<dl><dt>sock</dt><dd><p>The socket on which to receive the message.</p>
+</dd><dt>len</dt><dd><p>How much of the data to receive.</p>
+</dd></dl></dd><dt id="Network.Socket.recvAll"><span class="name function" title="Network.Socket.recvAll">recvAll</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The socket on which to receive the message.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<span class="type" title="String">String</span>)</span></dt><dd><p>Receive all the remaining data on the specified socket.</p>
+<p>Returns on failure a <code>SocketError</code><br />
+Returns on success the payload <code>String</code></p>
+<dl><dt>sock</dt><dd><p>The socket on which to receive the message.</p>
+</dd></dl></dd><dt id="Network.Socket.recvFrom"><span class="name function" title="Network.Socket.recvFrom">recvFrom</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The channel on which to receive.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+(<span class="documented boundvar" title="Size of the expected message.">len</span> : <a class="function" title="Network.Socket.Data.ByteLength" href="Network.Socket.Data.html#Network.Socket.Data.ByteLength">ByteLength</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">(</a><a class="type" title="Network.Socket.Data.UDPAddrInfo" href="Network.Socket.Data.html#Network.Socket.Data.UDPAddrInfo">UDPAddrInfo</a><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<span class="type" title="String">String</span><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">,</a>
+<a class="function" title="Network.Socket.Data.ResultCode" href="Network.Socket.Data.html#Network.Socket.Data.ResultCode">ResultCode</a><a class="type" title="Builtins.Pair" href="Builtins.html#Builtins.Pair">)</a>)</span></dt><dd><p>Receive a message.</p>
+<p>Returns on failure a <code>SocketError</code>.<br />
+Returns on success a triple of</p>
+<ul>
+<li><code>UDPAddrInfo</code> :: The address of the sender.</li>
+<li><code>String</code> :: The payload.</li>
+<li><code>Int</code> :: Result value from underlying function.</li>
+</ul>
+<dl><dt>sock</dt><dd><p>The channel on which to receive.</p>
+</dd><dt>len</dt><dd><p>Size of the expected message.</p>
+</dd></dl></dd><dt id="Network.Socket.send"><span class="name function" title="Network.Socket.send">send</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The socket on which to send the message.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+(<span class="documented boundvar" title="The data to send.">msg</span> : <span class="type" title="String">String</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<a class="function" title="Network.Socket.Data.ResultCode" href="Network.Socket.Data.html#Network.Socket.Data.ResultCode">ResultCode</a>)</span></dt><dd><p>Send data on the specified socket.</p>
+<p>Returns on failure a <code>SocketError</code>.<br />
+Returns on success the <code>ResultCode</code>.</p>
+<dl><dt>sock</dt><dd><p>The socket on which to send the message.</p>
+</dd><dt>msg</dt><dd><p>The data to send.</p>
+</dd></dl></dd><dt id="Network.Socket.sendTo"><span class="name function" title="Network.Socket.sendTo">sendTo</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="documented boundvar" title="The socket on which to send the message.">sock</span> : <a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>) ->
+(<span class="documented boundvar" title="Address of the recipient.">addr</span> : <a class="type" title="Network.Socket.Data.SocketAddress" href="Network.Socket.Data.html#Network.Socket.Data.SocketAddress">SocketAddress</a>) ->
+(<span class="documented boundvar" title="The port on which to send the message.">port</span> : <a class="function" title="Network.Socket.Data.Port" href="Network.Socket.Data.html#Network.Socket.Data.Port">Port</a>) ->
+(<span class="documented boundvar" title="The message to send.">msg</span> : <span class="type" title="String">String</span>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<a class="function" title="Network.Socket.Data.ByteLength" href="Network.Socket.Data.html#Network.Socket.Data.ByteLength">ByteLength</a>)</span></dt><dd><p>Send a message.</p>
+<p>Returns on failure a <code>SocketError</code><br />
+Returns on success the <code>ResultCode</code></p>
+<dl><dt>sock</dt><dd><p>The socket on which to send the message.</p>
+</dd><dt>addr</dt><dd><p>Address of the recipient.</p>
+</dd><dt>port</dt><dd><p>The port on which to send the message.</p>
+</dd><dt>msg</dt><dd><p>The message to send.</p>
+</dd></dl></dd><dt id="Network.Socket.socket"><span class="name function" title="Network.Socket.socket">socket</span><span class="word">&nbsp;:&nbsp;</span><span class="signature">(<span class="boundvar" title="">fam</span> : <a class="type" title="Network.Socket.Data.SocketFamily" href="Network.Socket.Data.html#Network.Socket.Data.SocketFamily">SocketFamily</a>) ->
+(<span class="boundvar" title="">ty</span> : <a class="type" title="Network.Socket.Data.SocketType" href="Network.Socket.Data.html#Network.Socket.Data.SocketType">SocketType</a>) ->
+(<span class="boundvar" title="">pnum</span> : <a class="function" title="Network.Socket.Data.ProtocolNumber" href="Network.Socket.Data.html#Network.Socket.Data.ProtocolNumber">ProtocolNumber</a>) ->
+<a class="function" title="IO" href="[builtins].html#IO">IO</a> (<a class="type" title="Prelude.Either.Either" href="Prelude.Either.html#Prelude.Either.Either">Either</a> <a class="function" title="Network.Socket.Data.SocketError" href="Network.Socket.Data.html#Network.Socket.Data.SocketError">SocketError</a>
+<a class="type" title="Network.Socket.Data.Socket" href="Network.Socket.Data.html#Network.Socket.Data.Socket">Socket</a>)</span></dt><dd><p>Creates a UNIX socket with the given family, socket type and protocol<br />
+number. Returns either a socket or an error.</p>
+</dd></dl></div></div><footer>Produced by IdrisDoc version 1.0</footer></body></html>

@@ -1,0 +1,203 @@
+primop effectful
+  _prim_int_print :: T_Int64 -> T_Unit
+  _prim_string_print :: T_String -> T_Unit
+  _prim_read_string :: T_String
+  _prim_usleep :: T_Int64 -> T_Unit
+  _prim_error :: T_String -> T_Unit
+  _prim_ffi_file_eof :: T_Int64 -> T_Int64
+  
+primop pure
+  _prim_string_concat :: T_String -> T_String -> T_String
+  _prim_string_reverse :: T_String -> T_String
+  _prim_string_lt :: T_String -> T_String -> T_Bool
+  _prim_string_eq :: T_String -> T_String -> T_Bool
+  _prim_string_head :: T_String -> T_Int64
+  _prim_string_tail :: T_String -> T_String
+  _prim_string_cons :: T_Int64 -> T_String -> T_String
+  _prim_string_len :: T_String -> T_Int64
+  _prim_int_str :: T_Int64 -> T_String
+  _prim_str_int :: T_String -> T_Int64
+  _prim_int_float :: T_Int64 -> T_Float
+  _prim_float_string :: T_Float -> T_String
+  _prim_char_int :: T_Char -> T_Int64
+  _prim_int_add :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_sub :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_mul :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_div :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_eq :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_ne :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_gt :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_ge :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_lt :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_le :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_word_add :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_sub :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_mul :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_div :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_eq :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_ne :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_gt :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_ge :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_lt :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_le :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_float_add :: T_Float -> T_Float -> T_Float
+  _prim_float_sub :: T_Float -> T_Float -> T_Float
+  _prim_float_mul :: T_Float -> T_Float -> T_Float
+  _prim_float_div :: T_Float -> T_Float -> T_Float
+  _prim_float_eq :: T_Float -> T_Float -> T_Bool
+  _prim_float_ne :: T_Float -> T_Float -> T_Bool
+  _prim_float_gt :: T_Float -> T_Float -> T_Bool
+  _prim_float_ge :: T_Float -> T_Float -> T_Bool
+  _prim_float_lt :: T_Float -> T_Float -> T_Bool
+  _prim_float_le :: T_Float -> T_Float -> T_Bool
+  _prim_bool_eq :: T_Bool -> T_Bool -> T_Bool
+  _prim_bool_ne :: T_Bool -> T_Bool -> T_Bool
+  
+primop effectful
+  _prim_int_print :: T_Int64 -> T_Unit
+  _prim_string_print :: T_String -> T_Unit
+  _prim_read_string :: T_String
+  _prim_usleep :: T_Int64 -> T_Unit
+  _prim_error :: T_String -> T_Unit
+  _prim_ffi_file_eof :: T_Int64 -> T_Int64
+  
+primop pure
+  _prim_string_concat :: T_String -> T_String -> T_String
+  _prim_string_reverse :: T_String -> T_String
+  _prim_string_lt :: T_String -> T_String -> T_Bool
+  _prim_string_eq :: T_String -> T_String -> T_Bool
+  _prim_string_head :: T_String -> T_Int64
+  _prim_string_tail :: T_String -> T_String
+  _prim_string_cons :: T_Int64 -> T_String -> T_String
+  _prim_string_len :: T_String -> T_Int64
+  _prim_int_str :: T_Int64 -> T_String
+  _prim_str_int :: T_String -> T_Int64
+  _prim_int_float :: T_Int64 -> T_Float
+  _prim_float_string :: T_Float -> T_String
+  _prim_char_int :: T_Char -> T_Int64
+  _prim_int_add :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_sub :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_mul :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_div :: T_Int64 -> T_Int64 -> T_Int64
+  _prim_int_eq :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_ne :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_gt :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_ge :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_lt :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_int_le :: T_Int64 -> T_Int64 -> T_Bool
+  _prim_word_add :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_sub :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_mul :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_div :: T_Word64 -> T_Word64 -> T_Word64
+  _prim_word_eq :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_ne :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_gt :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_ge :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_lt :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_word_le :: T_Word64 -> T_Word64 -> T_Bool
+  _prim_float_add :: T_Float -> T_Float -> T_Float
+  _prim_float_sub :: T_Float -> T_Float -> T_Float
+  _prim_float_mul :: T_Float -> T_Float -> T_Float
+  _prim_float_div :: T_Float -> T_Float -> T_Float
+  _prim_float_eq :: T_Float -> T_Float -> T_Bool
+  _prim_float_ne :: T_Float -> T_Float -> T_Bool
+  _prim_float_gt :: T_Float -> T_Float -> T_Bool
+  _prim_float_ge :: T_Float -> T_Float -> T_Bool
+  _prim_float_lt :: T_Float -> T_Float -> T_Bool
+  _prim_float_le :: T_Float -> T_Float -> T_Bool
+  _prim_bool_eq :: T_Bool -> T_Bool -> T_Bool
+  _prim_bool_ne :: T_Bool -> T_Bool -> T_Bool
+  
+grinMain =
+  "idr_{runMain_0}0_val_27.0" <- pure (CErased)
+  "idr_{runMain_0}0.0" <- store "idr_{runMain_0}0_val_27.0"
+  idr_Main.main1_val_6.0 <- pure (Cidr_Prelude.Bool.True)
+  idr_Main.main1.0 <- store idr_Main.main1_val_6.0
+  idr_Main.main2_val_7.0 <- pure (Cidr_Prelude.Bool.True)
+  idr_Main.main2.0 <- store idr_Main.main2_val_7.0
+  idr_Main.getStringOrInt0.0 <- pure idr_Main.main2.0
+  idr_Main.getStringOrInt0_val.0 <- fetch idr_Main.getStringOrInt0.0
+  idr_Main.main2_val.0 <- case idr_Main.getStringOrInt0_val.0 of
+    (Cidr_Prelude.Bool.False) ->
+      pure (CGrString #"Ninety four")
+    (Cidr_Prelude.Bool.True) ->
+      pure (CGrInt 94)
+  idr_Main.main2_8.0 <- store idr_Main.main2_val.0
+  idr_Main.valToString0.0 <- pure idr_Main.main1.0
+  idr_Main.valToString1.0 <- pure idr_Main.main2_8.0
+  idr_Main.valToString0_val.0 <- fetch idr_Main.valToString0.0
+  idr_Main.main1_val_5.0 <- case idr_Main.valToString0_val.0 of
+    (Cidr_Prelude.Bool.False) ->
+      fetch idr_Main.valToString1.0
+    (Cidr_Prelude.Bool.True) ->
+      idris_int_str1.0.0 <- pure idr_Main.valToString1.0
+      (CGrInt idris_int_str1_0.0.0) <- fetch idris_int_str1.0.0
+      idris_int_str2.0.0 <- _prim_int_str $ idris_int_str1_0.0.0
+      pure (CGrString idris_int_str2.0.0)
+  idr_Main.main1_9.0 <- store idr_Main.main1_val_5.0
+  idr_Main.main2_val_10.0 <- pure (CGrString #"\n")
+  idr_Main.main2_11.0 <- store idr_Main.main2_val_10.0
+  (CGrString idr_Main.main2_11.32.0.arity.1.0) <- fetch idr_Main.main2_11.0
+  idris_str_concat1.0 <- pure idr_Main.main1_9.0
+  idris_str_concat2.32.arity.1.0 <- pure idr_Main.main2_11.32.0.arity.1.0
+  (CGrString idris_str_concat1_0.0) <- fetch idris_str_concat1.0
+  (CGrString idris_str_concat2_0.0) <- pure (CGrString idris_str_concat2.32.arity.1.0)
+  idris_str_concat3.0 <- _prim_string_concat $ idris_str_concat1_0.0 idris_str_concat2_0.0
+  unboxed.CGrString.0.0 <- pure idris_str_concat3.0
+  idr_Main.main1_val_4.0 <- pure (CGrString unboxed.CGrString.0.0)
+  idr_Main.main1_12.0 <- store idr_Main.main1_val_4.0
+  (CGrString idr_Main.main1_12.32.1.arity.1.0) <- fetch idr_Main.main1_12.0
+  idris_write_str2.32.arity.1.0 <- pure idr_Main.main1_12.32.1.arity.1.0
+  (CGrString idris_write_str2_0.0) <- pure (CGrString idris_write_str2.32.arity.1.0)
+  _prim_string_print $ idris_write_str2_0.0
+  idr_Main.main1_val_3.0 <- pure (CUnit)
+  idr_Main.main1_13.0 <- store idr_Main.main1_val_3.0
+  idr_Main.main1_val.0 <- pure (Cidr_MkUnit)
+  idr_Main.main1_14.0 <- store idr_Main.main1_val.0
+  idr_Main.main2_val_18.0 <- pure (Cidr_Prelude.Bool.False)
+  idr_Main.main2_19.0 <- store idr_Main.main2_val_18.0
+  idr_Main.main3_val_20.0 <- pure (Cidr_Prelude.Bool.False)
+  idr_Main.main3.0 <- store idr_Main.main3_val_20.0
+  idr_Main.getStringOrInt0.1 <- pure idr_Main.main3.0
+  idr_Main.getStringOrInt0_val.1 <- fetch idr_Main.getStringOrInt0.1
+  idr_Main.main3_val.0 <- case idr_Main.getStringOrInt0_val.1 of
+    (Cidr_Prelude.Bool.False) ->
+      pure (CGrString #"Ninety four")
+    (Cidr_Prelude.Bool.True) ->
+      pure (CGrInt 94)
+  idr_Main.main3_21.0 <- store idr_Main.main3_val.0
+  idr_Main.valToString0.1 <- pure idr_Main.main2_19.0
+  idr_Main.valToString1.1 <- pure idr_Main.main3_21.0
+  idr_Main.valToString0_val.1 <- fetch idr_Main.valToString0.1
+  idr_Main.main2_val_17.0 <- case idr_Main.valToString0_val.1 of
+    (Cidr_Prelude.Bool.False) ->
+      fetch idr_Main.valToString1.1
+    (Cidr_Prelude.Bool.True) ->
+      idris_int_str1.0.1 <- pure idr_Main.valToString1.1
+      (CGrInt idris_int_str1_0.0.1) <- fetch idris_int_str1.0.1
+      idris_int_str2.0.1 <- _prim_int_str $ idris_int_str1_0.0.1
+      pure (CGrString idris_int_str2.0.1)
+  idr_Main.main2_22.0 <- store idr_Main.main2_val_17.0
+  idr_Main.main3_val_23.0 <- pure (CGrString #"\n")
+  idr_Main.main3_24.0 <- store idr_Main.main3_val_23.0
+  (CGrString idr_Main.main3_24.32.2.arity.1.0) <- fetch idr_Main.main3_24.0
+  idris_str_concat1.1 <- pure idr_Main.main2_22.0
+  idris_str_concat2.32.arity.1.1 <- pure idr_Main.main3_24.32.2.arity.1.0
+  (CGrString idris_str_concat1_0.1) <- fetch idris_str_concat1.1
+  (CGrString idris_str_concat2_0.1) <- pure (CGrString idris_str_concat2.32.arity.1.1)
+  idris_str_concat3.1 <- _prim_string_concat $ idris_str_concat1_0.1 idris_str_concat2_0.1
+  unboxed.CGrString.1.0 <- pure idris_str_concat3.1
+  idr_Main.main2_val_16.0 <- pure (CGrString unboxed.CGrString.1.0)
+  idr_Main.main2_25.0 <- store idr_Main.main2_val_16.0
+  (CGrString idr_Main.main2_25.32.3.arity.1.0) <- fetch idr_Main.main2_25.0
+  idris_write_str2.32.arity.1.1 <- pure idr_Main.main2_25.32.3.arity.1.0
+  (CGrString idris_write_str2_0.1) <- pure (CGrString idris_write_str2.32.arity.1.1)
+  _prim_string_print $ idris_write_str2_0.1
+  idr_Main.main2_val_15.0 <- pure (CUnit)
+  idr_Main.main2_26.0 <- store idr_Main.main2_val_15.0
+  "idr_{runMain_0}0_val.0" <- pure (Cidr_MkUnit)
+  "idr_{runMain_0}0_28.0" <- store "idr_{runMain_0}0_val.0"
+  "idr_{EVAL_0}0.0.0" <- pure "idr_{runMain_0}0_28.0"
+  "idr_{EVAL_0}0_val.0.0" <- fetch "idr_{EVAL_0}0.0.0"
+  r <- fetch "idr_{EVAL_0}0.0.0"
+  pure ()
