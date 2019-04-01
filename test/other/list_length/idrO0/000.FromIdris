@@ -1,16 +1,16 @@
-primop effectful
+ffi effectful
   _prim_int_print :: T_Int64 -> T_Unit
+  _prim_usleep :: T_Int64 -> T_Unit
   _prim_string_print :: T_String -> T_Unit
   _prim_read_string :: T_String
-  _prim_usleep :: T_Int64 -> T_Unit
   _prim_error :: T_String -> T_Unit
   _prim_ffi_file_eof :: T_Int64 -> T_Int64
   
-primop pure
+ffi pure
   _prim_string_concat :: T_String -> T_String -> T_String
   _prim_string_reverse :: T_String -> T_String
-  _prim_string_lt :: T_String -> T_String -> T_Bool
-  _prim_string_eq :: T_String -> T_String -> T_Bool
+  _prim_string_lt :: T_String -> T_String -> T_Int64
+  _prim_string_eq :: T_String -> T_String -> T_Int64
   _prim_string_head :: T_String -> T_Int64
   _prim_string_tail :: T_String -> T_String
   _prim_string_cons :: T_Int64 -> T_String -> T_String
@@ -20,6 +20,9 @@ primop pure
   _prim_int_float :: T_Int64 -> T_Float
   _prim_float_string :: T_Float -> T_String
   _prim_char_int :: T_Char -> T_Int64
+  
+primop pure
+  _prim_int_shr :: T_Int64 -> T_Int64
   _prim_int_add :: T_Int64 -> T_Int64 -> T_Int64
   _prim_int_sub :: T_Int64 -> T_Int64 -> T_Int64
   _prim_int_mul :: T_Int64 -> T_Int64 -> T_Int64
@@ -169,21 +172,13 @@ idris_str_eq idris_str_eq1 idris_str_eq2 =
   (CGrString idris_str_eq1_0) <- fetch idris_str_eq1
   (CGrString idris_str_eq2_0) <- fetch idris_str_eq2
   idris_str_eq3 <- _prim_string_eq $ idris_str_eq1_0 idris_str_eq2_0
-  case idris_str_eq3 of
-    #False ->
-      pure (CGrInt 0)
-    #True ->
-      pure (CGrInt 1)
+  pure (CGrInt idris_str_eq3)
 
 idris_str_lt idris_str_lt1 idris_str_lt2 =
   (CGrString idris_str_lt1_0) <- fetch idris_str_lt1
   (CGrString idris_str_lt2_0) <- fetch idris_str_lt2
   idris_str_lt3 <- _prim_string_lt $ idris_str_lt1_0 idris_str_lt2_0
-  case idris_str_lt3 of
-    #False ->
-      pure (CGrInt 0)
-    #True ->
-      pure (CGrInt 1)
+  pure (CGrInt idris_str_lt3)
 
 idris_str_len idris_str_len1 =
   (CGrString idris_str_len2) <- fetch idris_str_len1
@@ -249,6 +244,10 @@ idris_ls_ext idris_ls_ext1 =
 idris_ch_int idris_ch_int1 =
   (CGrInt idris_ch_int2) <- fetch idris_ch_int1
   pure (CGrInt idris_ch_int2)
+
+idris_int_ch idris_int_ch1 =
+  (CGrInt idris_int_ch2) <- fetch idris_int_ch1
+  pure (CGrInt idris_int_ch2)
 
 idris_usleep idris_usleep1 =
   (CGrInt idris_usleep1_0) <- fetch idris_usleep1

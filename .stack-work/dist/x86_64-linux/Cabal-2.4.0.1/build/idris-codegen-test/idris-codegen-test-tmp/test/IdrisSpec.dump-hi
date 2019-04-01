@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2019-02-14 02:57:03.342068032 UTC
+2019-04-01 19:15:36.504779367 UTC
 
 interface main:IdrisSpec 8061
-  interface hash: 614cd5035de326b0030dceaa69cf4adf
-  ABI hash: e54d5bb5e883f6206440cb70e560d503
-  export-list hash: 81e1b9945ee737040fea9d6d6205652b
-  orphan hash: 7fd65390a63ed6a2d077eac3fbb5e1c1
+  interface hash: a26b7f7bf07651a6585f1d95a207b594
+  ABI hash: 4225c6e919b0c1588c9294a430766d5a
+  export-list hash: 8d55e93c20d361300520aa978c2ae2f3
+  orphan hash: 8ec09f43c2b26bb9107a985be3b86d11
   flag hash: 99d1835012a80399ebf880f04ffc6853
   opt_hash: 6faf2de08de32d19db9870899d88e59a
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -26,7 +26,7 @@ package dependencies: HUnit-1.6.0.0 QuickCheck-2.11.3
                       process-1.6.3.0 quickcheck-io-0.2.0 random-1.1 setenv-0.1.1.3
                       stm-2.5.0.0 template-haskell-2.14.0.0 tf-random-0.5 time-1.8.0.2
                       transformers-0.5.5.0 unix-2.7.2.2
-orphans: colour-2.3.4:Data.Colour main:Test.Hspec.IdrisFrontend
+orphans: colour-2.3.4:Data.Colour
          quickcheck-io-0.2.0:Test.QuickCheck.IO
          transformers-0.5.5.0:Control.Monad.Trans.Error
          stm-2.5.0.0:Control.Monad.STM time-1.8.0.2:Data.Time.Format.Parse
@@ -66,14 +66,15 @@ import  -/  base-4.12.0.0:Prelude 4efa7a96beba0aef4f05942bacd5fe4a
 import  -/  hspec-2.5.5:Test.Hspec 2d56e5f58a8193ea933aeea3de9ed517
 import  -/  hspec-core-2.5.5:Test.Hspec.Core.Spec 270f71d5602dd834c293bde7bae3b0b2
 import  -/  hspec-core-2.5.5:Test.Hspec.Core.Spec.Monad 638945b2d24f8a3e130869de975b2b1c
-import  -/  Test.Hspec.IdrisFrontend 415c7a88eeb0e4767d36415baf71b538
-  exports: 760145faacaa2f86108c70bbabc3558f
-  NonOptimised 2b0baa834716b503b8a147cccb999cd6
-  Optimised 03b6b8c1a2d43ec242e24f159f1252a0
-  idris 7c00a6a00235291b5fe3d6c63d95cd06
-  idrisWithStdin b6b50ec3eb9e9e5caae7a72d88e03acf
-  timed 348434bb11930e5ad26c4b20e77e6a81
-a0aa5082c4690c8ed9206681de4c342e
+import  -/  Test.Hspec.IdrisFrontend f71096dc9c78b5a187d2c37f130e0d8c
+  exports: 4277e16b69d3bbd03842bb30ca77d020
+  Compiled 82a41a83cde6cc38324f757e97078c47
+  NonOptimisedEval 4752130f688f63bd17cfe7403798075b
+  OptimisedEval cd56825068cb68ff4cbaa89e1697ec50
+  idris 4539d230e60a3ed69536bb5fdb9e8dc5
+  idrisWithStdin 8b2b3907957b3ba81902555a16239e13
+  timed ae6934fba6a8101fb305af8548614fd4
+aa6a85f94477f25c7f34bf807031fe93
   $s$fExampleTimed1 ::
     Test.Hspec.IdrisFrontend.Timed
       Test.Hspec.IdrisFrontend.IdrisCodeGen
@@ -139,7 +140,7 @@ a92c593dc126f74543db990fde6d9ab7
 8067cbb2519a3f7502d94a9cd6958125
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-a05a676e84031dc8b48f2c5776a8d797
+3c9fa44191f664b47a1672a5add432ca
   spec :: Test.Hspec.Core.Spec.Monad.Spec
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -153,7 +154,7 @@ a05a676e84031dc8b48f2c5776a8d797
                                                     <GHC.Types.IO>_R
                                                     <()>_N) ; Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0]
                                                                        <()>_N) <()>_N)) -}
-583fd2ed8ead116c00e4f672596f85b9
+3808fa208d371df086068d1874a3406d
   spec1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -164,12 +165,15 @@ a05a676e84031dc8b48f2c5776a8d797
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case IdrisSpec.spec6
-                        Test.Hspec.IdrisFrontend.NonOptimised
-                        eta of ds38 { (#,#) ipv ipv1 ->
+                        Test.Hspec.IdrisFrontend.NonOptimisedEval
+                        eta of ds48 { (#,#) ipv ipv1 ->
                  case IdrisSpec.spec6
-                        Test.Hspec.IdrisFrontend.Optimised
-                        ipv of ds39 { (#,#) ipv2 ipv3 ->
-                 (# ipv2,
+                        Test.Hspec.IdrisFrontend.OptimisedEval
+                        ipv of ds49 { (#,#) ipv2 ipv3 ->
+                 case IdrisSpec.spec6
+                        Test.Hspec.IdrisFrontend.Compiled
+                        ipv2 of ds50 { (#,#) ipv4 ipv5 ->
+                 (# ipv4,
                     (GHC.Tuple.(),
                      GHC.Types.:
                        @ (Test.Hspec.Core.Tree.Tree
@@ -185,11 +189,17 @@ a05a676e84031dc8b48f2c5776a8d797
                                   (Test.Hspec.Core.Example.ActionWith ())
                                   (Test.Hspec.Core.Tree.Item ()))
                              w2
-                             (case ipv3 of wild1 { (,) a2 w1 -> w1 }) }))
+                             (case ipv3 of wild1 { (,) a2 w1 ->
+                              GHC.Base.++
+                                @ (Test.Hspec.Core.Tree.Tree
+                                     (Test.Hspec.Core.Example.ActionWith ())
+                                     (Test.Hspec.Core.Tree.Item ()))
+                                w1
+                                (case ipv5 of wild2 { (,) a3 w3 -> w3 }) }) }))
                        (GHC.Types.[]
                           @ (Test.Hspec.Core.Tree.Tree
                                (Test.Hspec.Core.Example.ActionWith ())
-                               (Test.Hspec.Core.Tree.Item ())))) #) } }) -}
+                               (Test.Hspec.Core.Tree.Item ())))) #) } } }) -}
 816c72d96366d9f81500e57fa532f6bd
   spec2 :: [GHC.Types.Char]
   {- Strictness: m2,
@@ -206,9 +216,9 @@ aa6dd290aadd28a7d213f0f82de45870
 faac91eee6d1fe65a6eeb7302793a280
   spec5 :: GHC.Types.Char
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'I'#) -}
-572f6f5eb3fb76301791bc82a7f91744
+bfc73c001cebb04e83b01c08fb4b8883
   spec6 ::
-    Test.Hspec.IdrisFrontend.OptMode
+    Test.Hspec.IdrisFrontend.CompileMode
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           ((),

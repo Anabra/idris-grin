@@ -11,6 +11,6 @@ mkdir "./idrO$lvl"
 
 tmp=$(uuidgen)
 
-stack exec idris -- $1 -o "$tmp".grin --O"$lvl" --codegen grin --cg-opt --output-dir="./idrO$lvl" --cg-opt --O0 --cg-opt --no-lint --cg-opt --quiet
+stack exec idris -- $1 -o "$tmp".grin --O"$lvl" --codegen grin --cg-opt --output-dir="./idrO$lvl" --cg-opt --grin --cg-opt --O0 --cg-opt --no-lint --cg-opt --quiet
 
 rm -f "$tmp.grin"

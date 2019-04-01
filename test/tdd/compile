@@ -1,12 +1,14 @@
-grin -o "optimized/" --optimize normal/001.high-level-code.grin
+generate_grin list_len.idr
+grin idrO0/003.high-level-code.grin --output-dir "optimized/" --optimize --save-elf list_len
 # seraching for last file
-grin -o "dde2" --dde-pass optimized/042.SimpleDeadVariableElimination.grin
+grin optimized/056.SimpleDeadVariableElimination.grin --output-dir "dde/" --dde-pass
 # renaming
-grin -o "dde2" --optimize dde2/000.DeadDataPass.grin
-grin --eval dde2/000.DeadDataPass.grin
+grin dde/000.DeadDataPass.grin --output-dir "dde/" --optimize --save-elf list_len
+
+grin --eval dde/000.DeadDataPass.grin
 grin --eval normal/001.high-level-code.grin
 # search for last file
-grin --eval dde2/006.SimpleDeadVariableElimination.grin
+grin --eval dde/006.SimpleDeadVariableElimination.grin
 
 
 

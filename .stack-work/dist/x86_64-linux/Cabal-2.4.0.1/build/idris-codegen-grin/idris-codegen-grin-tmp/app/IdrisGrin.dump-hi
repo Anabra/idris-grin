@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-02-13 12:17:29.646615065 UTC
+2019-04-01 19:15:40.628080453 UTC
 
 interface main:Main 8061
-  interface hash: 1bb3479a5870d2c39cdeec4816bcf2e6
-  ABI hash: 94c0318adc35d47b4ed08525acff1d39
-  export-list hash: e1b0a2b00e01a5f7e5b0be4efd1fb879
+  interface hash: fd9786a4ffaa87f557334d49681ef8ec
+  ABI hash: 6b1b47f3c41064b268fb548a37714064
+  export-list hash: f7872011c3a9b41c9d69d521f2299a2e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: bd6ba295c1b124c69327a7dccad18904
   opt_hash: 875791ef924fcd11c2b687259a138b70
@@ -252,7 +252,7 @@ import  -/  idris-1.3.1:Idris.ElabDecls f8fe3d8323b113e7e0157c219a2c216a
 import  -/  idris-1.3.1:Idris.Main 67f231f54b7be5c60a7f94ae419688a2
 import  -/  idris-1.3.1:Idris.ModeCommon 8560a020d20108941a33bd8ec6d071f1
 import  -/  idris-1.3.1:Idris.Options 000425dcb06a56f4b5dad270ca0c4da0
-import  -/  idris-grin-0.1.0.0:Idris.CodegenGrin 296afbbaf779708617326c6ec9766f83
+import  -/  idris-grin-0.1.0.0:Idris.CodegenGrin 602a39b55562ccfc47528d146d3fdc48
 be86c9d078d3acbf19ba91fe74a24273
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -271,11 +271,11 @@ e5875966b74dad2d29772660b8a75e33
 d026be77cb9ced20e35a61514e0458aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-4bb20cdab436bd572b7e10a0677e22da
+8d02e43b4881ae70eacfa1ea516dee18
   cg_main ::
     Idris.CodegenGrin.Options -> Idris.AbsSyntaxTree.Idris ()
   {- Arity: 3,
-     Strictness: <L,U(1*U,1*U,1*U,1*U,A,U,U,A,U)><L,U(U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
+     Strictness: <L,U(1*U,U,1*U,1*U,1*U,1*U,A,U,U,A,U,U)><L,U(U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.cg_main1
                   `cast`
@@ -295,7 +295,7 @@ d026be77cb9ced20e35a61514e0458aa
                                                                                                                                      Idris.Core.TT.Err
                                                                                                                                      GHC.Types.IO>_R
                                                                                                                                   <()>_N)) -}
-bc5a523612450406edfc990eafa2e852
+7a2c8632e346930f67f4b873a202803e
   cg_main1 ::
     Idris.CodegenGrin.Options
     -> Idris.AbsSyntaxTree.IState
@@ -304,7 +304,7 @@ bc5a523612450406edfc990eafa2e852
           Data.Either.Either
             Idris.Core.TT.Err ((), Idris.AbsSyntaxTree.IState) #)
   {- Arity: 3,
-     Strictness: <L,U(1*U,1*U,1*U,1*U,A,U,U,A,U)><L,U(U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
+     Strictness: <L,U(1*U,U,1*U,1*U,1*U,1*U,A,U,U,A,U,U)><L,U(U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
      Unfolding: (\ (opts :: Idris.CodegenGrin.Options)
                    (eta :: Idris.AbsSyntaxTree.IState)
                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
@@ -314,7 +314,7 @@ bc5a523612450406edfc990eafa2e852
                    Data.Either.Right x
                    -> case x of wild1 { (,) a1 s' ->
                       case Idris.ModeCommon.loadInputs1
-                             (case opts of wild2 { Idris.CodegenGrin.Options ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                             (case opts of wild2 { Idris.CodegenGrin.Options ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ->
                               ds2 })
                              (GHC.Maybe.Nothing @ GHC.Types.Int)
                              s'
@@ -378,22 +378,15 @@ bc5a523612450406edfc990eafa2e852
                                                 @ GHC.Exception.Type.SomeException
                                                 (\ (s2 :: GHC.Prim.State#
                                                             GHC.Prim.RealWorld)[OneShot] ->
-                                                 case opts of ww { Idris.CodegenGrin.Options ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
-                                                 case a4 of ww10 { IRTS.CodegenCommon.CodegenInfo ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ww25 ww26 ->
-                                                 case Idris.CodegenGrin.$wcodegenGrin
-                                                        ww3
-                                                        ww4
-                                                        ww6
-                                                        ww7
-                                                        ww9
-                                                        ww11
-                                                        ww21
+                                                 case Idris.CodegenGrin.codegenGrin1
+                                                        opts
+                                                        a4
                                                         s2 of ds5 { (#,#) ipv10 ipv11 ->
                                                  (# ipv10,
                                                     Data.Either.Right
                                                       @ GHC.IO.Exception.IOError
                                                       @ ()
-                                                      ipv11 #) } } })
+                                                      ipv11 #) })
                                                 (System.IO.Error.tryIOError2 @ ())
                                                 ipv8 of ds5 { (#,#) ipv10 ipv11 ->
                                          case ipv11 of wild8 {
@@ -448,7 +441,7 @@ bc5a523612450406edfc990eafa2e852
 5836aaf5dc633239365166319a87a4f3
   cg_main4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("grin"#) -}
-599c3c06d65d85c3d5923fb6a5e892c7
+0ce56238caaf8e1b9a36441dee3d5a08
   getOpts :: GHC.Types.IO (GHC.Maybe.Maybe Idris.CodegenGrin.Options)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -456,7 +449,7 @@ bc5a523612450406edfc990eafa2e852
                   `cast`
                 (Sym (GHC.Types.N:IO[0]
                           <GHC.Maybe.Maybe Idris.CodegenGrin.Options>_R)) -}
-95363d26a08c9d6059e1e2ffe23f4bf9
+b08acb7feda86d769273f437effe945e
   getOpts1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -510,15 +503,15 @@ bc5a523612450406edfc990eafa2e852
                               Idris.CodegenGrin.defaultOptions)
                       : ipv2 ipv3
                       -> GHC.Maybe.Nothing @ Idris.CodegenGrin.Options } } #) }) -}
-faca5f20a58ab54d3e8e3e1c27f6b37f
+7436d14b0eb839d0d08b511bc9c60242
   getOpts2 ::
     GHC.IO.FilePath
     -> Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U><S,1*U(U,U,U,U,U,U,U,U,U)>m,
+     Strictness: <L,U><S,1*U(U,U,U,U,U,U,U,U,U,U,U,U)>,
      Unfolding: (\ (i :: GHC.IO.FilePath)
                    (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    (GHC.Types.: @ GHC.IO.FilePath i ds)
                    ds1
@@ -528,13 +521,16 @@ faca5f20a58ab54d3e8e3e1c27f6b37f
                    ds5
                    ds6
                    ds7
-                   ds8 }) -}
-7464bbb8d21448ec483413c60ce8ecb8
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+357b575b10eb68d1c22181ea362d6840
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-b2c2662934d9b644b9f1b0d4077b14e8
+58cc735df782c9f0599c3a54f6c49a86
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -544,13 +540,13 @@ b2c2662934d9b644b9f1b0d4077b14e8
                  case ipv1 of wild {
                    GHC.Maybe.Nothing -> Main.main2 ipv
                    GHC.Maybe.Just x
-                   -> case x of wild1 { Idris.CodegenGrin.Options ds ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
-                      case ds5 of wild2 {
+                   -> case x of wild1 { Idris.CodegenGrin.Options ds ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
+                      case ds7 of wild2 {
                         GHC.Types.False
                         -> case Main.cg_main1
                                   wild1
                                   Idris.AbsSyntaxTree.idrisInit
-                                  ipv of ds10 { (#,#) ipv2 ipv3 ->
+                                  ipv of ds13 { (#,#) ipv2 ipv3 ->
                            case ipv3 of wild3 {
                              Data.Either.Left e1
                              -> case (GHC.IO.Handle.Text.hPutStr'
@@ -561,12 +557,12 @@ b2c2662934d9b644b9f1b0d4077b14e8
                                         GHC.Types.True)
                                        `cast`
                                      (GHC.Types.N:IO[0] <()>_R)
-                                       ipv2 of ds11 { (#,#) ipv4 ipv5 ->
+                                       ipv2 of ds14 { (#,#) ipv4 ipv5 ->
                                 System.Exit.exitFailure1 @ () ipv4 }
                              Data.Either.Right x1
-                             -> case x1 of wild4 { (,) ds11 s' -> (# ipv2, GHC.Tuple.() #) } } }
+                             -> case x1 of wild4 { (,) ds14 s' -> (# ipv2, GHC.Tuple.() #) } } }
                         GHC.Types.True -> Main.main2 ipv } } } }) -}
-ec37cc19663756e58579c7d5a17ecc6d
+678264a824fcd9acafd8a55eb351fdda
   main2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -594,25 +590,25 @@ ec37cc19663756e58579c7d5a17ecc6d
                    `cast`
                  (GHC.Types.N:IO[0] <()>_R)
                    ipv }) -}
-e91d739600a3accee634c6e9e6ddc960
+40f104a2f373e39aabbb58f3a1e0e2e1
   main3 :: [GHC.Types.Char]
   {- Strictness: m2,
      Unfolding: (GHC.Types.: @ GHC.Types.Char Main.main7 Main.main4) -}
-ecc8be15d7e73426c7a45d74c515df17
+60e86da39f0e5da4cf44cdd20371dc5e
   main4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
                    (GHC.CString.unpackCString# Main.main8)
                    Main.main5) -}
-3710c6162e1694bcdb8194ae0f2bff5e
+1f0db34d795b91b05663c1444921c25e
   main5 :: [GHC.Types.Char]
   {- Strictness: m2,
      Unfolding: (GHC.Types.: @ GHC.Types.Char Main.main7 Main.main6) -}
-2f0ef2012bcd3b00fc31ad4093ca078c
+d20bf6735a9c781a80acedd229f1eee9
   main6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Main.options74
+                   Main.options103
                    (GHC.Types.[] @ GHC.Types.Char)) -}
 93eda9e51d669c6ed8d5f0cdd1f5b8a6
   main7 :: GHC.Types.Char
@@ -620,7 +616,7 @@ ecc8be15d7e73426c7a45d74c515df17
 9e8d2ff3df0ec3111697e3a7b83a4b1c
   main8 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("[OPTION...]"#) -}
-cbae351daf83ac26196bd18393d92d12
+7be7c1d47561df8d68feb03f5df59929
   main9 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -628,7 +624,7 @@ cbae351daf83ac26196bd18393d92d12
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-ccfb4958c0339d4536c6bcb943ccd5c5
+68a44417ce16616ba7a098235161a32d
   options ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -636,9 +632,9 @@ ccfb4958c0339d4536c6bcb943ccd5c5
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options70
+                   Main.options99
                    Main.options1) -}
-73ff00ea5577018dc9c95ec5eae0a419
+681f9a696f46a2ccbbaaf7c3a3552e7e
   options1 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -646,29 +642,126 @@ ccfb4958c0339d4536c6bcb943ccd5c5
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options60
+                   Main.options91
                    Main.options2) -}
-9524e39e62d6580379066f66b2615993
-  options10 :: GHC.Prim.Addr#
-  {- HasNoCafRefs,
-     Unfolding: ("Save intermediate results in binary format too."#) -}
-dffc4f3ea7ebb3bc3faf7dcc032ead16
+f3209447e20c0fbf65c276d92314331e
+  options10 ::
+    [System.Console.GetOpt.OptDescr
+       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (System.Console.GetOpt.OptDescr
+                        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
+                   Main.options11
+                   (GHC.Types.[]
+                      @ (System.Console.GetOpt.OptDescr
+                           (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)))) -}
+85f0d915d20966f45dd61fb8ecd80fc3
+  options100 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options101) -}
+7937bab3e34ea86573bb5a2d2940fa7a
+  options101 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Executable ELF output FILE."#) -}
+8aa510b9d23f926f069bf5f99d31e931
+  options102 ::
+    System.Console.GetOpt.ArgDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m2,
+     Unfolding: (System.Console.GetOpt.ReqArg
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options105
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                                  <Idris.CodegenGrin.Options>_R))
+                   Main.options103) -}
+6b204a4fe8babcf5dc353cefd59437b3
+  options103 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options104) -}
+a4ac88d3fa63f71e51c7378aa048fd48
+  options104 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FILE"#) -}
+62511bd8070ad57d6869a26bad54025f
+  options105 ::
+    GHC.Base.String
+    -> Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S,1*U(U,A,U,U,U,U,U,U,U,U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: GHC.Base.String) (opts :: Idris.CodegenGrin.Options) ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 Idris.CodegenGrin.Options
+                   ds
+                   a
+                   ds2
+                   ds3
+                   ds4
+                   ds5
+                   ds6
+                   ds7
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+633543d42ec24440fe982ce4d324815e
+  options106 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.options107
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+2f6aa23b0995600287ac9a495bfa3f46
+  options107 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options108) -}
+5dee6d5291762fe638e64c9e6d3cb31b
+  options108 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("output"#) -}
+8700e351919b21cfcef1f509d0c06c30
+  options109 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.options110
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6d5de00f181af462e93ffd44e87af369
   options11 ::
+    System.Console.GetOpt.OptDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m,
+     Unfolding: (System.Console.GetOpt.Option
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.options16
+                   Main.options14
+                   Main.options12) -}
+ab90b0f1e11a5100fd3ed642e324b900
+  options110 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'o'#) -}
+7bd51ec0d12c78c6ebbfc125bc9bda8b
+  options12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options13) -}
+373ccab9382e6263f398ecc35065bb17
+  options13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Generate executable with debug symbols."#) -}
+f74fdd418d399d9d20cc9d927dc38253
+  options14 ::
     System.Console.GetOpt.ArgDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (System.Console.GetOpt.NoArg
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options12
+                   Main.options15
                      `cast`
                    (Sym (Data.Semigroup.Internal.N:Endo[0]
                              <Idris.CodegenGrin.Options>_R))) -}
-4dca42592a88290c446fac7f2b42f918
-  options12 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U,U,U,U,U,A)>m,
+80d0a13fe17c7465911abdf402fe0acd
+  options15 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,U,U,U,U,U,U,U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    ds
                    ds1
@@ -678,50 +771,35 @@ dffc4f3ea7ebb3bc3faf7dcc032ead16
                    ds5
                    ds6
                    ds7
+                   ds8
+                   ds9
+                   ds10
                    GHC.Types.True }) -}
-ca9b19d92ab8128efafb47ff8eb23119
-  options13 :: [GHC.Base.String]
+096c8c7e222f21bbce38aa43f061f7df
+  options16 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options14
+                   Main.options17
                    (GHC.Types.[] @ GHC.Base.String)) -}
-f87622975f459f54470ad473338b0e54
-  options14 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options15) -}
-c578b15093b2d7cc33e0be2b40752f1a
-  options15 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("binary-intermed"#) -}
-18529817d2942af14c55d5db5f8e116c
-  options16 ::
+8815cae24674eac79c9b2000e18460c7
+  options17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options18) -}
+62457b780d63ec366afbf68c265a2bac
+  options18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("dbg"#) -}
+acf20284b99f0ad07f6a6d8e22dfa10e
+  options19 ::
     System.Console.GetOpt.OptDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- Strictness: m,
      Unfolding: (System.Console.GetOpt.Option
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
                    (GHC.Types.[] @ GHC.Types.Char)
-                   Main.options21
-                   Main.options19
-                   Main.options17) -}
-120a938cb61fdb167605d66ce3bacc63
-  options17 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options18) -}
-80838c998a93e4191443930171ff9d57
-  options18 :: GHC.Prim.Addr#
-  {- HasNoCafRefs,
-     Unfolding: ("Turn on interprocedural dead code elimination."#) -}
-0bd42bee10cbab0d7eb989bd581ffb09
-  options19 ::
-    System.Console.GetOpt.ArgDescr
-      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (System.Console.GetOpt.NoArg
-                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options20
-                     `cast`
-                   (Sym (Data.Semigroup.Internal.N:Endo[0]
-                             <Idris.CodegenGrin.Options>_R))) -}
-73eddd448ac755e292b1804d4d1e5265
+                   Main.options24
+                   Main.options22
+                   Main.options20) -}
+92b6efdabb39f195469119fa84bd0a15
   options2 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -729,14 +807,33 @@ c578b15093b2d7cc33e0be2b40752f1a
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options52
+                   Main.options81
                    Main.options3) -}
-e53225dac9976466e5e9d10b75fe5e1c
-  options20 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U,U,U,U,A,U)>m,
+b8a36488078d91558a0e5662545c50c2
+  options20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options21) -}
+69bd2de58161fd01a9e25d2ff24622a7
+  options21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Save intermediate results in binary format too."#) -}
+9229a4a738bac8d8a6fdf80a9d3048c0
+  options22 ::
+    System.Console.GetOpt.ArgDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (System.Console.GetOpt.NoArg
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options23
+                     `cast`
+                   (Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <Idris.CodegenGrin.Options>_R))) -}
+2612ec24ec589d6c29fb8458e2025d07
+  options23 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,U,U,U,U,U,U,A,U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    ds
                    ds1
@@ -745,58 +842,43 @@ e53225dac9976466e5e9d10b75fe5e1c
                    ds4
                    ds5
                    ds6
+                   ds7
+                   ds8
+                   ds9
                    GHC.Types.True
-                   ds8 }) -}
-78ea685e9feec1ecfed89effbad7c7f0
-  options21 :: [GHC.Base.String]
+                   ds11 }) -}
+1a966d3999a1098642b4843b2803d839
+  options24 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options22
+                   Main.options25
                    (GHC.Types.[] @ GHC.Base.String)) -}
-59d8eabc2a134d4ff23a989034fdb144
-  options22 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options23) -}
-1a50264c424d849dba5337546e594946
-  options23 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("dead-code-elim"#) -}
-e7670254eb7869592a09402d303f72bb
-  options24 ::
+7dcec035cf20d2669963326f5931adbc
+  options25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options26) -}
+35857993905f05c11eae2d77ce7b5712
+  options26 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("binary-intermed"#) -}
+b3dbb79c3eb1927047a56fe7423d3735
+  options27 ::
     System.Console.GetOpt.OptDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- Strictness: m,
      Unfolding: (System.Console.GetOpt.Option
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
                    (GHC.Types.[] @ GHC.Types.Char)
-                   Main.options31
-                   Main.options27
-                   Main.options25) -}
-b9515489ec9e5b55f3b4f31cf19a95af
-  options25 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options26) -}
-d1b097efcd72551e895407347f551e5c
-  options26 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Grin output directory."#) -}
-8f52a578b6bd4be05eee432e2c7df4e7
-  options27 ::
-    System.Console.GetOpt.ArgDescr
-      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-  {- Strictness: m2,
-     Unfolding: (System.Console.GetOpt.ReqArg
-                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options32
                    Main.options30
-                     `cast`
-                   (<GHC.Base.String>_R
-                    ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
-                                  <Idris.CodegenGrin.Options>_R))
                    Main.options28) -}
-86b151b87b670f1e4e5b6e708e2b3c63
+1bbf2a42ff8b678dd6dd98bf50534314
   options28 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Main.options29) -}
-3ed30c4bf49375e26c4564a1e75d0434
+667a9de6a83f44e6269af8d5759dffb7
   options29 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("DIR"#) -}
-dc007ff4598a3cb6aca2c864ff8f3742
+  {- HasNoCafRefs,
+     Unfolding: ("Turn on interprocedural dead code elimination."#) -}
+a1b73f68549ae89c382a309f582babd6
   options3 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -804,84 +886,86 @@ dc007ff4598a3cb6aca2c864ff8f3742
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options42
+                   Main.options71
                    Main.options4) -}
-51dfd53f97f5a2068425309054985643
+75e37807c6d10417c80ba7810b86997f
   options30 ::
-    GHC.Base.String
-    -> Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U><S,1*U(U,U,U,U,U,U,A,U,U)>m,
-     Unfolding: InlineRule (2, True, False)
-                (\ (a :: GHC.Base.String) (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
-                 Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 a ds7 ds8 }) -}
-77f4a639766f56c502f7a0f35fc954ac
-  options31 :: [GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Main.options32
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-2a068a8d6fa342ada1c148d78b6078bb
-  options32 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options33) -}
-d7a4581b0a9759e604e379bba78234e9
-  options33 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("output-dir"#) -}
-3beb1b703bc378faa8622fde2cfc0a9f
-  options34 ::
-    System.Console.GetOpt.OptDescr
-      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-  {- Strictness: m,
-     Unfolding: (System.Console.GetOpt.Option
-                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   Main.options39
-                   Main.options37
-                   Main.options35) -}
-78c624dc733f45d96df7e46cc9a95ee2
-  options35 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options36) -}
-7e1acddf0b8a82a742943686356323fd
-  options36 :: GHC.Prim.Addr#
-  {- HasNoCafRefs,
-     Unfolding: ("Turn off linting intermediate results."#) -}
-d9918cc5a1134592f694cdb0e28b00fe
-  options37 ::
     System.Console.GetOpt.ArgDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (System.Console.GetOpt.NoArg
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options38
+                   Main.options31
                      `cast`
                    (Sym (Data.Semigroup.Internal.N:Endo[0]
                              <Idris.CodegenGrin.Options>_R))) -}
-901f4b0fd375710c075454c8562e636d
-  options38 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U,U,A,U,U,U)>m,
+65a5f2b1045e37159cd4a7c44a76aae5
+  options31 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,U,U,U,U,U,A,U,U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    ds
                    ds1
                    ds2
                    ds3
                    ds4
-                   GHC.Types.False
+                   ds5
                    ds6
                    ds7
-                   ds8 }) -}
-6875e7bbf971526b21908644c314ec65
-  options39 :: [GHC.Base.String]
+                   ds8
+                   GHC.Types.True
+                   ds10
+                   ds11 }) -}
+b837b1e0a1561a9bfd47252475ed3300
+  options32 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options40
+                   Main.options33
                    (GHC.Types.[] @ GHC.Base.String)) -}
-b2a8e82e95fe03718baeb3dedbd5f674
+6d6cbfdc529cf3441971b4a5ee394ed8
+  options33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options34) -}
+60382a5c735911ba143f6e4b9887a44c
+  options34 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("dead-code-elim"#) -}
+21422b84b26a900e9a064734113e077f
+  options35 ::
+    System.Console.GetOpt.OptDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m,
+     Unfolding: (System.Console.GetOpt.Option
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.options42
+                   Main.options38
+                   Main.options36) -}
+db5337a8d5f4f83c5e6a9a74a5f21e1e
+  options36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options37) -}
+5743ad86129f88b18a563a20ceed2e23
+  options37 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Grin output directory."#) -}
+0629a29976ae9f6c58468109015b6894
+  options38 ::
+    System.Console.GetOpt.ArgDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m2,
+     Unfolding: (System.Console.GetOpt.ReqArg
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options41
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                                  <Idris.CodegenGrin.Options>_R))
+                   Main.options39) -}
+cc5c23c81cfe7b8f3e48619ce3799ca1
+  options39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options40) -}
+d9132b2444e06130d2d39ea42f24f175
   options4 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -889,72 +973,96 @@ b2a8e82e95fe03718baeb3dedbd5f674
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options34
+                   Main.options63
                    Main.options5) -}
-85acb2f0fd8a1f7307a4d583fed5f3e2
-  options40 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options41) -}
-44608c5b36b519bd483342c9f75d15fb
-  options41 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("no-lint"#) -}
-8cd9f9d6a35ca09714d70f58273018f3
-  options42 ::
-    System.Console.GetOpt.OptDescr
-      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-  {- Strictness: m,
-     Unfolding: (System.Console.GetOpt.Option
-                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options50
-                   Main.options47
-                   Main.options45
-                   Main.options43) -}
-6e07d3f32455aa7bd51b86e8f0e588d0
-  options43 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options44) -}
-23567f9757f7af267cbf6cb0acb6a5a2
-  options44 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Print help"#) -}
-3647f50e6ccd5efaa4647b3c41a83649
-  options45 ::
-    System.Console.GetOpt.ArgDescr
-      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (System.Console.GetOpt.NoArg
-                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options46
-                     `cast`
-                   (Sym (Data.Semigroup.Internal.N:Endo[0]
-                             <Idris.CodegenGrin.Options>_R))) -}
-b55e09879528b76b6be8b22bcf61649d
-  options46 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U,A,U,U,U,U)>m,
-     Unfolding: InlineRule (1, True, False)
-                (\ (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+a5f4a877a27d41595fa7f6a642f26ae6
+  options40 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DIR"#) -}
+4a778fb1c404eb855278eb72cd115997
+  options41 ::
+    GHC.Base.String
+    -> Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S,1*U(U,U,U,U,U,U,U,U,A,U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: GHC.Base.String) (opts :: Idris.CodegenGrin.Options) ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    ds
                    ds1
                    ds2
                    ds3
-                   GHC.Types.True
+                   ds4
                    ds5
                    ds6
                    ds7
-                   ds8 }) -}
-4a17dfd69784d2a08bceccd43471f631
-  options47 :: [GHC.Base.String]
+                   a
+                   ds9
+                   ds10
+                   ds11 }) -}
+1020819cea7c71ddbe6a3be31a5c9f6c
+  options42 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options48
+                   Main.options43
                    (GHC.Types.[] @ GHC.Base.String)) -}
-3f26a08adb4d60e00c9afa13e4ae65b8
-  options48 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options49) -}
-2f71952ad92c8676ddec2964e565bb74
-  options49 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("help"#) -}
-b3a62e5381f063ff7b03d50a997a0961
+d45144f024287f6b0cbd9116b86fbe33
+  options43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options44) -}
+755e935493f124b911391d783af47700
+  options44 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("output-dir"#) -}
+270c925c7b1f0875ccdefa02db7774a4
+  options45 ::
+    System.Console.GetOpt.OptDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m,
+     Unfolding: (System.Console.GetOpt.Option
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.options50
+                   Main.options48
+                   Main.options46) -}
+e03668b21bb043fe1391a17a63912701
+  options46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options47) -}
+e747ce3ad13009e299637f003ed3d573
+  options47 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Turn off linting intermediate results."#) -}
+7900f5cb92196d155332aeff3f9c08af
+  options48 ::
+    System.Console.GetOpt.ArgDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (System.Console.GetOpt.NoArg
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options49
+                     `cast`
+                   (Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <Idris.CodegenGrin.Options>_R))) -}
+8325a197adb2ba483516904c6e1e9fe7
+  options49 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,U,U,U,A,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (opts :: Idris.CodegenGrin.Options) ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 Idris.CodegenGrin.Options
+                   ds
+                   ds1
+                   ds2
+                   ds3
+                   ds4
+                   ds5
+                   ds6
+                   GHC.Types.False
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+111d818583ba3bdb368531f5e0735b38
   options5 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -962,76 +1070,80 @@ b3a62e5381f063ff7b03d50a997a0961
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options24
+                   Main.options53
                    Main.options6) -}
-aef05fa784e471cc4e4fb2bc1859c9af
-  options50 :: [GHC.Types.Char]
-  {- HasNoCafRefs, Strictness: m2,
+204405e8b29ec61155e09fa4dfa37f9f
+  options50 :: [GHC.Base.String]
+  {- Strictness: m2,
      Unfolding: (GHC.Types.:
-                   @ GHC.Types.Char
+                   @ GHC.Base.String
                    Main.options51
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-ff0fd79594e30e11c6cd7c81e2e9c02e
-  options51 :: GHC.Types.Char
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'h'#) -}
-228c157cb6a3d32715a8c2335402b480
-  options52 ::
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+30e2950b333cd1161fbc6f6f18cfb5c6
+  options51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options52) -}
+5685077ba4c5a54e32e230b9b765017f
+  options52 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("no-lint"#) -}
+edfce9b358d37989b13a1120b4f5cb74
+  options53 ::
     System.Console.GetOpt.OptDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- Strictness: m,
      Unfolding: (System.Console.GetOpt.Option
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   Main.options57
-                   Main.options55
-                   Main.options53) -}
-e271459e5a2089dd6938a844023ab791
-  options53 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options54) -}
-cba5b6123f8260f84ee74a3443584b15
-  options54 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("No optimisation"#) -}
-be1633ee85df846dd46fb1c39190480a
-  options55 ::
+                   Main.options61
+                   Main.options58
+                   Main.options56
+                   Main.options54) -}
+6ba9451bc35b26f54089ada899c88465
+  options54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options55) -}
+f8bf02a4c2d82308cd4c57000962bfa1
+  options55 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Print help."#) -}
+e9fe117b0d1073dd57ef6db1c7d78563
+  options56 ::
     System.Console.GetOpt.ArgDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (System.Console.GetOpt.NoArg
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options56
+                   Main.options57
                      `cast`
                    (Sym (Data.Semigroup.Internal.N:Endo[0]
                              <Idris.CodegenGrin.Options>_R))) -}
-04a7692755c2e5bd948e666278a4cc0e
-  options56 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,A,U,U,U,U,U,U)>m,
+f87120006a13a988b2e24dfc9f94ede9
+  options57 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,U,U,A,U,U,U,U,U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    ds
                    ds1
-                   GHC.Types.False
+                   ds2
                    ds3
                    ds4
                    ds5
-                   ds6
+                   GHC.Types.True
                    ds7
-                   ds8 }) -}
-2a0c82110e29b5d97de0d32a8e5b11bb
-  options57 :: [GHC.Base.String]
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+d04db3292208eb821a56a58a83205450
+  options58 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options58
+                   Main.options59
                    (GHC.Types.[] @ GHC.Base.String)) -}
-a69c00289d869cca25c8f06ee3f4bd6d
-  options58 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options59) -}
-6f1765941ec174f957053500c24650c2
-  options59 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("O0"#) -}
-e5e92e04b5e6afc7909875ec10d5d571
+9b0beede443f63f12ef3ce91ee7ae9dc
+  options59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options60) -}
+650c3f676cab74923af213e9f470463b
   options6 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
@@ -1039,42 +1151,208 @@ e5e92e04b5e6afc7909875ec10d5d571
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options16
+                   Main.options45
                    Main.options7) -}
-3d982f49687713341c46fe38d7af3036
-  options60 ::
+98f33f655122df296b6e3d05737fa837
+  options60 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("help"#) -}
+ad4b5f48732de4c2ddcdf456b3e86a9d
+  options61 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.options62
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b2bffc3034da48f738927bb41f03ffd0
+  options62 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'h'#) -}
+230b7de92c5a6de5f456e15e853a3f1a
+  options63 ::
     System.Console.GetOpt.OptDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- Strictness: m,
      Unfolding: (System.Console.GetOpt.Option
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   (GHC.Types.[] @ GHC.Types.Char)
                    Main.options68
-                   Main.options65
-                   Main.options63
-                   Main.options61) -}
-fa3cd6d892fa8fff261e3f9aaac3ed2d
-  options61 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options62) -}
-3e03d68ff811c992652bc013d3f4c43f
-  options62 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Do not log to stdout"#) -}
-8353d714f4b932f7c65c381cf74bf1c8
-  options63 ::
+                   Main.options66
+                   Main.options64) -}
+d2f0f43d6b81bd2b8d78ac168f7734ce
+  options64 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options65) -}
+0d02e6b4d8f98fdccbc726c02bd5f483
+  options65 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("No optimisation."#) -}
+b306d27c9ea289d37fae75eb0947a368
+  options66 ::
     System.Console.GetOpt.ArgDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (System.Console.GetOpt.NoArg
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options64
+                   Main.options67
                      `cast`
                    (Sym (Data.Semigroup.Internal.N:Endo[0]
                              <Idris.CodegenGrin.Options>_R))) -}
-4e72632e2d7a1f05e88756b42a142c3a
-  options64 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,A,U,U,U,U,U)>m,
+bf1f51f8f9e04c34770ac9e71222625a
+  options67 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,A,U,U,U,U,U,U,U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 Idris.CodegenGrin.Options
+                   ds
+                   ds1
+                   ds2
+                   ds3
+                   GHC.Types.False
+                   ds5
+                   ds6
+                   ds7
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+362f1c4530c7534c34196531259c9a21
+  options68 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.options69
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+0d6fc1df7f93ad31f3ad6b36764398cb
+  options69 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options70) -}
+8b73db6143c85f7a1f66ad157787cab0
+  options7 ::
+    [System.Console.GetOpt.OptDescr
+       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (System.Console.GetOpt.OptDescr
+                        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
+                   Main.options35
+                   Main.options8) -}
+6dcea3eaba11de70572d7570d3a49e14
+  options70 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("O0"#) -}
+e1b937c93ce7ded8c8d9a324e30922ca
+  options71 ::
+    System.Console.GetOpt.OptDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m,
+     Unfolding: (System.Console.GetOpt.Option
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options79
+                   Main.options76
+                   Main.options74
+                   Main.options72) -}
+1b64de78f9a2153ad6b4e6c2b54bd789
+  options72 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options73) -}
+a7c451e0d35823cc75df1c188a98e804
+  options73 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Do not log to stdout."#) -}
+02749a5ed492ba35384b6785328eaede
+  options74 ::
+    System.Console.GetOpt.ArgDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (System.Console.GetOpt.NoArg
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options75
+                     `cast`
+                   (Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <Idris.CodegenGrin.Options>_R))) -}
+ba660b521c14c4ae906ae33b4ac0c569
+  options75 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,U,U,A,U,U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (opts :: Idris.CodegenGrin.Options) ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 Idris.CodegenGrin.Options
+                   ds
+                   ds1
+                   ds2
+                   ds3
+                   ds4
+                   GHC.Types.True
+                   ds6
+                   ds7
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+a465a8aca54ae0dff035a63d43594cac
+  options76 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.options77
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+270d79ea0c337d0a1b091f799dd143ee
+  options77 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options78) -}
+17d37809a6ed844b5ca0406ca2d2dc95
+  options78 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("quiet"#) -}
+6d302cf0d9edff3fa41d9ad8bc434b5f
+  options79 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.options80
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+313e3dd70a71f7dbfb7add20d9d4b840
+  options8 ::
+    [System.Console.GetOpt.OptDescr
+       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (System.Console.GetOpt.OptDescr
+                        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
+                   Main.options27
+                   Main.options9) -}
+5a4551d542ee70bf21cc0d2bdfe54dca
+  options80 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'q'#) -}
+55a6e4e13b0ea31b0a1a2eba2e288c60
+  options81 ::
+    System.Console.GetOpt.OptDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- Strictness: m,
+     Unfolding: (System.Console.GetOpt.Option
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options89
+                   Main.options86
+                   Main.options84
+                   Main.options82) -}
+43e1f061bc4ae102cbc73e9bdb249141
+  options82 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options83) -}
+3f958d50cd171b0fb944050d6bdba8cb
+  options83 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Eval the final optimised GRIN."#) -}
+0a501436f4196706f18f19cdcdc110e8
+  options84 ::
+    System.Console.GetOpt.ArgDescr
+      (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (System.Console.GetOpt.NoArg
+                   @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
+                   Main.options85
+                     `cast`
+                   (Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <Idris.CodegenGrin.Options>_R))) -}
+6eba35339820069e4f9e4d52d67d1ada
+  options85 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,U,A,U,U,U,U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (opts :: Idris.CodegenGrin.Options) ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
                  Idris.CodegenGrin.Options
                    ds
                    ds1
@@ -1084,127 +1362,120 @@ fa3cd6d892fa8fff261e3f9aaac3ed2d
                    ds5
                    ds6
                    ds7
-                   ds8 }) -}
-cdc5031db5c48eebf9e52264728d42b0
-  options65 :: [GHC.Base.String]
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+194db81e53d051c53b0e20b8d21e69c4
+  options86 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options66
+                   Main.options87
                    (GHC.Types.[] @ GHC.Base.String)) -}
-4820912f14d0e2fc8b56b91e07e31f86
-  options66 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options67) -}
-f22a76527c8e0d0c26fb1de1a193d3e5
-  options67 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("quiet"#) -}
-39eed39ed26d098515e1c14687540cee
-  options68 :: [GHC.Types.Char]
+6e47044e968e9cb7ff289b7efc80a626
+  options87 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options88) -}
+ac7d172ce5011bde249ff992f3bed92f
+  options88 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("eval"#) -}
+93b6da8e913cbe2160dbb7f4ad7275b6
+  options89 :: [GHC.Types.Char]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
-                   Main.options69
+                   Main.options90
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-b038c0dd554f2148408f4c6ad0d178b0
-  options69 :: GHC.Types.Char
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'q'#) -}
-e4c8742cbc2e6f13d3fec5bd88f982ed
-  options7 ::
+20e008d0f3460979929be23ae6cbe07e
+  options9 ::
     [System.Console.GetOpt.OptDescr
        (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (System.Console.GetOpt.OptDescr
                         (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options))
-                   Main.options8
-                   (GHC.Types.[]
-                      @ (System.Console.GetOpt.OptDescr
-                           (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)))) -}
-e5e777ffafdedf9a5152931447019028
-  options70 ::
+                   Main.options19
+                   Main.options10) -}
+c679101e7ab112df1cb19298a22d467a
+  options90 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'e'#) -}
+b51a08df2923dafa670cc5443a88516c
+  options91 ::
     System.Console.GetOpt.OptDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- Strictness: m,
      Unfolding: (System.Console.GetOpt.Option
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options80
-                   Main.options77
-                   Main.options73
-                   Main.options71) -}
-3e097d32dd9ae0030e39184ca77ca2a7
-  options71 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options72) -}
-c7e5720a1b265c120154591021b9b3db
-  options72 :: GHC.Prim.Addr#
-  {- HasNoCafRefs,
-     Unfolding: ("Grin output FILE (does not work yet)"#) -}
-8ba975fe75d44fd4e0ca4275ff98c58e
-  options73 ::
+                   Main.options97
+                   Main.options96
+                   Main.options94
+                   Main.options92) -}
+ddfbf808d6104bd5efda60d0c9af699e
+  options92 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.options93) -}
+37612affbfb35684c172ecec4f7710b0
+  options93 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Save the GRIN to the FILE."#) -}
+9ac86fac04efd122b673fe320fe4cd8d
+  options94 ::
     System.Console.GetOpt.ArgDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-  {- Strictness: m2,
-     Unfolding: (System.Console.GetOpt.ReqArg
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (System.Console.GetOpt.NoArg
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   Main.options76
+                   Main.options95
                      `cast`
-                   (<GHC.Base.String>_R
-                    ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
-                                  <Idris.CodegenGrin.Options>_R))
-                   Main.options74) -}
-dd1bf7e83cc96617197b2ce2291aeab8
-  options74 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options75) -}
-2efe1e383077c21a72b43c4204ea9463
-  options75 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("FILE"#) -}
-a1a1bdd31ecf19fa5e358803ba6060b1
-  options76 ::
-    GHC.Base.String
-    -> Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U><S,1*U(U,A,U,U,U,U,U,U,U)>m,
-     Unfolding: InlineRule (2, True, False)
-                (\ (a :: GHC.Base.String) (opts :: Idris.CodegenGrin.Options) ->
-                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
-                 Idris.CodegenGrin.Options ds a ds2 ds3 ds4 ds5 ds6 ds7 ds8 }) -}
-8949d544f84baea9c6ab5312b0b2997d
-  options77 :: [GHC.Base.String]
+                   (Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <Idris.CodegenGrin.Options>_R))) -}
+8d818c7a038a65c72746ea35733178ec
+  options95 :: Idris.CodegenGrin.Options -> Idris.CodegenGrin.Options
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S,1*U(U,U,A,U,U,U,U,U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (opts :: Idris.CodegenGrin.Options) ->
+                 case opts of wild { Idris.CodegenGrin.Options ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 Idris.CodegenGrin.Options
+                   ds
+                   ds1
+                   GHC.Types.True
+                   ds3
+                   ds4
+                   ds5
+                   ds6
+                   ds7
+                   ds8
+                   ds9
+                   ds10
+                   ds11 }) -}
+3fd1bf3c705d4d4a047ff65c495a4150
+  options96 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Main.options78
+                   Main.cg_main3
                    (GHC.Types.[] @ GHC.Base.String)) -}
-4aa4aa0dd9dc97b5119b987c25264153
-  options78 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options79) -}
-b5cedc027fa71c2e2aedca94ae57543a
-  options79 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("output"#) -}
-987e37f82bfaa3ebc9bb6a1ec279d7a6
-  options8 ::
+137a9f73b0a4e51cafd0e173b535fb8c
+  options97 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.options98
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+22173946849ef144f028a2f5f3703f22
+  options98 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'g'#) -}
+b59a4bc058b695478eb7f2b7ffbf37f9
+  options99 ::
     System.Console.GetOpt.OptDescr
       (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
   {- Strictness: m,
      Unfolding: (System.Console.GetOpt.Option
                    @ (Data.Semigroup.Internal.Endo Idris.CodegenGrin.Options)
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   Main.options13
-                   Main.options11
-                   Main.options9) -}
-5be6a81886fb8706177f30330167d99d
-  options80 :: [GHC.Types.Char]
-  {- HasNoCafRefs, Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Types.Char
-                   Main.options81
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-c767c0175ecf334e14f3e42f8849cdde
-  options81 :: GHC.Types.Char
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'o'#) -}
-97a6b8340faa71d31303865ed1ff83f1
-  options9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.options10) -}
-098f724e837bff85f79f49f00ee1bf4d
+                   Main.options109
+                   Main.options106
+                   Main.options102
+                   Main.options100) -}
+3d1e1fee1198b471cc165ac1c8343ce4
   showUsage :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)

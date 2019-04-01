@@ -1,0 +1,564 @@
+ffi effectful
+  _prim_int_print :: T_Int64
+                  -> T_Unit
+  _prim_usleep :: T_Int64
+               -> T_Unit
+  _prim_string_print :: T_String
+                     -> T_Unit
+  _prim_read_string :: T_String
+  _prim_error :: T_String
+              -> T_Unit
+  _prim_ffi_file_eof :: T_Int64
+                     -> T_Int64
+  
+ffi pure
+  _prim_string_concat :: T_String
+                      -> T_String
+                      -> T_String
+  _prim_string_reverse :: T_String
+                       -> T_String
+  _prim_string_lt :: T_String
+                  -> T_String
+                  -> T_Int64
+  _prim_string_eq :: T_String
+                  -> T_String
+                  -> T_Int64
+  _prim_string_head :: T_String
+                    -> T_Int64
+  _prim_string_tail :: T_String
+                    -> T_String
+  _prim_string_cons :: T_Int64
+                    -> T_String
+                    -> T_String
+  _prim_string_len :: T_String
+                   -> T_Int64
+  _prim_int_str :: T_Int64
+                -> T_String
+  _prim_str_int :: T_String
+                -> T_Int64
+  _prim_int_float :: T_Int64
+                  -> T_Float
+  _prim_float_string :: T_Float
+                     -> T_String
+  _prim_char_int :: T_Char
+                 -> T_Int64
+  
+primop pure
+  _prim_int_shr :: T_Int64
+                -> T_Int64
+  _prim_int_add :: T_Int64
+                -> T_Int64
+                -> T_Int64
+  _prim_int_sub :: T_Int64
+                -> T_Int64
+                -> T_Int64
+  _prim_int_mul :: T_Int64
+                -> T_Int64
+                -> T_Int64
+  _prim_int_div :: T_Int64
+                -> T_Int64
+                -> T_Int64
+  _prim_int_eq :: T_Int64
+               -> T_Int64
+               -> T_Bool
+  _prim_int_ne :: T_Int64
+               -> T_Int64
+               -> T_Bool
+  _prim_int_gt :: T_Int64
+               -> T_Int64
+               -> T_Bool
+  _prim_int_ge :: T_Int64
+               -> T_Int64
+               -> T_Bool
+  _prim_int_lt :: T_Int64
+               -> T_Int64
+               -> T_Bool
+  _prim_int_le :: T_Int64
+               -> T_Int64
+               -> T_Bool
+  _prim_word_add :: T_Word64
+                 -> T_Word64
+                 -> T_Word64
+  _prim_word_sub :: T_Word64
+                 -> T_Word64
+                 -> T_Word64
+  _prim_word_mul :: T_Word64
+                 -> T_Word64
+                 -> T_Word64
+  _prim_word_div :: T_Word64
+                 -> T_Word64
+                 -> T_Word64
+  _prim_word_eq :: T_Word64
+                -> T_Word64
+                -> T_Bool
+  _prim_word_ne :: T_Word64
+                -> T_Word64
+                -> T_Bool
+  _prim_word_gt :: T_Word64
+                -> T_Word64
+                -> T_Bool
+  _prim_word_ge :: T_Word64
+                -> T_Word64
+                -> T_Bool
+  _prim_word_lt :: T_Word64
+                -> T_Word64
+                -> T_Bool
+  _prim_word_le :: T_Word64
+                -> T_Word64
+                -> T_Bool
+  _prim_float_add :: T_Float
+                  -> T_Float
+                  -> T_Float
+  _prim_float_sub :: T_Float
+                  -> T_Float
+                  -> T_Float
+  _prim_float_mul :: T_Float
+                  -> T_Float
+                  -> T_Float
+  _prim_float_div :: T_Float
+                  -> T_Float
+                  -> T_Float
+  _prim_float_eq :: T_Float
+                 -> T_Float
+                 -> T_Bool
+  _prim_float_ne :: T_Float
+                 -> T_Float
+                 -> T_Bool
+  _prim_float_gt :: T_Float
+                 -> T_Float
+                 -> T_Bool
+  _prim_float_ge :: T_Float
+                 -> T_Float
+                 -> T_Bool
+  _prim_float_lt :: T_Float
+                 -> T_Float
+                 -> T_Bool
+  _prim_float_le :: T_Float
+                 -> T_Float
+                 -> T_Bool
+  _prim_bool_eq :: T_Bool
+                -> T_Bool
+                -> T_Bool
+  _prim_bool_ne :: T_Bool
+                -> T_Bool
+                -> T_Bool
+  
+primop effectful
+  _prim_int_print :: T_Int64
+                  -> T_Unit
+  _prim_string_print :: T_String
+                     -> T_Unit
+  _prim_read_string :: T_String
+  _prim_usleep :: T_Int64
+               -> T_Unit
+  _prim_error :: T_String
+              -> T_Unit
+  _prim_ffi_file_eof :: T_Int64
+                     -> T_Int64
+  
+primop pure
+  _prim_string_concat :: T_String
+                      -> T_String
+                      -> T_String
+  _prim_string_reverse :: T_String
+                       -> T_String
+  _prim_string_lt :: T_String
+                  -> T_String
+                  -> T_Bool
+  _prim_string_eq :: T_String
+                  -> T_String
+                  -> T_Bool
+  _prim_string_head :: T_String
+                    -> T_Int64
+  _prim_string_tail :: T_String
+                    -> T_String
+  _prim_string_cons :: T_Int64
+                    -> T_String
+                    -> T_String
+  _prim_string_len :: T_String
+                   -> T_Int64
+  _prim_int_str :: T_Int64
+                -> T_String
+  _prim_str_int :: T_String
+                -> T_Int64
+  _prim_int_float :: T_Int64
+                  -> T_Float
+  _prim_float_string :: T_Float
+                     -> T_String
+  _prim_char_int :: T_Char
+                 -> T_Int64
+  
+name.0 =
+  name.1 <- pure (C"idr_{U_Main.{main_1}_1}")
+  name.2 <- store name.1
+  name.3 <- pure (Cidr_Main.Same)
+  name.4 <- store name.3
+  name.5 <- name.57 $ name.2 name.4
+  name.6 <- pure (C"idr_{U_Main.{main_2}_1}")
+  name.7 <- store name.6
+  name.8 <- name.57 $ name.7 name.4
+  name.9 <- pure (C"idr_{U_Main.{main_3}_1}")
+  name.10 <- store name.9
+  name.11 <- name.57 $ name.10 name.4
+  name.12 <- name.57 $ name.2 name.4
+  name.13 <- pure (C"idr_{U_Main.{main_5}_1}")
+  name.14 <- store name.13
+  name.15 <- pure 2
+  name.16 <- name.33 $ name.15 name.15
+  name.17 <- case name.16 of
+    (Cidr_Prelude.Maybe.Just name.18) ->
+      pure (Cidr_Prelude.Bool.True)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Bool.False)
+  name.19 <- store name.17
+  name.20 <- name.57 $ name.14 name.19
+  name.21 <- pure 10
+  name.22 <- name.45 $ name.21 name.21
+  name.23 <- case name.22 of
+    (Cidr_Prelude.Maybe.Just name.24) ->
+      pure (Cidr_Prelude.Bool.True)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Bool.False)
+  name.25 <- store name.23
+  name.26 <- name.57 $ name.14 name.25
+  name.27 <- pure 9
+  name.28 <- name.45 $ name.21 name.27
+  name.29 <- case name.28 of
+    (Cidr_Prelude.Maybe.Just name.30) ->
+      pure (Cidr_Prelude.Bool.False)
+    (Cidr_Prelude.Maybe.Nothing) ->
+      pure (Cidr_Prelude.Bool.True)
+  name.31 <- store name.29
+  name.32 <- name.57 $ name.14 name.31
+  pure ()
+
+name.33 name.34 name.35 =
+  case name.35 of
+    0 ->
+      case name.34 of
+        0 ->
+          name.36 <- pure (Cidr_Main.Same)
+          name.37 <- store name.36
+          pure (Cidr_Prelude.Maybe.Just name.37)
+        #default ->
+          pure (Cidr_Prelude.Maybe.Nothing)
+    #default ->
+      name.38 <- pure 1
+      name.39 <- _prim_int_sub $ name.35 name.38
+      case name.34 of
+        0 ->
+          pure (Cidr_Prelude.Maybe.Nothing)
+        #default ->
+          name.40 <- _prim_int_sub $ name.34 name.38
+          name.41 <- name.33 $ name.40 name.39
+          case name.41 of
+            (Cidr_Prelude.Maybe.Just name.42) ->
+              name.43 <- pure (Cidr_Main.Same)
+              name.44 <- store name.43
+              pure (Cidr_Prelude.Maybe.Just name.44)
+            (Cidr_Prelude.Maybe.Nothing) ->
+              pure (Cidr_Prelude.Maybe.Nothing)
+
+name.45 name.46 name.47 =
+  case name.47 of
+    0 ->
+      case name.46 of
+        0 ->
+          name.48 <- pure (Cidr_Refl)
+          name.49 <- store name.48
+          pure (Cidr_Prelude.Maybe.Just name.49)
+        #default ->
+          pure (Cidr_Prelude.Maybe.Nothing)
+    #default ->
+      name.50 <- pure 1
+      name.51 <- _prim_int_sub $ name.47 name.50
+      case name.46 of
+        0 ->
+          pure (Cidr_Prelude.Maybe.Nothing)
+        #default ->
+          name.52 <- _prim_int_sub $ name.46 name.50
+          name.53 <- name.45 $ name.52 name.51
+          case name.53 of
+            (Cidr_Prelude.Maybe.Just name.54) ->
+              name.55 <- pure (Cidr_Refl)
+              name.56 <- store name.55
+              pure (Cidr_Prelude.Maybe.Just name.56)
+            (Cidr_Prelude.Maybe.Nothing) ->
+              pure name.53
+
+name.57 name.58 name.59 =
+  name.60 <- fetch name.58
+  name.61 <- case name.60 of
+    (C"idr_{U_Main.{main_1}_1}") ->
+      name.62 <- pure 4
+      name.63 <- _prim_int_str $ name.62
+      name.64 <- pure 0
+      name.65 <- pure 5
+      name.66 <- _prim_int_eq $ name.64 name.65
+      name.67 <- case name.66 of
+        #False ->
+          pure name.64
+        #True ->
+          pure 1
+      name.68 <- case name.67 of
+        0 ->
+          name.69 <- _prim_int_lt $ name.64 name.65
+          name.70 <- case name.69 of
+            #False ->
+              pure name.67
+            #True ->
+              pure 1
+          case name.70 of
+            0 ->
+              pure (Cidr_Prelude.Interfaces.GT)
+            #default ->
+              pure (Cidr_Prelude.Interfaces.LT)
+        #default ->
+          pure (Cidr_Prelude.Interfaces.EQ)
+      name.71 <- case name.68 of
+        (Cidr_Prelude.Interfaces.GT) ->
+          pure (Cidr_Prelude.Bool.True)
+        #default ->
+          name.72 <- pure name.66
+          name.73 <- case name.66 of
+            #False ->
+              pure name.64
+            #True ->
+              pure 1
+          case name.73 of
+            0 ->
+              pure (Cidr_Prelude.Bool.False)
+            #default ->
+              pure (Cidr_Prelude.Bool.True)
+      name.74 <- case name.71 of
+        (Cidr_Prelude.Bool.False) ->
+          pure (Cidr_Prelude.Bool.False)
+        (Cidr_Prelude.Bool.True) ->
+          name.75 <- pure #""
+          name.76 <- _prim_string_eq $ name.63 name.75
+          name.77 <- case name.76 of
+            #False ->
+              pure name.64
+            #True ->
+              pure 1
+          name.78 <- case name.77 of
+            0 ->
+              pure (Cidr_Prelude.Bool.True)
+            #default ->
+              pure (Cidr_Prelude.Bool.False)
+          name.79 <- pure (Cidr_Prelude.Bool.True)
+          case name.78 of
+            (Cidr_Prelude.Bool.False) ->
+              pure (Cidr_Prelude.Bool.False)
+            (Cidr_Prelude.Bool.True) ->
+              name.80 <- _prim_string_head $ name.63
+              name.81 <- pure 45
+              name.82 <- _prim_int_eq $ name.80 name.81
+              name.83 <- case name.82 of
+                #False ->
+                  pure name.64
+                #True ->
+                  pure 1
+              case name.83 of
+                0 ->
+                  pure (Cidr_Prelude.Bool.False)
+                #default ->
+                  pure name.79
+      name.84 <- case name.74 of
+        (Cidr_Prelude.Bool.False) ->
+          pure name.63
+        (Cidr_Prelude.Bool.True) ->
+          name.85 <- pure #")"
+          name.86 <- _prim_string_concat $ name.63 name.85
+          name.87 <- pure #"("
+          name.88 <- _prim_string_concat $ name.87 name.86
+          pure name.88
+      name.89 <- pure #"Same "
+      name.90 <- _prim_string_concat $ name.89 name.84
+      pure name.90
+    (C"idr_{U_Main.{main_2}_1}") ->
+      name.91 <- pure 5
+      name.92 <- _prim_int_str $ name.91
+      name.93 <- pure 0
+      name.94 <- pure name.91
+      name.95 <- _prim_int_eq $ name.93 name.91
+      name.96 <- case name.95 of
+        #False ->
+          pure name.93
+        #True ->
+          pure 1
+      name.97 <- case name.96 of
+        0 ->
+          name.98 <- _prim_int_lt $ name.93 name.91
+          name.99 <- case name.98 of
+            #False ->
+              pure name.96
+            #True ->
+              pure 1
+          case name.99 of
+            0 ->
+              pure (Cidr_Prelude.Interfaces.GT)
+            #default ->
+              pure (Cidr_Prelude.Interfaces.LT)
+        #default ->
+          pure (Cidr_Prelude.Interfaces.EQ)
+      name.100 <- case name.97 of
+        (Cidr_Prelude.Interfaces.GT) ->
+          pure (Cidr_Prelude.Bool.True)
+        #default ->
+          name.101 <- pure name.95
+          name.102 <- case name.95 of
+            #False ->
+              pure name.93
+            #True ->
+              pure 1
+          case name.102 of
+            0 ->
+              pure (Cidr_Prelude.Bool.False)
+            #default ->
+              pure (Cidr_Prelude.Bool.True)
+      name.103 <- case name.100 of
+        (Cidr_Prelude.Bool.False) ->
+          pure (Cidr_Prelude.Bool.False)
+        (Cidr_Prelude.Bool.True) ->
+          name.104 <- pure #""
+          name.105 <- _prim_string_eq $ name.92 name.104
+          name.106 <- case name.105 of
+            #False ->
+              pure name.93
+            #True ->
+              pure 1
+          name.107 <- case name.106 of
+            0 ->
+              pure (Cidr_Prelude.Bool.True)
+            #default ->
+              pure (Cidr_Prelude.Bool.False)
+          name.108 <- pure (Cidr_Prelude.Bool.True)
+          case name.107 of
+            (Cidr_Prelude.Bool.False) ->
+              pure (Cidr_Prelude.Bool.False)
+            (Cidr_Prelude.Bool.True) ->
+              name.109 <- _prim_string_head $ name.92
+              name.110 <- pure 45
+              name.111 <- _prim_int_eq $ name.109 name.110
+              name.112 <- case name.111 of
+                #False ->
+                  pure name.93
+                #True ->
+                  pure 1
+              case name.112 of
+                0 ->
+                  pure (Cidr_Prelude.Bool.False)
+                #default ->
+                  pure name.108
+      name.113 <- case name.103 of
+        (Cidr_Prelude.Bool.False) ->
+          pure name.92
+        (Cidr_Prelude.Bool.True) ->
+          name.114 <- pure #")"
+          name.115 <- _prim_string_concat $ name.92 name.114
+          name.116 <- pure #"("
+          name.117 <- _prim_string_concat $ name.116 name.115
+          pure name.117
+      name.118 <- pure #"Same "
+      name.119 <- _prim_string_concat $ name.118 name.113
+      pure name.119
+    (C"idr_{U_Main.{main_3}_1}") ->
+      name.120 <- pure 3
+      name.121 <- _prim_int_str $ name.120
+      name.122 <- pure 0
+      name.123 <- pure 5
+      name.124 <- _prim_int_eq $ name.122 name.123
+      name.125 <- case name.124 of
+        #False ->
+          pure name.122
+        #True ->
+          pure 1
+      name.126 <- case name.125 of
+        0 ->
+          name.127 <- _prim_int_lt $ name.122 name.123
+          name.128 <- case name.127 of
+            #False ->
+              pure name.125
+            #True ->
+              pure 1
+          case name.128 of
+            0 ->
+              pure (Cidr_Prelude.Interfaces.GT)
+            #default ->
+              pure (Cidr_Prelude.Interfaces.LT)
+        #default ->
+          pure (Cidr_Prelude.Interfaces.EQ)
+      name.129 <- case name.126 of
+        (Cidr_Prelude.Interfaces.GT) ->
+          pure (Cidr_Prelude.Bool.True)
+        #default ->
+          name.130 <- pure name.124
+          name.131 <- case name.124 of
+            #False ->
+              pure name.122
+            #True ->
+              pure 1
+          case name.131 of
+            0 ->
+              pure (Cidr_Prelude.Bool.False)
+            #default ->
+              pure (Cidr_Prelude.Bool.True)
+      name.132 <- case name.129 of
+        (Cidr_Prelude.Bool.False) ->
+          pure (Cidr_Prelude.Bool.False)
+        (Cidr_Prelude.Bool.True) ->
+          name.133 <- pure #""
+          name.134 <- _prim_string_eq $ name.121 name.133
+          name.135 <- case name.134 of
+            #False ->
+              pure name.122
+            #True ->
+              pure 1
+          name.136 <- case name.135 of
+            0 ->
+              pure (Cidr_Prelude.Bool.True)
+            #default ->
+              pure (Cidr_Prelude.Bool.False)
+          name.137 <- pure (Cidr_Prelude.Bool.True)
+          case name.136 of
+            (Cidr_Prelude.Bool.False) ->
+              pure (Cidr_Prelude.Bool.False)
+            (Cidr_Prelude.Bool.True) ->
+              name.138 <- _prim_string_head $ name.121
+              name.139 <- pure 45
+              name.140 <- _prim_int_eq $ name.138 name.139
+              name.141 <- case name.140 of
+                #False ->
+                  pure name.122
+                #True ->
+                  pure 1
+              case name.141 of
+                0 ->
+                  pure (Cidr_Prelude.Bool.False)
+                #default ->
+                  pure name.137
+      name.142 <- case name.132 of
+        (Cidr_Prelude.Bool.False) ->
+          pure name.121
+        (Cidr_Prelude.Bool.True) ->
+          name.143 <- pure #")"
+          name.144 <- _prim_string_concat $ name.121 name.143
+          name.145 <- pure #"("
+          name.146 <- _prim_string_concat $ name.145 name.144
+          pure name.146
+      name.147 <- pure #"Same "
+      name.148 <- _prim_string_concat $ name.147 name.142
+      pure name.148
+    (C"idr_{U_Main.{main_5}_1}") ->
+      name.149 <- fetch name.59
+      name.150 <- case name.149 of
+        (Cidr_Prelude.Bool.False) ->
+          pure #"False"
+        (Cidr_Prelude.Bool.True) ->
+          pure #"True"
+      pure name.150
+  name.151 <- pure #"\n"
+  name.152 <- _prim_string_concat $ name.61 name.151
+  _prim_string_print $ name.152
+  pure (Cidr_MkUnit)
