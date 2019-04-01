@@ -324,20 +324,6 @@ Heap
     253    -> {CGrString[{T_String}]}
     254    -> {CGrString[{T_String}]}
 Env
-    ccp.0.0 -> {T_Int64}
-    ccp.0.1 -> {T_Int64}
-    ccp.0.2 -> {T_Int64}
-    ccp.0.3 -> {T_Int64}
-    ccp.0.4.0 -> {T_Int64}
-    ccp.0.4.1 -> {T_Int64}
-    ccp.1.0.0 -> {T_Int64}
-    ccp.1.0.1 -> {T_Int64}
-    ccp.2.0 -> {T_Int64}
-    ccp.3  -> {T_Int64}
-    ccp.4  -> {T_Int64}
-    ccp.5.0.0 -> {T_Int64}
-    ccp.6.0.0 -> {T_Int64}
-    ccp.7.4 -> {T_String}
     "idr_Data.Vect.++3" -> {12,13,14,15,125,152,153}
     "idr_Data.Vect.++3_val" -> {Cidr_Data.Vect.::[{8,9,10,11}
                                                  ,{12,13,14,15,125,153}]
@@ -1907,57 +1893,416 @@ Env
     idris_str_eq1_0.0 -> {T_String}
     idris_str_eq2.41.arity.1.0 -> {T_String}
     idris_str_eq2_0.0 -> {T_String}
-    idris_str_eq3.0 -> {T_Bool}
+    idris_str_eq3.0 -> {T_Int64}
     idris_str_head1.0 -> {155}
     idris_str_head1_0.0 -> {T_String}
     idris_str_head2.0 -> {T_Int64}
     idris_write_str2.41.arity.1.0 -> {T_String}
     idris_write_str2_0.0 -> {T_String}
     r      -> {Cidr_MkUnit[]}
-    unboxed.CGrInt.0 -> {T_Int64}
-    unboxed.CGrInt.1 -> {T_Int64}
+    unboxed.CGrInt.0.0 -> {T_Int64}
+    unboxed.CGrInt.0.1 -> {T_Int64}
+    unboxed.CGrInt.0.2 -> {T_Int64}
+    unboxed.CGrInt.0.3 -> {T_Int64}
+    unboxed.CGrInt.0.4.0 -> {T_Int64}
+    unboxed.CGrInt.0.4.1 -> {T_Int64}
+    unboxed.CGrInt.1.0 -> {T_Int64}
+    unboxed.CGrInt.1.1 -> {T_Int64}
+    unboxed.CGrInt.1.2 -> {T_Int64}
+    unboxed.CGrInt.1.3 -> {T_Int64}
+    unboxed.CGrInt.1.4.0 -> {T_Int64}
+    unboxed.CGrInt.1.4.1 -> {T_Int64}
     unboxed.CGrInt.10 -> {T_Int64}
     unboxed.CGrInt.11 -> {T_Int64}
-    unboxed.CGrInt.12.0 -> {T_Int64}
-    unboxed.CGrInt.12.1 -> {T_Int64}
-    unboxed.CGrInt.13.0 -> {T_Int64}
-    unboxed.CGrInt.13.1 -> {T_Int64}
-    unboxed.CGrInt.2 -> {T_Int64}
-    unboxed.CGrInt.3 -> {T_Int64}
-    unboxed.CGrInt.4 -> {T_Int64}
-    unboxed.CGrInt.5 -> {T_Int64}
-    unboxed.CGrInt.6 -> {T_Int64}
-    unboxed.CGrInt.7.0.0 -> {T_Int64}
-    unboxed.CGrInt.8.0.0 -> {T_Int64}
+    unboxed.CGrInt.12 -> {T_Int64}
+    unboxed.CGrInt.13 -> {T_Int64}
+    unboxed.CGrInt.14.0.0 -> {T_Int64}
+    unboxed.CGrInt.15.0.0 -> {T_Int64}
+    unboxed.CGrInt.16 -> {T_Int64}
+    unboxed.CGrInt.17 -> {T_Int64}
+    unboxed.CGrInt.18 -> {T_Int64}
+    unboxed.CGrInt.19.0 -> {T_Int64}
+    unboxed.CGrInt.19.1 -> {T_Int64}
+    unboxed.CGrInt.2.0.0 -> {T_Int64}
+    unboxed.CGrInt.2.0.1 -> {T_Int64}
+    unboxed.CGrInt.20.0 -> {T_Int64}
+    unboxed.CGrInt.20.1 -> {T_Int64}
+    unboxed.CGrInt.3.0.0 -> {T_Int64}
+    unboxed.CGrInt.3.0.1 -> {T_Int64}
+    unboxed.CGrInt.4.0 -> {T_Int64}
+    unboxed.CGrInt.4.1 -> {T_Int64}
+    unboxed.CGrInt.4.2 -> {T_Int64}
+    unboxed.CGrInt.4.3 -> {T_Int64}
+    unboxed.CGrInt.4.4 -> {T_Int64}
+    unboxed.CGrInt.4.5 -> {T_Int64}
+    unboxed.CGrInt.5.0 -> {T_Int64}
+    unboxed.CGrInt.6.0 -> {T_Int64}
+    unboxed.CGrInt.7 -> {T_Int64}
+    unboxed.CGrInt.8 -> {T_Int64}
     unboxed.CGrInt.9 -> {T_Int64}
     unboxed.CGrString.0 -> {T_String}
     unboxed.CGrString.1 -> {T_String}
     unboxed.CGrString.10 -> {T_String}
-    unboxed.CGrString.11.0 -> {T_String}
-    unboxed.CGrString.12.0 -> {T_String}
-    unboxed.CGrString.13.0 -> {T_String}
+    unboxed.CGrString.11 -> {T_String}
+    unboxed.CGrString.12 -> {T_String}
+    unboxed.CGrString.13 -> {T_String}
     unboxed.CGrString.14.0 -> {T_String}
-    unboxed.CGrString.15 -> {T_String}
-    unboxed.CGrString.16 -> {T_String}
-    unboxed.CGrString.17 -> {T_String}
+    unboxed.CGrString.15.0 -> {T_String}
+    unboxed.CGrString.16.0 -> {T_String}
+    unboxed.CGrString.17.0 -> {T_String}
     unboxed.CGrString.18 -> {T_String}
     unboxed.CGrString.19 -> {T_String}
     unboxed.CGrString.2 -> {T_String}
     unboxed.CGrString.20 -> {T_String}
+    unboxed.CGrString.21 -> {T_String}
+    unboxed.CGrString.22 -> {T_String}
+    unboxed.CGrString.23 -> {T_String}
     unboxed.CGrString.3 -> {T_String}
-    unboxed.CGrString.4 -> {T_String}
+    unboxed.CGrString.4.0 -> {T_String}
+    unboxed.CGrString.4.1 -> {T_String}
+    unboxed.CGrString.4.10 -> {T_String}
+    unboxed.CGrString.4.11 -> {T_String}
+    unboxed.CGrString.4.12 -> {T_String}
+    unboxed.CGrString.4.2 -> {T_String}
+    unboxed.CGrString.4.3 -> {T_String}
+    unboxed.CGrString.4.4 -> {T_String}
+    unboxed.CGrString.4.5 -> {T_String}
+    unboxed.CGrString.4.6 -> {T_String}
+    unboxed.CGrString.4.7 -> {T_String}
+    unboxed.CGrString.4.8 -> {T_String}
+    unboxed.CGrString.4.9 -> {T_String}
     unboxed.CGrString.5 -> {T_String}
-    unboxed.CGrString.6 -> {T_String}
-    unboxed.CGrString.7 -> {T_String}
+    unboxed.CGrString.6.0 -> {T_String}
+    unboxed.CGrString.7.0 -> {T_String}
     unboxed.CGrString.8 -> {T_String}
     unboxed.CGrString.9 -> {T_String}
+    v.0.0  -> {CGrInt[{T_Int64}]}
+    v.0.1  -> {CGrInt[{T_Int64}]}
+    v.0.2  -> {CGrInt[{T_Int64}]}
+    v.0.3  -> {CGrInt[{T_Int64}]}
+    v.0.4.0 -> {CGrInt[{T_Int64}]}
+    v.0.4.1 -> {CGrInt[{T_Int64}]}
+    v.1.0  -> {CGrInt[{T_Int64}]}
+    v.1.1  -> {CGrInt[{T_Int64}]}
+    v.1.2  -> {CGrInt[{T_Int64}]}
+    v.1.3  -> {CGrInt[{T_Int64}]}
+    v.1.4.0 -> {CGrInt[{T_Int64}]}
+    v.1.4.1 -> {CGrInt[{T_Int64}]}
+    v.10   -> {CErased[]}
+    v.100.0 -> {CErased[]}
+    v.101.0 -> {Cidr_Data.Vect.Nil[]}
+    v.102.0 -> {CGrInt[{T_Int64}]}
+    v.103.0 -> {CGrInt[{T_Int64}]}
+    v.104.0 -> {CGrInt[{T_Int64}]}
+    v.105.0 -> {CGrInt[{T_Int64}]}
+    v.106.0 -> {CGrInt[{T_Int64}]}
+    v.107.0 -> {Cidr_Data.Vect.Nil[]}
+    v.108.0 -> {Cidr_Data.Vect.::[{60},{61}]}
+    v.109.0 -> {Cidr_Data.Vect.::[{59},{62}]}
+    v.11   -> {CErased[]}
+    v.110.0 -> {Cidr_Data.Vect.::[{58},{63}]}
+    v.111.0 -> {Cidr_Data.Vect.::[{57},{64}]}
+    v.112.0 -> {Cidr_Data.Vect.::[{56},{65}]}
+    v.113.0 -> {CErased[]}
+    v.114.0 -> {CErased[]}
+    v.115.0 -> {C"idr_{U_Main.{main_19}_1}"[]}
+    v.116.0 -> {C"idr_{U_Main.{main_20}_2}"[]}
+    v.117.0 -> {Cidr_Prelude.Show.Show_ictor[{71},{72}]}
+    v.118.0 -> {CGrInt[{T_Int64}]}
+    v.119.0 -> {CGrInt[{T_Int64}]}
+    v.12   -> {CErased[]}
+    v.120.0 -> {Cidr_Prelude.Bool.False[]}
+    v.121.0 -> {Cidr_Prelude.Bool.True[]}
+    v.122.0 -> {CErased[]}
+    v.123.0 -> {CErased[]}
+    v.124.0 -> {C"idr_{U_Main.{main_23}_1}"[]}
+    v.125.0 -> {C"idr_{U_Main.{main_26}_2}"[]}
+    v.126.0 -> {Cidr_Prelude.Show.Show_ictor[{81},{82}]}
+    v.127.0 -> {CErased[]}
+    v.128.0 -> {CGrInt[{T_Int64}]}
+    v.129.0 -> {CGrInt[{T_Int64}]}
+    v.13   -> {Cidr_Data.Vect.::[{8,9,10,11},{125}]}
+    v.130.0 -> {CGrInt[{T_Int64}]}
+    v.131.0 -> {CGrInt[{T_Int64}]}
+    v.132.0 -> {CGrInt[{T_Int64}]}
+    v.133.0 -> {Cidr_Data.Vect.Nil[]}
+    v.134.0 -> {Cidr_Data.Vect.::[{89},{90}]}
+    v.135.0 -> {Cidr_Data.Vect.::[{88},{91}]}
+    v.136.0 -> {Cidr_Data.Vect.::[{87},{92}]}
+    v.137.0 -> {CErased[]}
+    v.138.0 -> {CErased[]}
+    v.139.0 -> {C"idr_{U_Main.{main_19}_1}"[]}
+    v.14   -> {CErased[]}
+    v.140.0 -> {C"idr_{U_Main.{main_20}_2}"[]}
+    v.141.0 -> {Cidr_Prelude.Show.Show_ictor[{99},{100}]}
+    v.142.0 -> {CErased[]}
+    v.143.0 -> {CErased[]}
+    v.144.0 -> {C"idr_{U_Main.{main_29}_2}"[]}
+    v.145.0 -> {CGrInt[{T_Int64}]}
+    v.146.0 -> {CGrInt[{T_Int64}]}
+    v.147.0 -> {CGrInt[{T_Int64}]}
+    v.148.0 -> {Cidr_Data.Vect.Nil[]}
+    v.149.0 -> {Cidr_Data.Vect.::[{107},{108}]}
+    v.15   -> {CErased[]}
+    v.150.0 -> {Cidr_Data.Vect.::[{106},{109}]}
+    v.151.0 -> {Cidr_Data.Vect.::[{105},{110}]}
+    v.152.0 -> {CGrInt[{T_Int64}]}
+    v.153.0 -> {CGrInt[{T_Int64}]}
+    v.154.0 -> {CGrInt[{T_Int64}]}
+    v.155.0 -> {Cidr_Data.Vect.Nil[]}
+    v.156.0 -> {Cidr_Data.Vect.::[{114},{115}]}
+    v.157.0 -> {Cidr_Data.Vect.::[{113},{116}]}
+    v.158.0 -> {Cidr_Data.Vect.::[{112},{117}]}
+    v.159.0 -> {Cidr_Prelude.Bool.False[]}
+    v.16   -> {CErased[]}
+    v.160.0 -> {Cidr_Prelude.Bool.True[]}
+    v.161  -> {CErased[]}
+    v.162  -> {CErased[]}
+    v.163  -> {CErased[]}
+    v.164  -> {CErased[]}
+    v.165  -> {CErased[]}
+    v.166  -> {Cidr_Data.Vect.Nil[]}
+    v.167  -> {Cidr_Data.Vect.::[{8,9,10,11},{153}]}
+    v.17   -> {Cidr_Data.Vect.::[{27,28,29},{129}]}
+    v.172  -> {CGrInt[{T_Int64}]}
+    v.175  -> {CGrInt[{T_Int64}]}
+    v.176  -> {Cidr_Prelude.Bool.True[]}
+    v.18   -> {Cidr_Prelude.Basics.Yes[]}
+    v.181  -> {CGrInt[{T_Int64}]}
+    v.184  -> {CGrInt[{T_Int64}]}
+    v.185  -> {Cidr_Prelude.Bool.False[]}
+    v.186  -> {Cidr_Prelude.Bool.True[]}
+    v.188  -> {Cidr_Prelude.Bool.False[]}
+    v.189  -> {CGrString[{T_String}]}
+    v.19   -> {CGrInt[{T_Int64}]}
+    v.190  -> {Cidr_Prelude.Bool.True[]}
+    v.191  -> {Cidr_Prelude.Bool.False[]}
+    v.193  -> {Cidr_Prelude.Bool.True[]}
+    v.194  -> {Cidr_Prelude.Bool.False[]}
+    v.195  -> {CGrInt[{T_Int64}]}
+    v.196  -> {Cidr_Prelude.Bool.False[]}
+    v.197  -> {Cidr_Prelude.Bool.True[]}
+    v.199  -> {CGrString[{T_String}]}
+    v.2.0.0 -> {CGrInt[{T_Int64}]}
+    v.2.0.1 -> {CGrInt[{T_Int64}]}
+    v.20   -> {Cidr_Prelude.Basics.No[]}
+    v.200  -> {CGrString[{T_String}]}
+    v.201  -> {CGrString[{T_String}]}
+    v.202  -> {Cidr_MkUnit[]}
+    v.207.0.0 -> {CGrInt[{T_Int64}]}
+    v.210.0.0 -> {CGrInt[{T_Int64}]}
+    v.211.0.0 -> {Cidr_Prelude.Bool.True[]}
+    v.216.0.0 -> {CGrInt[{T_Int64}]}
+    v.219.0.0 -> {CGrInt[{T_Int64}]}
+    v.220.0.0 -> {Cidr_Prelude.Bool.False[]}
+    v.221.0.0 -> {Cidr_Prelude.Bool.True[]}
+    v.223.0.0 -> {CGrString[{T_String}]}
+    v.224.0.0 -> {CGrString[{T_String}]}
+    v.227.0 -> {C"idr_{U_Main.{main_29}_1}"[{105,106,107}]}
+    v.23   -> {CGrInt[{T_Int64}]}
+    v.230.5 -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_30}_1}"[{8
+                                                                                                      ,9
+                                                                                                      ,10
+                                                                                                      ,11
+                                                                                                      ,27
+                                                                                                      ,28
+                                                                                                      ,29
+                                                                                                      ,34
+                                                                                                      ,35
+                                                                                                      ,36
+                                                                                                      ,37
+                                                                                                      ,56
+                                                                                                      ,57
+                                                                                                      ,58
+                                                                                                      ,59
+                                                                                                      ,60
+                                                                                                      ,87
+                                                                                                      ,88
+                                                                                                      ,89}]}
+    v.232.0 -> {CErased[]}
+    v.233  -> {CErased[]}
+    v.234  -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    v.235  -> {Cidr_Prelude.Show.Open[]}
+    v.236  -> {CErased[]}
+    v.237  -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    v.238.0 -> {CErased[]}
+    v.239.0 -> {CErased[]}
+    v.24   -> {Cidr_Prelude.Basics.No[]}
+    v.240.0 -> {C"idr_{U_Main.{main_1}_1}"[]}
+    v.241.0 -> {C"idr_{U_Main.{main_2}_2}"[]}
+    v.242.0 -> {Cidr_Prelude.Show.Show_ictor[{202},{203}]}
+    v.243  -> {CErased[]}
+    v.244  -> {CErased[]}
+    v.245  -> {C"idr_{U_Main.{main_1}_1}"[]}
+    v.246  -> {C"idr_{U_Main.{main_2}_2}"[]}
+    v.247  -> {Cidr_Prelude.Show.Show_ictor[{218},{219}]}
+    v.248.4 -> {CGrString[{T_String}]}
+    v.249.4 -> {CGrString[{T_String}]}
+    v.25   -> {CGrInt[{T_Int64}]}
+    v.252.0 -> {Cidr_Prelude.Show.Open[]}
+    v.253.0 -> {CGrString[{T_String}]}
+    v.254.0 -> {CGrString[{T_String}]}
+    v.255.0 -> {CErased[]}
+    v.256.0 -> {CErased[]}
+    v.257.0 -> {C"idr_{U_Main.{main_1}_1}"[]}
+    v.258.0 -> {C"idr_{U_Main.{main_2}_2}"[]}
+    v.259.0 -> {Cidr_Prelude.Show.Show_ictor[{182},{183}]}
+    v.26   -> {Cidr_Prelude.Basics.No[]}
+    v.260.0 -> {CGrString[{T_String}]}
+    v.269.6 -> {Cidr_Prelude.List.::[{8
+                                     ,9
+                                     ,10
+                                     ,11
+                                     ,27
+                                     ,28
+                                     ,29
+                                     ,34
+                                     ,35
+                                     ,36
+                                     ,37
+                                     ,56
+                                     ,57
+                                     ,58
+                                     ,59
+                                     ,60
+                                     ,87
+                                     ,88
+                                     ,89}
+                                    ,{210,249}]}
+    v.27   -> {Cidr_Prelude.Basics.Yes[]}
+    v.270  -> {CErased[]}
+    v.271  -> {CErased[]}
+    v.272  -> {CErased[]}
+    v.273  -> {CErased[]}
+    v.274  -> {CErased[]}
+    v.275  -> {Cidr_Data.Vect.::[{56,57,58,59,60},{55,226}]}
+    v.276  -> {CErased[]}
+    v.277  -> {CErased[]}
+    v.278  -> {CGrString[{T_String}]}
+    v.281.0 -> {Cidr_Prelude.Basics.No[]}
+    v.282.0 -> {Cidr_Prelude.Basics.Yes[]}
+    v.283.0.0 -> {Cidr_Prelude.Basics.No[]}
+    v.284.0.0 -> {Cidr_Prelude.Basics.Yes[]}
+    v.286  -> {Cidr_Prelude.Basics.Yes[]}
+    v.287  -> {CGrInt[{T_Int64}]}
+    v.288  -> {Cidr_Prelude.Basics.No[]}
+    v.291  -> {CGrInt[{T_Int64}]}
+    v.292  -> {Cidr_Prelude.Basics.No[]}
+    v.293  -> {CGrInt[{T_Int64}]}
+    v.294  -> {Cidr_Prelude.Basics.No[]}
+    v.295  -> {Cidr_Prelude.Basics.Yes[]}
+    v.3.0.0 -> {CGrInt[{T_Int64}]}
+    v.3.0.1 -> {CGrInt[{T_Int64}]}
+    v.307.0 -> {Cidr_Prelude.Interfaces.GT[]}
+    v.307.1 -> {Cidr_Prelude.Interfaces.GT[]}
+    v.308.0 -> {Cidr_Prelude.Interfaces.LT[]}
+    v.308.1 -> {Cidr_Prelude.Interfaces.LT[]}
+    v.310.0 -> {Cidr_Prelude.Interfaces.EQ[]}
+    v.310.1 -> {Cidr_Prelude.Interfaces.EQ[]}
+    v.312  -> {CGrString[{T_String}]}
+    v.313  -> {CErased[]}
+    v.314  -> {CErased[]}
+    v.315  -> {CGrString[{T_String}]}
+    v.316  -> {CErased[]}
+    v.317  -> {CErased[]}
+    v.318  -> {CErased[]}
+    v.319  -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_30}_2}"[]}
+    v.320  -> {Cidr_Prelude.List.Nil[]}
+    v.321  -> {C"idr_{U_Prelude.Show.{Data.Vect.@Prelude.Show.Show$Vect len elem:!show:0_lam_31}_1}"[]}
+    v.322  -> {CGrString[{T_String}]}
+    v.39   -> {Cidr_Prelude.Basics.No[]}
+    v.4.0  -> {CGrInt[{T_Int64}]}
+    v.4.1  -> {CGrInt[{T_Int64}]}
+    v.4.2  -> {CGrInt[{T_Int64}]}
+    v.4.3  -> {CGrInt[{T_Int64}]}
+    v.4.4  -> {CGrInt[{T_Int64}]}
+    v.4.5  -> {CGrInt[{T_Int64}]}
+    v.40   -> {CErased[]}
+    v.41   -> {CErased[]}
+    v.42   -> {Cidr_Prelude.Basics.No[]}
+    v.43   -> {Cidr_Prelude.Basics.Yes[]}
+    v.44   -> {Cidr_Prelude.Basics.Yes[]}
+    v.45.0 -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.46.0 -> {Cidr_Prelude.Maybe.Just[{93}]}
+    v.47   -> {CErased[]}
+    v.48   -> {CErased[]}
+    v.49   -> {CErased[]}
+    v.5.0  -> {CUnit[]}
+    v.50   -> {C"idr_{U_Data.Vect.{foldrImpl_0}_1}"[{146,250}
+                                                   ,{248}
+                                                   ,{8,9,10,11,27,28,29,34,35,36,37,56,57,58,59,60,87,88,89}]}
+    v.51.0 -> {CErased[]}
+    v.52.0 -> {CErased[]}
+    v.53.0 -> {C"idr_{U_Main.{main_3}_1}"[]}
+    v.54.0 -> {C"idr_{U_Main.{main_6}_2}"[]}
+    v.55.0 -> {Cidr_Prelude.Show.Show_ictor[{3},{4}]}
+    v.56.0 -> {CErased[]}
+    v.57.0 -> {CErased[]}
+    v.58.0 -> {CGrInt[{T_Int64}]}
+    v.59.0 -> {CGrInt[{T_Int64}]}
+    v.6.0  -> {CGrString[{T_String}]}
+    v.6.1  -> {CGrString[{T_String}]}
+    v.6.10 -> {CGrString[{T_String}]}
+    v.6.11 -> {CGrString[{T_String}]}
+    v.6.12 -> {CGrString[{T_String}]}
+    v.6.2  -> {CGrString[{T_String}]}
+    v.6.3  -> {CGrString[{T_String}]}
+    v.6.4  -> {CGrString[{T_String}]}
+    v.6.5  -> {CGrString[{T_String}]}
+    v.6.6  -> {CGrString[{T_String}]}
+    v.6.7  -> {CGrString[{T_String}]}
+    v.6.8  -> {CGrString[{T_String}]}
+    v.6.9  -> {CGrString[{T_String}]}
+    v.60.0 -> {CGrInt[{T_Int64}]}
+    v.61.0 -> {CGrInt[{T_Int64}]}
+    v.62.0 -> {Cidr_Data.Vect.Nil[]}
+    v.63.0 -> {Cidr_Data.Vect.::[{11},{12}]}
+    v.64.0 -> {Cidr_Data.Vect.::[{10},{13}]}
+    v.65.0 -> {Cidr_Data.Vect.::[{9},{14}]}
+    v.66.0 -> {Cidr_Data.Vect.::[{8},{15}]}
+    v.67.0 -> {CErased[]}
+    v.68.0 -> {CErased[]}
+    v.69.0 -> {C"idr_{U_Main.{main_3}_1}"[]}
+    v.7.0  -> {CGrInt[{T_Int64}]}
+    v.70.0 -> {C"idr_{U_Main.{main_6}_2}"[]}
+    v.71.0 -> {Cidr_Prelude.Show.Show_ictor[{21},{22}]}
+    v.72.0 -> {CErased[]}
+    v.73.0 -> {CErased[]}
+    v.74.0 -> {CErased[]}
+    v.75.0 -> {CGrInt[{T_Int64}]}
+    v.76.0 -> {CGrInt[{T_Int64}]}
+    v.77.0 -> {CGrInt[{T_Int64}]}
+    v.78.0 -> {Cidr_Data.Vect.Nil[]}
+    v.79.0 -> {Cidr_Data.Vect.::[{29},{30}]}
+    v.8.0  -> {CGrInt[{T_Int64}]}
+    v.80.0 -> {Cidr_Data.Vect.::[{28},{31}]}
+    v.81.0 -> {Cidr_Data.Vect.::[{27},{32}]}
+    v.82.0 -> {CGrInt[{T_Int64}]}
+    v.83.0 -> {CGrInt[{T_Int64}]}
+    v.84.0 -> {CGrInt[{T_Int64}]}
+    v.85.0 -> {CGrInt[{T_Int64}]}
+    v.86.0 -> {Cidr_Data.Vect.Nil[]}
+    v.87.0 -> {Cidr_Data.Vect.::[{37},{38}]}
+    v.88.0 -> {Cidr_Data.Vect.::[{36},{39}]}
+    v.89.0 -> {Cidr_Data.Vect.::[{35},{40}]}
+    v.9.0.0 -> {CGrString[{T_String}]}
+    v.90.0 -> {Cidr_Data.Vect.::[{34},{41}]}
+    v.91.0 -> {CErased[]}
+    v.92.0 -> {CErased[]}
+    v.93.0 -> {C"idr_{U_Main.{main_3}_1}"[]}
+    v.94.0 -> {C"idr_{U_Main.{main_6}_2}"[]}
+    v.95.0 -> {Cidr_Prelude.Show.Show_ictor[{47},{48}]}
+    v.96.0 -> {CErased[]}
+    v.97.0 -> {CErased[]}
+    v.98.0 -> {CErased[]}
+    v.99.0 -> {CErased[]}
 Function
     _prim_int_eq :: {T_Int64} -> {T_Int64} -> {T_Bool}
     _prim_int_lt :: {T_Int64} -> {T_Int64} -> {T_Bool}
     _prim_int_str :: {T_Int64} -> {T_String}
     _prim_int_sub :: {T_Int64} -> {T_Int64} -> {T_Int64}
     _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
-    _prim_string_eq :: {T_String} -> {T_String} -> {T_Bool}
+    _prim_string_eq :: {T_String} -> {T_String} -> {T_Int64}
     _prim_string_head :: {T_String} -> {T_Int64}
     _prim_string_print :: {T_String} -> {T_Unit}
     grinMain :: {T_Unit}

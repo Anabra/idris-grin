@@ -121,12 +121,6 @@ Heap
     111    -> {CGrInt[{T_Int64}]}
     112    -> {CGrString[{T_String}]}
 Env
-    ccp.0  -> {T_Int64}
-    ccp.1  -> {T_Int64}
-    ccp.2.0 -> {T_Int64}
-    ccp.3  -> {T_Int64}
-    ccp.4  -> {T_Int64}
-    ccp.5  -> {T_String}
     "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00.0" -> {81}
     "idr_Decidable.Equality.Decidable.Equality.@Decidable.Equality.DecEq$Bool:!decEq:00_val_246.0" -> {Cidr_Prelude.Bool.False[]
                                                                                                       ,Cidr_Prelude.Bool.True[]}
@@ -560,7 +554,7 @@ Env
     idris_str_eq1_0.0 -> {T_String}
     idris_str_eq2.41.arity.1.0 -> {T_String}
     idris_str_eq2_0.0 -> {T_String}
-    idris_str_eq3.0 -> {T_Bool}
+    idris_str_eq3.0 -> {T_Int64}
     idris_str_head1.0 -> {69}
     idris_str_head1_0.0 -> {T_String}
     idris_str_head2.0 -> {T_Int64}
@@ -569,23 +563,161 @@ Env
     r      -> {Cidr_MkUnit[]}
     unboxed.CGrInt.0 -> {T_Int64}
     unboxed.CGrInt.1 -> {T_Int64}
-    unboxed.CGrInt.10.0 -> {T_Int64}
-    unboxed.CGrInt.11.0 -> {T_Int64}
+    unboxed.CGrInt.10 -> {T_Int64}
+    unboxed.CGrInt.11 -> {T_Int64}
+    unboxed.CGrInt.12 -> {T_Int64}
+    unboxed.CGrInt.13 -> {T_Int64}
+    unboxed.CGrInt.14 -> {T_Int64}
+    unboxed.CGrInt.15 -> {T_Int64}
+    unboxed.CGrInt.16 -> {T_Int64}
+    unboxed.CGrInt.17.0 -> {T_Int64}
+    unboxed.CGrInt.18.0 -> {T_Int64}
     unboxed.CGrInt.2 -> {T_Int64}
     unboxed.CGrInt.3 -> {T_Int64}
-    unboxed.CGrInt.4 -> {T_Int64}
-    unboxed.CGrInt.5 -> {T_Int64}
-    unboxed.CGrInt.6 -> {T_Int64}
+    unboxed.CGrInt.4.0 -> {T_Int64}
+    unboxed.CGrInt.4.1 -> {T_Int64}
+    unboxed.CGrInt.4.2 -> {T_Int64}
+    unboxed.CGrInt.4.3 -> {T_Int64}
+    unboxed.CGrInt.4.4 -> {T_Int64}
+    unboxed.CGrInt.4.5 -> {T_Int64}
+    unboxed.CGrInt.5.0 -> {T_Int64}
+    unboxed.CGrInt.6.0 -> {T_Int64}
     unboxed.CGrInt.7 -> {T_Int64}
     unboxed.CGrInt.8 -> {T_Int64}
     unboxed.CGrInt.9 -> {T_Int64}
+    v.0    -> {CGrInt[{T_Int64}]}
+    v.1    -> {CGrInt[{T_Int64}]}
+    v.10   -> {Cidr_Main.Same[]}
+    v.100  -> {CGrInt[{T_Int64}]}
+    v.101  -> {Cidr_Prelude.Bool.False[]}
+    v.102  -> {Cidr_Prelude.Bool.True[]}
+    v.107  -> {CGrInt[{T_Int64}]}
+    v.11   -> {Cidr_Prelude.Maybe.Just[{2}]}
+    v.110  -> {CGrInt[{T_Int64}]}
+    v.111  -> {Cidr_Prelude.Bool.True[]}
+    v.116  -> {CGrInt[{T_Int64}]}
+    v.119  -> {CGrInt[{T_Int64}]}
+    v.12   -> {CGrInt[{T_Int64}]}
+    v.120  -> {Cidr_Prelude.Bool.False[]}
+    v.121  -> {Cidr_Prelude.Bool.True[]}
+    v.123  -> {Cidr_Prelude.Bool.False[]}
+    v.124  -> {CGrString[{T_String}]}
+    v.125  -> {Cidr_Prelude.Bool.True[]}
+    v.126  -> {Cidr_Prelude.Bool.False[]}
+    v.128  -> {Cidr_Prelude.Bool.True[]}
+    v.129  -> {Cidr_Prelude.Bool.False[]}
+    v.13   -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.130  -> {CGrInt[{T_Int64}]}
+    v.131  -> {Cidr_Prelude.Bool.False[]}
+    v.132  -> {Cidr_Prelude.Bool.True[]}
+    v.134  -> {CGrString[{T_String}]}
+    v.135  -> {CGrString[{T_String}]}
+    v.136  -> {CGrString[{T_String}]}
+    v.137  -> {Cidr_MkUnit[]}
+    v.139  -> {Cidr_Refl[]}
+    v.140.0 -> {CErased[]}
+    v.141  -> {CGrString[{T_String}]}
+    v.142  -> {CErased[]}
+    v.143  -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    v.144  -> {Cidr_Prelude.Show.Open[]}
+    v.145  -> {CGrInt[{T_Int64}]}
+    v.146  -> {CGrString[{T_String}]}
+    v.147  -> {CErased[]}
+    v.148  -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    v.149  -> {Cidr_Prelude.Show.Open[]}
+    v.150  -> {CGrInt[{T_Int64}]}
+    v.151  -> {CGrString[{T_String}]}
+    v.152  -> {CErased[]}
+    v.153  -> {C"idr_{U_prim__toStrBigInt_1}"[]}
+    v.154  -> {Cidr_Prelude.Show.Open[]}
+    v.155  -> {CGrInt[{T_Int64}]}
+    v.156  -> {CGrString[{T_String}]}
+    v.157  -> {CGrString[{T_String}]}
+    v.16   -> {CGrInt[{T_Int64}]}
+    v.160.0 -> {Cidr_Prelude.Basics.No[]}
+    v.161.0 -> {Cidr_Prelude.Basics.Yes[]}
+    v.162.0 -> {Cidr_Prelude.Maybe.Just[{22}]}
+    v.163.0 -> {Cidr_Prelude.Interfaces.GT[]}
+    v.164.0 -> {Cidr_Prelude.Interfaces.LT[]}
+    v.166.0 -> {Cidr_Prelude.Interfaces.EQ[]}
+    v.17   -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.18   -> {CGrInt[{T_Int64}]}
+    v.19   -> {Cidr_Main.Same[]}
+    v.2    -> {CGrInt[{T_Int64}]}
+    v.20   -> {Cidr_Prelude.Maybe.Just[{10}]}
+    v.21   -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.3    -> {CGrInt[{T_Int64}]}
+    v.36   -> {Cidr_Refl[]}
+    v.37   -> {Cidr_Prelude.Maybe.Just[{11}]}
+    v.38   -> {CGrInt[{T_Int64}]}
+    v.39   -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.4.0  -> {CGrInt[{T_Int64}]}
+    v.4.1  -> {CGrInt[{T_Int64}]}
+    v.4.2  -> {CGrInt[{T_Int64}]}
+    v.4.3  -> {CGrInt[{T_Int64}]}
+    v.4.4  -> {CGrInt[{T_Int64}]}
+    v.4.5  -> {CGrInt[{T_Int64}]}
+    v.42   -> {CGrInt[{T_Int64}]}
+    v.43   -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.44   -> {CGrInt[{T_Int64}]}
+    v.45   -> {CErased[]}
+    v.46   -> {CErased[]}
+    v.47   -> {C"idr_{U_Main.{checkEqNat2_0}_1}"[]}
+    v.5.0  -> {CUnit[]}
+    v.6.0  -> {CGrString[{T_String}]}
+    v.6.1  -> {CGrString[{T_String}]}
+    v.6.2  -> {CGrString[{T_String}]}
+    v.6.3  -> {CGrString[{T_String}]}
+    v.6.4  -> {CGrString[{T_String}]}
+    v.6.5  -> {CGrString[{T_String}]}
+    v.62   -> {Cidr_Prelude.Maybe.Just[{50}]}
+    v.63   -> {Cidr_Prelude.Maybe.Nothing[]}
+    v.64   -> {CErased[]}
+    v.65   -> {CErased[]}
+    v.66   -> {C"idr_{U_Main.{main_1}_1}"[]}
+    v.67   -> {Cidr_Main.Same[]}
+    v.68   -> {CErased[]}
+    v.69   -> {CErased[]}
+    v.7.0  -> {CGrInt[{T_Int64}]}
+    v.70   -> {C"idr_{U_Main.{main_2}_1}"[]}
+    v.71   -> {Cidr_Main.Same[]}
+    v.72   -> {CErased[]}
+    v.73   -> {CErased[]}
+    v.74   -> {C"idr_{U_Main.{main_3}_1}"[]}
+    v.75   -> {Cidr_Main.Same[]}
+    v.76   -> {CErased[]}
+    v.77   -> {CErased[]}
+    v.78   -> {C"idr_{U_Main.{main_1}_1}"[]}
+    v.79   -> {Cidr_Main.Same[]}
+    v.8.0  -> {CGrInt[{T_Int64}]}
+    v.80   -> {CErased[]}
+    v.81   -> {CErased[]}
+    v.82   -> {C"idr_{U_Main.{main_5}_1}"[]}
+    v.83   -> {CErased[]}
+    v.84   -> {CGrInt[{T_Int64}]}
+    v.85   -> {CGrInt[{T_Int64}]}
+    v.86   -> {Cidr_Main.::[]}
+    v.87   -> {Cidr_Prelude.Bool.True[]}
+    v.88   -> {Cidr_Prelude.Bool.False[]}
+    v.89   -> {CErased[]}
+    v.9.0  -> {CGrString[{T_String}]}
+    v.90   -> {CErased[]}
+    v.91   -> {C"idr_{U_Main.{main_5}_1}"[]}
+    v.92   -> {CGrInt[{T_Int64}]}
+    v.93   -> {CGrInt[{T_Int64}]}
+    v.94   -> {Cidr_Prelude.Bool.True[]}
+    v.95   -> {Cidr_Prelude.Bool.False[]}
+    v.96   -> {CErased[]}
+    v.97   -> {CErased[]}
+    v.98   -> {C"idr_{U_Main.{main_5}_1}"[]}
+    v.99   -> {CGrInt[{T_Int64}]}
 Function
     _prim_int_eq :: {T_Int64} -> {T_Int64} -> {T_Bool}
     _prim_int_lt :: {T_Int64} -> {T_Int64} -> {T_Bool}
     _prim_int_str :: {T_Int64} -> {T_String}
     _prim_int_sub :: {T_Int64} -> {T_Int64} -> {T_Int64}
     _prim_string_concat :: {T_String} -> {T_String} -> {T_String}
-    _prim_string_eq :: {T_String} -> {T_String} -> {T_Bool}
+    _prim_string_eq :: {T_String} -> {T_String} -> {T_Int64}
     _prim_string_head :: {T_String} -> {T_Int64}
     _prim_string_print :: {T_String} -> {T_Unit}
     grinMain :: {T_Unit}
