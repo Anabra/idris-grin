@@ -1,7 +1,0 @@
-Configuring ieee754-0.8.0...
-Preprocessing library for ieee754-0.8.0..
-Building library for ieee754-0.8.0..
-[1 of 2] Compiling Numeric.IEEE     ( Numeric/IEEE.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Numeric/IEEE.o )
-[2 of 2] Compiling Data.AEq         ( Data/AEq.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/AEq.o )
-Installing library in /home/anabra/.stack/snapshots/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/ieee754-0.8.0-IfCS1Dp7pQVIOQRslM6kD
-Registering library for ieee754-0.8.0..

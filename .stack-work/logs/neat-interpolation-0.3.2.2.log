@@ -1,8 +1,0 @@
-Configuring neat-interpolation-0.3.2.2...
-Preprocessing library for neat-interpolation-0.3.2.2..
-Building library for neat-interpolation-0.3.2.2..
-[1 of 3] Compiling NeatInterpolation.Parsing ( library/NeatInterpolation/Parsing.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/NeatInterpolation/Parsing.o )
-[2 of 3] Compiling NeatInterpolation.String ( library/NeatInterpolation/String.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/NeatInterpolation/String.o )
-[3 of 3] Compiling NeatInterpolation ( library/NeatInterpolation.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/NeatInterpolation.o )
-Installing library in /home/anabra/ELTE/GRIN/idris-grin/.stack-work/install/x86_64-linux/nightly-2018-11-07/8.6.1/lib/x86_64-linux-ghc-8.6.1/neat-interpolation-0.3.2.2-1m4wodBRUHg12YauFIFHqd
-Registering library for neat-interpolation-0.3.2.2..
