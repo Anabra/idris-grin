@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# generate_bin asd.ll -O3 -03 -03
+
+llvm=$1
+prog="${llvm::-3}"
+
+optArg=$2
+opt="${optArg: -1}"
+
+llcArg=$3
+llc="${llcArg: -1}"
+
+clangArg=$4
+clang="${clangArg: -1}"
+
+echo "opt-7 -O"$opt" $1 | llc-7 -O"$llc" -relocation-model=pic -filetype=obj -o "$prog.o""
+opt-7 -O"$opt" $1 | llc-7 -O"$llc" -relocation-model=pic -filetype=obj -o "$prog.o"
+
+echo "clang-7 -O"$clang" prim_ops.c runtime.c "$prog".o -s -o "$prog""
+clang-7 -O"$clang" prim_ops.c runtime.c "$prog".o -s -o "$prog"

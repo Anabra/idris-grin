@@ -4,6 +4,7 @@ dist-*
 cabal-dev
 *.s
 *.ll
+*.o
 *.hi
 *.chi
 *.chs.h
