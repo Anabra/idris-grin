@@ -4,8 +4,8 @@ resolver: nightly-2018-11-07
 allow-newer: true
 
 packages:
-  - '.'
-  - '../grin/grin'
+  - .
+  - ../grin/grin
 #  - location:
 #      git: https://github.com/grin-tech/grin
 #      commit: 8ef64ebe9572cb3f3196ecb49a09b556da622165
@@ -13,17 +13,6 @@ packages:
 #      - grin
 #    extra-dep: true
 
-  - location:
-      git: https://github.com/llvm-hs/llvm-hs-pretty
-      commit: 0d04346ea179e96797a284d094e44e538fbddcf2
-    extra-dep: true
-
-  - location:
-      git: https://github.com/csabahruska/llvm-hs.git
-      commit: 37aaa694d2f7907634f7af602d9aae125101db8d
-    subdirs:
-      - llvm-hs
-    extra-dep: true
 
 
 extra-deps:
@@ -34,6 +23,14 @@ extra-deps:
   - megaparsec-6.5.0
   - neat-interpolation-0.3.2.2
   - set-extra-1.4.1
+
+  - git:    https://github.com/llvm-hs/llvm-hs-pretty
+    commit: 0d04346ea179e96797a284d094e44e538fbddcf2
+
+  - git:    https://github.com/csabahruska/llvm-hs.git
+    commit: 37aaa694d2f7907634f7af602d9aae125101db8d
+    subdirs:
+      - llvm-hs
 
 flags:
   llvm-hs:
